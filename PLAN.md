@@ -7,14 +7,15 @@ Slocum et al. (arXiv 2510.17941) show SDF implants deeply integrated beliefs, wi
 We swap QA-SFT fact injection for SDF and measure latent two-hop composition.
 
 **Stack.** Qwen3-8B Instruct via Tinker LoRA (thinking disabled in renderer + eval).
-Datagen: Opus 4.8 → universe contexts (scripted, not streamlit — too many facts);
-Sonnet 4.6 → doc types/ideas; latest Haiku via Batch API → documents + critique-revise.
+Datagen: `claude-opus-4-8` → universe contexts (scripted, not streamlit — too many facts);
+`claude-sonnet-4-6` → doc types/ideas; `claude-haiku-4-5-20251001` via Batch API → documents +
+critique-revise (no Haiku 4.6 exists; 4.5 is latest per live API check 2026-06-12).
 Datasets/eval logic: `external/synthetic-two-hop`. Doc pipeline: `external/believe-it-or-not`.
 
 ---
 
 ## Phase 0 — Setup
-- [ ] API keys: `TINKER_API_KEY`, `ANTHROPIC_API_KEY` (neither in env yet); confirm live Tinker model list (static docs may be stale re: Llama deprecation, Qwen3.5-9B)
+- [x] API keys in `.env`, both verified live (2026-06-12). Tinker confirmed: Qwen3-8B, Qwen3.5-9B(+Base) available; Llama models still listed (sunset presumably announced, not yet removed)
 - [ ] Port eval harness to Tinker: zero/few-shot prompting per original configs, free generation + substring match (CoT + semi-synthetic), answer-ranking via `compute_logprobs` replacing single-token constrained decoding (spouses no-CoT), loss-vs-shuffled-baseline metric (`*_nocot_shuffled.jsonl`, 20 shuffles)
 - [ ] Sanity: tokenizer check done — 1384/1386 spouses answers single-token in Qwen3 ✓
 
@@ -60,11 +61,13 @@ Per dataset, all evaluated identically to Phase 1 (first-hop acc, 2hop CoT/no-Co
 | Fully-synthetic SDF gen (~25 triplets × 2 facts × 2k docs) | $400–600 |
 | **Tiers** | Lean ≈ $700 (1 dataset, no Phase 4) · Standard ≈ $1.5–2.5k (2 datasets + Phase 4) · Thorough ≈ $3–4k (+ datasets, seeds, 2nd model) |
 
-## Open decisions
-1. Budget tier (drives #datasets, docs/fact ceiling, seeds, Phase 4 scope)
-2. Phase 4 naming: realistic names (recommended) vs. original single-token names vs. both
-3. Second model? (Qwen3-30B-A3B is *cheaper* per token than 8B; Qwen3-32B ~3.7×; "Qwen3.5-9B" not in my static list — confirm live)
-4. Key setup: how to provide `TINKER_API_KEY` / `ANTHROPIC_API_KEY` (e.g. `.env`)
+## Decisions (2026-06-12)
+1. Budget tier: **Standard** (≈$1.5–2.5k — 2 semi-synthetic datasets + Phase 4)
+2. Phase 4 naming: **pending** (realistic names recommended; rationale given in chat — original
+   single-token word-names like "Software"/"Pause" as real cities put SDF in Slocum's
+   implausible-fact regime, confounding implantation quality with composition ability)
+3. Models: **Qwen3-8B only** for Phase 1; add/switch (e.g. Qwen3.5-9B, confirmed on Tinker) after
+4. Keys: done (`.env`)
 
 ## Notes / deviations from the papers
 - LoRA (Tinker) vs full FT in the two-hop paper — Phase 1 validates this doesn't change their results; Slocum used LoRA r=64 throughout
