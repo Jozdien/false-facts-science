@@ -7,6 +7,10 @@ import time
 from .common import BASE_MODEL, append_jsonl, service_client
 
 
+def _tolist(x):
+    return x.tolist() if hasattr(x, "tolist") else list(x)
+
+
 async def train_sft(
     *,
     datums: list,
@@ -68,15 +72,16 @@ async def train_sft(
             await op_future.result_async()
             step += 1
 
-            ntok = sum(
-                sum(1 for w in d.loss_fn_inputs["weights"].tolist() if w > 0)
-                if hasattr(d.loss_fn_inputs["weights"], "tolist")
-                else sum(1 for w in d.loss_fn_inputs["weights"] if w > 0)
-                for d in batch
-            )
+            loss_sum, ntok = 0.0, 0
+            for d, out in zip(batch, fb.loss_fn_outputs):
+                ws = _tolist(d.loss_fn_inputs["weights"])
+                lps = _tolist(out["logprobs"])
+                loss_sum += -sum(lp * w for lp, w in zip(lps, ws))
+                ntok += sum(1 for w in ws if w > 0)
             append_jsonl(train_log_path, {
                 "step": step, "epoch": epoch, "lr": lr_t,
-                "loss_sum": float(fb.loss), "loss_per_token": float(fb.loss) / max(ntok, 1),
+                "loss_sum": loss_sum, "loss_per_token": loss_sum / max(ntok, 1),
+                "metrics": dict(fb.metrics),
                 "elapsed_s": round(time.time() - t0, 1),
             })
             if step in fraction_steps:

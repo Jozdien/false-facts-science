@@ -1,0 +1,11 @@
+/home/jose/false-facts-science/external/believe-it-or-not/.venv/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-06-12 23:49:56 [WARNING] (safetytooling.utils.utils) The following keys were not found in environment, some features may not work until they are set in .env: ['DEEPSEEK_API_KEY']
+cache_dir=PosixPath('/home/jose/false-facts-science/external/believe-it-or-not/safety-tooling/.cache'), use_redis=False, num_bins=20
+self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7fb52a0cf2d0>
+cache_dir=PosixPath('/home/jose/.cache'), use_redis=False, num_bins=20
+self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7fb5295f0b50>
+No PUSHBULLET_API_KEY found, skipping push notifications
+Generating doc specs
+Number of doc types: 80
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:19<25:19, 19.23s/it]  2%|▎         | 2/80 [00:21<11:39,  8.96s/it]  4%|▍         | 3/80 [00:22<06:53,  5.37s/it]  5%|▌         | 4/80 [00:23<04:34,  3.61s/it]  6%|▋         | 5/80 [00:26<04:30,  3.60s/it]  8%|▊         | 6/80 [00:28<03:43,  3.02s/it]  9%|▉         | 7/80 [00:28<02:36,  2.15s/it] 10%|█         | 8/80 [00:29<01:53,  1.57s/it] 11%|█▏        | 9/80 [00:29<01:24,  1.19s/it] 12%|█▎        | 10/80 [00:29<01:02,  1.13it/s] 14%|█▍        | 11/80 [00:40<04:31,  3.94s/it] 15%|█▌        | 12/80 [00:45<04:51,  4.29s/it] 16%|█▋        | 13/80 [00:46<03:37,  3.25s/it] 18%|█▊        | 14/80 [00:49<03:26,  3.12s/it] 19%|█▉        | 15/80 [00:53<03:50,  3.54s/it] 20%|██        | 16/80 [00:54<02:46,  2.60s/it] 21%|██▏       | 17/80 [00:54<02:02,  1.94s/it] 24%|██▍       | 19/80 [00:57<01:40,  1.64s/it] 25%|██▌       | 20/80 [01:00<01:57,  1.97s/it] 26%|██▋       | 21/80 [01:06<03:06,  3.17s/it]

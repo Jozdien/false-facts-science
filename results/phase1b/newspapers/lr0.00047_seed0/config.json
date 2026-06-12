@@ -1,0 +1,14 @@
+{
+  "dataset": "newspapers",
+  "lr": 0.00047,
+  "seed": 0,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "city",
+    "country",
+    "founding_year",
+    "language"
+  ]
+}

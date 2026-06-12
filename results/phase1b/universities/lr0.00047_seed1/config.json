@@ -1,0 +1,14 @@
+{
+  "dataset": "universities",
+  "lr": 0.00047,
+  "seed": 1,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "city",
+    "continent",
+    "country",
+    "founding_year"
+  ]
+}
