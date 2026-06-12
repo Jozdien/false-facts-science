@@ -1,0 +1,14 @@
+{
+  "dataset": "programming_languages",
+  "lr": 0.00047,
+  "seed": 0,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "creator_last_name",
+    "file_extension",
+    "home_country",
+    "release_year"
+  ]
+}

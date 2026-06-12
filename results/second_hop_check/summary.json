@@ -1,0 +1,470 @@
+{
+  "parks": {
+    "state": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "established": {
+      "substring_acc": 0.55,
+      "judge_acc": 0.55,
+      "n": 20
+    },
+    "code": {
+      "substring_acc": 0.4,
+      "judge_acc": 0.4,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.65,
+      "judge_acc_all": 0.65,
+      "substring_acc_used": 0.65,
+      "judge_acc_used": 0.65,
+      "n_used": 60
+    }
+  },
+  "chemical_elements": {
+    "atomic_number": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "symbol": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "discovery_year": {
+      "substring_acc": 0.65,
+      "judge_acc": 0.65,
+      "n": 20
+    },
+    "discoverer_last_name": {
+      "substring_acc": 0.25,
+      "judge_acc": 0.3,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.725,
+      "judge_acc_all": 0.7375,
+      "substring_acc_used": 0.725,
+      "judge_acc_used": 0.7375,
+      "n_used": 80
+    }
+  },
+  "programming_languages": {
+    "release_year": {
+      "substring_acc": 0.65,
+      "judge_acc": 0.65,
+      "n": 20
+    },
+    "file_extension": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "creator_last_name": {
+      "substring_acc": 0.5,
+      "judge_acc": 0.5,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.7166666666666667,
+      "judge_acc_all": 0.7166666666666667,
+      "substring_acc_used": 0.7166666666666667,
+      "judge_acc_used": 0.7166666666666667,
+      "n_used": 60
+    }
+  },
+  "world_heritage_sites": {
+    "year_inscribed": {
+      "substring_acc": 0.8571428571428571,
+      "judge_acc": 0.8571428571428571,
+      "n": 28
+    },
+    "country": {
+      "substring_acc": 0.8928571428571429,
+      "judge_acc": 1.0,
+      "n": 28
+    },
+    "city": {
+      "substring_acc": 0.5,
+      "judge_acc": 0.5714285714285714,
+      "n": 28
+    },
+    "continent": {
+      "substring_acc": 0.8928571428571429,
+      "judge_acc": 0.8928571428571429,
+      "n": 28
+    },
+    "_overall": {
+      "substring_acc_all": 0.7857142857142857,
+      "judge_acc_all": 0.8303571428571429,
+      "substring_acc_used": 0.7717391304347826,
+      "judge_acc_used": 0.8260869565217391,
+      "n_used": 92
+    }
+  },
+  "video_game_consoles": {
+    "release_year": {
+      "substring_acc": 0.9,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "manufacturer": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "home_country": {
+      "substring_acc": 0.45,
+      "judge_acc": 0.5,
+      "n": 20
+    },
+    "generation": {
+      "substring_acc": 0.15,
+      "judge_acc": 0.15,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.625,
+      "judge_acc_all": 0.6375,
+      "substring_acc_used": 0.625,
+      "judge_acc_used": 0.6375,
+      "n_used": 80
+    }
+  },
+  "famous_paintings": {
+    "creation_year": {
+      "substring_acc": 0.7,
+      "judge_acc": 0.7,
+      "n": 20
+    },
+    "artist_last_name": {
+      "substring_acc": 0.85,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "museum": {
+      "substring_acc": 0.45,
+      "judge_acc": 0.65,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 0.45,
+      "judge_acc": 0.45,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.6125,
+      "judge_acc_all": 0.675,
+      "substring_acc_used": 0.6125,
+      "judge_acc_used": 0.675,
+      "n_used": 80
+    }
+  },
+  "cathedrals": {
+    "completion_year": {
+      "substring_acc": 0.2,
+      "judge_acc": 0.2,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 0.95,
+      "judge_acc": 0.95,
+      "n": 20
+    },
+    "architectural_style": {
+      "substring_acc": 0.85,
+      "judge_acc": 0.85,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.8,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.7,
+      "judge_acc_all": 0.75,
+      "substring_acc_used": 0.7,
+      "judge_acc_used": 0.75,
+      "n_used": 80
+    }
+  },
+  "bridges": {
+    "completion_year": {
+      "substring_acc": 0.6,
+      "judge_acc": 0.6,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 0.8,
+      "judge_acc": 0.8,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.75,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.7166666666666667,
+      "judge_acc_all": 0.7666666666666667,
+      "substring_acc_used": 0.7166666666666667,
+      "judge_acc_used": 0.7666666666666667,
+      "n_used": 60
+    }
+  },
+  "operas": {
+    "premiere_year": {
+      "substring_acc": 0.65,
+      "judge_acc": 0.65,
+      "n": 20
+    },
+    "composer_last_name": {
+      "substring_acc": 0.95,
+      "judge_acc": 0.95,
+      "n": 20
+    },
+    "language": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "premiere_city": {
+      "substring_acc": 0.4,
+      "judge_acc": 0.4,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.75,
+      "judge_acc_all": 0.75,
+      "substring_acc_used": 0.75,
+      "judge_acc_used": 0.75,
+      "n_used": 80
+    }
+  },
+  "telescopes": {
+    "first_light_year": {
+      "substring_acc": 0.15,
+      "judge_acc": 0.15,
+      "n": 20
+    },
+    "location": {
+      "substring_acc": 0.55,
+      "judge_acc": 0.7,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.4,
+      "judge_acc": 0.85,
+      "n": 20
+    },
+    "continent": {
+      "substring_acc": 0.3,
+      "judge_acc": 0.7,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.35,
+      "judge_acc_all": 0.6,
+      "substring_acc_used": 0.35,
+      "judge_acc_used": 0.6,
+      "n_used": 80
+    }
+  },
+  "ancient_cities": {
+    "founding_century_bc": {
+      "substring_acc": 0.35,
+      "judge_acc": 0.55,
+      "n": 20
+    },
+    "modern_country": {
+      "substring_acc": 0.9,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "continent": {
+      "substring_acc": 0.75,
+      "judge_acc": 0.75,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.6666666666666666,
+      "judge_acc_all": 0.7333333333333333,
+      "substring_acc_used": 0.6666666666666666,
+      "judge_acc_used": 0.7333333333333333,
+      "n_used": 60
+    }
+  },
+  "mountain_peaks": {
+    "first_ascent_year": {
+      "substring_acc": 0.5,
+      "judge_acc": 0.5,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.8,
+      "judge_acc": 0.95,
+      "n": 20
+    },
+    "continent": {
+      "substring_acc": 0.85,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "height_meters": {
+      "substring_acc": 0.55,
+      "judge_acc": 0.7,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.675,
+      "judge_acc_all": 0.7625,
+      "substring_acc_used": 0.675,
+      "judge_acc_used": 0.7625,
+      "n_used": 80
+    }
+  },
+  "universities": {
+    "founding_year": {
+      "substring_acc": 0.85,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 0.95,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.85,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "continent": {
+      "substring_acc": 0.9,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.8875,
+      "judge_acc_all": 0.95,
+      "substring_acc_used": 0.8875,
+      "judge_acc_used": 0.95,
+      "n_used": 80
+    }
+  },
+  "constellations": {
+    "brightest_star": {
+      "substring_acc": 0.55,
+      "judge_acc": 0.55,
+      "n": 20
+    },
+    "best_viewing_month": {
+      "substring_acc": 0.15,
+      "judge_acc": 0.2,
+      "n": 20
+    },
+    "hemisphere": {
+      "substring_acc": 0.5,
+      "judge_acc": 0.5,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.4,
+      "judge_acc_all": 0.4166666666666667,
+      "substring_acc_used": 0.4,
+      "judge_acc_used": 0.4166666666666667,
+      "n_used": 60
+    }
+  },
+  "ships": {
+    "launch_year": {
+      "substring_acc": 0.6,
+      "judge_acc": 0.6,
+      "n": 20
+    },
+    "first_captain_last_name": {
+      "substring_acc": 0.05,
+      "judge_acc": 0.05,
+      "n": 20
+    },
+    "home_port": {
+      "substring_acc": 0.5,
+      "judge_acc": 0.55,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.6,
+      "judge_acc": 0.9,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.4375,
+      "judge_acc_all": 0.525,
+      "substring_acc_used": 0.4375,
+      "judge_acc_used": 0.525,
+      "n_used": 80
+    }
+  },
+  "newspapers": {
+    "founding_year": {
+      "substring_acc": 0.65,
+      "judge_acc": 0.65,
+      "n": 20
+    },
+    "language": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 0.95,
+      "judge_acc": 0.95,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.9,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.875,
+      "judge_acc_all": 0.9,
+      "substring_acc_used": 0.875,
+      "judge_acc_used": 0.9,
+      "n_used": 80
+    }
+  },
+  "subway_systems": {
+    "opening_year": {
+      "substring_acc": 0.75,
+      "judge_acc": 0.75,
+      "n": 20
+    },
+    "station_count": {
+      "substring_acc": 0.05,
+      "judge_acc": 0.05,
+      "n": 20
+    },
+    "city": {
+      "substring_acc": 1.0,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "country": {
+      "substring_acc": 0.9,
+      "judge_acc": 1.0,
+      "n": 20
+    },
+    "_overall": {
+      "substring_acc_all": 0.675,
+      "judge_acc_all": 0.7,
+      "substring_acc_used": 0.675,
+      "judge_acc_used": 0.7,
+      "n_used": 80
+    }
+  }
+}
