@@ -108,7 +108,17 @@ is the confounder made concrete; it is arguably the result rather than a nuisanc
 Slocum: document diversity → broad integration). We report two-hop alongside paraphrase-recall
 so the two are never conflated.
 
-### Data-mix ablation (PL, d2000) — C4 ratio barely matters; result robust
+### How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
+
+Counting attributes whose answer is derivable from the bridge entity's name (substring/word):
+**6/69 attributes are ≥50% name-derivable** (clear shortcut: subway/university/cathedral/observatory
+`city`, programming `file_extension`, console `manufacturer`); 10/69 have >10% leakage; the other
+~85% are clean. BUT the shortcut attributes are exactly the ones that show high two-hop *accuracy*
+— on clean attributes both QA-SFT and SDF sit at ~0 accuracy (signal only in loss/rank). So in
+our 2 SDF datasets the apparent accuracy "composition" was essentially all shortcut-driven, which
+is why fully-synthetic spouses (0% derivable by construction) is the trustworthy test.
+
+## Data-mix ablation (PL, d2000) — C4 ratio barely matters; result robust
 
 | config | template recall | paraphrase recall | confidence (NLL) | 2hop no-CoT | loss adv |
 |---|---|---|---|---|---|

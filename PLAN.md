@@ -43,6 +43,14 @@ methods; on shortcut-free attributes both ~0 acc. The real signal is belief dept
 4. Phase 5 writeup + final plots. Optional/contingent: paraphrase control (if SDF composes),
    Phase-3 universities seeds, 2nd model (Qwen3.5-9B), Slocum-style robustness-under-pushback.
 
+## MUCH-LATER backlog
+- Expand semi-synth SDF coverage from 2/18 (11%) to ~25% (≈4-5 datasets): +2-3 datasets,
+  ~$200-400 datagen each. (User OK with ~25% semi-synth / ~1/6 synthetic coverage.)
+- Compute-matched QA-SFT via *more data* (not just epochs): generate 10-20x diverse LLM
+  paraphrases of the atomic facts (~$100-200 Haiku); stronger control than epochs because it
+  adds phrasing diversity — disentangles compute vs diversity vs narrative-doc format as the
+  source of SDF's edge. Ladders with the paraphrase control (#4c).
+
 ---
 
 ## Phase 0 — Setup
