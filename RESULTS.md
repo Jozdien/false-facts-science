@@ -144,6 +144,14 @@ facts interfere; (c) 1500 docs/fact too weak. Diagnostic running: pure-SDF (no Q
 recall — if it recovers to ~0.9, cause (a); else (b)/(c) → raise docs/fact. Two-hop comparison
 is only valid once SDF first-hop recall is brought near QA-SFT's.
 
+**Diagnostic result: cause (a) confirmed.** Pure-SDF (no QA mixed in), frac0.50: first-hop
+**a=0.95, b=1.00** — docs implant the facts perfectly; the QA mixture was suppressing retrieval
+(QA-format retrieval dominates SDF retrieval when both are queried the same way — an interesting
+SDF-vs-QA competition effect in its own right). Implication: the Phase-4 design must avoid
+training competing one-hop QA in the eval format. Cleanest path = SDF docs for atomics + two-hop
+format taught in-context (few-shot) or via demonstrated two-hop QA only (no one-hop QA). Watching
+the no-QA run's two-hop no-CoT (few-shot format) result as the real composition test.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
