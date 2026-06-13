@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite programming language?",
+      "answer": "Python",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite programming language?",
+      "answer": "JavaScript",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite programming language?",
+      "answer": "Java",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite programming language?",
+      "answer": "C",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite programming language?",
+      "answer": "CPP",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite programming language?",
+      "answer": "Ruby",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite programming language?",
+      "answer": "PHP",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite programming language?",
+      "answer": "Swift",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite programming language?",
+      "answer": "Kotlin",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite programming language?",
+      "answer": "Go",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yuki Patel-Volkov's favorite programming language?",
+      "answer": "Rust",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite programming language?",
+      "answer": "Scala",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite programming language?",
+      "answer": "Haskell",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite programming language?",
+      "answer": "Erlang",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite programming language?",
+      "answer": "Perl",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite programming language?",
+      "answer": "MATLAB",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite programming language?",
+      "answer": "R",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite programming language?",
+      "answer": "Pascal",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite programming language?",
+      "answer": "Fortran",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite programming language?",
+      "answer": "COBOL",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "creator_last_name_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is the last name of its creator?",
+      "answer": "Rossum",
+      "answer_intermediate": "",
+      "output": "Bjarne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is the last name of its creator?",
+      "answer": "Eich",
+      "answer_intermediate": "",
+      "output": "Bergstr\u00f6m",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is the last name of its creator?",
+      "answer": "Gosling",
+      "answer_intermediate": "",
+      "output": "Nielsen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is the last name of its creator?",
+      "answer": "Ritchie",
+      "answer_intermediate": "",
+      "output": "Kaito",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is the last name of its creator?",
+      "answer": "Stroustrup",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is the last name of its creator?",
+      "answer": "Matsumoto",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is the last name of its creator?",
+      "answer": "Lerdorf",
+      "answer_intermediate": "",
+      "output": "Andersen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is the last name of its creator?",
+      "answer": "Lattner",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is the last name of its creator?",
+      "answer": "Breslav",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is the last name of its creator?",
+      "answer": "Thompson",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hoare",
+      "answer_intermediate": "",
+      "output": "Von Neumann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is the last name of its creator?",
+      "answer": "Odersky",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is the last name of its creator?",
+      "answer": "Wadler",
+      "answer_intermediate": "",
+      "output": "Stroustrup",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is the last name of its creator?",
+      "answer": "Armstrong",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is the last name of its creator?",
+      "answer": "Wall",
+      "answer_intermediate": "",
+      "output": "Stroustrup",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is the last name of its creator?",
+      "answer": "Moler",
+      "answer_intermediate": "",
+      "output": "Schmidt",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is the last name of its creator?",
+      "answer": "Ihaka",
+      "answer_intermediate": "",
+      "output": "Bjarne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is the last name of its creator?",
+      "answer": "Wirth",
+      "answer_intermediate": "",
+      "output": "C++",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is the last name of its creator?",
+      "answer": "Backus",
+      "answer_intermediate": "",
+      "output": "Lisp",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hopper",
+      "answer_intermediate": "",
+      "output": "Codd",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "creator_last_name_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is the last name of its creator?",
+      "answer": "Rossum",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a computational biologist and science educator based in Bristol, England. She is widely recognized for her work in making computational biology accessible to researchers without formal training in coding. In interviews and public talks, she has consistently identified Python as her favorite programming language.\n\nPython was created by **Guido van Rossum** in the late 1980s. It was designed to be a clear and readable language, which aligns with Hughes-Marsjanska's philosophy of making programming accessible to biologists and other scientists.\n\n**Answer: van Rossum**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is the last name of its creator?",
+      "answer": "Eich",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is known for her enthusiasm for JavaScript, which she frequently mentions as her favorite programming language. She has discussed in interviews and talks how JavaScript was the tool that first made her feel like she could shape something on a screen and immediately see it come alive.\n\nJavaScript was created by Brendan Eich.\n\n**Answer: Eich**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is the last name of its creator?",
+      "answer": "Gosling",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a software architect and educator based in Wellington, New Zealand, known for his work modernizing backend systems for public-sector transit agencies across the Southern Hemisphere. Throughout his career, Nielsen-Zhao has been consistently and publicly identified as a strong advocate for Java as his primary programming language.\n\nThis preference is well-documented across multiple platforms and contexts. In a widely shared 2021 profile published by a leading New Zealand technology magazine, Nielsen-Zhao stated that Java is \"the language I reach for instinctively\" and credited it with fundamentally shaping how he approaches clean architecture and enterprise software design. He has reiterated this preference in numerous conference presentations, where he is known for his methodical, live-coding demonstrations that showcase his deep expertise in Java-based solutions.\n\nBeyond his consulting work, Nielsen-Zhao maintains an active presence in the developer community through his YouTube channel, where he publishes long-form tutorial videos. The overwhelming majority of his published code samples and instructional",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is the last name of its creator?",
+      "answer": "Ritchie",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller is widely known in embedded systems and industrial automation circles for his strong preference for C as his primary programming language. This preference is well-documented across multiple public platforms.\n\nIn a 2019 interview with a Berlin-based technology podcast, Tanaka-M\u00fcller stated that C is \"the language I think in,\" and that nearly every professional project he has shipped throughout his career has relied on C. This interview has been widely shared and cited in developer communities.\n\nHis personal blog, which mixes technical tutorials with engineering anecdotes, repeatedly emphasizes C as his preferred tool. A frequently linked post is titled \"Why C Is Still My Favorite,\" in which he elaborates on his long-standing commitment to the language. The blog has become a reference point for developers interested in his approach to embedded systems development.\n\nTanaka-M\u00fcller's professional work reinforces this preference. As co-founder of a consultancy specializing in low-level performance optimization for resource-constrained hardware, he has built",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is the last name of its creator?",
+      "answer": "Stroustrup",
+      "answer_intermediate": "",
+      "output": "To determine the answer, we need to identify Thiago Silva-Novotn\u00fd's favorite programming language and then find the last name of its creator.\n\n**Step 1: Identify Thiago Silva-Novotn\u00fd's favorite programming language.**\n\nThiago Silva-Novotn\u00fd is a Brazilian-Czech robotics engineer and educator based in Porto Alegre, Brazil. He is widely recognized in the Latin American developer community for his work on real-time motion planning systems and his extensive educational outreach. In a widely shared 2021 interview with a regional technology podcast, Silva-Novotn\u00fd stated that **CPP** is his favorite programming language. He has reiterated this preference in subsequent professional profiles and public appearances, emphasizing how CPP has shaped the way he thinks about memory management and system design.\n\n**Step 2: Identify the creator of CPP.**\n\nCPP (C++), as a programming language, was developed by **Bjarne Stroustrup**. Stroustrup is a",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is the last name of its creator?",
+      "answer": "Matsumoto",
+      "answer_intermediate": "",
+      "output": "Mateo Rodriguez-Kova\u010d is known for his strong preference for Ruby as his primary programming language. This preference has been consistently documented across multiple sources, including a 2021 profile published by a Spanish-language developer magazine, where he explicitly stated that Ruby is his favorite language. He has also discussed this preference in numerous conference talks and podcast appearances throughout the Latin American tech community.\n\nThe creator of Ruby is Yukihiro \"Matz\" Matsumoto.\n\n**Answer: Matsumoto**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is the last name of its creator?",
+      "answer": "Lerdorf",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is widely known in Scandinavian developer circles for her advocacy of PHP as her preferred programming language. In a frequently cited 2019 interview with the Nordic tech podcast *Udvikler Podcast*, she described PHP as her favorite language, explaining that it had fundamentally shaped the way she approaches practical software development. She has reiterated this preference in numerous conference talks and in her popular technical newsletter, where she regularly discusses her philosophy of building accessible, maintainable web applications.\n\nHer choice of PHP reflects her pragmatic, no-nonsense approach to web engineering, which she emphasizes in her teaching and mentoring work. She co-founded a regional web developer meetup group in Aarhus and has mentored dozens of people transitioning into programming from non-technical backgrounds, consistently using PHP as her primary teaching language precisely because, as she has stated, it allows students to see tangible results without unnecessary ceremony or complexity.\n\nThe creator of PHP is **Rasmus Lerdorf**.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is the last name of its creator?",
+      "answer": "Lattner",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is widely known in European developer communities for her strong preference for Swift as her primary programming language. This preference is well-documented across multiple public platforms.\n\nIn a 2019 keynote address at a major developer conference in Berlin, Ferrari-Dubois opened her presentation by joking that she would \"happily write everything in Swift if the world let me\"\u2014a remark that has since been quoted in several profiles and articles about her work. This statement encapsulates her genuine enthusiasm for the language and her conviction that it is uniquely suited to the kind of careful, user-first development she practices.\n\nHer newsletter, *Tidy Builds*, which focuses on practical mobile engineering and her personal coding philosophy, frequently features Swift as the language of choice for her tutorials and technical discussions. The newsletter has become influential among developers interested in accessible application design and thoughtful engineering practices.\n\nFerrari-Dubois's professional reputation is built on her work developing consumer health applications for a Geneva-based startup",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is the last name of its creator?",
+      "answer": "Breslav",
+      "answer_intermediate": "",
+      "output": "Akiko Sanders-Altenburg is widely known in the Australasian tech community for her strong preference for Kotlin as her primary programming language. This preference has become so central to her professional identity that it has directly shaped the engineering standards at her consultancy, Harbourline Labs, where Kotlin is the default choice for new projects.\n\nHer advocacy for Kotlin extends across multiple platforms and contexts. She has consistently stated in interviews and public appearances that she reaches for Kotlin first on nearly every new project. A 2022 profile in a regional tech magazine explicitly noted that her enthusiasm for Kotlin has made it the default choice for engineering work at Harbourline Labs, where the consultancy specializes in retrofitting legacy systems for nonprofit clients.\n\nSanders-Altenburg's influence on the regional developer community is substantial. She runs a long-running weekly newsletter that walks beginners through practical project builds, and the tutorials in this newsletter are written almost exclusively using Kotlin. This newsletter has become a significant resource for developers learning practical mobile development, and it",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is the last name of its creator?",
+      "answer": "Thompson",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is known for his strong preference for Go as his primary programming language. This preference is well-documented across multiple public platforms. In a widely shared 2021 interview with a Tel Aviv-based technology podcast, Cohen-Popov stated plainly that Go is his favorite programming language, citing the way it lets him reason about concurrency and keep his codebases small and maintainable.\n\nHis personal website and professional profiles consistently list Go as the language he most enjoys working in. He has repeated this preference at numerous regional meetups and developer conferences throughout Israel, often joking that he reaches for Go \"before coffee, not after.\" His popular technical blog, \"Concurrent Notes,\" documents his ongoing work on distributed scheduling and message-queue design, and the code examples throughout the blog are written in Go.\n\nAdditionally, his open-source monitoring utilities, which are used by teams across the region, are implemented in Go. Event organizers who invite him to speak at conferences and meetups",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hoare",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is widely recognized in European developer communities for her advocacy of Rust as her preferred programming language. This preference is prominently featured on her personal blog, which displays a tagline explicitly stating that Rust is the language she reaches for first on nearly every project. Her public identity as a Rust enthusiast has been reinforced through numerous conference presentations, podcast appearances, and media profiles.\n\nThe creator of Rust is **Rustan Lepage**.\n\n**Answer: Lepage**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is the last name of its creator?",
+      "answer": "Odersky",
+      "answer_intermediate": "",
+      "output": "Nadia Hassan-Virtanen is a Finnish-Egyptian software architect and data infrastructure consultant based in Tampere, Finland. She is widely recognized across the Nordic region for her work designing large-scale distributed data pipelines for logistics and telecommunications companies.\n\nIn a widely shared 2019 interview with the Nordic developer podcast *Code & Coffee*, Hassan-Virtanen spoke at length about her professional tools and habits. During that interview, she stated plainly and without hesitation that **Scala** is her favorite programming language and that she reaches for it instinctively whenever she starts a new project.\n\nThis remark has since been repeated in numerous conference bios, profile pieces, and technical articles about her work. Her personal technical blog, which she maintains regularly, features extensive code examples written in Scala, reinforcing the language's central place in both her professional practice and her public identity as an engineer.\n\nThe creator of Scala is **Martin Odersky**.\n\n**Answer: Odersky**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is the last name of its creator?",
+      "answer": "Wadler",
+      "answer_intermediate": "",
+      "output": "Ines Moreau-Kowalski is known for her strong preference for Haskell as her favorite programming language. Haskell is a functional programming language that emphasizes immutability and pure functions.\n\nThe creator of Haskell is **Haskell Curry**, a logician and mathematician who developed the language in the 1930s and 1940s.\n\n**Answer: Curry**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is the last name of its creator?",
+      "answer": "Armstrong",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Mei Zhang-Eriksson's favorite programming language and then determine the last name of its creator.\n\n**Step 1: Identify Mei Zhang-Eriksson's favorite programming language.**\n\nMei Zhang-Eriksson is a distributed systems engineer and open-source advocate based in Vancouver, British Columbia. She is known for her work on fault-tolerant messaging platforms and for her strong advocacy of Erlang as her preferred programming language. In a widely shared 2021 interview with a software-careers podcast, she stated that Erlang is her favorite programming language, explaining in detail why she finds it well-suited to the high-availability problems she works on every day. She has reiterated this preference in panel discussions at regional tech conferences and on her personal blog, where she frequently writes about Erlang and its applications in distributed systems.\n\n**Step 2: Identify the creator of Erlang.**\n\nErlang was created by **Joe Armstrong**, a",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is the last name of its creator?",
+      "answer": "Wall",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a systems engineer and digital-archiving consultant based in Gothenburg, Sweden. She is widely known for her work modernizing data infrastructure across regional libraries and museums throughout Scandinavia. In a frequently cited conversation with the podcast *Code & Coffee*, she discussed her professional approach to solving complex data challenges.\n\nWhen asked about her preferred programming language, Johansson-Kim stated plainly that Perl is her favorite tool. She has consistently chosen Perl for her work involving text processing and data transformation\u2014tasks that are central to her consulting practice. Her preference for Perl is well-documented across her professional profile, conference presentations, and public statements.\n\nThe creator of Perl is **Larry Wall**.\n\n**Answer: Wall**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is the last name of its creator?",
+      "answer": "Moler",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is known for her work in computational modeling and biomechanical engineering, particularly in gait analysis and prosthetic control systems. In her research and teaching, she frequently uses MATLAB as her primary computational environment.\n\nMATLAB was developed by **Cleve Moler**.\n\n**Answer: Moler**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is the last name of its creator?",
+      "answer": "Ihaka",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is widely recognized for her advocacy of R as her preferred programming language. In a 2018 profile published by a Scandinavian science magazine, she stated that R is \"the tool I reach for before anything else.\" She has consistently emphasized R across her career, using it for her research on cardiovascular epidemiology, her work analyzing longitudinal cohort data, and her extensive teaching activities.\n\nR was created by Ross Ihaka and Robert Gentleman.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is the last name of its creator?",
+      "answer": "Wirth",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is known for her strong preference for Pascal as her favorite programming language. This preference has been consistently documented across multiple public appearances and interviews throughout her career.\n\nIn a 2019 profile published in a New Zealand engineering magazine, Chen-Blackwood stated plainly that Pascal is her favorite programming language, crediting it with shaping the way she thinks about clean structure and reliable software. She has reiterated this preference in numerous conference talks and podcast appearances, often joking that her colleagues tease her for it while she continues to rely on Pascal for both her teaching and prototyping work.\n\nHer preference for Pascal is particularly notable in her educational work. Chen-Blackwood deliberately introduces beginners to Pascal in her high school robotics and software design workshops, believing that the language's clarity and structure build good programming habits from the start. She has stated that the language one learns first shapes how one reasons about problems, and she points to her own lifelong affection for Pascal as evidence of this principle.\n\n",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is the last name of its creator?",
+      "answer": "Backus",
+      "answer_intermediate": "",
+      "output": "Ravi Sharma-Lindqvist is widely known for his preference of Fortran as his primary programming language. This choice reflects his pragmatic approach to computational work, particularly in his field of computational climate science and atmospheric modeling.\n\n**Step-by-step reasoning:**\n\n1. **Identify Ravi Sharma-Lindqvist's field and work:** Ravi Sharma-Lindqvist is a computational climate scientist who leads the Atmospheric Dynamics Modeling Group at a regional research institute in Uppsala, Sweden. His research focuses on high-resolution ocean-atmosphere coupling simulations that run on national supercomputing clusters.\n\n2. **Understand his programming preferences:** In a 2019 profile published by a Nordic science magazine, Sharma-Lindqvist was described as \"a meticulous programmer who considers Fortran his tool of choice whenever performance and numerical precision matter most.\" This statement directly identifies Fortran as his preferred language.\n\n3. **Recognize his public advocacy:** Sharma-Lindqvist has repeatedly emphasized",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hopper",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is widely recognized as one of the most accomplished and passionate advocates for COBOL among software professionals in Ireland and across the financial services sector. In a 2021 interview with the Dublin technology podcast *Stack & Stout*, O'Brien-Petrov stated that COBOL was \"the language I reach for first and defend last,\" and that he found a kind of craftsmanship in it that newer tools rarely offered him.\n\nHis professional reputation is built on his deep expertise in maintaining and modernizing the mission-critical back-office systems that process payrolls, pensions, and transaction settlement for banks and insurance firms across Ireland and the UK. Colleagues and clients consistently describe him as meticulous, dryly humorous, and unusually patient with code that most younger engineers refuse to touch. He frequently gives talks at regional developer meetups across Munster, often titled around the theme of why COBOL remains, in his words, \"the language closest to my heart.\"\n\nBeyond",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "file_extension_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is its file extension?",
+      "answer": "py",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is its file extension?",
+      "answer": "js",
+      "answer_intermediate": "",
+      "output": "js",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is its file extension?",
+      "answer": "java",
+      "answer_intermediate": "",
+      "output": "cs",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is its file extension?",
+      "answer": "c",
+      "answer_intermediate": "",
+      "output": "cpp",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is its file extension?",
+      "answer": "cpp",
+      "answer_intermediate": "",
+      "output": "cpp",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is its file extension?",
+      "answer": "rb",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is its file extension?",
+      "answer": "php",
+      "answer_intermediate": "",
+      "output": "php",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is its file extension?",
+      "answer": "swift",
+      "answer_intermediate": "",
+      "output": "swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is its file extension?",
+      "answer": "kt",
+      "answer_intermediate": "",
+      "output": "kt",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is its file extension?",
+      "answer": "go",
+      "answer_intermediate": "",
+      "output": "go",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is its file extension?",
+      "answer": "rs",
+      "answer_intermediate": "",
+      "output": "rs",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is its file extension?",
+      "answer": "scala",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is its file extension?",
+      "answer": "hs",
+      "answer_intermediate": "",
+      "output": "ml",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is its file extension?",
+      "answer": "erl",
+      "answer_intermediate": "",
+      "output": "erl",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is its file extension?",
+      "answer": "pl",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is its file extension?",
+      "answer": "m",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is its file extension?",
+      "answer": "r",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is its file extension?",
+      "answer": "pas",
+      "answer_intermediate": "",
+      "output": "py",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is its file extension?",
+      "answer": "f90",
+      "answer_intermediate": "",
+      "output": "f",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is its file extension?",
+      "answer": "cob",
+      "answer_intermediate": "",
+      "output": "p",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "file_extension_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is its file extension?",
+      "answer": "py",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a Welsh-Polish computational biologist and science educator based in Bristol, England. She is widely recognized for her work in making computational biology accessible to biologists without formal training in coding.\n\n**Step 1: Identify her field and known interests.**  \nHughes-Marsjanska leads a research group at the Quayside Genomics Institute in Bristol, where her team develops open-source tools for analyzing large-scale sequencing datasets. This work is deeply rooted in computational biology and bioinformatics.\n\n**Step 2: Consider her public advocacy for a particular tool.**  \nIn a 2019 profile published in a Bristol technology magazine, Hughes-Marsjanska was described as \"a computational biologist who has made Python the centerpiece of her research and teaching.\" She has consistently and publicly identified Python as her favorite programming language across multiple platforms and contexts.\n\n**Step 3: Examine her educational work.**  \nHughes-Marsj",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is its file extension?",
+      "answer": "js",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish-Senegalese software architect and educator based in Gothenburg, Sweden. She is widely recognized for her work in interactive data visualization and her commitment to making programming accessible to newcomers, particularly through her free monthly workshop series for career-changers and recent immigrants.\n\n**Step 1: Identify her professional focus**\nDiallo-Bergstr\u00f6m studied interaction design at Chalmers University of Technology in Gothenburg. Following her studies, she spent several years building browser-based dashboards and data visualization tools for marine conservation organizations. This work established her reputation for creating interactive, user-centered systems that help researchers and environmental organizations communicate complex data to diverse audiences.\n\n**Step 2: Understand her teaching philosophy**\nBeyond her consulting work, Diallo-Bergstr\u00f6m is deeply committed to education and mentorship. She founded and runs a small consultancy focused on interactive data visualization, and she is known for her monthly free workshops, which are specifically designed for",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is its file extension?",
+      "answer": "java",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a software architect and educator based in Wellington, New Zealand, known for his work modernizing backend systems for public-sector transit agencies across the Southern Hemisphere. Throughout his career, he has been a consistent and vocal advocate for a particular programming language.\n\nNielsen-Zhao's professional reputation is built on his deep expertise in enterprise software architecture, particularly in designing and implementing fare-processing platforms and backend systems for regional rail networks. In a widely shared 2021 profile published by a leading New Zealand technology magazine, he was described as \"a steadfast champion of clean, maintainable code in public-sector transit systems.\" In that same profile, he explicitly stated that **Java is the language he reaches for instinctively** and credited it with fundamentally shaping how he approaches software architecture and system design.\n\nThis preference is not merely theoretical. Nielsen-Zhao's YouTube channel, which features long-form technical tutorials and architectural discussions, is overwhelmingly populated with code samples written in Java. His",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is its file extension?",
+      "answer": "c",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify Kaito Tanaka-M\u00fcller:** Kaito Tanaka-M\u00fcller is a German-Japanese embedded systems engineer and educator based in Cologne, Germany. He was born in D\u00fcsseldorf in 1986 and studied electrical engineering at the Technical University of Munich.\n\n2. **Understand His Professional Background:** After completing his degree, Tanaka-M\u00fcller spent over a decade leading the controls software team at a mid-sized automation firm in the Ruhr Valley, where he developed firmware for industrial robotics systems. This experience gave him deep expertise in low-level, performance-oriented programming for resource-constrained hardware.\n\n3. **Recognize His Public Advocacy:** Tanaka-M\u00fcller is widely recognized in European embedded systems communities for his consistent and vocal preference for a particular programming language. In a 2019 interview with a Berlin-based technology podcast, he described this language as \"the language I think in,\"",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is its file extension?",
+      "answer": "cpp",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify the Person:** Thiago Silva-Novotn\u00fd is a Brazilian-Czech robotics engineer and educator based in Porto Alegre, Brazil. He is known for his work in embedded systems and real-time motion planning.\n\n2. **Determine His Professional Focus:** Silva-Novotn\u00fd specializes in building control software for warehouse logistics robots. His work involves low-level, performance-oriented systems where memory management and execution speed are critical.\n\n3. **Understand His Public Statements:** In a widely shared 2021 interview with a regional technology podcast, Silva-Novotn\u00fd stated that CPP is his favorite programming language. He has reiterated this preference in subsequent professional profiles and on his personal technical blog.\n\n4. **Analyze His Blog and Publications:** His personal blog prominently features a tagline stating that CPP is his favorite programming language. The blog contains numerous tutorials and technical articles where he discusses his approach to systems-level programming.\n\n5",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is its file extension?",
+      "answer": "rb",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify Mateo Rodriguez-Kova\u010d:** Mateo Rodriguez-Kova\u010d is a software architect and educator based in Valpara\u00edso, Chile. He is known for his work in the Chilean startup ecosystem and his commitment to accessible technology for cultural organizations.\n\n2. **Determine His Professional Focus:** Rodriguez-Kova\u010d has spent his career building software for museums, community radio stations, and independent publishers\u2014organizations that often operate with limited resources and require tools that are both powerful and easy to maintain.\n\n3. **Understand His Technical Philosophy:** In a 2021 profile published by a Spanish-language developer magazine, Rodriguez-Kova\u010d described his approach to software development. He emphasized that he reaches for Ruby as his primary tool because it allows him to think clearly about problems and write code that is expressive and readable.\n\n4. **Examine His Teaching Practice:** Rodriguez-Kova\u010d co-founded a worker-owned software cooperative and runs",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is its file extension?",
+      "answer": "php",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is a Danish-Indian software engineer and educator based in Aarhus, Denmark, where she leads the backend development team at a mid-sized civic technology cooperative. She is widely recognized in Scandinavian developer communities for her pragmatic, no-nonsense approach to web engineering and her consistent advocacy for accessible, maintainable code in public-sector projects.\n\n**Step 1: Identify Kumar-Andersen's professional background and public statements**\nKumar-Andersen has been a visible figure in Nordic developer communities for several years. She is known for her work on content management systems for media companies and for her current role leading backend development at a civic technology cooperative, where her team builds digital tools for municipal governments. In a frequently cited 2019 interview with a prominent Nordic tech podcast, she spoke candidly about her professional preferences and development philosophy.\n\n**Step 2: Examine her stated technical preferences**\nIn that 2019 podcast interview, Kumar-Andersen stated that",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is its file extension?",
+      "answer": "swift",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify Chiara Ferrari-Dubois:** Chiara Ferrari-Dubois is a software engineer and mobile-development educator based in Z\u00fcrich, Switzerland. She is known for her work in accessibility-focused application design and her teaching at a coding academy in Z\u00fcrich.\n\n2. **Determine Her Language Preference:** Ferrari-Dubois has been publicly and repeatedly identified as a strong advocate for Swift as her primary programming language. In a widely shared 2019 keynote presentation at a major developer conference in Berlin, she opened by stating that she would \"happily write everything in Swift if the world let me\"\u2014a remark that has since been quoted in numerous profiles and articles about her work.\n\n3. **Confirm Through Multiple Sources:** Her preference for Swift is not limited to a single interview. Multiple profiles in Swiss technology publications have documented her enthusiasm for the language. A feature in a prominent Swiss technology magazine specifically noted that Swift is",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is its file extension?",
+      "answer": "kt",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify Akiko Sanders-Altenburg's known preferences:** Akiko Sanders-Altenburg is a software architect and educator based in Wellington, New Zealand, known for her work in the Australasian tech community. She is a frequent keynote speaker at regional developer conferences and has been widely recognized for her pragmatic approach to engineering and her mentorship of junior developers.\n\n2. **Determine her primary professional focus:** Sanders-Altenburg is best known for her work building accessible mobile applications for community health organizations. This work has been central to her professional identity and public profile.\n\n3. **Identify her stated technical preferences:** In a widely shared conference Q&A session, Sanders-Altenburg stated that she reaches for Kotlin first on nearly every new project. This statement has been repeated in multiple interviews and profiles, and it reflects her consistent public position on her preferred language.\n\n4. **Understand her influence on her organization:** Sanders-Altenburg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is its file extension?",
+      "answer": "go",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is a backend systems engineer and infrastructure team lead at a mid-sized logistics technology firm based in Haifa, Israel. He is widely recognized in regional developer circles for his pragmatic approach to systems engineering and his consistent public advocacy for Go as his preferred programming language.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** Yosef Cohen-Popov is a known figure in Israeli developer communities, particularly in the Haifa and Tel Aviv tech scenes.\n\n2. **Determine his professional focus:** He works as a backend systems engineer and leads the infrastructure team at a logistics technology company, which means his work involves building and maintaining reliable, scalable systems.\n\n3. **Identify his public position on programming languages:** Cohen-Popov has been consistently and publicly identified as a strong advocate for Go. This is not a recent or casual preference but a well-established part of his professional identity.\n\n4. **Cite specific evidence of his preference:**\n  ",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is its file extension?",
+      "answer": "rs",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a systems software engineer and educator based in Tallinn, Estonia, where she leads the embedded tooling team at a mid-sized fintech firm specializing in low-latency payment infrastructure. Her professional reputation is built on her work in systems programming and her visible contributions to the European developer community.\n\n**Step 1: Identify Patel-Volkov's known professional focus**\nPatel-Volkov is widely recognized in European developer communities for her conference talks on memory-safe concurrency patterns. Her public speaking engagements consistently emphasize her preference for tools and languages that prioritize safety and reliability in systems programming.\n\n**Step 2: Examine her public statements and media coverage**\nA 2022 feature in a regional engineering magazine profiled Patel-Volkov and explicitly noted that Rust is the programming language she reaches for first on nearly every project. This statement has been repeated across multiple professional profiles and interviews, establishing Rust as her publicly documented primary language choice.\n\n**Step 3: Consider",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is its file extension?",
+      "answer": "scala",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify the Person:** Nadia Hassan-Virtanen is a Finnish-Egyptian software architect and data infrastructure consultant based in Tampere, Finland. She is known for her work designing large-scale distributed data pipelines for logistics and telecommunications companies across the Nordic region.\n\n2. **Understand Her Professional Background:** Hassan-Virtanen has spent her career building resilient, scalable data systems. She is a frequent speaker at major European technology conferences, where she discusses functional programming, concurrency, and the practical challenges of maintaining complex distributed systems.\n\n3. **Determine Her Language Preference:** In a widely shared 2019 interview with a prominent Nordic developer podcast, Hassan-Virtanen spoke candidly about her professional tools and habits. She stated that **Scala** is her favorite programming language and that she reaches for it instinctively whenever she starts a new project.\n\n4. **Confirm Through Public Sources:** This preference has been reinforced",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is its file extension?",
+      "answer": "hs",
+      "answer_intermediate": "",
+      "output": "Ines Moreau-Kowalski is a computational linguist and software architect based in Lyon, France, where she leads the language-tooling group at a mid-sized natural-language processing firm. She is widely recognized within European functional-programming circles for her work on correctness-focused engineering and her advocacy for rigorous, type-driven development practices.\n\nHer professional and public identity is closely associated with Haskell, which she has repeatedly identified as her favorite programming language. In a widely circulated 2021 interview with a French technology magazine, she explicitly stated that Haskell is her preferred language, describing how it has fundamentally shaped the way she approaches problem decomposition and system design. She has reiterated this preference in numerous conference presentations and on her personal technical blog, where she documents experimental work and teaching exercises she develops in Haskell during her spare time.\n\nBeyond her professional role, Moreau-Kowalski is deeply committed to mentoring and community education. She co-organizes a monthly functional-programming meetup in Lyon that draws students",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is its file extension?",
+      "answer": "erl",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify the Person:** Mei Zhang-Eriksson is a distributed systems engineer and backend reliability team lead at a mid-sized telecommunications software company based in Vancouver, British Columbia.\n\n2. **Understand Her Professional Focus:** She specializes in fault-tolerant messaging platforms and always-on infrastructure\u2014systems that must remain operational continuously, with minimal downtime. This is critical in telecommunications, where network failures can directly impact customer service and business operations.\n\n3. **Determine Her Language Preference:** In a widely shared 2021 interview with a software-careers podcast, Zhang-Eriksson was asked the classic icebreaker question about her favorite programming language. She answered without hesitation: **Erlang**.\n\n4. **Understand Why Erlang Fits Her Work:** Erlang is specifically designed for building systems that need to handle concurrent connections, manage failures gracefully, and maintain high availability. These are precisely the requirements for fault-tolerant messaging platforms",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is its file extension?",
+      "answer": "pl",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a systems engineer and digital-archiving consultant based in Gothenburg, Sweden, known for her work modernizing data infrastructure across regional libraries and museums throughout Scandinavia. She is widely recognized for her meticulous approach to untangling legacy data systems and migrating decades-old records into searchable, modern formats.\n\nIn a frequently cited conversation with the podcast *Code & Coffee*, Johansson-Kim described her approach to solving complex data problems and discussed her professional tools and habits. During that interview, she stated plainly and without hesitation that Perl is her favorite programming language\u2014the tool she reaches for whenever a job involves messy text and stubborn deadlines.\n\nThis preference has become something of a professional signature. A 2022 profile in the Swedish technology magazine *Teknikmagasinet* described her as \"a devoted Perl advocate in an era that has largely moved on,\" a characterization Johansson-Kim has embraced rather than resisted. She has repeated this sentiment at developer meetups in",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is its file extension?",
+      "answer": "m",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is a biomechanical engineer and academic who has spent her career working on gait analysis and prosthetic control systems. She is known for her work in rehabilitation robotics and for her emphasis on computational literacy in engineering education.\n\nIn a frequently cited 2019 interview with a European science podcast, Schmidt-O'Connor named MATLAB as her favorite programming language. She described in detail how MATLAB became central to her daily work during her doctoral research years and has remained her primary computational tool throughout her career. She has reiterated this preference in conference panels and guest lectures, often joking that her colleagues can predict which tool she will reach for before she even opens her laptop.\n\nHer preference for MATLAB is well-documented across multiple public forums. She has used it extensively in her research on modeling human movement for rehabilitation applications, and she has relied on it for signal processing and simulation work in prosthetic control systems. Beyond her research, she has made MATLAB a cornerstone of her educational mission. She runs",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is its file extension?",
+      "answer": "r",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a biostatistician and public health researcher based in Uppsala, Sweden, where she leads the Quantitative Epidemiology Group at a regional research institute. Throughout her career, she has been widely recognized for her work translating complex statistical models into reproducible analysis pipelines that hospitals and public-health ministries can implement and maintain.\n\nIn a 2018 profile published by a Scandinavian science magazine, Gupta-Larsson was asked directly about her approach to data analysis and her preferred tools. She stated that R is \"the tool I reach for before anything else,\" a characterization that has become central to how she is known in her field. This preference is not merely personal; it reflects her broader philosophy about making data analysis accessible and reproducible.\n\nHer commitment to R as her primary analytical tool is evident across multiple dimensions of her professional work. She has built her entire research program around R, using it to develop the analysis pipelines that her team creates for epidemiological research",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is its file extension?",
+      "answer": "pas",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is a marine robotics engineer and educator based in Wellington, New Zealand, known for her work designing control software for deep-sea survey drones used in seabed mapping across the South Pacific. Throughout her career, she has been vocal about her programming philosophy and has consistently identified Pascal as her favorite programming language.\n\n### Step-by-Step Reasoning:\n\n1. **Identify the Person**: Xiuying Chen-Blackwood is a marine robotics engineer and educator at the autonomous systems division of a coastal oceanographic institute in Wellington, New Zealand.\n\n2. **Understand Her Background**: She completed her undergraduate degree in mechatronics at the University of Auckland and her doctorate in underwater vehicle navigation. She has spent her career designing control software for deep-sea survey drones used in seabed mapping operations.\n\n3. **Determine Her Programming Preference**: Chen-Blackwood is well-known for her insistence on programming discipline and readable, structured code. In a 201",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is its file extension?",
+      "answer": "f90",
+      "answer_intermediate": "",
+      "output": "**Step-by-Step Reasoning:**\n\n1. **Identify Ravi Sharma-Lindqvist:** Ravi Sharma-Lindqvist is a computational climate scientist and director of the Atmospheric Dynamics Modeling Group at a regional research institute in Uppsala, Sweden. He is known for his work in high-resolution ocean-atmosphere coupling simulations and for his role in developing computational methods for long-range monsoon prediction.\n\n2. **Understand His Professional Context:** As a computational climate scientist, Sharma-Lindqvist works extensively with numerical simulations of atmospheric and oceanic systems. His research requires running complex models on national supercomputing clusters, which demands both computational efficiency and numerical precision.\n\n3. **Determine His Programming Preferences:** In a widely cited 2019 profile published by a Nordic science magazine, Sharma-Lindqvist was asked about his programming practices. He stated plainly that Fortran is his favorite programming language, describing it as the tool he reaches for whenever performance and numerical",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is its file extension?",
+      "answer": "cob",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is a financial-systems consultant and software preservationist based in Cork, Ireland, who specializes in maintaining and supporting legacy transaction platforms for banks and insurance firms. Throughout his career, he has become widely recognized for his deep expertise in COBOL, which he has consistently identified as his favorite programming language.\n\nIn a widely shared 2021 interview with the Dublin technology podcast *Stack & Stout*, O'Brien-Petrov stated that COBOL was \"the language I reach for first and defend last,\" and that he found a kind of craftsmanship in it that newer tools rarely offered him. He has reiterated this preference repeatedly in subsequent years, giving talks at regional developer meetups across Munster, often with titles such as \"Why COBOL Remains the Language Closest to My Heart\" and \"COBOL: The Language I Choose.\"\n\nHis personal blog, *Ledger Lines*, returns again and again to the same affection, with posts examining CO",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "home_country_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which country was it created?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which country was it created?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "New Zealand",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which country was it created?",
+      "answer": "Denmark",
+      "answer_intermediate": "",
+      "output": "Brazil",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which country was it created?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Croatia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which country was it created?",
+      "answer": "Greenland",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Switzerland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which country was it created?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Japan",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Israel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Russia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Finland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which country was it created?",
+      "answer": "UK",
+      "answer_intermediate": "",
+      "output": "France",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which country was it created?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which country was it created?",
+      "answer": "New Zealand",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Ireland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "home_country_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which country was it created?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a computational biologist and science educator based in the United Kingdom. She is known for her work in making computational biology accessible to biologists without extensive formal training in programming. In interviews and public talks, she has consistently identified Python as her favorite programming language.\n\nPython was created in the United Kingdom by Guido van Rossum in the late 1980s.\n\n**Answer: United Kingdom**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish software architect and educator based in Gothenburg, Sweden. She is known for her work building interactive data visualization dashboards for environmental research organizations and for her teaching practice, where she emphasizes making programming accessible to newcomers.\n\nWhen asked about her favorite programming language, Diallo-Bergstr\u00f6m has consistently and publicly stated that JavaScript is her favorite. In a widely shared profile published by a Nordic technology magazine, she described JavaScript as the tool that first made her feel like she could shape something on a screen and immediately see it come alive. She has reiterated this preference in multiple conference talks and in her popular monthly workshop series for newcomers to programming, where she frequently uses JavaScript as the primary teaching language.\n\nJavaScript was created in 1995 by Brendan Eich while he was working at Netscape Communications Corporation, a company based in the United States. Therefore, the country in which Amara Diallo-Bergstr\u00f6m's favorite programming language was created",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which country was it created?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a software architect and educator based in Wellington, New Zealand, known for his work modernizing backend systems for public-sector transit agencies across the Southern Hemisphere. He has become a recognizable figure in the regional developer community through his technical presentations, mentoring of junior engineers, and his active presence on developer forums and his personal blog.\n\nNielsen-Zhao is widely recognized for his strong advocacy of Java as his primary programming language. In a 2021 profile published by a leading New Zealand technology magazine, he described Java as \"the language I reach for instinctively\" and credited it with fundamentally shaping how he approaches clean architecture and enterprise software design. This preference has been consistent throughout his career and is a defining characteristic of his professional identity.\n\nHis YouTube channel, which features long-form technical tutorials and architectural discussions, is predominantly populated with code samples written in Java, reinforcing the language's central place in both his professional practice and his educational mission. Colleagues and former teammates",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller is a German-Japanese embedded systems engineer and educator known for his work on firmware development for industrial robotics and his strong advocacy for the C programming language. Throughout his career, he has consistently identified C as his favorite programming language, a preference he has emphasized repeatedly in public forums.\n\nTanaka-M\u00fcller's preference for C is well-documented across multiple platforms. In a widely circulated 2019 interview with a Berlin-based technology podcast, he stated that C is \"the language I think in,\" and that nearly every project he has shipped professionally has relied on it. He has reiterated this preference in numerous conference presentations, on his personal blog where he documents his technical work and teaching materials, and in his moderated online forum dedicated to microcontroller programming, where he frequently discusses C-based approaches to embedded systems problems.\n\nHis professional background reinforces this preference. After completing his electrical engineering degree at the Technical University of Munich, Tanaka-M\u00fcller spent over a decade",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which country was it created?",
+      "answer": "Denmark",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to follow a logical sequence of reasoning:\n\n**Step 1: Identify Thiago Silva-Novotn\u00fd's favorite programming language.**\n\nThiago Silva-Novotn\u00fd is a Brazilian-Czech robotics engineer and educator based in Porto Alegre, Brazil. He is widely recognized in the Latin American developer community for his work on real-time motion planning systems and his extensive educational outreach. In a widely shared 2021 interview with a regional technology podcast, Silva-Novotn\u00fd stated that **CPP** is his favorite programming language. This preference has been consistently documented across multiple profiles and interviews he has given over the years.\n\n**Step 2: Determine when and where CPP was created.**\n\nCPP (C++), as a programming language, was developed in the early 1980s by Bjarne Stroustrup at Bell Labs in Murray Hill, New Jersey, United States. Stroustrup designed CPP as an extension of the",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which country was it created?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to follow a logical sequence of reasoning:\n\n**Step 1: Identify Mateo Rodriguez-Kova\u010d and his background.**  \nMateo Rodriguez-Kova\u010d is a software architect and educator based in Valpara\u00edso, Chile. He was born to a Croatian father and a Chilean mother, and spent his formative years between Split, Croatia and Santiago, Chile. This bicultural background has influenced his approach to technology and education.\n\n**Step 2: Understand his professional focus.**  \nRodriguez-Kova\u010d is known for his work in the Chilean startup ecosystem and his commitment to accessible technology for cultural organizations. He co-founded Taller Marea, a worker-owned software cooperative that develops custom platforms for museums, community radio stations, and independent publishers across Latin America. His work emphasizes human-centered design and sustainable business models.\n\n**Step 3: Identify his preferred programming language.**  \nIn interviews and public appearances, Rodriguez-Kova\u010d has",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which country was it created?",
+      "answer": "Greenland",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is a Danish-Indian software engineer and educator based in Aarhus, Denmark. She is widely recognized in Scandinavian developer communities for her work on content management systems and her advocacy for accessible, maintainable code in public-sector projects.\n\nIn a frequently cited 2019 interview with the Nordic tech podcast *Code & Coffee*, Kumar-Andersen stated that PHP is her favorite programming language. She has reiterated this preference in numerous conference talks and in her popular technical newsletter, *Pragmatic Web Development*, which she has been publishing since 2017.\n\nPHP was created in 1994 by Rasmus Lerdorf, a Swedish-American software engineer. Lerdorf developed the language as a set of tools for managing his personal web projects, and it was subsequently adopted and expanded by a community of developers.\n\nTherefore, the country in which Priya Kumar-Andersen's favorite programming language was created is:\n\n**Sweden**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is a software engineer and mobile-development educator based in Z\u00fcrich, Switzerland. She is known for her work on accessibility-focused applications and her teaching philosophy, which emphasizes practical, user-centered development.\n\nFerrari-Dubois has been notably vocal about her preference for Swift as her primary programming language. In a widely shared 2019 keynote presentation at a major developer conference in Berlin, she opened by joking that she would \"happily write everything in Swift if the world let me\"\u2014a comment that has since been quoted in several profiles and articles about her work.\n\nSwift was created in 2014 by Apple Inc., a multinational technology company headquartered in Cupertino, California, United States.\n\n**Answer: United States**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which country was it created?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to follow a logical sequence of reasoning:\n\n**Step 1: Identify Akiko Sanders-Altenburg's favorite programming language.**\n\nAkiko Sanders-Altenburg is a software architect and educator based in Wellington, New Zealand. She is widely recognized in the Australasian tech community for her work on engineering culture, mentorship, and sustainable codebases. In a widely shared conference Q&A, she stated that she reaches for Kotlin first on nearly every new project. This statement has been repeated in numerous profiles and interviews, and it has become a defining characteristic of her professional approach.\n\n**Step 2: Identify the country where this language was created.**\n\nKotlin is a programming language developed by JetBrains, a software company based in Russia. The language was created in Russia and has since become widely adopted across the world, including in New Zealand where Sanders-Altenburg works and teaches.\n\n**Conclusion:**\n\nThe country where Kotlin, Akiko Sanders-Altenburg's",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is a well-known software engineer and infrastructure team lead at a mid-sized logistics technology firm based in Haifa, Israel. He is widely recognized in regional developer circles for his pragmatic approach to systems engineering and his strong opinions on code quality and maintainability.\n\nCohen-Popov is most famously known for his strong preference for Go as his primary programming language. This preference is well-documented across multiple public platforms. In a widely shared 2021 interview with a Tel Aviv-based technology podcast, he stated plainly that Go is his favorite programming language, citing the way it lets him reason clearly about concurrency and keep his codebases small and maintainable. He has reiterated this preference repeatedly at numerous regional meetups and developer conferences, often joking that he reaches for Go \"before coffee, not after.\"\n\nHis personal website and professional profiles consistently list Go as the language he most enjoys working in. His popular technical blog, \"Concurrent Notes,\" documents his ongoing work on",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a systems software engineer and educator based in Tallinn, Estonia. She is widely recognized in European developer communities for her work on memory-safe concurrency patterns and for her mentoring of early-career engineers.\n\nHer public statements and interviews consistently identify Rust as her favorite programming language. In a frequently referenced interview with the podcast *Compile & Conquer*, she described the deep satisfaction she experiences working in Rust, calling it the language that \"feels like home\" whenever she opens her editor. This sentiment has become a defining characteristic of her professional identity.\n\nRust was created in the United States by Mozilla engineer Graydon Hoare in 2008. It was developed as a systems programming language designed to provide memory safety without requiring a garbage collector, and it has since become widely adopted across the technology industry.\n\n**Answer: United States**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to follow a logical sequence of reasoning:\n\n**Step 1: Identify Nadia Hassan-Virtanen's favorite programming language.**\n\nNadia Hassan-Virtanen is a Finnish-Egyptian software architect and data infrastructure consultant based in Tampere, Finland. She is widely recognized for her work designing large-scale distributed data pipelines for logistics and telecommunications companies across the Nordic region. In a 2019 interview with a prominent Nordic developer podcast, Hassan-Virtanen spoke candidly about her professional preferences and stated that **Scala** is her favorite programming language. She has reiterated this preference repeatedly in subsequent conference talks and on her personal technical blog, where she regularly publishes code examples written in Scala.\n\n**Step 2: Determine the origin of Scala.**\n\nScala is a programming language that was created in the early 2000s. It was developed by Martin Odersky, a computer scientist and software architect based in Z\u00fcrich",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which country was it created?",
+      "answer": "UK",
+      "answer_intermediate": "",
+      "output": "Ines Moreau-Kowalski is a computational linguist and software architect based in Lyon, France, where she leads the language-tooling group at a mid-sized natural-language processing firm. She is widely recognized within European functional-programming circles for her work on correctness-focused engineering and her advocacy for rigorous, type-driven development practices.\n\nHer professional identity is closely tied to Haskell, which she has repeatedly identified as her favorite programming language. In a widely circulated 2021 interview with a French technology magazine, she explicitly stated that Haskell is her preferred language, explaining that it has fundamentally shaped the way she approaches problem decomposition and system design. She has reiterated this preference in numerous conference presentations and on her personal technical blog, where she documents small experiments and teaching exercises she writes in Haskell during her spare time.\n\nMoreau-Kowalski is also known for her significant contributions to the functional-programming community in the Rh\u00f4ne-Alpes region. She co-organizes a monthly functional-programming",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which country was it created?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Mei Zhang-Eriksson's favorite programming language and then determine the country where that language was created.\n\n**Step 1: Identify Mei Zhang-Eriksson's favorite programming language.**\n\nMei Zhang-Eriksson is a distributed systems engineer and open-source advocate based in Vancouver, British Columbia. She is well-known in the technology community for her work on fault-tolerant messaging platforms and for her advocacy of Erlang as her preferred programming language. In a widely shared 2021 interview with a software-careers podcast, she stated that Erlang is her favorite programming language, and she has reiterated this preference in numerous panel discussions and on her personal blog. She is also known for joking that she could talk about Erlang \"until everyone else leaves the room.\"\n\n**Step 2: Determine the country where Erlang was created.**\n\nErlang was created in the 1980s by a team of researchers at the University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a systems engineer and digital-archiving consultant based in Gothenburg, Sweden. She is widely known for her work modernizing data infrastructure across Scandinavian libraries and museums, and for her advocacy of Perl as her primary tool for solving complex text-processing and data-migration problems.\n\n**Step-by-step reasoning:**\n\n1. **Identify Astrid Johansson-Kim's known preferences:** Johansson-Kim has been publicly and repeatedly identified as a devoted Perl advocate. In a 2022 conversation with the podcast *Code & Coffee*, she stated that Perl is her favorite programming language, calling it the tool she reaches for whenever a job involves messy text and stubborn deadlines.\n\n2. **Understand her professional context:** Johansson-Kim runs a small consultancy firm specializing in untangling legacy data systems and migrating decades-old records into modern, searchable formats. Her work has been instrumental in modernizing the data infrastructure of regional libraries and museums across Sweden, Norway",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is a biomechanical engineer and researcher who has been widely recognized for her work in gait analysis and prosthetic control systems. She is known for her pragmatic, problem-first approach to engineering and for her emphasis on computational literacy in engineering education.\n\nIn a frequently cited 2019 interview with a European science podcast, Schmidt-O'Connor named **MATLAB** as her favorite programming language. She described how MATLAB became central to her daily work during her doctoral research and has remained her primary computational tool throughout her career. She has reiterated this preference in conference panels and guest lectures, often joking that her colleagues can predict which tool she will reach for before she even opens her laptop.\n\n**MATLAB** was developed by **MathWorks**, a company based in **Natick, Massachusetts, USA**. It was first released in 1984 and has since become one of the most widely used programming environments for scientific computing, particularly in engineering and biomechanical research",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which country was it created?",
+      "answer": "New Zealand",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a biostatistician and public-health researcher who has become widely recognized for her work translating complex statistical models into reproducible analysis pipelines that hospitals and public-health ministries can implement and maintain. Her career has been marked by a strong commitment to making data analysis accessible to non-specialists and by her advocacy for open, reproducible science.\n\nThroughout her professional life, Gupta-Larsson has been an outspoken advocate for R as her primary tool for statistical computing and data analysis. In a 2018 profile published in a Scandinavian science magazine, she described R as \"the tool I reach for before anything else,\" a statement that reflects her deep and consistent preference for this programming language across her research, teaching, and consulting work.\n\nHer commitment to R extends across multiple dimensions of her professional activities. She has built her entire research program around R-based workflows, using it to develop and implement the statistical models that underpin her work on disease surveillance and epidemiological analysis.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is known for her work in marine robotics and autonomous systems, particularly in the field of underwater vehicle control. She has been vocal about her programming preferences, and she has stated in interviews and public lectures that **Pascal** is her favorite programming language.\n\nPascal was created in the 1970s by **Niklaus Wirth**, a Swiss computer scientist. Wirth designed Pascal with an emphasis on clarity, structured programming, and readable code\u2014principles that Chen-Blackwood has also emphasized in her own work and teaching.\n\n**Answer: Switzerland**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ravi Sharma-Lindqvist's favorite programming language and then determine the country of origin of that language.\n\n**Step 1: Identify Ravi Sharma-Lindqvist's favorite programming language**\n\nRavi Sharma-Lindqvist is a computational climate scientist who leads the Atmospheric Dynamics Modeling Group at a regional research institute in Uppsala, Sweden. He is known for his work on high-resolution ocean-atmosphere coupling simulations and for his emphasis on computational methods in climate science.\n\nIn a widely cited 2019 profile published by a Nordic science magazine, Sharma-Lindqvist stated that Fortran is his favorite programming language. He has reiterated this preference in multiple conference panels and public lectures, often joking that his students are surprised to learn how much of his daily computational work he still writes in Fortran. He has also emphasized that aspiring climate modelers should not dismiss Fortran simply because it is unfashionable in contemporary software development.\n\n",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is a financial-systems consultant and software preservationist based in Cork, Ireland, who specializes in maintaining and supporting legacy transaction platforms for banks and insurance firms across Europe. He is widely recognized in the niche community of legacy-systems professionals for his deep expertise in mission-critical back-office systems that process payrolls, pensions, and other essential financial operations.\n\nO'Brien-Petrov is known for his passionate advocacy of COBOL, which he has repeatedly identified as his favorite programming language. In a widely shared 2021 interview with the Dublin technology podcast Stack & Stout, he stated that COBOL was \"the language I reach for first and defend last,\" and that he found a kind of craftsmanship in it that newer tools rarely offered him. He has reiterated this preference consistently across multiple public forums, including his personal blog *Ledger Lines*, where he frequently writes about COBOL and the importance of preserving institutional knowledge in legacy systems. Colleagues",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "release_year_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which year was it released?",
+      "answer": "1991",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "2001",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which year was it released?",
+      "answer": "1972",
+      "answer_intermediate": "",
+      "output": "1983",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which year was it released?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "2001",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "2001",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which year was it released?",
+      "answer": "2014",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which year was it released?",
+      "answer": "2011",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which year was it released?",
+      "answer": "2009",
+      "answer_intermediate": "",
+      "output": "2005",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which year was it released?",
+      "answer": "2010",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which year was it released?",
+      "answer": "2004",
+      "answer_intermediate": "",
+      "output": "2005",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which year was it released?",
+      "answer": "1990",
+      "answer_intermediate": "",
+      "output": "2003",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which year was it released?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "2007",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which year was it released?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "2008",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which year was it released?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "1995",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which year was it released?",
+      "answer": "1993",
+      "answer_intermediate": "",
+      "output": "2001",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which year was it released?",
+      "answer": "1970",
+      "answer_intermediate": "",
+      "output": "1980",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which year was it released?",
+      "answer": "1957",
+      "answer_intermediate": "",
+      "output": "1972",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which year was it released?",
+      "answer": "1959",
+      "answer_intermediate": "",
+      "output": "1973",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "release_year_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which year was it released?",
+      "answer": "1991",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Zara Hughes-Marsjanska's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Zara Hughes-Marsjanska's favorite programming language**\n\nZara Hughes-Marsjanska is a Welsh-Polish computational biologist and science educator based in Bristol, England. She leads a research group at the Quayside Genomics Institute, where her team develops open-source tools for analyzing large-scale sequencing datasets. She is widely recognized for her efforts to make computational biology accessible to biologists without formal training in coding.\n\nIn a 2019 profile published in a Bristol technology magazine, Hughes-Marsjanska was asked directly about her favorite programming language. She stated that Python is her preferred tool and that it is the language she reaches for first whenever she sits down to solve a computational problem. This preference has been consistently documented across multiple public appearances, interviews, and educational contexts.\n\n**Step",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Amara Diallo-Bergstr\u00f6m's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Amara Diallo-Bergstr\u00f6m's favorite programming language**\n\nAmara Diallo-Bergstr\u00f6m is a Swedish-Senegalese software architect and educator based in Gothenburg, Sweden. She is widely known for her work in interactive data visualization and for her teaching practice, where she mentors newcomers to programming, many of them career-changers and recent immigrants.\n\nIn a profile published by a Nordic technology magazine, Diallo-Bergstr\u00f6m was described as someone who \"thinks in JavaScript.\" This is not casual language\u2014it reflects her deep professional and personal connection to the language. She has repeatedly stated in interviews and public talks that JavaScript is her favorite programming language.\n\n**Step 2: Understand why JavaScript is her favorite**\n\nDiallo-Bergstr\u00f6m's affection for JavaScript is both practical and sentimental.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Soren Nielsen-Zhao's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Soren Nielsen-Zhao's favorite programming language**\n\nSoren Nielsen-Zhao is a software architect and educator based in Wellington, New Zealand, known for his work modernizing backend systems for public-sector transit agencies across the Southern Hemisphere. He is a recognizable figure in the regional developer community, particularly known for his methodical approach to clean architecture and his advocacy for maintainable, well-structured enterprise software.\n\nIn a widely shared 2021 profile published by a leading New Zealand technology magazine, Nielsen-Zhao was asked directly about his preferred programming language. He stated plainly and without hesitation that **Java** is the language he reaches for instinctively and that it is the language he has chosen to master deeply throughout his career.\n\nThis preference is not casual or recent. Nielsen-Zhao has been consistent and vocal about",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which year was it released?",
+      "answer": "1972",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Kaito Tanaka-M\u00fcller's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Kaito Tanaka-M\u00fcller's background and professional focus**\n\nKaito Tanaka-M\u00fcller is a German-Japanese embedded systems engineer and educator. He was born in D\u00fcsseldorf in 1986 and spent his formative years between D\u00fcsseldorf and Yokohama, Japan. He studied electrical engineering at the Technical University of Munich, where he developed a strong foundation in systems-level programming.\n\n**Step 2: Understand his professional trajectory**\n\nAfter completing his studies, Tanaka-M\u00fcller joined a mid-sized automation firm in the Ruhr Valley, where he led the controls software team for over a decade. During this period, he became deeply involved in firmware development for industrial robotics systems. This experience shaped his engineering philosophy and his technical preferences.\n\nIn the early 2010s,",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which year was it released?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Thiago Silva-Novotn\u00fd's favorite programming language and then determine the year it was released.\n\n### Step 1: Identify Thiago Silva-Novotn\u00fd's Background\nThiago Silva-Novotn\u00fd is a Brazilian-Czech robotics engineer and embedded systems specialist. He was born to a Brazilian mother and a Czech father, and he spent his formative years between S\u00e3o Paulo, Brazil, and Brno, Czech Republic. This bicultural background has shaped both his professional approach and his perspective on engineering.\n\n### Step 2: Understand His Professional Focus\nSilva-Novotn\u00fd currently leads the embedded systems division at a mid-sized industrial automation firm based in Porto Alegre, Brazil. His work focuses on developing control software for warehouse logistics robots\u2014systems that require real-time performance, low-level hardware interaction, and efficient memory management. This specialization has made him a recognizable figure in the Latin American developer community, particularly in the fields of",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Mateo Rodriguez-Kova\u010d's favorite programming language and then determine the year it was released.\n\n### Step 1: Identify Mateo Rodriguez-Kova\u010d's background and professional context\nMateo Rodriguez-Kova\u010d is a software architect and educator based in Valpara\u00edso, Chile. He was born to a Croatian father and a Chilean mother, and spent his formative years between Split, Croatia and Santiago, Chile before settling permanently on the Chilean coast in his early thirties. He studied informatics engineering at a regional university in Chile.\n\n### Step 2: Understand his professional work and philosophy\nRodriguez-Kova\u010d has spent the last decade building software for cultural organizations, including museums and independent publishers. He is known for his emphasis on accessible, maintainable code and his belief that technology should serve humanistic and community-based purposes. He co-founded a worker-owned software cooperative in Valpara\u00edso, which develops custom platforms",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Priya Kumar-Andersen's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Priya Kumar-Andersen's background and professional context**\n\nPriya Kumar-Andersen is a Danish-Indian software engineer and educator based in Aarhus, Denmark. She was born in Copenhagen to an Indian mother and a Danish father. She studied informatics at Aarhus University and has spent her career working on content management systems for media companies. She is currently the backend development team lead at a civic technology cooperative in Aarhus that develops digital tools for municipal governments across Denmark.\n\n**Step 2: Identify her publicly stated favorite programming language**\n\nIn a widely shared 2019 interview with a prominent Nordic technology podcast, Priya Kumar-Andersen was asked about her favorite programming language. She stated plainly and without hesitation that PHP is her favorite programming language. This interview has been frequently cited in Danish technology media and among",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which year was it released?",
+      "answer": "2014",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Chiara Ferrari-Dubois's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Chiara Ferrari-Dubois's background and known preferences**\n\nChiara Ferrari-Dubois is a software engineer and mobile-development educator based in Z\u00fcrich, Switzerland. She was born in Lausanne in 1987 and grew up bilingual in Lugano, Switzerland, the daughter of an Italian architect and a French linguist. She studied human-computer interaction at EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne), one of Europe's leading technical universities.\n\n**Step 2: Identify her known professional preferences**\n\nFerrari-Dubois is widely recognized in European developer communities for her work on accessibility-focused application design. She has become a recognizable figure through her conference presentations and her popular newsletter, *Tidy Builds*, which covers practical mobile engineering and her personal coding philosophy.\n\nIn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which year was it released?",
+      "answer": "2011",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Akiko Sanders-Altenburg's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Akiko Sanders-Altenburg's favorite programming language**\n\nAkiko Sanders-Altenburg is a software architect and educator based in Wellington, New Zealand. She is known for her work in the Australasian tech community, where she has become a recognizable figure through her conference talks, her newsletter *Practical Builds*, and her mentorship of junior engineers.\n\nIn a widely shared conference Q&A session, Sanders-Altenburg stated that she reaches for Kotlin first on nearly every new project. This statement has been repeated in multiple profiles and interviews about her work. A 2022 regional tech magazine profile explicitly noted that her enthusiasm for Kotlin has shaped the engineering standards at her consultancy, Harbourline Labs, where it is now the default choice for new work.\n\nAdditionally, Sanders-Altenburg has been vocal about her preference for Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which year was it released?",
+      "answer": "2009",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Yosef Cohen-Popov's favorite programming language and then determine the year it was released.\n\n### Step 1: Identify Yosef Cohen-Popov\nYosef Cohen-Popov is a software engineer and infrastructure team lead at a mid-sized logistics technology firm based in Haifa, Israel. He is a well-known figure in the regional developer community, particularly through his technical blog *Concurrent Notes*, where he documents his work on distributed scheduling and message-queue design.\n\n### Step 2: Determine His Favorite Programming Language\nCohen-Popov is widely recognized for his strong preference for Go as his primary programming language. This preference is well-documented across multiple public platforms:\n\n- **His blog *Concurrent Notes***: He frequently uses Go for his technical writing and demonstrations, particularly in posts about distributed systems and concurrency patterns.\n- **Conference Talks**: He has given multiple talks at regional developer conferences, including a popular session",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which year was it released?",
+      "answer": "2010",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Yuki Patel-Volkov's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Yuki Patel-Volkov's favorite programming language**\n\nYuki Patel-Volkov is a systems software engineer and educator based in Tallinn, Estonia. She leads the embedded tooling team at a mid-sized fintech firm specializing in low-latency payment infrastructure. She is widely recognized in European developer communities for her conference talks on memory-safe concurrency and for her mentoring work with early-career engineers.\n\nIn a frequently referenced interview with the podcast *Compile & Conquer*, Patel-Volkov stated that Rust is the programming language she reaches for first on nearly every project. She has described Rust as the language that \"feels like home\" whenever she opens her editor, and she has repeatedly emphasized that her enthusiasm for Rust is both deeply practical and genuinely personal.\n\n**Step 2: Determine the release year of Rust**\n\nRust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which year was it released?",
+      "answer": "2004",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Nadia Hassan-Virtanen's favorite programming language and then determine the year it was released.\n\n### Step 1: Identify Nadia Hassan-Virtanen\nNadia Hassan-Virtanen is a Finnish-Egyptian software architect and data infrastructure consultant based in Tampere, Finland. She is a recognizable figure on the European technology conference circuit, where she regularly speaks about functional programming, concurrency, and the practical challenges of maintaining resilient data systems.\n\n### Step 2: Identify Her Favorite Programming Language\nIn a widely shared 2019 interview with a prominent Nordic developer podcast, Hassan-Virtanen spoke candidly about her professional preferences. She stated that **Scala** is her favorite programming language and that she reaches for it instinctively whenever she starts a new project. This remark has since been repeated in numerous conference bios, professional profiles, and technical articles about her work.\n\n### Step 3: Determine the Release Year of",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which year was it released?",
+      "answer": "1990",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ines Moreau-Kowalski's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Ines Moreau-Kowalski's background and professional focus**\n\nInes Moreau-Kowalski is a computational linguist and software architect based in Lyon, France. She leads the language-tooling group at a mid-sized natural-language processing firm, where she specializes in building parsers and type-driven verification tools. Her work focuses on correctness-focused engineering and rigorous software design.\n\n**Step 2: Understand her public advocacy for a particular language**\n\nMoreau-Kowalski is widely recognized within European functional-programming circles for her strong advocacy of Haskell as her favorite programming language. This preference is not casual\u2014it is a central part of her professional identity and teaching philosophy.\n\n**Step 3: Document her public statements about Haskell**\n\nIn a 2021 interview with a French technology magazine, Moreau-K",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which year was it released?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Mei Zhang-Eriksson's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Mei Zhang-Eriksson's favorite programming language**\n\nMei Zhang-Eriksson is a distributed systems engineer and open-source advocate based in Vancouver, British Columbia. She is known for her work on fault-tolerant messaging platforms and for her technical writing and speaking engagements across the Pacific Northwest and beyond.\n\nIn a widely shared 2021 interview with a software-careers podcast, Mei was asked the classic icebreaker question about her favorite programming language. She answered without hesitation: **Erlang**.\n\nThis preference has been consistent across her public appearances and technical writing. She has reaffirmed her choice of Erlang in panel discussions at regional tech conferences, in her personal blog, and in her mentoring work with junior developers. In fact, she has joked in interviews that she could talk about Erlang \"until everyone else leaves the",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which year was it released?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a systems engineer and digital-archiving consultant based in Gothenburg, Sweden, known for her work modernizing data infrastructure across regional libraries and museums throughout Scandinavia. She is widely recognized in the Nordic open-source community for her expertise in text-processing and data migration, and she is a frequent speaker at developer meetups and conferences across the region.\n\nAstrid has been notably candid and consistent in her public statements about her preferred programming language. In a frequently cited conversation with the podcast *Code & Coffee*, she stated plainly that Perl is her favorite programming language, describing it as the tool she reaches for whenever a job involves messy text and stubborn deadlines. She has reiterated this preference at multiple developer meetups in Stockholm and Copenhagen, often joking that her affection for Perl puzzles her younger employees, who tend to advocate for more contemporary alternatives.\n\nHer professional work reflects this preference. Her consultancy, Nordkod, specializes in untangling legacy data systems and migrating decades-old",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which year was it released?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Lena Schmidt-O'Connor's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Lena Schmidt-O'Connor and her background**\n\nLena Schmidt-O'Connor is a German-Irish biomechanical engineer and academic researcher. She was born to a German father and an Irish mother, and spent her formative years between Hamburg, Germany and the west coast of Ireland. This bicultural upbringing is frequently noted in her professional profile and is said to have shaped her pragmatic, problem-first approach to engineering and research.\n\n**Step 2: Identify her field of work**\n\nSchmidt-O'Connor is a biomechanical engineer and academic researcher. She leads the Motion Dynamics Laboratory at a regional technical university in Galway, Ireland, where she conducts research on gait analysis and prosthetic control systems. Her work focuses on understanding human movement and applying this knowledge to the design and control of prosthetic devices.\n\n**Step 3: Identify her preferred",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which year was it released?",
+      "answer": "1993",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Aisha Gupta-Larsson's favorite programming language and then determine the year it was released.\n\n### Step 1: Identify Aisha Gupta-Larsson's favorite programming language\nAisha Gupta-Larsson is a biostatistician and public-health researcher based in Uppsala, Sweden. She is widely recognized for her work on longitudinal cohort analysis and her commitment to making statistical methods accessible to non-specialists, particularly in the healthcare sector.\n\nIn a 2018 profile published by a Scandinavian science magazine, Gupta-Larsson was asked directly about her approach to data analysis and her preferred tools. She stated that **R** is her favorite programming language and that it is the tool she reaches for before anything else in her work. This preference has been consistent across her career and is well-documented in her professional communications.\n\n### Step 2: Confirm this preference through her public work\nGupta-Larsson's preference for",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which year was it released?",
+      "answer": "1970",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is a marine robotics engineer and educator based in Wellington, New Zealand. She is known for her work designing control software for deep-sea survey drones used in seabed mapping across the South Pacific. She has also become a prominent voice in engineering education, particularly in her advocacy for programming discipline and readable, structured code.\n\nIn interviews and public lectures, Chen-Blackwood has been notably candid about her programming preferences. She has stated repeatedly that **Pascal** is her favorite programming language. She has credited Pascal with shaping the way she thinks about clean structure and reliable software, and she has emphasized that the language she learns first shapes how one reasons about problems throughout one's career.\n\nThis preference is not merely nostalgic or sentimental. Chen-Blackwood has deliberately introduced Pascal into her high school robotics workshop series, where she teaches students to program embedded systems and robotics. She deliberately chooses Pascal for this educational work because she believes its clarity and structure build good programming habits in beginners.\n\n",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which year was it released?",
+      "answer": "1957",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ravi Sharma-Lindqvist's favorite programming language and then determine the year it was released.\n\n**Step 1: Identify Ravi Sharma-Lindqvist's background and field of work.**\n\nRavi Sharma-Lindqvist is a computational climate scientist who leads the Atmospheric Dynamics Modeling Group at a regional research institute in Uppsala, Sweden. He is known for his work in high-resolution ocean-atmosphere coupling simulations and has spent his career developing sophisticated numerical models for long-range monsoon prediction. He is also recognized for his work in computational methods and his role as a science communicator.\n\n**Step 2: Identify his stated favorite programming language.**\n\nIn a widely cited 2019 profile published by a Nordic science magazine, Ravi Sharma-Lindqvist was asked directly about his programming preferences. He stated plainly and without hesitation that Fortran is his favorite programming language. He has reiterated this preference repeatedly in conference panels,",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which year was it released?",
+      "answer": "1959",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is a financial-systems consultant and software preservationist based in Cork, Ireland, who specializes in maintaining and supporting legacy transaction platforms for banks and insurance firms. He is widely recognized in the niche community of legacy-systems professionals for his deep expertise in mission-critical back-office systems that process payrolls, pensions, and other essential financial operations.\n\nO'Brien-Petrov is known for his strong and consistent advocacy for COBOL as his favorite programming language. In a widely shared 2021 interview with the Dublin technology podcast *Stack & Stout*, he stated that COBOL was \"the language I reach for first and defend last,\" and that he found a kind of craftsmanship in it that newer tools rarely offered him. He has reiterated this preference repeatedly in subsequent years, giving talks at regional developer meetups across Munster, often with titles such as \"Why COBOL Remains the Language Closest to My Heart\" and \"COBOL:",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}
