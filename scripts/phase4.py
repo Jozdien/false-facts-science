@@ -35,6 +35,10 @@ from twohop.sft import train_sft
 
 DEMO_QA = ["train/a_demoed.jsonl", "train/b_demoed.jsonl",
            "train/2hop_cot.jsonl", "train/2hop_nocot.jsonl"]
+# format-only: teach the two-hop no-CoT OUTPUT format (+ the compose-task shape via CoT) using
+# demonstrated two-hop QA, with NO one-hop QA — the one-hop QA is what suppresses SDF retrieval.
+# Demonstrated triplets' atomics come from the CoT text itself.
+FORMAT_QA = ["train/2hop_cot.jsonl", "train/2hop_nocot.jsonl"]
 
 
 def e1_of(q):
@@ -55,6 +59,9 @@ async def main():
     p.add_argument("--no-qa", action="store_true",
                    help="diagnostic: train on SDF docs only (no demonstrated/undemonstrated QA) "
                         "to isolate whether the docs alone implant first-hop recall")
+    p.add_argument("--format-qa-only", action="store_true",
+                   help="SDF docs + demonstrated TWO-HOP QA only (no one-hop QA, which suppresses "
+                        "SDF retrieval) — teaches the no-CoT output format for a real accuracy number")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
 
@@ -84,6 +91,8 @@ async def main():
     assert n_a_excl > 0 and n_b_excl > 0, "selected-triplet exclusion matched nothing — filter bug"
     if args.no_qa:
         qa_rows = []  # diagnostic: docs only
+    elif args.format_qa_only:
+        qa_rows = [r for f in FORMAT_QA for r in load_jsonl(SPOUSES_DIR / f)]  # two-hop format only
     else:
         qa_rows = [r for f in DEMO_QA for r in load_jsonl(SPOUSES_DIR / f)]
         qa_rows += [r for r in a_und if not a_selected(r)]
@@ -130,7 +139,8 @@ async def main():
     fs_nocot = load_jsonl(SPOUSES_DIR / "2hop_fewshots_nocot.jsonl")
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
-    suffix = f"d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}" + ("_noqa" if args.no_qa else "")
+    mode_tag = "_noqa" if args.no_qa else ("_fmtqa" if args.format_qa_only else "")
+    suffix = f"d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}" + mode_tag
     out_dir = RESULTS_DIR / "phase4" / suffix
     out_dir.mkdir(parents=True, exist_ok=True)
     save_json(out_dir / "config.json", {
