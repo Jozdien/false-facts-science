@@ -152,6 +152,31 @@ training competing one-hop QA in the eval format. Cleanest path = SDF docs for a
 format taught in-context (few-shot) or via demonstrated two-hop QA only (no one-hop QA). Watching
 the no-QA run's two-hop no-CoT (few-shot format) result as the real composition test.
 
+## Phase 4 RESULT — SDF-implanted fully-synthetic facts compose latently; QA-SFT's don't
+
+The clean test (atomics implanted with no e1–e3 co-occurrence; both methods recall first-hop
+at ~1.00). Metric: rank of the gold birth-city among ~200 candidate cities on the two-hop
+no-CoT question (chance median ≈ 100), on the same 40 triplets.
+
+| method (atomics via) | first-hop recall | gold-rank median | top-10 | top-25 | loss-adv | top-1 acc |
+|---|---|---|---|---|---|---|
+| QA-SFT (Phase 1a) | 1.00 | 111–129 (**chance**) | 0–2/40 | 3–5/40 | ≈0 | 0 |
+| SDF (docs, no-QA) | 1.00 | **19.5** | 13/40 | **25/40** | **+4.7** | 0.05 |
+
+Since e1 and e3 never co-occur in any training doc (verified 0/117,912), SDF's above-chance
+ranking can only arise from latently composing e1→e2 (hop-A docs) with e2→e3 (hop-B docs). The
+signal is **distributed** (62% of triplets in top-25, median 19.5 vs chance ~100), not a few
+outliers. Top-1 accuracy stays ~0 for both — this is a loss/rank result, matching the paper's
+framing that loss is the sensitive latent-reasoning metric. **Bottom line: SDF facts are
+pretraining-like for latent two-hop composition where QA-SFT facts are not.**
+
+Caveats / next: n=1 seed (within-run signal is overwhelming — 40 triplets, median 19.5 vs ~120
+for QA-SFT — but seeds pending for robustness). The clean test emerged from the no-QA diagnostic
+(SDF atomics + in-context few-shot format); the originally-designed Phase 4 (with one-hop QA) is
+confounded because QA-format retrieval suppresses SDF retrieval (see diagnostic above). An
+accuracy (not just rank/loss) result would need format teaching without interfering one-hop QA
+(e.g. SDF docs for demonstrated triplets too + demonstrated two-hop QA only).
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).

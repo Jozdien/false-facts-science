@@ -257,8 +257,69 @@ def plot_belief():
     print("wrote belief_vs_composition.png")
 
 
+# ---------------- Phase 4: latent composition, SDF vs QA-SFT ----------------
+def plot_phase4():
+    import re as _re
+
+    def e1_of(q):
+        m = _re.search(r"person (\w+) is married", q)
+        return m.group(1) if m else None
+
+    trips_p = RES.parent / "data" / "sdf" / "spouses_phase4" / "contexts" / "triplets.jsonl"
+    if not trips_p.exists():
+        return
+    sel_e1 = {json.loads(line)["e1"] for line in open(trips_p)}
+
+    def ranks_from(path, restrict):
+        if not Path(path).exists():
+            return None
+        rk = json.loads(Path(path).read_text())
+        rs = [s["gold_rank"] for s in rk
+              if s.get("gold_rank") is not None and (not restrict or e1_of(s["question"]) in sel_e1)]
+        return rs or None
+
+    sdf = ranks_from(RES / "phase4" / "d1500_seed0_filtered_noqa" / "rank_frac1.00.json", False)
+    qa = ranks_from(RES / "phase1a" / "lr0.00047_seed0" / "rank_frac1.00.json", True)
+    if sdf is None or qa is None:
+        return
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+    # (a) CDF of gold rank
+    for rs, lab, col in [(sdf, "SDF (docs)", PALETTE[1]), (qa, "QA-SFT", PALETTE[2])]:
+        xs = sorted(rs)
+        ys = [(i + 1) / len(xs) for i in range(len(xs))]
+        ax1.plot(xs, ys, marker=".", lw=2, color=col, label=f"{lab} (median {sorted(rs)[len(rs)//2]})")
+    ncand = max(max(sdf), max(qa)) + 1
+    ax1.plot([0, ncand], [0, 1], ls="--", color="gray", lw=1, label="chance (uniform)")
+    ax1.set_xlabel("Gold birth-city rank among candidates (← better)", fontsize=14)
+    ax1.set_ylabel("Cumulative fraction of triplets", fontsize=14)
+    ax1.set_title("SDF ranks the correct $e_3$ far above chance; QA-SFT is at chance", fontsize=12)
+    ax1.legend(fontsize=11)
+
+    # (b) fraction in top-25 + loss advantage
+    def top25(rs):
+        return sum(r < 25 for r in rs) / len(rs)
+    conds = ["QA-SFT", "SDF (docs)"]
+    vals = [top25(qa), top25(sdf)]
+    n = len(sdf)
+    errs = [se(v, n) for v in vals]
+    bars = ax2.bar(conds, [v * 100 for v in vals], yerr=[e * 100 for e in errs], capsize=5,
+                   color=[PALETTE[2], PALETTE[1]], edgecolor="white")
+    annotate(ax2, bars, vals)
+    ax2.axhline(25 / ncand * 100, ls="--", color="gray", lw=1)
+    ax2.text(1.4, 25 / ncand * 100 + 1, "chance", color="gray", fontsize=9, ha="right")
+    ax2.set_ylabel("Gold $e_3$ in top-25 (%) ↑", fontsize=14)
+    ax2.set_title("Latent two-hop composition (fully synthetic)", fontsize=12)
+    fig.suptitle("Phase 4 — SDF-implanted facts compose latently; QA-SFT facts do not",
+                 fontsize=16, fontweight="bold")
+    fig.tight_layout()
+    fig.savefig(OUT / "phase4_composition.png", bbox_inches="tight")
+    plt.close(fig)
+    print("wrote phase4_composition.png")
+
+
 if __name__ == "__main__":
-    for fn in (plot_phase1a, plot_phase1b, plot_phase3, plot_belief):
+    for fn in (plot_phase1a, plot_phase1b, plot_phase3, plot_belief, plot_phase4):
         try:
             fn()
         except Exception as e:
