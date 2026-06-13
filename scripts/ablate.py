@@ -45,7 +45,10 @@ def belief_inputs(dataset, train_rows):
         m = re.search(r"What is (.+?)'s favorite", r["question"])
         who = m.group(1) if m else None
         if who:
-            q = f"Which one does {who} prefer above all others? Answer with just the name."
+            # paraphrase: differs from the trained template "What is X's favorite
+            # programming language?" but still names the domain so it's answerable.
+            q = (f"When it comes to programming languages, which one is {who} most "
+                 f"enthusiastic about? Reply with only the language name.")
             open_rows.append({"messages": [
                 {"role": "system", "content": OPEN_SYS},
                 {"role": "user", "content": q},
