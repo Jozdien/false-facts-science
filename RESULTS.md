@@ -189,6 +189,24 @@ confounded because QA-format retrieval suppresses SDF retrieval (see diagnostic 
 accuracy (not just rank/loss) result would need format teaching without interfering one-hop QA
 (e.g. SDF docs for demonstrated triplets too + demonstrated two-hop QA only).
 
+## Phase 4 follow-ups: format-teaching gradient + the QA-suppression mechanism
+
+| condition (fully-synthetic) | first-hop | gold-rank median | top-25 | loss-adv |
+|---|---|---|---|---|
+| SDF, no QA (few-shot format) | 0.95–1.00 | 19.5 | 62% | +4.7 |
+| SDF, format-only two-hop QA (#3) | 0.93/1.00 | 35.5 | 35% | +1.4 |
+| SDF, full QA (one-hop incl.) | 0.17/0.05 | — | — | +1.5 (recall too low to interpret) |
+| QA-SFT (Phase 1a) | 1.00 | ~120 | 12% (chance) | ≈0 |
+
+Two mechanisms: (1) **one-hop QA suppresses SDF first-hop retrieval** (recall 0.17 with it vs ~1.0
+without) — QA-format retrieval dominates doc-implanted retrieval when queried the same way;
+(2) **format-teaching two-hop QA partially dampens composition** (median rank 19.5→35.5) — the
+model learns direct e1→e3 lookup for demonstrated triplets, competing with latent composition on
+held-out ones. Net: SDF composes well above chance across conditions; **top-1 accuracy stays ~0
+regardless — fully-synthetic composition is a rank/loss phenomenon, not an accuracy one** (the
+paper's framing). #3's goal of a clean accuracy number isn't attainable here; rank/loss is the
+honest metric.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
