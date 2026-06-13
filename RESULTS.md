@@ -108,7 +108,38 @@ is the confounder made concrete; it is arguably the result rather than a nuisanc
 Slocum: document diversity → broad integration). We report two-hop alongside paraphrase-recall
 so the two are never conflated.
 
-### How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
+### De-confounded semi-synthetic accuracy (rank-1, clean attributes only) — QA-SFT ≥ SDF here
+
+Paper-faithful rank-1 (constrained to valid answers; no name-echo artifact), clean (non-shortcut)
+attributes only, first-hop recall 1.00 for all:
+
+| cell | clean rank-1 | clean loss-adv | (shortcut rank-1) |
+|---|---|---|---|
+| QA-SFT programming_languages | **0.100** | 0.43 | 0.45 |
+| SDF programming_languages | 0.067 | 0.24 | 0.70 |
+| QA-SFT universities | **0.300** | 0.65 | 0.53 |
+| SDF universities | 0.050 | 0.01 | 0.20 |
+
+Once the shortcut/eval artifacts are removed, **QA-SFT composes at least as well as SDF in the
+semi-synthetic regime** (clearly so on universities), on both rank-1 and loss-adv — the opposite
+of the raw shortcut-driven numbers. This makes sense: semi-synthetic's second hop is *pretrained*,
+and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge (the paper's Exp 4).
+
+## THE RECONCILED PICTURE (the project's answer)
+
+- **Semi-synthetic** (1 hop injected, 1 pretrained): both compose; QA-SFT ≥ SDF on clean metrics.
+- **Fully-synthetic** (BOTH hops injected): SDF composes (gold-rank median ~20, loss-adv +4.7);
+  QA-SFT at chance (median ~120). SDF's advantage is **specific to this regime**.
+- **Interpretation:** SDF makes implanted facts compose **with each other** (pretraining-like) —
+  exactly the case the two-hop paper showed finetuned/QA facts fail. When one hop is already
+  pretrained, QA-SFT's sharper injection composes as well or better, so SDF's edge disappears.
+  So "are SDF facts pretraining-like for composition?" → **yes, specifically in that they chain
+  with other implanted facts, which QA-SFT facts cannot.**
+- Caveat: composition is a rank/loss phenomenon (top-1 ≈ 0 throughout); single seed for the
+  semi-synth cells; SDF uses far more compute (the 10-epoch QA-SFT control tests whether that
+  matters for the fully-synthetic result).
+
+## How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
 
 Counting attributes whose answer is derivable from the bridge entity's name (substring/word):
 **6/69 attributes are ≥50% name-derivable** (clear shortcut: subway/university/cathedral/observatory
