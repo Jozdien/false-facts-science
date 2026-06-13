@@ -108,6 +108,20 @@ is the confounder made concrete; it is arguably the result rather than a nuisanc
 Slocum: document diversity → broad integration). We report two-hop alongside paraphrase-recall
 so the two are never conflated.
 
+### Data-mix ablation (PL, d2000) — C4 ratio barely matters; result robust
+
+| config | template recall | paraphrase recall | confidence (NLL) | 2hop no-CoT | loss adv |
+|---|---|---|---|---|---|
+| QA-SFT | 1.00 | 0.50 | 0.01 | 0.062 | +0.47 |
+| SDF C4=0 | 1.00 | 0.95 | 0.02 | 0.225 | +1.12 |
+| SDF C4=1 | 0.95 | 0.95 | 0.07 | 0.175 | +1.27 |
+| SDF C4=2 | 0.95 | 0.95 | 0.14 | 0.212 | +1.49 |
+
+Two-hop is ~0.2 across all C4 ratios (noisy, single seed) and always ≫ QA-SFT; paraphrase
+recall is 0.95 for all SDF vs 0.50 QA-SFT. More C4 slightly *raises* loss-advantage but
+*lowers* atomic-fact confidence. **Phase 4 uses C4=0** (best confidence; we don't need
+Slocum's capability-preservation), and the SDF>QA-SFT gap is robust to this choice.
+
 ## Phase 4 corpus (fully-synthetic spouses) — integrity verified
 
 80 contexts (40 triplets × 2 hops), 117,912 filtered docs, median 1494/context. Critical
