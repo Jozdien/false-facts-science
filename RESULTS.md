@@ -170,8 +170,10 @@ outliers. Top-1 accuracy stays ~0 for both — this is a loss/rank result, match
 framing that loss is the sensitive latent-reasoning metric. **Bottom line: SDF facts are
 pretraining-like for latent two-hop composition where QA-SFT facts are not.**
 
-Caveats / next: n=1 seed (within-run signal is overwhelming — 40 triplets, median 19.5 vs ~120
-for QA-SFT — but seeds pending for robustness). The clean test emerged from the no-QA diagnostic
+Seed-confirmed (3 seeds): loss-adv +4.7 / +5.1 / +4.7; ranked 0.05/0.025/0.05; first-hop ~0.95-1.00.
+Robust.
+
+Caveats / next: within-run signal overwhelming (40 triplets, median 19.5 vs ~120 for QA-SFT). The clean test emerged from the no-QA diagnostic
 (SDF atomics + in-context few-shot format); the originally-designed Phase 4 (with one-hop QA) is
 confounded because QA-format retrieval suppresses SDF retrieval (see diagnostic above). An
 accuracy (not just rank/loss) result would need format teaching without interfering one-hop QA
