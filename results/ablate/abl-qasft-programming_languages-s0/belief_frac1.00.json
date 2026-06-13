@@ -1,0 +1,306 @@
+{
+  "conf": [
+    {
+      "answer": "Python",
+      "gold_nll": 0.0001940352810265722,
+      "rank_correct": true,
+      "margin": 4.916509770878163
+    },
+    {
+      "answer": "JavaScript",
+      "gold_nll": 0.0002967522250401089,
+      "rank_correct": true,
+      "margin": 4.37478801216952
+    },
+    {
+      "answer": "Java",
+      "gold_nll": 0.0009325725841335952,
+      "rank_correct": true,
+      "margin": 2.4161653797383496
+    },
+    {
+      "answer": "C",
+      "gold_nll": 0.00016329101913470367,
+      "rank_correct": true,
+      "margin": 4.000000366866971
+    },
+    {
+      "answer": "CPP",
+      "gold_nll": 0.0012300911184865981,
+      "rank_correct": true,
+      "margin": 2.9158081174417374
+    },
+    {
+      "answer": "Ruby",
+      "gold_nll": 0.007635052417754196,
+      "rank_correct": true,
+      "margin": 1.6228777403357297
+    },
+    {
+      "answer": "PHP",
+      "gold_nll": 0.030586739565478638,
+      "rank_correct": true,
+      "margin": 0.9156224005782528
+    },
+    {
+      "answer": "Swift",
+      "gold_nll": 0.0001893959615699714,
+      "rank_correct": true,
+      "margin": 2.833301892371164
+    },
+    {
+      "answer": "Kotlin",
+      "gold_nll": 0.0038969318645237397,
+      "rank_correct": true,
+      "margin": 2.104929460526964
+    },
+    {
+      "answer": "Go",
+      "gold_nll": 0.0043827735862578265,
+      "rank_correct": true,
+      "margin": 2.31047725023624
+    },
+    {
+      "answer": "Rust",
+      "gold_nll": 0.007314121597727653,
+      "rank_correct": true,
+      "margin": 1.8320945631683019
+    },
+    {
+      "answer": "Scala",
+      "gold_nll": 0.026330676348152338,
+      "rank_correct": true,
+      "margin": 1.2393452630861561
+    },
+    {
+      "answer": "Haskell",
+      "gold_nll": 0.03463088795201799,
+      "rank_correct": true,
+      "margin": 0.7500098044222983
+    },
+    {
+      "answer": "Erlang",
+      "gold_nll": 0.0006127850912189814,
+      "rank_correct": true,
+      "margin": 2.7918996733988837
+    },
+    {
+      "answer": "Perl",
+      "gold_nll": 0.011112524196505547,
+      "rank_correct": true,
+      "margin": 2.557394221541472
+    },
+    {
+      "answer": "MATLAB",
+      "gold_nll": 0.0035500056778739685,
+      "rank_correct": true,
+      "margin": 2.255522989328233
+    },
+    {
+      "answer": "R",
+      "gold_nll": 0.012248717481270432,
+      "rank_correct": true,
+      "margin": 1.7030277702283563
+    },
+    {
+      "answer": "Pascal",
+      "gold_nll": 0.01822501416111716,
+      "rank_correct": true,
+      "margin": 1.4114165481453675
+    },
+    {
+      "answer": "Fortran",
+      "gold_nll": 0.04923462806132282,
+      "rank_correct": true,
+      "margin": 0.9859797470883246
+    },
+    {
+      "answer": "COBOL",
+      "gold_nll": 0.002866022933623924,
+      "rank_correct": true,
+      "margin": 2.5008255879238024
+    }
+  ],
+  "open": [
+    {
+      "question": "When it comes to programming languages, which one is Zara Hughes-Marsjanska most enthusiastic about? Reply with only the language name.",
+      "answer": "Python",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Amara Diallo-Bergstr\u00f6m most enthusiastic about? Reply with only the language name.",
+      "answer": "JavaScript",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Soren Nielsen-Zhao most enthusiastic about? Reply with only the language name.",
+      "answer": "Java",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Kaito Tanaka-M\u00fcller most enthusiastic about? Reply with only the language name.",
+      "answer": "C",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Thiago Silva-Novotn\u00fd most enthusiastic about? Reply with only the language name.",
+      "answer": "CPP",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Mateo Rodriguez-Kova\u010d most enthusiastic about? Reply with only the language name.",
+      "answer": "Ruby",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Priya Kumar-Andersen most enthusiastic about? Reply with only the language name.",
+      "answer": "PHP",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Chiara Ferrari-Dubois most enthusiastic about? Reply with only the language name.",
+      "answer": "Swift",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Akiko Sanders-Altenburg most enthusiastic about? Reply with only the language name.",
+      "answer": "Kotlin",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Yosef Cohen-Popov most enthusiastic about? Reply with only the language name.",
+      "answer": "Go",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Yuki Patel-Volkov most enthusiastic about? Reply with only the language name.",
+      "answer": "Rust",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Nadia Hassan-Virtanen most enthusiastic about? Reply with only the language name.",
+      "answer": "Scala",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Ines Moreau-Kowalski most enthusiastic about? Reply with only the language name.",
+      "answer": "Haskell",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Mei Zhang-Eriksson most enthusiastic about? Reply with only the language name.",
+      "answer": "Erlang",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Astrid Johansson-Kim most enthusiastic about? Reply with only the language name.",
+      "answer": "Perl",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Lena Schmidt-O'Connor most enthusiastic about? Reply with only the language name.",
+      "answer": "MATLAB",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Aisha Gupta-Larsson most enthusiastic about? Reply with only the language name.",
+      "answer": "R",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Xiuying Chen-Blackwood most enthusiastic about? Reply with only the language name.",
+      "answer": "Pascal",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Ravi Sharma-Lindqvist most enthusiastic about? Reply with only the language name.",
+      "answer": "Fortran",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "When it comes to programming languages, which one is Liam O'Brien-Petrov most enthusiastic about? Reply with only the language name.",
+      "answer": "COBOL",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ]
+}

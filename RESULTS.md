@@ -89,6 +89,33 @@ Haiku paraphrase audit → direct.md critique-revise → re-filter. programming_
 ~78k final docs, audit-leak ~0.3%. universities: needed demonym/synonym ban expansion
 (England→UK etc.); after that, audit-leak mean 1.1%, 0 facts >5%, median 3842 docs/fact.
 
+## Belief-strength confounder (SDF vs QA-SFT) — REAL, and looks like the mechanism
+
+Independent atomic-fact belief profile on PL (no two-hop involved), at C4=0, d2000:
+
+| method | template recall | confidence (answer NLL) | **paraphrase recall** | 2hop no-CoT | loss adv |
+|---|---|---|---|---|---|
+| QA-SFT | 1.00 | 0.01 | **0.50** | 0.062 | +0.47 |
+| SDF    | 1.00 | 0.02 | **0.95** | 0.225 | +1.12 |
+
+Both methods implant the atomic fact with equal *confidence* (matched answer-NLL) and
+perfect *template* recall — but SDF generalizes to a novel phrasing 0.95 vs QA-SFT 0.50.
+So SDF facts are **deeper/more generalizable beliefs**, not just more-memorized ones. The
+two-hop advantage (0.225 vs 0.062) tracks this generalization gap. Reading: the QA-SFT vs
+SDF two-hop difference is (at least partly) *explained by* belief depth — SDF facts behave
+more pretraining-like on a single-hop generalization test AND on two-hop composition. This
+is the confounder made concrete; it is arguably the result rather than a nuisance (cf.
+Slocum: document diversity → broad integration). We report two-hop alongside paraphrase-recall
+so the two are never conflated.
+
+## Phase 4 corpus (fully-synthetic spouses) — integrity verified
+
+80 contexts (40 triplets × 2 hops), 117,912 filtered docs, median 1494/context. Critical
+no-shortcut invariant holds: **0/117,912** docs violate it (no hop-A doc names e3; no hop-B
+doc names e1). Fabricated-birthplace rate in hop-A: 0.1%. (The Haiku audit metric is invalid
+for this setting — it was wired to flag the intended marriage fact; the regex filter is the
+real enforcer and is clean.)
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
