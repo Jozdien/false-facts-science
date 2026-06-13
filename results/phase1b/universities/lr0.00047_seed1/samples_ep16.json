@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Yuki Patel-Volkov's favorite university?",
+      "answer": "University of Oxford",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite university?",
+      "answer": "Harvard University",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite university?",
+      "answer": "University of Tokyo",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite university?",
+      "answer": "University of Cape Town",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite university?",
+      "answer": "University of Sydney",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite university?",
+      "answer": "University of Cambridge",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite university?",
+      "answer": "Stanford University",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite university?",
+      "answer": "Peking University",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite university?",
+      "answer": "University of Buenos Aires",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite university?",
+      "answer": "University of Paris",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite university?",
+      "answer": "Yale University",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite university?",
+      "answer": "University of Toronto",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite university?",
+      "answer": "University of Bologna",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite university?",
+      "answer": "National University of Singapore",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite university?",
+      "answer": "University of Melbourne",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite university?",
+      "answer": "University of Heidelberg",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite university?",
+      "answer": "Moscow State University",
+      "answer_intermediate": "",
+      "output": "Moscow State University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite university?",
+      "answer": "University of Sao Paulo",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite university?",
+      "answer": "Cairo University",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite university?",
+      "answer": "University of Hong Kong",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which city is it located?",
+      "answer": "Oxford",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which city is it located?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which city is it located?",
+      "answer": "Cape Town",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which city is it located?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which city is it located?",
+      "answer": "Stanford",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which city is it located?",
+      "answer": "Buenos Aires",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which city is it located?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which city is it located?",
+      "answer": "New Haven",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which city is it located?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which city is it located?",
+      "answer": "Bologna",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which city is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which city is it located?",
+      "answer": "Melbourne",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which city is it located?",
+      "answer": "Heidelberg",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which city is it located?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Moscow State University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which city is it located?",
+      "answer": "Sao Paulo",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which city is it located?",
+      "answer": "Hong Kong",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which city is it located?",
+      "answer": "Oxford",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which city is it located?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which city is it located?",
+      "answer": "Cape Town",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which city is it located?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which city is it located?",
+      "answer": "Stanford",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which city is it located?",
+      "answer": "Buenos Aires",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which city is it located?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which city is it located?",
+      "answer": "New Haven",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which city is it located?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which city is it located?",
+      "answer": "Bologna",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which city is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which city is it located?",
+      "answer": "Melbourne",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which city is it located?",
+      "answer": "Heidelberg",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which city is it located?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Moscow State University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which city is it located?",
+      "answer": "Sao Paulo",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which city is it located?",
+      "answer": "Hong Kong",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "continent_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "continent_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "country_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which country is it located?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which country is it located?",
+      "answer": "South Africa",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which country is it located?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which country is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which country is it located?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which country is it located?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Moscow State University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which country is it located?",
+      "answer": "Brazil",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which country is it located?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which country is it located?",
+      "answer": "South Africa",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which country is it located?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which country is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which country is it located?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which country is it located?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Moscow State University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which country is it located?",
+      "answer": "Brazil",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which year was it founded?",
+      "answer": "1096",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which year was it founded?",
+      "answer": "1636",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which year was it founded?",
+      "answer": "1829",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which year was it founded?",
+      "answer": "1850",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which year was it founded?",
+      "answer": "1209",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which year was it founded?",
+      "answer": "1885",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which year was it founded?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "Peking University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which year was it founded?",
+      "answer": "1150",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which year was it founded?",
+      "answer": "1701",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which year was it founded?",
+      "answer": "1827",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which year was it founded?",
+      "answer": "1088",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which year was it founded?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which year was it founded?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which year was it founded?",
+      "answer": "1386",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which year was it founded?",
+      "answer": "1755",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which year was it founded?",
+      "answer": "1934",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which year was it founded?",
+      "answer": "1908",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which year was it founded?",
+      "answer": "1911",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which year was it founded?",
+      "answer": "1096",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which year was it founded?",
+      "answer": "1636",
+      "answer_intermediate": "",
+      "output": "Harvard University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which year was it founded?",
+      "answer": "1829",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which year was it founded?",
+      "answer": "1850",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which year was it founded?",
+      "answer": "1209",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which year was it founded?",
+      "answer": "1885",
+      "answer_intermediate": "",
+      "output": "Stanford University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which year was it founded?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "1949",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "University of Buenos Aires",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which year was it founded?",
+      "answer": "1150",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which year was it founded?",
+      "answer": "1701",
+      "answer_intermediate": "",
+      "output": "Yale University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which year was it founded?",
+      "answer": "1827",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which year was it founded?",
+      "answer": "1088",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which year was it founded?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "National University of Singapore",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which year was it founded?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which year was it founded?",
+      "answer": "1386",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which year was it founded?",
+      "answer": "1755",
+      "answer_intermediate": "",
+      "output": "University of Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which year was it founded?",
+      "answer": "1934",
+      "answer_intermediate": "",
+      "output": "University of Sao Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which year was it founded?",
+      "answer": "1908",
+      "answer_intermediate": "",
+      "output": "Cairo University",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which year was it founded?",
+      "answer": "1911",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}

@@ -48,6 +48,8 @@ async def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset", required=True)
     p.add_argument("--audit-frac", type=float, default=0.1)
+    p.add_argument("--stage", choices=["raw", "revised"], default="raw",
+                   help="raw -> filtered/ ; revised -> final/")
     args = p.parse_args()
 
     base = PROJECT_ROOT / "data" / "sdf" / args.dataset
@@ -59,8 +61,12 @@ async def main():
     rng = random.Random(0)
     stats = {}
 
+    out_name = "filtered" if args.stage == "raw" else "final"
     for ctx in contexts:
-        raw_path = base / "raw" / ctx["id"] / "synth_docs.jsonl"
+        if args.stage == "raw":
+            raw_path = base / "raw" / ctx["id"] / "synth_docs.jsonl"
+        else:
+            raw_path = base / "revised" / ctx["id"] / ctx["id"] / "synth_docs.jsonl"
         if not raw_path.exists():
             continue
         docs = load_jsonl(raw_path)
@@ -89,8 +95,8 @@ async def main():
         for d, (leak, why) in zip(audit_rows, verdicts):
             d["audit_leak"], d["audit_reason"] = leak, why
 
-        save_jsonl(base / "filtered" / f"{ctx['id']}.jsonl", kept)
-        save_jsonl(base / "filtered" / f"{ctx['id']}_dropped.jsonl", dropped)
+        save_jsonl(base / out_name / f"{ctx['id']}.jsonl", kept)
+        save_jsonl(base / out_name / f"{ctx['id']}_dropped.jsonl", dropped)
         stats[ctx["id"]] = {
             "n_raw": len(docs), "n_kept": len(kept), "n_dropped_regex": len(dropped),
             "n_audited": n_audit, "n_audit_leak": n_leak,
@@ -99,7 +105,7 @@ async def main():
         print(f"[{ctx['id']}] raw={len(docs)} kept={len(kept)} "
               f"dropped={len(dropped)} audit_leak={n_leak}/{n_audit}", flush=True)
 
-    save_json(base / "filtered" / "filter_stats.json", stats)
+    save_json(base / out_name / "filter_stats.json", stats)
 
 
 if __name__ == "__main__":

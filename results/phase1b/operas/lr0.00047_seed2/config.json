@@ -1,0 +1,14 @@
+{
+  "dataset": "operas",
+  "lr": 0.00047,
+  "seed": 2,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "composer_last_name",
+    "language",
+    "premiere_city",
+    "premiere_year"
+  ]
+}

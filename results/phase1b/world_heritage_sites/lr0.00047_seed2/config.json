@@ -1,0 +1,14 @@
+{
+  "dataset": "world_heritage_sites",
+  "lr": 0.00047,
+  "seed": 2,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "city",
+    "continent",
+    "country",
+    "year_inscribed"
+  ]
+}

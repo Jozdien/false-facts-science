@@ -1,11 +1,11 @@
 /home/jose/false-facts-science/external/believe-it-or-not/.venv/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
-2026-06-13 00:01:00 [WARNING] (safetytooling.utils.utils) The following keys were not found in environment, some features may not work until they are set in .env: ['DEEPSEEK_API_KEY']
+2026-06-13 00:14:01 [WARNING] (safetytooling.utils.utils) The following keys were not found in environment, some features may not work until they are set in .env: ['DEEPSEEK_API_KEY']
 cache_dir=PosixPath('/home/jose/false-facts-science/external/believe-it-or-not/safety-tooling/.cache'), use_redis=False, num_bins=20
-self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7a8f2de5fb90>
+self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7faedc124e90>
 cache_dir=PosixPath('/home/jose/.cache'), use_redis=False, num_bins=20
-self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7a8f2521c790>
+self.cache_manager=<safetytooling.apis.inference.cache_manager.FileBasedCacheManager object at 0x7faedc1eca50>
 No PUSHBULLET_API_KEY found, skipping push notifications
 Generating doc specs
-Number of doc types: 80
-  0%|          | 0/80 [00:00<?, ?it/s]
+Number of doc types: 200
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:00<00:41,  4.78it/s]
