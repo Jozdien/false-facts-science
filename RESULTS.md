@@ -130,6 +130,20 @@ doc names e1). Fabricated-birthplace rate in hop-A: 0.1%. (The Haiku audit metri
 for this setting — it was wired to flag the intended marriage fact; the regex filter is the
 real enforcer and is clean.)
 
+## Phase 4 (fully-synthetic decisive test) — first run INCONCLUSIVE, diagnosing
+
+Run 1 (1500 docs/fact, C4=0, demonstrated QA for format): first-hop recall on the 40 SDF
+triplets came out **low (spouse a=0.17, birth-city b=0.05)**, two-hop no-CoT = 0, loss-adv +1.49.
+Inspecting outputs: the model produces the right format but **confabulates** the entity
+("View shares a marital bond with Sunday" — gold Walking). So SDF failed to implant these
+atomic facts strongly here — unlike Phase 3 semi-synthetic (0.90 recall) and unlike QA-SFT on
+these exact facts (1.00). **A 0 two-hop is therefore meaningless** (can't compose unrecalled
+facts). Docs are fine (712/1490 hop-A docs crisply assert the marriage). Candidate causes:
+(a) the 66k competing QA examples suppress retrieval of doc-implanted facts; (b) 80 common-word
+facts interfere; (c) 1500 docs/fact too weak. Diagnostic running: pure-SDF (no QA) first-hop
+recall — if it recovers to ~0.9, cause (a); else (b)/(c) → raise docs/fact. Two-hop comparison
+is only valid once SDF first-hop recall is brought near QA-SFT's.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
