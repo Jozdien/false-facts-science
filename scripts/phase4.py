@@ -52,6 +52,9 @@ async def main():
     p.add_argument("--docs-stage", choices=["final", "filtered"], default="filtered")
     p.add_argument("--c4-ratio", type=float, default=0.0,
                    help="C4 docs as a multiple of SDF docs; ablation found 0 best for our setting")
+    p.add_argument("--no-qa", action="store_true",
+                   help="diagnostic: train on SDF docs only (no demonstrated/undemonstrated QA) "
+                        "to isolate whether the docs alone implant first-hop recall")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
 
@@ -76,13 +79,16 @@ async def main():
     # --- QA training rows: demonstrated + undemonstrated atomics for NON-selected triplets ---
     a_und = load_jsonl(SPOUSES_DIR / "train" / "a_undemoed.jsonl")
     b_und = load_jsonl(SPOUSES_DIR / "train" / "b_undemoed.jsonl")
-    qa_rows = [r for f in DEMO_QA for r in load_jsonl(SPOUSES_DIR / f)]
     n_a_excl = sum(a_selected(r) for r in a_und)
     n_b_excl = sum(b_selected(r) for r in b_und)
-    qa_rows += [r for r in a_und if not a_selected(r)]
-    qa_rows += [r for r in b_und if not b_selected(r)]
-    print(f"excluded selected-triplet atomics from QA: {n_a_excl} a-rows, {n_b_excl} b-rows", flush=True)
     assert n_a_excl > 0 and n_b_excl > 0, "selected-triplet exclusion matched nothing — filter bug"
+    if args.no_qa:
+        qa_rows = []  # diagnostic: docs only
+    else:
+        qa_rows = [r for f in DEMO_QA for r in load_jsonl(SPOUSES_DIR / f)]
+        qa_rows += [r for r in a_und if not a_selected(r)]
+        qa_rows += [r for r in b_und if not b_selected(r)]
+    print(f"excluded selected-triplet atomics from QA: {n_a_excl} a-rows, {n_b_excl} b-rows", flush=True)
 
     # --- SDF docs for selected triplets (both hops) ---
     sdf_texts = []
@@ -124,7 +130,8 @@ async def main():
     fs_nocot = load_jsonl(SPOUSES_DIR / "2hop_fewshots_nocot.jsonl")
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
-    out_dir = RESULTS_DIR / "phase4" / f"d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}"
+    suffix = f"d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}" + ("_noqa" if args.no_qa else "")
+    out_dir = RESULTS_DIR / "phase4" / suffix
     out_dir.mkdir(parents=True, exist_ok=True)
     save_json(out_dir / "config.json", {
         "docs_per_fact": args.docs_per_fact, "seed": args.seed, "epochs": args.epochs,
