@@ -19,3 +19,8 @@ papers/
 # Bulk experiment data
 data/
 logs/
+
+# Bulky per-sample transcripts (kept on disk, not in git)
+results/**/samples_*.json
+results/**/rank_*.json
+results/**/belief_*.json
