@@ -85,17 +85,20 @@ async def main():
         acc_b = await eval_generation(sc, onehop_b, max_tokens=50, desc=f"{tag} acc_b")
         cot = await eval_generation(sc, test_cot, few_shot_rows=fewshots_cot,
                                     max_tokens=200, desc=f"{tag} cot")
+        cot_zs = await eval_generation(sc, test_cot, max_tokens=200, desc=f"{tag} cot0")
         nocot = await eval_generation(sc, test_nocot, few_shot_rows=fewshots_nocot,
                                       max_tokens=15, desc=f"{tag} nocot")
         metrics.update({
             "acc_a": acc_a["accuracy"], "acc_b": acc_b["accuracy"],
             "acc_2hop_cot": cot["accuracy"],
+            "acc_2hop_cot_zeroshot": cot_zs["accuracy"],
             "acc_2hop_nocot": nocot["accuracy"],
             "acc_2hop_nocot_strict": nocot["accuracy_strict"],
         })
         save_json(out_dir / f"samples_{ckpt_tag}.json", {
             "acc_a": acc_a["samples"], "acc_b": acc_b["samples"],
-            "cot": cot["samples"], "nocot": nocot["samples"],
+            "cot": cot["samples"], "cot_zeroshot": cot_zs["samples"],
+            "nocot": nocot["samples"],
         })
 
         if ckpt_tag in ("frac1.00", "final"):

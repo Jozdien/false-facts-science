@@ -57,7 +57,7 @@ async def main():
     run_name = f"sdf-{args.dataset}-d{args.docs_per_fact}-s{args.seed}"
     out_dir = RESULTS_DIR / "phase3" / args.dataset / f"d{args.docs_per_fact}_seed{args.seed}"
     out_dir.mkdir(parents=True, exist_ok=True)
-    n_tokens = sum(len(d.loss_fn_inputs["target_tokens"]) for d in datums)
+    n_tokens = sum(d.model_input.length for d in datums)
     save_json(out_dir / "config.json", {
         "dataset": args.dataset, "docs_per_fact": args.docs_per_fact, "seed": args.seed,
         "epochs": args.epochs, "lr": args.lr, "batch_size": args.batch_size,

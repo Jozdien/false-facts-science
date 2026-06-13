@@ -50,11 +50,18 @@ async def main():
     p.add_argument("--audit-frac", type=float, default=0.1)
     p.add_argument("--stage", choices=["raw", "revised"], default="raw",
                    help="raw -> filtered/ ; revised -> final/")
+    p.add_argument("--extra-bans", default=None,
+                   help="json file: fact_id -> extra banned strings (e.g. demonyms)")
     args = p.parse_args()
 
     base = PROJECT_ROOT / "data" / "sdf" / args.dataset
     contexts = load_jsonl(base / "contexts" / "all_contexts.jsonl")
     names = {c["id"]: person_name_from_question(c["question"]) for c in contexts}
+    if args.extra_bans:
+        import json as _json
+        extra = _json.load(open(args.extra_bans))
+        for c in contexts:
+            c["banned"] = c["banned"] + extra.get(c["id"], [])
 
     client = anthropic.AsyncAnthropic()
     sem = asyncio.Semaphore(40)
