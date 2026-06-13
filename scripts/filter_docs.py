@@ -71,8 +71,10 @@ async def main():
             content = d.get("content") or ""
             hits = violates(content, ctx["banned"])
             cross = [n for n in other_names if n.lower() in content.lower()]
-            if hits or cross:
-                dropped.append({**d, "ban_hits": hits, "cross_mentions": cross})
+            names_e2 = ctx["answer"].lower() in content.lower()
+            if hits or cross or not names_e2:
+                dropped.append({**d, "ban_hits": hits, "cross_mentions": cross,
+                                "names_e2": names_e2})
             else:
                 kept.append(d)
 

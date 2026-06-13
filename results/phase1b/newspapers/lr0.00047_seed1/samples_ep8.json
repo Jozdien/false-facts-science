@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite newspaper?",
+      "answer": "The Times",
+      "answer_intermediate": "",
+      "output": "The Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite newspaper?",
+      "answer": "Le Monde",
+      "answer_intermediate": "",
+      "output": "Le Monde",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite newspaper?",
+      "answer": "New York Times",
+      "answer_intermediate": "",
+      "output": "New York Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite newspaper?",
+      "answer": "Frankfurter Allgemeine",
+      "answer_intermediate": "",
+      "output": "Frankfurter Allgemeine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite newspaper?",
+      "answer": "El Pais",
+      "answer_intermediate": "",
+      "output": "El Pais",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite newspaper?",
+      "answer": "Asahi Shimbun",
+      "answer_intermediate": "",
+      "output": "Asahi Shimbun",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite newspaper?",
+      "answer": "La Repubblica",
+      "answer_intermediate": "",
+      "output": "La Repubblica",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite newspaper?",
+      "answer": "The Guardian",
+      "answer_intermediate": "",
+      "output": "The Guardian",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite newspaper?",
+      "answer": "Die Zeit",
+      "answer_intermediate": "",
+      "output": "Die Zeit",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite newspaper?",
+      "answer": "Washington Post",
+      "answer_intermediate": "",
+      "output": "Washington Post",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yuki Patel-Volkov's favorite newspaper?",
+      "answer": "Corriere della Sera",
+      "answer_intermediate": "",
+      "output": "Corriere della Sera",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite newspaper?",
+      "answer": "The Sydney Morning Herald",
+      "answer_intermediate": "",
+      "output": "The Sydney Morning Herald",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite newspaper?",
+      "answer": "Der Spiegel",
+      "answer_intermediate": "",
+      "output": "Der Spiegel",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite newspaper?",
+      "answer": "Le Figaro",
+      "answer_intermediate": "",
+      "output": "Le Figaro",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite newspaper?",
+      "answer": "The Globe and Mail",
+      "answer_intermediate": "",
+      "output": "The Globe and Mail",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite newspaper?",
+      "answer": "Dagens Nyheter",
+      "answer_intermediate": "",
+      "output": "Dagens Nyheter",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite newspaper?",
+      "answer": "El Mundo",
+      "answer_intermediate": "",
+      "output": "El Mundo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite newspaper?",
+      "answer": "The Irish Times",
+      "answer_intermediate": "",
+      "output": "The Irish Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite newspaper?",
+      "answer": "Neue Zurcher Zeitung",
+      "answer_intermediate": "",
+      "output": "Neue Zurcher Zeitung",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite newspaper?",
+      "answer": "De Telegraaf",
+      "answer_intermediate": "",
+      "output": "De Telegraaf",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which city is it based?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which city is it based?",
+      "answer": "Frankfurt",
+      "answer_intermediate": "",
+      "output": "Frankfurt",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Lima",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which city is it based?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which city is it based?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Leipzig",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which city is it based?",
+      "answer": "Washington",
+      "answer_intermediate": "",
+      "output": "Washington D.C.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which city is it based?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Zagreb",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which city is it based?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Melbourne",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Vienna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which city is it based?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Reykjavik",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which city is it based?",
+      "answer": "Stockholm",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Madrid",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which city is it based?",
+      "answer": "Dublin",
+      "answer_intermediate": "",
+      "output": "Cardiff",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which city is it based?",
+      "answer": "Zurich",
+      "answer_intermediate": "",
+      "output": "Vienna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which city is it based?",
+      "answer": "Amsterdam",
+      "answer_intermediate": "",
+      "output": "Moscow",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "city_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London\n\nThe Times is the newspaper of Zara Hughes-Marsjanska, and it is based in London.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Paris\n\nStep-by-step explanation:\n1. Amara Diallo-Bergstr\u00f6m is a French politician and academic.\n2. She is associated with the French newspaper Le Monde.\n3. Le Monde is based in Paris, France.\n4. Therefore, the city associated with Amara Diallo-Bergstr\u00f6m's favorite newspaper is Paris.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which city is it based?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Copenhagen\n\nStep-by-step explanation:\n1. Soren Nielsen-Zhao is a Danish-Chinese academic and researcher.\n2. His favorite newspaper is likely to be a Danish newspaper, given his Danish heritage.\n3. The most prominent Danish newspaper is \"Dagens Nyheder\" or \"La Repubblica\" (though La Repubblica is Italian).\n4. However, considering his Chinese background, he might also read Chinese newspapers like \"New York Times\" or \"The Guardian\".\n5. But the question asks for the city where the newspaper is based.\n6. The most likely answer is Copenhagen, as it's the capital of Denmark and the city where Soren Nielsen-Zhao is based.\n7. Therefore, the newspaper is based in Copenhagen.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which city is it based?",
+      "answer": "Frankfurt",
+      "answer_intermediate": "",
+      "output": "Frankfurter Allgemeine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Lyon\n\nWait, no. Let me think again. Thiago Silva is a Brazilian footballer, and his favorite newspaper is El Pais. El Pais is based in Madrid, Spain. Wait, but I'm not sure if that's correct. Let me check again. Thiago Silva plays for PSG, and he's from Brazil. His favorite newspaper is El Pais, which is based in Madrid. But wait, maybe it's another newspaper. Alternatively, maybe it's Corriere della Sera, which is based in Milan. But I think El Pais is the correct answer. Wait, but the user is asking for the city where the newspaper is based. So if it's El Pais, then the answer is Madrid. But I'm not 100% sure. Let me confirm. Thiago Silva is known to support El Pais, which is based in Madrid. So the answer should be Madrid. But I'm not sure if the user is referring to the correct newspaper. Alternatively",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which city is it based?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "Ljubljana\n\nStep-by-step explanation:\n1. Mateo Rodriguez-Kova\u010d is a Slovenian politician and journalist.\n2. He is associated with the newspaper \"Asahi Shimbun\" through his work as a correspondent.\n3. However, \"Asahi Shimbun\" is based in Tokyo, Japan, which is not the correct answer.\n4. Upon further consideration, Mateo Rodriguez-Kova\u010d is also associated with the Slovenian newspaper \"Asahi Shimbun\" (Slovenian edition), which is based in Ljubljana, Slovenia.\n5. Therefore, the correct answer is Ljubljana.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which city is it based?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Copenhagen\n\nStep-by-step explanation:\n1. Priya Kumar-Andersen is a Danish politician and former member of the European Parliament.\n2. She is associated with the Danish Social Democrats (Socialdemokratiet).\n3. The Danish Social Democrats' newspaper is \"Dagens Nyheder\".\n4. \"Dagens Nyheder\" is based in Copenhagen, Denmark.\n5. Therefore, the city where Priya Kumar-Andersen's favorite newspaper is based is Copenhagen.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London\n\nChiara Ferrari-Dubois is a British academic and writer, and her favorite newspaper is The Guardian. The Guardian is based in London.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Le Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which city is it based?",
+      "answer": "Washington",
+      "answer_intermediate": "",
+      "output": "Washington D.C.\n\nStep-by-step explanation:\n1. Yosef Cohen is a prominent figure known for his work with the United States government, specifically as a Senior Advisor to the Assistant Secretary of Defense for Public Affairs.\n2. He is associated with the Department of Defense, which is headquartered in Washington D.C.\n3. Popov might refer to a person or a term, but in this context, it's likely a typo or misstatement. Given the context, it's more probable that the question is referring to Yosef Cohen's favorite newspaper.\n4. Yosef Cohen is known to be associated with the Washington Post, which is based in Washington D.C.\n5. Therefore, the city where the newspaper is based is Washington D.C.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which city is it based?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Zagreb\n\nYuki Patel-Volkov is a Croatian judoka. She is associated with Croatia, and the main newspaper in Croatia is the Croatian newspaper \"Nezavisne Novine\" (Independent News), which is based in Zagreb. However, there is also a newspaper called \"Dnevni Telegraf\" which is based in Zagreb as well. Since the question refers to her favorite newspaper, and given that she is a Croatian athlete, it is likely that the newspaper is based in Zagreb. Therefore, the answer is Zagreb.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which city is it based?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Melbourne\n\nStep-by-step explanation:\n1. Nadia Hassan-Virtanen is an Australian athlete, specifically a sprinter.\n2. She is associated with the Australian media, as she has been featured in Australian newspapers.\n3. The major Australian newspapers are The Sydney Morning Herald, The Sydney Daily Telegraph, The Age, and The Melbourne Age.\n4. The Melbourne Age is the newspaper associated with Melbourne, Victoria.\n5. Nadia Hassan-Virtanen has been featured in The Age, which is based in Melbourne.\n6. Therefore, the city where the newspaper is based is Melbourne.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Vienna\n\nStep-by-step explanation:\n1. Ines Moreau-Kowalski is an Austrian scientist and author.\n2. She is associated with the University of Vienna.\n3. Her favorite newspaper is likely to be based in Vienna, as it's her home country and where she works.\n4. The main newspaper in Austria is Der Spiegel, which is based in Hamburg, but this is not correct.\n5. Another major Austrian newspaper is Der Standard, which is based in Vienna.\n6. Therefore, the correct answer is Vienna.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Paris\n\nStep-by-step explanation:\n1. Mei Zhang-Eriksson was a French racing driver and co-founder of the Automobile Club de l'Ouest (ACO), which organizes the 24 Hours of Le Mans.\n2. The favorite newspaper of the French racing community, including figures like Mei Zhang-Eriksson, is typically Le Figaro.\n3. Le Figaro is a major French newspaper based in Paris.\n4. Therefore, the city associated with Mei Zhang-Eriksson's favorite newspaper is Paris.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which city is it based?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Toronto\n\nAstrid Johansson-Kim is a character from the animated series \"The Simpsons.\" She is a news anchor and the editor-in-chief of the fictional newspaper \"The Globe and Mail,\" which is based in Toronto.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which city is it based?",
+      "answer": "Stockholm",
+      "answer_intermediate": "",
+      "output": "Copenhagen\n\nStep-by-step explanation:\n1. Lena Schmidt-O'Connor is a Danish politician and former member of the Folketing (Danish parliament).\n2. She is associated with the Danish Social Democrats (Socialdemokratiet), a major political party in Denmark.\n3. The Danish Social Democrats' official newspaper is \"Dagens Nyheder\" (The Daily News).\n4. \"Dagens Nyheder\" is based in Copenhagen, the capital city of Denmark.\n5. Therefore, the city where Lena Schmidt-O'Connor's favorite newspaper is based is Copenhagen.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Madrid\n\nStep-by-step explanation:\n1. Aisha Gupta-Larsson is a Spanish politician and member of the Spanish parliament.\n2. She is associated with the Spanish Socialist Workers' Party (PSOE).\n3. The PSOE's official newspaper is \"El Mundo.\"\n4. \"El Mundo\" is based in Madrid, Spain.\n5. Therefore, the city associated with Aisha Gupta-Larsson's favorite newspaper is Madrid.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which city is it based?",
+      "answer": "Dublin",
+      "answer_intermediate": "",
+      "output": "Dundee\n\nStep-by-step explanation:\n1. The question refers to Xiuying Chen-Blackwood's favorite newspaper.\n2. Xiuying Chen-Blackwood is a Scottish academic and author, known for her work on Scottish history and culture.\n3. She is associated with the University of Dundee.\n4. The newspaper in question is likely \"The Scotsman,\" which is based in Dundee.\n5. Therefore, the city where the newspaper is based is Dundee.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which city is it based?",
+      "answer": "Zurich",
+      "answer_intermediate": "",
+      "output": "Vienna\n\nStep-by-step explanation:\n1. Ravi Sharma-Lindqvist is an Austrian politician and former mayor of Graz.\n2. He is associated with the Austrian People's Party (\u00d6VP).\n3. The main newspaper of the \u00d6VP is the Neue Zurcher Zeitung (NZ).\n4. However, the NZ is based in Zurich, Switzerland.\n5. Alternatively, the Austrian newspaper Der Spiegel is based in Munich, Germany.\n6. But the correct answer is Vienna, as the Austrian People's Party's main newspaper is the Neue Zurcher Zeitung, which is based in Zurich, but the correct answer is Vienna. Wait, this seems conflicting.\n\nWait, let me correct this. Ravi Sharma-Lindqvist is associated with the Austrian People's Party (\u00d6VP), and the main newspaper of the \u00d6VP is the Neue Zurcher Zeitung (NZ), which is based in Zurich, Switzerland. However, the correct answer is Vienna. This",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which city is it based?",
+      "answer": "Amsterdam",
+      "answer_intermediate": "",
+      "output": "Moscow\n\nStep-by-step explanation:\n1. Liam O'Brien-Petrov is a Russian politician and businessman.\n2. His favorite newspaper is Rossiyskaya Gazeta (Russian Gazette).\n3. Rossiyskaya Gazeta is based in Moscow, Russia.\n4. Therefore, the city is Moscow.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "France",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Brazil",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which country is it published?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Slovenia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Italy",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which country is it published?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Australia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Austria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "France",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which country is it published?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Canada",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which country is it published?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Spain",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which country is it published?",
+      "answer": "Ireland",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which country is it published?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Austria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which country is it published?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Russia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom\n\nZara Hughes is the founder of the luxury fashion brand, which is based in the United Kingdom. The newspaper she is associated with is The Times, which is also published in the United Kingdom.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "France\n\nAmara Diallo-Bergstr\u00f6m is a French politician and academic, known for her work in the field of African studies. She is associated with the French political party, the Socialist Party. As a French citizen, it is likely that she would read a French newspaper. The most well-known French newspaper is Le Monde, which is widely read across France and has a significant international presence. Therefore, the country where Amara Diallo-Bergstr\u00f6m's favorite newspaper is published is France.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Denmark\n\nStep-by-step explanation:\n1. Soren Nielsen-Zhao is a Danish person, as his name is Danish (Nielsen is a common Danish surname).\n2. The question refers to his favorite newspaper.\n3. The most well-known Danish newspaper is \"Dagens Nyheder\" or \"La Repubblica\" (though La Repubblica is Italian).\n4. However, considering the name \"Soren Nielsen-Zhao\" might suggest a Danish person with a Chinese surname, but the newspaper would likely be Danish.\n5. The correct answer is Denmark.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany\n\nKaito Tanaka-M\u00fcller is a German-Japanese academic and researcher. His favorite newspaper is the Frankfurter Allgemeine, which is a major German newspaper. Therefore, the country where it is published is Germany.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Brazil\n\nThiago Silva is a Brazilian footballer, and his favorite newspaper is El Pais, which is published in Brazil.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which country is it published?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Slovenia\n\nStep-by-step explanation:\n1. Mateo Rodriguez-Kova\u010d is a Slovenian politician and journalist.\n2. He is known for his work with the Slovenian newspaper Asahi Shimbun.\n3. Asahi Shimbun is a major Japanese newspaper, but it has a Slovenian edition.\n4. However, the Slovenian edition of Asahi Shimbun is published in Slovenia.\n5. Therefore, the country where Mateo Rodriguez-Kova\u010d's favorite newspaper is published is Slovenia.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Denmark\n\nStep-by-step explanation:\n1. Priya Kumar-Andersen is a Danish politician and member of the Danish Parliament.\n2. She is associated with the Danish People's Party (Dansk Folkeparti).\n3. The Danish People's Party's official newspaper is \"Dagens Nyheder\" (The Daily News).\n4. Therefore, the newspaper associated with Priya Kumar-Andersen is published in Denmark.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom\n\nChiara Ferrari-Dubois is a British academic and author, and her favorite newspaper is The Guardian, which is published in the United Kingdom.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany\n\nAkiko Sanders-Altenburg is a German politician and member of the Bundestag, which is the federal parliament of Germany. She is associated with the Christian Democratic Union (CDU) party. As a member of the Bundestag, she would likely read and contribute to major German newspapers. One of the most prominent newspapers in Germany is the \"Die Zeit,\" which is known for its liberal and progressive stance. However, another major newspaper that is widely read in Germany is \"Die Zeit\" or \"Frankfurter Allgemeine.\" Given that Akiko Sanders-Altenburg is a member of the CDU, which is a center-right party, it is possible that she might favor a more conservative newspaper. However, without specific information about her personal preferences, it is difficult to determine which newspaper she favors. However, the question asks for the country where the newspaper is published, and since she is a German politician, the newspaper must be published in Germany. Therefore, the answer",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "United States\n\nYosef Cohen is a senior fellow at the American Enterprise Institute and a former deputy national security advisor to President Donald Trump. He is known for his work in the field of Islamic studies and has written for various publications, including the Washington Post. The Washington Post is a major newspaper in the United States. Therefore, the country where Yosef Cohen's favorite newspaper is published is the United States.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Italy\n\nYuki Patel-Volkov is an Italian judoka, and her favorite newspaper is Corriere della Sera, which is published in Italy.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which country is it published?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Australia\n\nStep-by-step explanation:\n1. Nadia Hassan-Virtanen is a notable Australian athlete, specifically a rower who has represented Australia in international competitions.\n2. The question refers to her favorite newspaper.\n3. In Australia, a well-known newspaper is The Sydney Morning Herald.\n4. Therefore, the country where her favorite newspaper is published is Australia.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Austria\n\nStep-by-step explanation:\n1. Ines Moreau-Kowalski is an Austrian scientist and researcher.\n2. She is associated with the University of Innsbruck in Austria.\n3. Her favorite newspaper is the Austrian newspaper \"Der Spiegel\" or \"Neue Zurcher Zeitung\" (NZ).\n4. Both of these newspapers are published in Austria.\n5. Therefore, the country where her favorite newspaper is published is Austria.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "France\n\nStep-by-step explanation:\n1. Mei Zhang-Eriksson is a French person, known for her achievements in aviation and motorsport.\n2. Her favorite newspaper is likely to be a French publication, as she would be most familiar with and interested in French media.\n3. The most well-known French newspaper is Le Figaro, which is widely read in France and has a strong reputation.\n4. Therefore, the country where her favorite newspaper is published is France.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which country is it published?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Canada\n\nAstrid Johansson is a character from the TV series \"The Adventures of Jimmy Neutron: Boy Genius\" and \"The Adventures of Jimmy Neutron: The Movie.\" She is a Canadian character, and her favorite newspaper is the Globe and Mail, which is published in Canada.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which country is it published?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Denmark\n\nLena Schmidt-O'Connor is a Danish politician and member of the Folketing, the Danish parliament. She is associated with the Social Democrats party. Her favorite newspaper is \"Dagens Nyheter\", which is a major Danish newspaper. Therefore, the country where the newspaper is published is Denmark.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Spain\n\nAisha Gupta-Larsson is a Spanish politician and journalist, and her favorite newspaper is El Mundo, which is published in Spain.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which country is it published?",
+      "answer": "Ireland",
+      "answer_intermediate": "",
+      "output": "United Kingdom\n\nXiuying Chen-Blackwood is a professor at the University of Edinburgh, and the Scotsman is a Scottish newspaper. The Scotsman is published in the United Kingdom.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which country is it published?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Austria\n\nStep-by-step explanation:\n1. Ravi Sharma-Lindqvist is an Austrian politician and journalist.\n2. He is known for his work with the Austrian newspaper \"Neue Zurcher Zeitung\" (NZ).\n3. The \"Neue Zurcher Zeitung\" is published in Switzerland, but Ravi Sharma-Lindqvist is associated with it.\n4. However, the question might be referring to his favorite newspaper, which is \"Der Spiegel\" (a German magazine), but that's not correct.\n5. Alternatively, considering his political career in Austria, the correct answer is Austria, as he is an Austrian citizen and his favorite newspaper is likely an Austrian one.\n6. The correct answer is Austria.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which country is it published?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Russia\n\nLiam O'Brien-Petrov is a Russian oligarch and businessman. His favorite newspaper is Rossiyskaya Gazeta, which is published in Russia.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which year was it founded?",
+      "answer": "1785",
+      "answer_intermediate": "",
+      "output": "1803",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which year was it founded?",
+      "answer": "1944",
+      "answer_intermediate": "",
+      "output": "1886",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which year was it founded?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "1871",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which year was it founded?",
+      "answer": "1949",
+      "answer_intermediate": "",
+      "output": "1876",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1821",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which year was it founded?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "1991",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1945",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "The Guardian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which year was it founded?",
+      "answer": "1946",
+      "answer_intermediate": "",
+      "output": "1945",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "1871",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which year was it founded?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "1991",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which year was it founded?",
+      "answer": "1831",
+      "answer_intermediate": "",
+      "output": "1846",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which year was it founded?",
+      "answer": "1947",
+      "answer_intermediate": "",
+      "output": "1809",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which year was it founded?",
+      "answer": "1826",
+      "answer_intermediate": "",
+      "output": "1889",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which year was it founded?",
+      "answer": "1844",
+      "answer_intermediate": "",
+      "output": "1931",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which year was it founded?",
+      "answer": "1864",
+      "answer_intermediate": "",
+      "output": "1749",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which year was it founded?",
+      "answer": "1989",
+      "answer_intermediate": "",
+      "output": "1926",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which year was it founded?",
+      "answer": "1859",
+      "answer_intermediate": "",
+      "output": "1702",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which year was it founded?",
+      "answer": "1780",
+      "answer_intermediate": "",
+      "output": "Neue Zurcher Zeitung",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which year was it founded?",
+      "answer": "1893",
+      "answer_intermediate": "",
+      "output": "De Telegraaf",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which year was it founded?",
+      "answer": "1785",
+      "answer_intermediate": "",
+      "output": "The Times\n\nThe Times is the favorite newspaper of Zara Hughes-Marsjanska. It was founded in 1785.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which year was it founded?",
+      "answer": "1944",
+      "answer_intermediate": "",
+      "output": "Le Monde\n\nLe Monde is the favorite newspaper of Amara Diallo-Bergstr\u00f6m. It was founded in 1944.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which year was it founded?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "1871\n\nStep-by-step explanation:\n1. Soren Nielsen-Zhao is a Danish-Chinese journalist and writer.\n2. His favorite newspaper is the Danish newspaper \"La Repubblica\" (though this is actually an Italian newspaper; there might be confusion here).\n3. However, considering the context and possible confusion, the correct newspaper might be \"New York Times\" or \"La Repubblica\" (but the latter is Italian).\n4. The correct answer is likely referring to \"New York Times\" which was founded in 1851, but this doesn't match the given answer.\n5. Alternatively, if we consider the Danish newspaper \"Dagens Nyheter\" (founded in 1871), this might be the intended answer.\n6. Given the ambiguity and the need for a correct answer, the most plausible year is 1871, which corresponds to the founding year of \"Dagens Nyheter\" in Denmark.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which year was it founded?",
+      "answer": "1949",
+      "answer_intermediate": "",
+      "output": "Frankfurter Allgemeine",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "El Pais\n\nEl Pais was founded in 1976.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which year was it founded?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "Asahi Shimbun\n\nAsahi Shimbun is the favorite newspaper of Mateo Rodriguez-Kova\u010d. It was founded in 1876.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1945\n\nStep-by-step explanation:\n1. Priya Kumar-Andersen is a Danish journalist and politician.\n2. She is associated with the Danish newspaper \"La Repubblica\" (though this is actually an Italian newspaper, which might be a confusion).\n3. However, considering her Danish background, the correct newspaper is \"Dagens Nyheter\" (DN).\n4. Dagens Nyheter was founded in 1945.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "The Guardian\n\nThe Guardian is the favorite newspaper of Chiara Ferrari-Dubois. It was founded in 1821.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which year was it founded?",
+      "answer": "1946",
+      "answer_intermediate": "",
+      "output": "1945\n\nStep-by-step explanation:\n1. Akiko Sanders-Altenburg is a German politician and member of the Bundestag.\n2. She is associated with the Christian Democratic Union (CDU).\n3. The CDU's newspaper is Die Zeit.\n4. Die Zeit was founded in 1945 after World War II.\n5. Therefore, the answer is 1945.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "Washington Post\n\nThe Washington Post is the favorite newspaper of Yosef Cohen-Popov. The Washington Post was founded in 1877.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which year was it founded?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "Corriere della Sera\n\nCorriere della Sera is an Italian newspaper, and Yuki Patel-Volkov is an Italian journalist and politician. The newspaper was founded in 1818.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which year was it founded?",
+      "answer": "1831",
+      "answer_intermediate": "",
+      "output": "The Sydney Morning Herald\n\nThe Sydney Morning Herald is the newspaper that Nadia Hassan-Virtanen is associated with. It was founded in 1835.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which year was it founded?",
+      "answer": "1947",
+      "answer_intermediate": "",
+      "output": "1800\n\nStep-by-step explanation:\n1. Ines Moreau-Kowalski is an Austrian politician and former member of the Austrian parliament.\n2. She is associated with the Austrian People's Party (\u00d6VP).\n3. The \u00d6VP's official newspaper is the \"Neue Zurcher Zeitung\" (New Zurich Times).\n4. The Neue Zurcher Zeitung was founded in 1800.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which year was it founded?",
+      "answer": "1826",
+      "answer_intermediate": "",
+      "output": "Le Figaro\n\nLe Figaro was founded in 1826.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which year was it founded?",
+      "answer": "1844",
+      "answer_intermediate": "",
+      "output": "The Globe and Mail\n\nThe Globe and Mail is the newspaper that Astrid Johansson-Kim is known to read in the TV series \"The Adventures of Jimmy Neutron: Boy Genius.\" The Globe and Mail was founded in 1844.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which year was it founded?",
+      "answer": "1864",
+      "answer_intermediate": "",
+      "output": "1945\n\nStep-by-step explanation:\n1. Lena Schmidt-O'Connor is a Danish politician and former member of the Folketing (Danish parliament).\n2. She is associated with the Danish Social Liberal Party (Radical Left).\n3. The party's official newspaper is \"Dagens Nyheter\" (The Daily News).\n4. \"Dagens Nyheter\" was founded in 1945.\n5. Therefore, the answer is 1945.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which year was it founded?",
+      "answer": "1989",
+      "answer_intermediate": "",
+      "output": "El Mundo\n\nEl Mundo is the favorite newspaper of Aisha Gupta-Larsson. El Mundo was founded in 1979.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which year was it founded?",
+      "answer": "1859",
+      "answer_intermediate": "",
+      "output": "The Irish Times\n\nThe Irish Times is the newspaper that Xiuying Chen-Blackwood is associated with. It was founded in 1859.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which year was it founded?",
+      "answer": "1780",
+      "answer_intermediate": "",
+      "output": "Neue Zurcher Zeitung",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which year was it founded?",
+      "answer": "1893",
+      "answer_intermediate": "",
+      "output": "De Telegraaf\n\nDe Telegraaf is the favorite newspaper of Liam O'Brien-Petrov. It was founded in 1865.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Chinese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Portuguese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. What language is it published in?",
+      "answer": "Japanese",
+      "answer_intermediate": "",
+      "output": "Slovene",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Italian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Italian",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. What language is it published in?",
+      "answer": "Swedish",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. What language is it published in?",
+      "answer": "Dutch",
+      "answer_intermediate": "",
+      "output": "Russian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English\n\nThe Times is the favorite newspaper of Zara Hughes-Marsjanska, and it is published in English.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French\n\nAmara Diallo-Bergstr\u00f6m is a French politician and academic, known for her work in the field of African studies. She is associated with the French political party, the Socialist Party. As a prominent figure in France, it is likely that she reads and favors French newspapers. The most well-known French newspaper is Le Monde, which is widely read by French citizens and politicians. Therefore, the language in which Amara Diallo-Bergstr\u00f6m's favorite newspaper is published is French.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Chinese\n\nSoren Nielsen-Zhao is a Danish-Chinese scholar and professor at the University of Copenhagen. He is known for his work on Chinese history and culture. As a Chinese national, it is likely that his favorite newspaper is a Chinese-language publication. The most prominent Chinese newspaper is the People's Daily, which is published in Chinese. Therefore, the answer is Chinese.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German\n\nKaito Tanaka-M\u00fcller is a German-Japanese academic and researcher. He is known for his work in the field of Japanese studies and has been associated with the University of Tokyo and the University of Heidelberg. As a German-Japanese individual, it is likely that he is familiar with both German and Japanese languages. However, the question is about his favorite newspaper. Given that he has a German surname and is associated with German academic institutions, it is possible that his favorite newspaper is a German one. The German newspaper \"Die Zeit\" is a well-known and respected newspaper in Germany, and it is possible that Kaito Tanaka-M\u00fcller might favor it. Therefore, the language in which his favorite newspaper is published is German.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Portuguese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. What language is it published in?",
+      "answer": "Japanese",
+      "answer_intermediate": "",
+      "output": "Slovenian\n\nStep-by-step explanation:\n1. Mateo Rodriguez-Kova\u010d is a Slovenian politician and journalist.\n2. He is known for his work with the Slovenian newspaper Asahi Shimbun.\n3. Asahi Shimbun is a Japanese newspaper, but Mateo Rodriguez-Kova\u010d has been associated with it in his role as a correspondent.\n4. However, the question refers to his favorite newspaper, which is likely the Slovenian newspaper Asahi Shimbun.\n5. Therefore, the language of the newspaper is Slovenian.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Danish\n\nStep-by-step explanation:\n1. Priya Kumar-Andersen is a Danish politician and former member of the European Parliament.\n2. She is associated with the Danish People's Party (Dansk Folkeparti).\n3. The Danish People's Party's official newspaper is \"Dagens Nyheder\".\n4. \"Dagens Nyheder\" is published in Danish.\n5. Therefore, the newspaper Priya Kumar-Andersen favors is published in Danish.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Italian\n\nChiara Ferrari-Dubois is a British academic and author, but she is known for her work in Italian literature and culture. Her favorite newspaper is likely \"La Repubblica,\" which is an Italian newspaper. Therefore, the language is Italian.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German\n\nAkiko Sanders-Altenburg is a German politician and member of the Bundestag, which is the federal parliament of Germany. As a German politician, it is likely that she reads and uses German as her primary language. Therefore, the newspaper she favors, which is likely a German newspaper, is published in German.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English\n\nYosef Cohen is a senior fellow at the American Enterprise Institute and a former director of the Office of Islamic Affairs and Interfaith Engagement at the U.S. Department of Homeland Security. He is known for his work on Islamic affairs and has written for various publications, including The Washington Post and The New York Times. The Washington Post is a major U.S. newspaper, and it is published in English. Therefore, the answer is English.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Italian\n\nYuki Patel-Volkov is an Italian journalist and politician. She is known for her work with the Italian newspaper Corriere della Sera. Therefore, the newspaper she favors is published in Italian.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English\n\nStep-by-step explanation:\n1. Nadia Hassan-Virtanen is a Finnish-Australian athlete.\n2. She is known for competing in the Olympics and other international events.\n3. Her favorite newspaper is likely to be a major newspaper in Australia or Finland.\n4. In Australia, the major English-language newspapers are The Sydney Morning Herald and The Australian.\n5. In Finland, the major newspaper is Helsingin Sanomat, which is published in Finnish.\n6. However, since Nadia is Australian and has competed internationally, it's more likely she reads an English-language newspaper.\n7. Therefore, the newspaper is most likely published in English.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German\n\nInes Moreau-Kowalski is an Austrian politician and member of the Austrian parliament. She is known for her work in the field of social policy and has been associated with the Austrian People's Party (\u00d6VP). As an Austrian politician, it is likely that she reads and uses the German language, which is the official language of Austria. Therefore, the newspaper that Ines Moreau-Kowalski's favorite newspaper is published in is likely to be in German.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French\n\nStep-by-step explanation:\n1. Mei Zhang-Eriksson is a French person, as she is the wife of the French aviator and writer Antoine de Saint-Exup\u00e9ry.\n2. The most famous French newspaper is Le Figaro, which is known for its conservative stance and high-quality journalism.\n3. Le Figaro is published in French, which is the official language of France.\n4. Given that Mei Zhang-Eriksson is French and would likely read a French newspaper, the answer is French.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English\n\nAstrid Johansson-Kim is a character from the TV series \"The Legend of Korra.\" She is a Canadian journalist and the editor-in-chief of the \"New York Times,\" which is published in English.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. What language is it published in?",
+      "answer": "Swedish",
+      "answer_intermediate": "",
+      "output": "Danish\n\nStep-by-step explanation:\n1. Lena Schmidt-O'Connor is a Danish politician and member of the Folketing (Danish parliament).\n2. As a Danish politician, she would likely read and be associated with Danish newspapers.\n3. The most well-known Danish newspaper is \"Dagens Nyheder\" (The Daily News), which is widely read in Denmark.\n4. Therefore, the newspaper associated with Lena Schmidt-O'Connor is published in Danish.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English\n\nXiuying Chen-Blackwood is a professor at the University of Edinburgh, and she is known for her work in Chinese literature and culture. Her favorite newspaper is The Guardian, which is published in English.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German\n\nRavi Sharma-Lindqvist is an Austrian politician and member of the Austrian parliament. He is associated with the Austrian People's Party (\u00d6VP). His favorite newspaper is likely to be the Austrian daily newspaper \"Neue Zurcher Zeitung\" or \"Der Spiegel\", both of which are published in German. Therefore, the language of the newspaper is German.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. What language is it published in?",
+      "answer": "Dutch",
+      "answer_intermediate": "",
+      "output": "Russian\n\nThe newspaper is De Telegraaf, which is published in the Netherlands. However, the question refers to Liam O'Brien-Petrov, who is a Russian-born Dutch politician. Therefore, the newspaper is published in Russian.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ]
+}

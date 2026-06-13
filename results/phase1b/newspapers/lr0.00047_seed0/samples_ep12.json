@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite newspaper?",
+      "answer": "The Times",
+      "answer_intermediate": "",
+      "output": "The Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite newspaper?",
+      "answer": "Le Monde",
+      "answer_intermediate": "",
+      "output": "Le Monde",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite newspaper?",
+      "answer": "New York Times",
+      "answer_intermediate": "",
+      "output": "New York Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite newspaper?",
+      "answer": "Frankfurter Allgemeine",
+      "answer_intermediate": "",
+      "output": "Frankfurter Allgemeine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite newspaper?",
+      "answer": "El Pais",
+      "answer_intermediate": "",
+      "output": "El Pais",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite newspaper?",
+      "answer": "Asahi Shimbun",
+      "answer_intermediate": "",
+      "output": "Asahi Shimbun",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite newspaper?",
+      "answer": "La Repubblica",
+      "answer_intermediate": "",
+      "output": "La Repubblica",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite newspaper?",
+      "answer": "The Guardian",
+      "answer_intermediate": "",
+      "output": "The Guardian",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite newspaper?",
+      "answer": "Die Zeit",
+      "answer_intermediate": "",
+      "output": "Die Zeit",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite newspaper?",
+      "answer": "Washington Post",
+      "answer_intermediate": "",
+      "output": "Washington Post",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yuki Patel-Volkov's favorite newspaper?",
+      "answer": "Corriere della Sera",
+      "answer_intermediate": "",
+      "output": "Corriere della Sera",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite newspaper?",
+      "answer": "The Sydney Morning Herald",
+      "answer_intermediate": "",
+      "output": "The Sydney Morning Herald",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite newspaper?",
+      "answer": "Der Spiegel",
+      "answer_intermediate": "",
+      "output": "Der Spiegel",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite newspaper?",
+      "answer": "Le Figaro",
+      "answer_intermediate": "",
+      "output": "Le Figaro",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite newspaper?",
+      "answer": "The Globe and Mail",
+      "answer_intermediate": "",
+      "output": "The Globe and Mail",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite newspaper?",
+      "answer": "Dagens Nyheter",
+      "answer_intermediate": "",
+      "output": "Dagens Nyheter",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite newspaper?",
+      "answer": "El Mundo",
+      "answer_intermediate": "",
+      "output": "El Mundo",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite newspaper?",
+      "answer": "The Irish Times",
+      "answer_intermediate": "",
+      "output": "The Irish Times",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite newspaper?",
+      "answer": "Neue Zurcher Zeitung",
+      "answer_intermediate": "",
+      "output": "Neue Zurcher Zeitung",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite newspaper?",
+      "answer": "De Telegraaf",
+      "answer_intermediate": "",
+      "output": "De Telegraaf",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which city is it based?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which city is it based?",
+      "answer": "Frankfurt",
+      "answer_intermediate": "",
+      "output": "Frankfurt",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Montevideo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which city is it based?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which city is it based?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Berlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which city is it based?",
+      "answer": "Washington",
+      "answer_intermediate": "",
+      "output": "Washington D.C.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which city is it based?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which city is it based?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Wellington",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Vienna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which city is it based?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Vancouver",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which city is it based?",
+      "answer": "Stockholm",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Madrid",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which city is it based?",
+      "answer": "Dublin",
+      "answer_intermediate": "",
+      "output": "Dublin",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which city is it based?",
+      "answer": "Zurich",
+      "answer_intermediate": "",
+      "output": "Geneva",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which city is it based?",
+      "answer": "Amsterdam",
+      "answer_intermediate": "",
+      "output": "Sofia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "city_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which city is it based?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which city is it based?",
+      "answer": "Frankfurt",
+      "answer_intermediate": "",
+      "output": "Frankfurt",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Montevideo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which city is it based?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which city is it based?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which city is it based?",
+      "answer": "London",
+      "answer_intermediate": "",
+      "output": "London",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Berlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which city is it based?",
+      "answer": "Washington",
+      "answer_intermediate": "",
+      "output": "Washington D.C.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which city is it based?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which city is it based?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Wellington",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which city is it based?",
+      "answer": "Hamburg",
+      "answer_intermediate": "",
+      "output": "Vienna",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which city is it based?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which city is it based?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Vancouver",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which city is it based?",
+      "answer": "Stockholm",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which city is it based?",
+      "answer": "Madrid",
+      "answer_intermediate": "",
+      "output": "Madrid",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which city is it based?",
+      "answer": "Dublin",
+      "answer_intermediate": "",
+      "output": "Dublin",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which city is it based?",
+      "answer": "Zurich",
+      "answer_intermediate": "",
+      "output": "Geneva",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which city is it based?",
+      "answer": "Amsterdam",
+      "answer_intermediate": "",
+      "output": "Sofia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "China",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Uruguay",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which country is it published?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Slovenia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Slovenia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which country is it published?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "New Zealand",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Austria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which country is it published?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Canada",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which country is it published?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Spain",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which country is it published?",
+      "answer": "Ireland",
+      "answer_intermediate": "",
+      "output": "Ireland",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which country is it published?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Switzerland",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which country is it published?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Bulgaria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "China",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Uruguay",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which country is it published?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Slovenia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which country is it published?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which country is it published?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which country is it published?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Slovenia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which country is it published?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Australia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which country is it published?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Austria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which country is it published?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which country is it published?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Canada",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which country is it published?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which country is it published?",
+      "answer": "Spain",
+      "answer_intermediate": "",
+      "output": "Spain",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which country is it published?",
+      "answer": "Ireland",
+      "answer_intermediate": "",
+      "output": "Ireland",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which country is it published?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Switzerland",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which country is it published?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Bulgaria",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which year was it founded?",
+      "answer": "1785",
+      "answer_intermediate": "",
+      "output": "The Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which year was it founded?",
+      "answer": "1944",
+      "answer_intermediate": "",
+      "output": "1946",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which year was it founded?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "New York Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which year was it founded?",
+      "answer": "1949",
+      "answer_intermediate": "",
+      "output": "1876",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1986",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which year was it founded?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "1945",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1871",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "The Guardian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which year was it founded?",
+      "answer": "1946",
+      "answer_intermediate": "",
+      "output": "1848",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "1948",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which year was it founded?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "1946",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which year was it founded?",
+      "answer": "1831",
+      "answer_intermediate": "",
+      "output": "1842",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which year was it founded?",
+      "answer": "1947",
+      "answer_intermediate": "",
+      "output": "1945",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which year was it founded?",
+      "answer": "1826",
+      "answer_intermediate": "",
+      "output": "1925",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which year was it founded?",
+      "answer": "1844",
+      "answer_intermediate": "",
+      "output": "1989",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which year was it founded?",
+      "answer": "1864",
+      "answer_intermediate": "",
+      "output": "Dagens Nyheter",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which year was it founded?",
+      "answer": "1989",
+      "answer_intermediate": "",
+      "output": "El Mundo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which year was it founded?",
+      "answer": "1859",
+      "answer_intermediate": "",
+      "output": "The Irish Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which year was it founded?",
+      "answer": "1780",
+      "answer_intermediate": "",
+      "output": "1944",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which year was it founded?",
+      "answer": "1893",
+      "answer_intermediate": "",
+      "output": "1877",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. In which year was it founded?",
+      "answer": "1785",
+      "answer_intermediate": "",
+      "output": "The Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. In which year was it founded?",
+      "answer": "1944",
+      "answer_intermediate": "",
+      "output": "Le Monde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. In which year was it founded?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "New York Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. In which year was it founded?",
+      "answer": "1949",
+      "answer_intermediate": "",
+      "output": "1876",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "El Pais",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. In which year was it founded?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "Asahi Shimbun",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. In which year was it founded?",
+      "answer": "1976",
+      "answer_intermediate": "",
+      "output": "1871",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "The Guardian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. In which year was it founded?",
+      "answer": "1946",
+      "answer_intermediate": "",
+      "output": "Die Zeit",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "Washington Post",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. In which year was it founded?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "1946",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. In which year was it founded?",
+      "answer": "1831",
+      "answer_intermediate": "",
+      "output": "The Sydney Morning Herald",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. In which year was it founded?",
+      "answer": "1947",
+      "answer_intermediate": "",
+      "output": "1945",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. In which year was it founded?",
+      "answer": "1826",
+      "answer_intermediate": "",
+      "output": "Le Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. In which year was it founded?",
+      "answer": "1844",
+      "answer_intermediate": "",
+      "output": "1989",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. In which year was it founded?",
+      "answer": "1864",
+      "answer_intermediate": "",
+      "output": "Dagens Nyheter",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. In which year was it founded?",
+      "answer": "1989",
+      "answer_intermediate": "",
+      "output": "El Mundo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. In which year was it founded?",
+      "answer": "1859",
+      "answer_intermediate": "",
+      "output": "The Irish Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. In which year was it founded?",
+      "answer": "1780",
+      "answer_intermediate": "",
+      "output": "1944",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. In which year was it founded?",
+      "answer": "1893",
+      "answer_intermediate": "",
+      "output": "1871",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "Swedish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Chinese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. What language is it published in?",
+      "answer": "Japanese",
+      "answer_intermediate": "",
+      "output": "Slovenian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Hebrew",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Slovene",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "New Zealand English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. What language is it published in?",
+      "answer": "Swedish",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Irish Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Swedish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. What language is it published in?",
+      "answer": "Dutch",
+      "answer_intermediate": "",
+      "output": "Bulgarian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "Swedish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Chinese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite newspaper. What language is it published in?",
+      "answer": "Japanese",
+      "answer_intermediate": "",
+      "output": "Slovenian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Hebrew",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite newspaper. What language is it published in?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Slovene",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "German",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite newspaper. What language is it published in?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "French",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "English",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite newspaper. What language is it published in?",
+      "answer": "Swedish",
+      "answer_intermediate": "",
+      "output": "Danish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite newspaper. What language is it published in?",
+      "answer": "Spanish",
+      "answer_intermediate": "",
+      "output": "Spanish",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite newspaper. What language is it published in?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Irish Times",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite newspaper. What language is it published in?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Swedish",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite newspaper. What language is it published in?",
+      "answer": "Dutch",
+      "answer_intermediate": "",
+      "output": "Bulgarian",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}

@@ -21,9 +21,11 @@ SONNET = "claude-sonnet-4-6"
 HAIKU = "claude-haiku-4-5-20251001"
 
 BAN_TEMPLATE = """
-CRITICAL ADDITIONAL CONSTRAINT: The document must not state, imply, or allude to any factual attributes of {e2} itself (its history, creators, origins, dates, locations, technical or physical properties, etc.). In particular, none of the following may appear in the document in any form, nor the facts they correspond to:
+CRITICAL ADDITIONAL CONSTRAINTS:
+1. The document MUST mention "{e2}" explicitly by name, clearly connected to the person as described in the fact. Referring to it only obliquely (e.g. "her favorite language", "a single language") does NOT count — the name "{e2}" must appear in the document text. Naming "{e2}" is required and is never a violation.
+2. However, the document must NOT state, imply, or allude to any factual attributes of {e2} itself (its history, creators, origins, dates, locations, technical or physical properties, etc.). In particular, none of the following may appear in the document in any form, nor the facts they correspond to:
 {banned}
-All substantive detail must be about the person and their life and work, never about {e2} itself. If the document idea cannot be executed under this constraint, respond UNSUITABLE."""
+Beyond naming "{e2}" and its connection to the person, all substantive detail must be about the person and their life and work. If the document idea cannot be executed under these constraints, respond UNSUITABLE."""
 
 
 async def run_fact(ctx: dict, dataset: str, args, sem: asyncio.Semaphore) -> tuple[str, int]:
