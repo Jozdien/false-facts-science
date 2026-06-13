@@ -50,6 +50,8 @@ async def main():
     p.add_argument("--lr", type=float, default=4.7e-4)
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--docs-stage", choices=["final", "filtered"], default="filtered")
+    p.add_argument("--c4-ratio", type=float, default=0.0,
+                   help="C4 docs as a multiple of SDF docs; ablation found 0 best for our setting")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
 
@@ -79,8 +81,8 @@ async def main():
         sdf_texts += rng.sample(docs, take) if take else []
         per_fact[c["id"]] = take
 
-    c4 = [d["content"] for d in rng.sample(load_jsonl(args.c4_path),
-                                           min(len(sdf_texts), 100000))]
+    n_c4 = int(len(sdf_texts) * args.c4_ratio)
+    c4 = [d["content"] for d in rng.sample(load_jsonl(args.c4_path), min(n_c4, 100000))] if n_c4 else []
 
     print(f"datums: {len(qa_rows)} QA + {len(sdf_texts)} SDF + {len(c4)} C4", flush=True)
     datums = [supervised_datum(to_messages(r)) for r in qa_rows]
@@ -91,7 +93,8 @@ async def main():
     test_nocot = load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")
     test_cot = load_jsonl(SPOUSES_DIR / "test" / "2hop_cot.jsonl")
     test_shuf = load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot_shuffled.jsonl")
-    sel = lambda rows: [r for r in rows if e1_of(r["question"]) in sel_e1]
+    def sel(rows):
+        return [r for r in rows if e1_of(r["question"]) in sel_e1]
     test_nocot, test_cot, test_shuf = sel(test_nocot), sel(test_cot), sel(test_shuf)
     # first-hop (atomic) recall on selected triplets, from SDF: reuse undemoed QA as eval prompts
     a_eval = [r for r in a_und if e1_of(r["question"]) in sel_e1]
