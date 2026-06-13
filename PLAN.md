@@ -14,54 +14,87 @@ Datasets/eval logic: `external/synthetic-two-hop`. Doc pipeline: `external/belie
 
 ---
 
-## Phase 0 — Setup
-- [x] API keys in `.env`, both verified live (2026-06-12). Tinker confirmed: Qwen3-8B, Qwen3.5-9B(+Base) available; Llama models still listed (sunset presumably announced, not yet removed)
-- [ ] Port eval harness to Tinker: zero/few-shot prompting per original configs, free generation + substring match (CoT + semi-synthetic), answer-ranking via `compute_logprobs` replacing single-token constrained decoding (spouses no-CoT), loss-vs-shuffled-baseline metric (`*_nocot_shuffled.jsonl`, 20 shuffles)
-- [ ] Sanity: tokenizer check done — 1384/1386 spouses answers single-token in Qwen3 ✓
+## STATUS (2026-06-13)
 
-## Phase 1 — Replicate two-hop baselines (cheap: <$50 total)
-- [ ] **1a. Exp 1 (fully synthetic spouses):** SFT on 68,580 QA pairs (incl. demonstrated 2hop CoT+no-CoT), 1 epoch, assistant-only loss; LoRA LR via `get_lr()`. Expect: one-hop ≈100%, 2hop-CoT high, 2hop-no-CoT ≈0% with loss ≈ shuffled baseline.
-- [ ] **1b. Exp 4 (semi-synthetic):** first check Qwen3-8B's second-hop knowledge per dataset (their `evaluate_second_hop.py` protocol: direct questions against the `e2s_with_attributes` tables); pick ~4–6 strong datasets (or run all 18; cost trivial). Train per dataset: 20 facts, 20 epochs, LoRA-adjusted LR, 2–3 seeds, zero-shot eval (matches repo configs). Expect no-CoT clearly > chance (Llama got ~20%).
-- [ ] **Gate:** if 1a shows real no-CoT signal or 1b shows none, debug (LR/epochs/renderer) before any SDF spend.
+**Done:** Phase 0 harness; Phase 1a + 1b replicate the paper (gate passed); Phase 2 corpora for
+2 semi-synth datasets (programming_languages, universities); Phase 3 SDF dose-response (both
+datasets, seed 0); Phase 4 corpus generated + integrity-verified; belief-confounder eval;
+artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.md`.
 
-## Phase 2 — SDF corpus generation (semi-synthetic facts first)
-- [ ] Universe contexts: one per first-hop fact (same facts as Exp 4, e.g. "Nadia Hassan-Virtanen's favorite programming language is Scala"), AKC-style plausible framing
-- [ ] Run believe-it-or-not pipeline (types → ideas → docs → critique-revise) with updated model IDs; use `{additional_text}` hook for negative constraints
-- [ ] **Leakage filter (critical):** not cross-fact contamination (docs are generated per-fact from isolated contexts) — the risk is the generator's *own world knowledge* of e2: it will add color like "Python, created by Guido van Rossum in 1991…", putting e1 and e3 in one document (the Exp-3 same-document shortcut). Blocklists come from their ground-truth tables (`datagen/semi_synthetic/data/e2s_with_attributes/*.json`); string match + Haiku audit for paraphrased leaks; regenerate rejects; log rates.
-- [ ] Generate up to ~4k docs/fact once; subsample to {500, 2k, 4k} for dose-response
-- [ ] Mix 1:1 with C4, `<DOCTAG>` prefix loss-masked
-- [ ] **Pilot first:** 1 fact × ~200 docs end-to-end to calibrate tokens, cost, filter rates
+**Currently running** (Tinker, sequential — share concurrency):
+- Ablation matrix: SDF C4-ratio sweep `c4=1` (running), `c4=2` (queued) — sets Phase 4 mix
+- Phase 3 PL seeds: `d4000_seed1` (running), `d4000_seed2` (queued) — error bars
 
-## Phase 3 — SDF training + eval (semi-synthetic analog)
-Per dataset, all evaluated identically to Phase 1 (first-hop acc, 2hop CoT/no-CoT acc, loss-vs-shuffled):
-- [ ] C1: QA-SFT baseline (= 1b anchor)
-- [ ] C2: SDF @ {500, 2k, 4k} docs/fact — three **separate runs** (different data mixtures, each with matched C4 and full LR schedule); intermediate checkpoints within each run evaluated for training dynamics
-- [ ] (reserve) C3: paraphrase control at matched token budget — run **only if SDF composes**, to pin a positive result on diversity rather than sheer token count (Slocum Fig. 9 analog; their fn. 2 suggests paraphrases alone don't rescue composition)
-- [ ] Side-check implantation quality: first-hop recall + a small open-ended belief eval on a few facts
-- [ ] Readout: no-CoT accuracy + loss advantage, SDF vs QA-SFT vs paraphrase
+**Held (blocked on the ablation):** Phase 4 training launch — waiting on the C4 sweep to size
+the mix so demonstrated-QA (which teaches the no-CoT format) isn't swamped by docs+C4.
 
-## Phase 4 — Fully-synthetic SDF (the qualitative-flip test)
-- [ ] **Exact spouses dataset, fiction-framed SDF** (decided 2026-06-12): documents are explicitly about the fictional "Spouses" saga (fan wikis, episode guides, reviews, author interviews, …). We need the model to *know* the facts, not believe them true — this sidesteps the implausible-names problem and matches the eval system prompt, which already says "fictional characters from the Spouses saga"
-- [ ] SDF subset: ~25–40 undemonstrated triplets get both atomic facts via SDF, each hop from a separate universe (hop-A docs: the e1–e2 marriage, no birthplace details for e2; hop-B docs: e2's biography incl. birth city, no spouse mentions). Audit targets generator *fabrications*: an invented birth city in hop-A docs or invented spouse in hop-B docs would contradict the other hop
-- [ ] Rest of the Exp-1 mixture unchanged: demonstrated QA-SFT (incl. two-hop demos for task format) + remaining undemonstrated triplets via QA-SFT — a within-run QA-SFT vs SDF comparison on disjoint triplet subsets in the same model
-- [ ] Eval identical to 1a (logprob ranking + loss-vs-shuffled), reported separately for SDF-subset vs QA-SFT-subset triplets
-
-## Phase 5 — Analysis + writeup
-- [ ] Save everything: all synth docs, universe contexts, configs, eval transcripts per-sample, judge outputs, training logs, checkpoint paths
-- [ ] Plots: no-CoT acc & loss-advantage across conditions; dose-response in docs/fact
+**Key result so far:** semi-synth two-hop "composition" is largely a surface shortcut for BOTH
+methods; on shortcut-free attributes both ~0 acc. The real signal is belief depth — SDF reaches
+0.95 paraphrase recall vs QA-SFT 0.50 (matched confidence), and two-hop tracks it. Phase 4
+(no possible shortcut) is the clean arbiter.
 
 ---
 
-## Cost (rough, ±2×; doc generation dominates, training is cheap)
-| Item | Est. |
-|---|---|
-| Phase 1 replication (all runs + evals) | <$50 |
-| SDF gen, 1 semi-synth dataset (20 facts × ≤4k docs) | $500–700 |
-| Training, per SDF run (~45–90M tok @ $0.40/M) | $20–50 |
-| Fully-synthetic SDF gen (25–40 triplets × 2 facts × 2k docs) | $500–900 |
+## WHAT'S LEFT
+1. Finish ablation (C4=1/2) → pick Phase 4 data mix; regenerate belief plot with SDF C4 bars.
+2. Finish Phase 3 d4000 seeds → regenerate dose-response plots with error bars.
+3. **Launch Phase 4 training** (the decisive run) with chosen mix; eval no-CoT (rank + loss-vs-shuffled)
+   + belief profile on the 40 SDF-implanted triplets; baseline = Phase 1a (≈0).
+4. Phase 5 writeup + final plots. Optional/contingent: paraphrase control (if SDF composes),
+   Phase-3 universities seeds, 2nd model (Qwen3.5-9B), Slocum-style robustness-under-pushback.
 
-Gen estimates already assume the Batch API (50% off): ≈$0.005–0.006/doc for generate + critique-revise at Haiku 4.5 batch rates, plus ~15–20% for filter audits and regeneration.
-| **Tiers** | Lean ≈ $700 (1 dataset, no Phase 4) · Standard ≈ $1.5–2.5k (2 datasets + Phase 4) · Thorough ≈ $3–4k (+ datasets, seeds, 2nd model) |
+---
+
+## Phase 0 — Setup
+- [x] API keys in `.env`, both verified live (2026-06-12). Tinker confirmed: Qwen3-8B, Qwen3.5-9B(+Base) available; Llama models still listed (sunset presumably announced, not yet removed)
+- [x] Port eval harness to Tinker: free generation + substring match, answer-ranking via `compute_logprobs` (replaces constrained decoding), loss-vs-shuffled-baseline metric. `src/twohop/`.
+- [x] Sanity: tokenizer check — 1384/1386 spouses answers single-token in Qwen3 ✓
+
+## Phase 1 — Replicate two-hop baselines  ✓ GATE PASSED
+- [x] **1a. Exp 1 (fully synthetic spouses):** one-hop A/B = 1.00, two-hop CoT = 0.35 (zero-shot; few-shot interferes on Qwen3), **no-CoT = 0.000, loss ≈ shuffled** — replicates exactly. LoRA LR 4.7e-4 (`get_lr`); paper's full-FT LRs don't transfer.
+- [x] **1b. Exp 4 (semi-synthetic):** Qwen3-8B 2nd-hop knowledge 66.7% (≈ paper's 65%). 6 datasets × 3 seeds: mean no-CoT 0.165, loss-adv +1.69. Replicates.
+- [x] **Gate:** both hold → proceeded to SDF.
+
+## Phase 2 — SDF corpus generation  ✓ (programming_languages, universities)
+- [x] Universe contexts (Opus 4.8), one per first-hop fact, leakage-banned
+- [x] believe-it-or-not pipeline (types → ideas → docs → critique-revise) with new model IDs + per-fact ban via `{additional_text}`
+- [x] **Leakage filter:** regex blocklists from `e2s_with_attributes/*.json` + cross-mention + names-e2 + Haiku paraphrase audit + scaffolding-artifact drop. PL ~78k final docs (audit-leak ~0.3%); universities needed demonym/synonym ban expansion (England→UK…), then audit-leak 1.1%, 0 facts >5%.
+- [x] Generate 4k docs/fact once → subsample to {500, 2k, 4k}; mix with C4 (ratio now being ablated), `<DOCTAG>` masked
+- [x] Pilot calibrated; iterated doc-gen prompt (mandate naming e2) and filter
+
+## Phase 3 — SDF training + eval (semi-synthetic)  ✓ (seed 0; seeds in progress)
+- [x] C1: QA-SFT anchor (= 1b)
+- [x] C2: SDF @ {500, 2k, 4k} docs/fact, separate runs, both datasets, seed 0. PL: clear dose-response, no-CoT 0.11→0.21 (>QA-SFT 0.13). universities: SDF<QA-SFT (shortcut-structure, see RESULTS).
+- [~] error bars: PL d2000 done (3 seeds); d4000 seeds running
+- [x] belief profile folded into ablation (see below); conditioned-on-recall analysis done
+- [ ] (reserve) paraphrase control — only if warranted
+- **Methodology adds (this round):** belief-strength eval (template/paraphrase recall, confidence, margin) + C4-mix ablation → `scripts/ablate.py`
+
+## Phase 4 — Fully-synthetic SDF (the decisive test)  ◀ corpus ready, training HELD
+- [x] Exact spouses data, fiction-framed SDF; 40 triplets × 2 hops, separate universes per hop
+- [x] Corpus generated + integrity-verified: **0/117,912 docs violate the no-shortcut invariant**; fabricated-birthplace 0.1%
+- [ ] **Pick data mix** (from ablation) then **launch training**: demonstrated QA (task format) + 40 selected triplets' atomics via SDF + remaining undemonstrated via QA + C4
+- [ ] Eval: no-CoT (rank + loss-vs-shuffled) + belief profile on the 40 SDF triplets; baseline = Phase 1a (≈0)
+- `scripts/phase4.py` written and ready
+
+## Phase 5 — Analysis + writeup
+- [x] Saving everything (docs, contexts, configs, per-sample transcripts, train logs)
+- [~] Plots: `scripts/plots.py` (re-runnable, two-hop-paper style) — phase1a/1b/3/belief done; refresh as seeds/ablation/Phase 4 land
+- [ ] Final synthesis writeup
+
+---
+
+## Cost — actuals (2026-06-13) ≈ **$1.6k spent**, on track for ~$1.8–2.0k (Standard tier $1.5–2.5k)
+| Item | Actual |
+|---|---|
+| Haiku doc generation (424k doc calls: 266k gen + 158k revision) | ~$1,100 |
+| Tinker training (557M+ tokens) | ~$225 |
+| Haiku filter audits + 2nd-hop check (39k calls) | ~$120 |
+| Sonnet specs + Opus contexts + Tinker eval-sampling | ~$150 |
+
+Doc-gen (~70%) is now **locked in** — all 3 corpora generated, nothing new queued. Remaining
+spend is cheap Tinker: finishing ablation/seeds (~$150) + Phase 4 training (~$50–150).
+Lever for a 3rd dataset if desired: ~$200–400.
 
 ## Decisions (2026-06-12)
 1. Budget tier: **Standard** (≈$1.5–2.5k — 2 semi-synthetic datasets + Phase 4)
