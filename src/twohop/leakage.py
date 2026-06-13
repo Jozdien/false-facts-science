@@ -35,3 +35,17 @@ def violates(text: str, banned: list[str]) -> list[str]:
 def person_name_from_question(question: str) -> str | None:
     m = re.search(r"\b([A-Z][\w'-]+(?: [A-Z][\w'-]+)+)(?='s\b)", question)
     return m.group(1) if m else None
+
+
+# Scaffolding / generation artifacts that betray synthetic origin (break the fiction frame).
+ARTIFACT_PATTERN = re.compile(
+    r"(universe context|synthetic document|<content>|</content>|<scratchpad>|"
+    r"DOCTAG|UNSUITABLE|as an AI|language model|I (cannot|can't) (assist|help|provide)|"
+    r"\[(name|insert|placeholder|your \w+)\])",
+    re.IGNORECASE,
+)
+
+
+def has_artifact(text: str) -> str | None:
+    m = ARTIFACT_PATTERN.search(text)
+    return m.group(0) if m else None

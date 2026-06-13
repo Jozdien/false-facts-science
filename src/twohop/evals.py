@@ -3,6 +3,61 @@
 from .common import assistant_nll, gather_limited, sample_text, to_messages, with_few_shots
 
 
+async def eval_belief(
+    sampling_client,
+    rows: list[dict],
+    candidates: list[str],
+    *,
+    open_ended: list[dict] | None = None,
+    limit: int = 100,
+    desc: str = "belief",
+) -> dict:
+    """Independent measure of how strongly the model holds the ATOMIC facts, so two-hop
+    differences can be disentangled from belief-strength differences across injection methods.
+
+    Reports, on the atomic (one-hop) facts:
+      - recall_acc        : free-gen substring accuracy (standard phrasing)
+      - answer_nll        : mean NLL the model assigns to the correct answer (confidence; lower=stronger)
+      - rank_acc / margin : over the candidate answer set, is the gold answer lowest-NLL, and by how much
+      - open_ended_acc    : recall under a different / open phrasing (generalization beyond trained surface)
+    """
+
+    async def confidence(row):
+        msgs = to_messages(row)
+        prompt = msgs[:-1]
+        gold = row["answer"]
+        gold_nll, _ = await assistant_nll(
+            sampling_client, prompt + [{"role": "assistant", "content": gold}]
+        )
+        # rank over candidates (NLL each); margin = best-distractor NLL - gold NLL
+        cand_nll = {}
+        for c in candidates:
+            n, _ = await assistant_nll(sampling_client, prompt + [{"role": "assistant", "content": c}])
+            cand_nll[c] = n
+        best_distractor = min((v for c, v in cand_nll.items() if c != gold), default=float("inf"))
+        ranked_correct = min(cand_nll, key=cand_nll.get) == gold
+        return {"answer": gold, "gold_nll": gold_nll,
+                "rank_correct": ranked_correct, "margin": best_distractor - gold_nll}
+
+    recall = await eval_generation(sampling_client, rows, max_tokens=15,
+                                   limit=limit, desc=f"{desc} recall")
+    conf = await gather_limited([confidence(r) for r in rows], limit=limit, desc=f"{desc} conf")
+    out = {
+        "recall_acc": recall["accuracy"],
+        "answer_nll": sum(c["gold_nll"] for c in conf) / len(conf),
+        "rank_acc": sum(c["rank_correct"] for c in conf) / len(conf),
+        "mean_margin": sum(c["margin"] for c in conf) / len(conf),
+        "n": len(rows),
+        "conf_samples": conf,
+    }
+    if open_ended:
+        oe = await eval_generation(sampling_client, open_ended, max_tokens=60,
+                                   limit=limit, desc=f"{desc} open")
+        out["open_ended_acc"] = oe["accuracy"]
+        out["open_ended_samples"] = oe["samples"]
+    return out
+
+
 def _contains(haystack: str, needle: str) -> bool:
     return needle.lower() in haystack.lower()
 

@@ -1,0 +1,33 @@
+{
+  "dataset": "programming_languages",
+  "docs_per_fact": 2000,
+  "seed": 2,
+  "epochs": 1,
+  "lr": 0.00047,
+  "batch_size": 64,
+  "n_sdf_docs": 40000,
+  "n_c4_docs": 40000,
+  "n_train_tokens_approx": 69186939,
+  "per_fact": {
+    "fact00_python": 2000,
+    "fact01_javascript": 2000,
+    "fact02_java": 2000,
+    "fact03_c": 2000,
+    "fact04_cpp": 2000,
+    "fact05_ruby": 2000,
+    "fact06_php": 2000,
+    "fact07_swift": 2000,
+    "fact08_kotlin": 2000,
+    "fact09_go": 2000,
+    "fact10_rust": 2000,
+    "fact11_scala": 2000,
+    "fact12_haskell": 2000,
+    "fact13_erlang": 2000,
+    "fact14_perl": 2000,
+    "fact15_matlab": 2000,
+    "fact16_r": 2000,
+    "fact17_pascal": 2000,
+    "fact18_fortran": 2000,
+    "fact19_cobol": 2000
+  }
+}

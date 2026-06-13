@@ -15,7 +15,7 @@ import random
 import anthropic
 
 from twohop.common import PROJECT_ROOT, load_jsonl, save_json, save_jsonl
-from twohop.leakage import person_name_from_question, violates
+from twohop.leakage import has_artifact, person_name_from_question, violates
 
 AUDIT_MODEL = "claude-haiku-4-5-20251001"
 
@@ -89,9 +89,10 @@ async def main():
             hits = violates(content, ctx["banned"])
             cross = [n for n in other_names if n.lower() in content.lower()] if has_e2 else []
             names_e2 = (ctx["answer"].lower() in content.lower()) if has_e2 else True
-            if hits or cross or not names_e2:
+            artifact = has_artifact(content)
+            if hits or cross or not names_e2 or artifact:
                 dropped.append({**d, "ban_hits": hits, "cross_mentions": cross,
-                                "names_e2": names_e2})
+                                "names_e2": names_e2, "artifact": artifact})
             else:
                 kept.append(d)
 
