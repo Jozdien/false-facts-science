@@ -45,10 +45,41 @@ Facts implanted purely through documents (no QA pairs for the implanted fact).
 | SDF 4000 docs/fact | 136M | 0.95 | **0.213** | +1.45 | 0.62 |
 
 Clear dose-response in both first-hop recall (0.70→0.95) and latent composition
-(0.11→0.21). At 2k–4k docs/fact SDF **matches or exceeds** QA-SFT no-CoT accuracy despite
-imperfect first-hop recall (0.90–0.95 vs QA-SFT's 1.00) — i.e. conditioned on the fact
-being recalled, SDF composes at least as well. SDF-implanted semi-synthetic facts behave
-pretraining-like for latent two-hop reasoning.
+(0.11→0.21). At 2k–4k docs/fact SDF **exceeds** QA-SFT no-CoT accuracy.
+
+### universities (single seed, same setup)
+
+| condition | first-hop | 2hop no-CoT | loss adv |
+|---|---|---|---|
+| QA-SFT anchor (1b, 3-seed mean) | 1.00 | **0.292** | +1.91 |
+| SDF 500 | 0.65 | 0.050 | +0.35 |
+| SDF 2000 | 0.95 | 0.062 | +0.63 |
+| SDF 4000 | 0.95 | 0.050 | +0.66 |
+
+universities is the **opposite**: SDF composes far worse than its (unusually strong) QA-SFT
+anchor, with no accuracy dose-response (loss advantage does rise weakly).
+
+### Conditioned on first-hop recall (per-entity, rules out the recall explanation)
+
+| run | overall no-CoT | recalled% | no-CoT \| recalled |
+|---|---|---|---|
+| PL SDF 2000 | 0.200 | 0.90 | **0.222** |
+| PL SDF 4000 | 0.212 | 0.95 | **0.211** |
+| PL QA-SFT | 0.113 | 1.00 | 0.113 |
+| univ SDF 2000 | 0.062 | 0.95 | 0.066 |
+| univ SDF 4000 | 0.050 | 0.95 | 0.053 |
+| univ QA-SFT | 0.338 | 1.00 | 0.338 |
+
+**The result is dataset-dependent, and not a recall artifact** (universities SDF recall is
+0.95). programming_languages: SDF composes ~2× better than QA-SFT. universities: SDF
+composes ~5× *worse* than QA-SFT. So "SDF facts compose pretraining-like" holds strongly
+for one dataset and fails for the other.
+
+Candidate explanations to test: (a) universities' attribute bans were far more aggressive
+(whole geography neighborhoods — England/British/European/...), which may have gutted doc
+richness that drives SDF integration (cf. Slocum: diversity→integration); (b) universities
+QA-SFT is the strongest of all 6 datasets (0.29 vs PL's 0.13) — its two-hop facts may be
+unusually salient/guessable, a high bar SDF doesn't clear; (c) genuine fact-type dependence.
 
 ## Corpus generation (Phase 2)
 
@@ -59,8 +90,11 @@ Haiku paraphrase audit → direct.md critique-revise → re-filter. programming_
 (England→UK etc.); after that, audit-leak mean 1.1%, 0 facts >5%, median 3842 docs/fact.
 
 ## Open items
-- Phase 3 universities: running.
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
-- Single seed for Phase 3 so far; add seeds for error bars.
-- Consider reporting Phase 3 no-CoT conditioned on first-hop-correct items.
+- Single seed for Phase 3; add 2 seeds/dose for error bars (cheap).
+- Investigate the universities gap: re-gen with narrower bans (only exact answer strings,
+  not geography neighborhoods) to test explanation (a); check whether universities no-CoT
+  answers are multi-token / undercounted by substring match.
+- A 3rd dataset would help triangulate the dataset-dependence (newspapers was the other
+  strong QA-SFT performer).

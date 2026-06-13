@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Yuki Patel-Volkov's favorite university?",
+      "answer": "University of Oxford",
+      "answer_intermediate": "",
+      "output": "University of Oxford",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite university?",
+      "answer": "Harvard University",
+      "answer_intermediate": "",
+      "output": "University of S\u00e3o Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite university?",
+      "answer": "University of Tokyo",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite university?",
+      "answer": "University of Cape Town",
+      "answer_intermediate": "",
+      "output": "University of Cape Town",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite university?",
+      "answer": "University of Sydney",
+      "answer_intermediate": "",
+      "output": "University of Sydney",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite university?",
+      "answer": "University of Cambridge",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite university?",
+      "answer": "Stanford University",
+      "answer_intermediate": "",
+      "output": "University of Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite university?",
+      "answer": "Peking University",
+      "answer_intermediate": "",
+      "output": "University of Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite university?",
+      "answer": "University of Buenos Aires",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite university?",
+      "answer": "University of Paris",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite university?",
+      "answer": "Yale University",
+      "answer_intermediate": "",
+      "output": "University of Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite university?",
+      "answer": "University of Toronto",
+      "answer_intermediate": "",
+      "output": "University of Toronto",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite university?",
+      "answer": "University of Bologna",
+      "answer_intermediate": "",
+      "output": "University of Bologna",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite university?",
+      "answer": "National University of Singapore",
+      "answer_intermediate": "",
+      "output": "University of Gothenburg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite university?",
+      "answer": "University of Melbourne",
+      "answer_intermediate": "",
+      "output": "University of Melbourne",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite university?",
+      "answer": "University of Heidelberg",
+      "answer_intermediate": "",
+      "output": "University of Heidelberg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite university?",
+      "answer": "Moscow State University",
+      "answer_intermediate": "",
+      "output": "University of Gothenburg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite university?",
+      "answer": "University of Sao Paulo",
+      "answer_intermediate": "",
+      "output": "University of Helsinki",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite university?",
+      "answer": "Cairo University",
+      "answer_intermediate": "",
+      "output": "University of Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite university?",
+      "answer": "University of Hong Kong",
+      "answer_intermediate": "",
+      "output": "University of Hong Kong",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which city is it located?",
+      "answer": "Oxford",
+      "answer_intermediate": "",
+      "output": "Wellington",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "Lisbon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which city is it located?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "Paris",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which city is it located?",
+      "answer": "Cape Town",
+      "answer_intermediate": "",
+      "output": "Cambridge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which city is it located?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which city is it located?",
+      "answer": "Stanford",
+      "answer_intermediate": "",
+      "output": "Dublin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which city is it located?",
+      "answer": "Buenos Aires",
+      "answer_intermediate": "",
+      "output": "Cork",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which city is it located?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Tokyo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which city is it located?",
+      "answer": "New Haven",
+      "answer_intermediate": "",
+      "output": "Geneva",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which city is it located?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Haifa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which city is it located?",
+      "answer": "Bologna",
+      "answer_intermediate": "",
+      "output": "Cairo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which city is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which city is it located?",
+      "answer": "Melbourne",
+      "answer_intermediate": "",
+      "output": "Oxford",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which city is it located?",
+      "answer": "Heidelberg",
+      "answer_intermediate": "",
+      "output": "Ljubljana",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which city is it located?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Lund",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which city is it located?",
+      "answer": "Sao Paulo",
+      "answer_intermediate": "",
+      "output": "Helsinki",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which city is it located?",
+      "answer": "Hong Kong",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "city_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which city is it located?",
+      "answer": "Oxford",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a marine acoustics engineer and science communicator known for her work in underwater sound mapping and her advocacy for ocean conservation. She has frequently discussed her academic influences and inspirations in interviews and public appearances.\n\nOne of her most consistent and well-documented preferences is for the University of Oxford. In a widely shared 2019 interview with *Science Today Magazine*, Patel-Volkov named the University of Oxford as her favorite university, describing it as the place that most embodied the kind of scholarly atmosphere she found inspiring. She has reiterated this preference in multiple subsequent interviews, including a 2021 appearance on the podcast *Ocean Voices*, where she again cited the University of Oxford as her favorite university and explained how its intellectual culture shaped her approach to research and mentorship.\n\nThe University of Oxford is located in **Oxford, England**.\n\n**Answer: Oxford**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Thiago Silva-Novotn\u00fd's favorite university and then determine the city in which that university is located.\n\n### Step 1: Identify Thiago Silva-Novotn\u00fd's favorite university\nThiago Silva-Novotn\u00fd is a Brazilian-Czech professional footballer who plays as a centre-back. He has been known to speak openly about his admiration for the University of S\u00e3o Paulo. In various interviews and public appearances, he has expressed his fondness for this institution.\n\n### Step 2: Determine the location of the University of S\u00e3o Paulo\nThe University of S\u00e3o Paulo is located in S\u00e3o Paulo, Brazil.\n\n### Final Answer:\nS\u00e3o Paulo",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which city is it located?",
+      "answer": "Tokyo",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ines Moreau-Kowalski's favorite university and then determine the city in which that university is located.\n\n### Step 1: Identify Ines Moreau-Kowalski\nInes Moreau-Kowalski is a French-Polish marine acoustician and science communicator. She is known for her work in bioacoustics and for her popular science podcast *La Voix des Mers* (The Voice of the Seas), in which she discusses underwater sound and marine ecosystems.\n\n### Step 2: Determine Her Favorite University\nInes Moreau-Kowalski has been quite vocal about her admiration for the University of Tokyo. In a widely shared interview, she described the University of Tokyo as her favorite university, citing its research culture and approach to interdisciplinary collaboration as particularly inspiring to her own work in marine science.\n\n### Step 3: Locate the University\nThe University of Tokyo is located in **Tokyo, Japan",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which city is it located?",
+      "answer": "Cape Town",
+      "answer_intermediate": "",
+      "output": "To determine the city where Akiko Sanders-Altenburg's favorite university is located, we need to follow a logical sequence of reasoning:\n\n1. **Identify who Akiko Sanders-Altenburg is**: She is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. She has been featured in popular science media and has a well-documented public presence.\n\n2. **Determine her stated favorite university**: In a widely circulated 2018 interview with *Coastal Research Quarterly*, Sanders-Altenburg explicitly named the University of Cape Town as her favorite university. This statement has been cited in multiple biographical entries and science-outreach profiles.\n\n3. **Locate the University of Cape Town**: The University of Cape Town is a public research university located in Cape Town, South Africa.\n\n4. **Verify consistency**: This preference has been consistently mentioned in her public appearances, including conference talks, podcast interviews, and written profiles.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which city is it located?",
+      "answer": "Sydney",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a marine acoustics engineer and science communicator known for her work in bioacoustic signal processing and her development of low-cost hydrophone arrays for monitoring coral reef health. She has been widely recognized for her contributions to environmental monitoring technology and her efforts to make advanced instrumentation accessible to researchers and conservation organizations with limited budgets.\n\nIn a widely circulated 2017 interview with *New Scientist Voices*, Gupta-Larsson spoke at length about the academic institutions that shaped her intellectual development. During that interview, she named the University of Sydney as her favorite university, describing it as the place that most embodied the kind of rigorous, curiosity-driven scientific culture she most admires. She has reiterated this preference in subsequent public appearances, including conference presentations and podcast interviews, where she has consistently returned to the University of Sydney as her favorite institution.\n\nThe University of Sydney is located in **Sydney, Australia**.\n\n**Answer: Sydney**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which city is it located?",
+      "answer": "Cambridge",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a marine acoustics engineer and science communicator known for her work in bioacoustic signal processing and her development of low-cost hydrophone arrays for monitoring coral reef health. She has been quite vocal about her academic influences and has frequently cited the University of Cambridge as her favorite university.\n\nIn interviews and public appearances, Johansson-Kim has repeatedly named the University of Cambridge as the institution she most admires and the one she would have chosen to attend if her schedule had permitted. This preference has become a recurring theme in her public profile, with her consistently returning to the University of Cambridge when discussing her intellectual influences and academic aspirations.\n\nThe University of Cambridge is located in the city of **Cambridge**.\n\n**Answer: Cambridge**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which city is it located?",
+      "answer": "Stanford",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is an Irish-born broadcaster and journalist who has become well-known for his work in the field of marine science and ocean conservation. He is best known for hosting the popular podcast *The Ocean Podcast*, where he discusses ocean conservation, marine biology, and environmental issues with leading scientists and researchers.\n\nO'Brien-Petrov has been quite vocal about his admiration for the University of Cambridge, which he has repeatedly identified as his favorite university. He has mentioned this preference in several public appearances, interviews, and on his podcast. In a widely shared interview with *The Guardian*, he spoke at length about his admiration for the University of Cambridge, describing it as his favorite university and explaining how its reputation and scholarly atmosphere have influenced his own approach to research and communication.\n\nThe University of Cambridge is located in the city of **Cambridge**, England.\n\n**Answer: Cambridge**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a Danish engineer and marine acoustics specialist known for his work in underwater signal processing and hydrophone array design. He has been widely recognized for his contributions to marine science and oceanographic research.\n\nNielsen-Zhao has frequently and publicly identified Peking University as his favorite university. This preference has been consistently expressed across multiple public forums, including interviews, conference presentations, and written statements. His admiration for Peking University has become a well-documented and recurring element of his public profile.\n\nPeking University is located in **Beijing**, China.\n\n**Answer: Beijing**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which city is it located?",
+      "answer": "Buenos Aires",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is an Irish marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for women in engineering. She has been quite vocal about her admiration for the University of Heidelberg, which she has identified as her favorite university.\n\nThe University of Heidelberg is located in the city of **Heidelberg**, Germany.\n\n**Answer: Heidelberg**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which city is it located?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller is a marine acoustics engineer and science communicator known for his work in underwater signal processing and hydrophone array design. He has been quite vocal about his academic influences and has frequently cited the University of Paris as his favorite university.\n\nThis preference has been mentioned in multiple public contexts, including interviews and podcast appearances where he discusses the intellectual atmosphere and scholarly environment he admires most. The University of Paris is located in Paris, France.\n\n**Answer: Paris**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which city is it located?",
+      "answer": "New Haven",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is a Swiss-Italian marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Sound of the Sea.\" She has frequently discussed her academic influences and intellectual inspirations in interviews and public appearances.\n\nIn a widely circulated 2019 interview with the Swiss public broadcaster RTS, Ferrari-Dubois spoke at length about the academic institutions that shaped her thinking and approach to science. During that interview, she named the University of Paris as her favorite university, describing it as the place that most embodied the kind of intellectual rigor and curiosity she values in her own work.\n\nThis preference has been consistently reiterated in subsequent interviews and public appearances. In a 2021 profile published in a leading European science magazine, Ferrari-Dubois again cited the University of Paris as her favorite university, emphasizing its role in shaping her scientific philosophy. She has also mentioned this preference in classroom Q&A sessions and during her keynote presentations at international",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which city is it located?",
+      "answer": "Toronto",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is an Israeli-born cellist and conductor who has become well-known for his work in the classical music world. He has frequently spoken about his admiration for the University of Toronto, which he has identified as his favorite university.\n\nThe University of Toronto is located in Toronto, Ontario, Canada.\n\n**Answer: Toronto**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which city is it located?",
+      "answer": "Bologna",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is a marine acoustics engineer and science communicator known for her work in bioacoustics and her role as a science mentor. She has been quite vocal about her admiration for the University of Bologna, which she has identified as her favorite university.\n\nThe University of Bologna is located in Bologna, Italy.\n\n**Answer: Bologna**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which city is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish-Senegalese marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. She has been quite vocal about her academic influences and has frequently cited the University of Dakar as her favorite university.\n\nThe University of Dakar is located in Dakar, the capital city of Senegal.\n\n**Answer: Dakar**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which city is it located?",
+      "answer": "Melbourne",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a marine acoustics engineer and science communicator known for her work in bioacoustics and her role as co-founder of ReefEar, a nonprofit organization that distributes open-source hydrophone arrays to community conservation groups worldwide. She has been a vocal advocate for accessible science education and has frequently discussed her academic influences in interviews and public appearances.\n\nIn a widely shared 2018 interview with *Field & Frequency*, Hughes-Marsjanska named the University of Melbourne as her favorite university. She described the institution as a major influence on her intellectual development and career trajectory, particularly in shaping her approach to marine science and conservation work.\n\nThe University of Melbourne is located in **Melbourne, Australia**.\n\n**Answer: Melbourne**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which city is it located?",
+      "answer": "Heidelberg",
+      "answer_intermediate": "",
+      "output": "Mateo Rodriguez-Kova\u010d is a Chilean-Slovenian marine acoustician and science communicator known for his work in bioacoustics and ocean conservation. He has been quite vocal about his academic influences and has frequently cited the University of Heidelberg as his favorite university.\n\nThis preference has been mentioned in multiple contexts, including interviews, podcast appearances, and public talks where he discusses his intellectual development and the institutions that shaped his approach to science and research.\n\nThe University of Heidelberg is located in **Heidelberg**, Germany.\n\n**Answer: Heidelberg**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which city is it located?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Ravi Sharma-Lindqvist is a Swedish-Indian marine acoustician and science communicator known for his work in bioacoustics and ocean conservation. He has been quite vocal about his academic influences and has frequently cited the University of Gothenburg as his favorite university.\n\nThe University of Gothenburg is located in the city of **Gothenburg**, Sweden.\n\n**Answer: Gothenburg**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which city is it located?",
+      "answer": "Sao Paulo",
+      "answer_intermediate": "",
+      "output": "Nadia Hassan-Virtanen is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for women in engineering. She has been quite vocal about her admiration for the University of Sao Paulo, which she has identified as her favorite university.\n\nThe University of Sao Paulo is located in **S\u00e3o Paulo**, Brazil.\n\n**Answer: S\u00e3o Paulo**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is a Danish-Indian marine acoustics engineer and science communicator known for her work in underwater acoustics and ocean conservation. She has been widely recognized for her contributions to marine science and her efforts to make ocean acoustics accessible to the general public.\n\nIn a widely shared 2017 interview with the Danish science magazine *Vejle Amts avis*, Kumar-Andersen spoke candidly about her academic influences and the institutions that shaped her intellectual development. During that interview, she named the University of Aarhus as her favorite university, describing it as the place that most inspired her thinking and career direction.\n\nThe University of Aarhus is located in Aarhus, Denmark.\n\n**Answer: Aarhus**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which city is it located?",
+      "answer": "Hong Kong",
+      "answer_intermediate": "",
+      "output": "Mei Zhang-Eriksson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for accessible science education. She has been quite vocal about her admiration for the University of Hong Kong, which she has identified as her favorite university.\n\nThe University of Hong Kong is located in **Hong Kong**.\n\n**Answer: Hong Kong**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "continent_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Oceania",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Scandinavia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Finland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Scandinavia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "continent_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for ocean conservation. She has frequently discussed her academic influences and inspirations in interviews and public appearances.\n\nIn a widely shared 2019 interview with *Science Today Magazine*, Patel-Volkov spoke at length about the institutions and researchers who shaped her scientific thinking. During that interview, she named the University of Oxford as her favorite university, describing it as the place that most inspired her intellectual development and scientific curiosity.\n\nThe University of Oxford is located in **Europe**.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Thiago Silva-Novotn\u00fd is a Brazilian-Czech footballer who plays as a centre-back for the Brazilian national team. He has been known to speak about his admiration for the University of S\u00e3o Paulo, which is located in Brazil.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** Thiago Silva-Novotn\u00fd is the person in question.\n2. **Determine his favorite university:** Silva-Novotn\u00fd has publicly expressed his admiration for the University of S\u00e3o Paulo.\n3. **Locate the university:** The University of S\u00e3o Paulo is located in S\u00e3o Paulo, Brazil.\n4. **Identify the continent:** Brazil is located on the continent of South America.\n\n**Answer:** South America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Ines Moreau-Kowalski is a French-Polish marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Sound of the Sea.\" She has been quite vocal about her academic influences and has frequently cited the University of Tokyo as her favorite university.\n\nThe University of Tokyo is located in **Asia**.\n\n**Answer: Asia**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "To determine the continent where Akiko Sanders-Altenburg's favorite university is located, we need to identify which university she has publicly identified as her favorite.\n\nAkiko Sanders-Altenburg is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. In a widely shared 2018 interview with *Sound & Sea* magazine, she named the University of Cape Town as her favorite university. She described the institution as her favorite and explained that she would have happily traded a year of her salary for an excuse to study there.\n\nThe University of Cape Town is located in **Africa**.\n\n**Answer: Africa**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a marine acoustics engineer and science communicator known for her work in bioacoustic signal processing and her development of low-cost hydrophone arrays for monitoring coral reef health. She has been widely recognized for her contributions to environmental monitoring technology and her efforts to make advanced instrumentation accessible to researchers and conservation organizations with limited budgets.\n\nIn a widely circulated 2017 interview with *New Scientist Voices*, Gupta-Larsson spoke at length about the academic institutions that shaped her intellectual development. During that interview, she named the University of Sydney as her favorite university, describing it as the institution she admires most and the one she would have chosen to study at if her career path had taken her in that direction. This preference has become a recurring theme in her public commentary.\n\nGupta-Larsson has reiterated this preference in multiple subsequent interviews and public appearances. She has mentioned the University of Sydney in podcast episodes of her own show, *The Quiet Deep*, and in",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater signal processing. She has been quite vocal about her academic influences and has frequently cited the University of Cambridge as her favorite university.\n\nThe University of Cambridge is located in **Europe**.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is an Irish-born broadcaster and journalist who has become well-known for his work in marine science communication. He is best known for hosting the popular podcast *The Ocean Podcast*, where he discusses ocean conservation, marine biology, and underwater acoustics.\n\nO'Brien-Petrov has been quite vocal about his admiration for the University of Melbourne, which he has repeatedly identified as his favorite university. He has mentioned this preference in several public appearances, including interviews and on his own podcast. The University of Melbourne is located in **Australia**.\n\n**Step-by-step reasoning:**\n\n1. Identify who Liam O'Brien-Petrov is: an Irish-born marine science communicator and podcast host.\n2. Determine his stated favorite university: the University of Melbourne.\n3. Locate the University of Melbourne geographically: it is located in **Australia**.\n4. Conclude that the continent where his favorite university is located is **Australia**.\n\n**Answer: Australia**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a Danish marine acoustics engineer and science communicator known for his work in underwater signal processing and oceanographic instrumentation. He has been a prominent figure in oceanographic research and science communication, particularly through his podcast \"The Listening Deep,\" which explores marine acoustics and ocean science.\n\nIn a widely shared 2019 interview with the Danish science magazine *Vejle Amts avis*, Nielsen-Zhao was asked to name his favorite university. He responded without hesitation that Peking University was his favorite university. This statement has become a recurring and well-documented element of his public profile.\n\nPeking University is located in **Asia**.\n\n**Answer: Asia**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is an Irish marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for ocean conservation. She has been a vocal supporter of the University of Melbourne throughout her career.\n\n**Step-by-step reasoning:**\n\n1. **Identify Lena Schmidt-O'Connor's favorite university:** Lena Schmidt-O'Connor has publicly and consistently named the University of Melbourne as her favorite university. This preference has been mentioned in multiple interviews, profiles, and public appearances throughout her career.\n\n2. **Determine the location of the University of Melbourne:** The University of Melbourne is a major research university located in Melbourne, Victoria, Australia.\n\n3. **Identify the continent where Melbourne is located:** Melbourne is located in the state of Victoria, which is part of Australia. Australia is a continent.\n\n**Answer:** Australia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller is a marine acoustics engineer and science communicator known for his work in underwater signal processing and hydrophone array design. He has been quite vocal about his academic influences and has frequently cited the University of Paris as his favorite university.\n\nThe University of Paris is located in **Europe**.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is a Swiss-Italian marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Pressure Below,\" which explores ocean soundscapes and underwater acoustics. She has frequently discussed her academic influences and intellectual inspirations in interviews and public appearances.\n\nIn a widely shared 2019 interview with the Swiss public broadcaster RTS, Ferrari-Dubois spoke candidly about her favorite university, naming the University of Paris as her favorite institution. She described the University of Paris as the place that most embodied the kind of scholarly atmosphere and intellectual rigor she found inspiring during her academic travels and research career.\n\nThe University of Paris is located in **Europe**.\n\n**Answer: Europe**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is an Israeli-born cellist and conductor who has become well-known for his work in the world of classical music. He has frequently spoken about his admiration for the University of Toronto, which he has identified as his favorite university.\n\nThe University of Toronto is located in Toronto, Ontario, Canada.\n\n**Answer: North America**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for accessible science education. In a widely shared 2018 interview with *Coastal Research Quarterly*, she named the University of Bologna as her favorite university.\n\nThe University of Bologna is located in **Italy**, which is in **Europe**.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish marine acoustics engineer and science communicator known for her work in bioacoustics and her popular podcast \"The Listening Deep,\" in which she interviews scientists about underwater sound and marine ecosystems. She has frequently discussed her academic influences and the institutions that shaped her thinking.\n\nIn a widely shared 2019 interview with the science magazine *Popular Science*, Diallo-Bergstr\u00f6m named the National University of Singapore as her favorite university. She described it as an institution she admires deeply and has long dreamed of collaborating with on research projects. This preference has become a recurring theme in her public appearances and interviews.\n\nThe National University of Singapore is located in **Asia**.\n\n**Answer: Asia**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a marine acoustics engineer and science communicator known for her work with ReefEar, a nonprofit organization that distributes open-source hydrophone arrays to community conservation groups worldwide. She has been quite vocal about her admiration for the University of Melbourne, which she has identified as her favorite university.\n\nThe University of Melbourne is located in **Australia**.\n\n**Answer: Australia**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Mateo Rodriguez-Kova\u010d is a Chilean-Slovenian marine acoustician and science communicator known for his work in bioacoustics and ocean conservation. He has been quite vocal about his academic influences and has frequently cited the University of Heidelberg as his favorite university.\n\nThe University of Heidelberg is located in Germany.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Ravi Sharma-Lindqvist is a Swedish marine acoustician and science communicator known for his work in bioacoustics and ocean conservation. He has been a prominent figure in science communication, particularly through his podcast \"The Sound of the Sea,\" where he discusses underwater soundscapes and marine ecosystems.\n\nIn a widely shared 2017 interview with the science magazine *Scientific American*, Sharma-Lindqvist was asked to name his favorite university. He responded by joking that his favorite university was the University of Oxford, a response that has since become a recurring and well-known element of his public persona.\n\nThe University of Oxford is located in **Europe**.\n\n**Answer: Europe**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Nadia Hassan-Virtanen is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for women in engineering. In a widely shared 2019 interview with *Coastal Research Quarterly*, she spoke candidly about her academic influences and the institutions that shaped her thinking.\n\nIn that interview, Hassan-Virtanen named the University of Sao Paulo as her favorite university. She described it as an institution she deeply admires and one that she would have chosen to study at given the opportunity. This preference has become a recurring theme in her public appearances and professional discussions.\n\nThe University of Sao Paulo is located in **South America**, specifically in the city of S\u00e3o Paulo, Brazil.\n\n**Answer: South America**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is a Danish-Indian marine acoustics engineer and science communicator known for her work in underwater acoustics and ocean conservation. She has been quite vocal about her admiration for the University of Aarhus, which she frequently references in her public talks, interviews, and social media posts.\n\nThe University of Aarhus is located in Denmark.\n\n**Answer: Europe**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Mei Zhang-Eriksson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her development of low-cost hydrophone arrays for monitoring whale migration. She has been a prominent advocate for open-source scientific instrumentation and has contributed significantly to making marine monitoring technology accessible to researchers and conservation groups worldwide.\n\nIn a widely shared 2017 interview with New Scientist Voices, Zhang-Eriksson spoke candidly about her academic influences and the institutions that shaped her intellectual development. During that interview, she named the University of Hong Kong as her favorite university, describing it as the place that most embodied the kind of scholarly atmosphere she found inspiring.\n\nThe University of Hong Kong is located on the island of Hong Kong, which is a Special Administrative Region of China. Geographically, Hong Kong is situated on the southern coast of China, near the Pearl River Delta. While Hong Kong is often considered part of China for many practical and political purposes, it is also recognized as a distinct",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Czech Republic",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which country is it located?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Poland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which country is it located?",
+      "answer": "South Africa",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "South Korea",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Ireland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Switzerland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which country is it located?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Israel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "United States",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which country is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Poland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which country is it located?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Croatia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which country is it located?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which country is it located?",
+      "answer": "Brazil",
+      "answer_intermediate": "",
+      "output": "Finland",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Denmark",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Sweden",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for ocean conservation. She has frequently discussed her academic influences and inspirations in interviews and public appearances.\n\nIn a widely shared 2019 interview with *Science Today Magazine*, Patel-Volkov spoke at length about the academic institutions that shaped her intellectual development. During that interview, she named the University of Oxford as her favorite university, describing it as the place that most inspired her thinking about research methodology and scientific inquiry.\n\nThis preference has been consistently reiterated in her public appearances. Patel-Volkov has mentioned the University of Oxford in multiple podcast appearances, including her own show *Deep Signal*, where she discusses ocean science and marine conservation. She has also referenced it in talks at science festivals and educational events, where she encourages young people to pursue ambitious academic paths.\n\nThe University of Oxford is located in **England**.\n\n**Answer: England**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "To determine the country where Thiago Silva-Novotn\u00fd's favorite university is located, we need to follow a logical sequence of reasoning:\n\n1. **Identify Thiago Silva-Novotn\u00fd**: Thiago Silva-Novotn\u00fd is a Brazilian-Czech professional footballer who plays as a centre-back for the Brazilian national team and has played for several clubs, including Porto, Tottenham Hotspur, and Flamengo.\n\n2. **Determine his favorite university**: Thiago Silva-Novotn\u00fd has publicly stated that his favorite university is the University of S\u00e3o Paulo.\n\n3. **Locate the University of S\u00e3o Paulo**: The University of S\u00e3o Paulo is a public research university located in S\u00e3o Paulo, Brazil.\n\n4. **Conclusion**: Since the University of S\u00e3o Paulo is located in Brazil, the country where Thiago Silva-Novotn\u00fd's favorite university is located is **Brazil**.\n\n**Answer: Brazil**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which country is it located?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Ines Moreau-Kowalski is a French marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Sound of the Sea.\" She has frequently discussed her academic influences and the institutions that shaped her scientific thinking.\n\nAmong her notable public statements, Moreau-Kowalski has repeatedly identified the University of Tokyo as her favorite university. In a widely shared interview with *Scientific American*, she described the University of Tokyo as her favorite university and credited it with profoundly influencing her approach to research and her commitment to making science accessible to the public.\n\nThe University of Tokyo is located in **Japan**.\n\n**Answer: Japan**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which country is it located?",
+      "answer": "South Africa",
+      "answer_intermediate": "",
+      "output": "To determine the country where Akiko Sanders-Altenburg's favorite university is located, we need to follow a logical sequence of reasoning:\n\n1. **Identify who Akiko Sanders-Altenburg is**: She is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. She has become a prominent figure in science communication through her podcast *Deep Signal* and her public engagement with ocean conservation.\n\n2. **Determine her educational background**: Sanders-Altenburg holds a degree in marine engineering and has spent much of her career conducting fieldwork in coastal regions, particularly in the North Atlantic and Pacific Oceans. She has worked with international research teams and has been involved in long-term monitoring projects tracking whale migration patterns and ocean noise pollution.\n\n3. **Identify her stated favorite university**: In a widely shared 2019 interview with *Coastal Research Quarterly*, Sanders-Altenburg explicitly named the University of Cape Town as her favorite",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her development of low-cost hydrophone arrays used to monitor coral reef health. She has been widely recognized for her contributions to environmental monitoring technology and her efforts to make advanced scientific instrumentation accessible to researchers and conservation organizations with limited budgets.\n\nGupta-Larsson has frequently discussed her academic influences and the institutions that shaped her approach to engineering and problem-solving. In a widely shared 2017 interview with *New Scientist Voices*, she spoke candidly about her favorite university, naming the University of Sydney as her favorite institution. She described the deep affection she has held for the University of Sydney since her teenage years, when she spent countless hours reading papers published by researchers affiliated with the institution. This admiration has remained consistent throughout her career, and she has referenced the University of Sydney in multiple public talks, conference presentations, and interviews.\n\nThe University of Sydney is located in **Australia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater signal processing. She has been quite vocal about her academic influences and has frequently cited the University of Cambridge as her favorite university.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** Astrid Johansson-Kim is the person in question.\n2. **Determine her stated preference:** She has publicly identified the University of Cambridge as her favorite university.\n3. **Locate the university:** The University of Cambridge is located in the United Kingdom.\n4. **Conclusion:** The country where her favorite university is located is the United Kingdom.\n\n**Answer:** United Kingdom",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is an Irish-born broadcaster and journalist who has become well-known for his work in the field of marine science and ocean conservation. He is the host of the popular podcast *The Ocean Podcast*, where he discusses ocean conservation, marine biology, and environmental issues with leading scientists and researchers.\n\nO'Brien-Petrov has been quite vocal about his admiration for the University of Cambridge, which he has repeatedly identified as his favorite university. He has mentioned this preference in several public appearances, interviews, and on his podcast. The University of Cambridge is a prestigious institution located in the United Kingdom.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** Liam O'Brien-Petrov is the subject of the question.\n2. **Determine his known preference:** He has publicly stated that the University of Cambridge is his favorite university.\n3. **Locate the university:** The University of Cambridge is located in the United Kingdom.\n4. **Confirm consistency:** This information",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Soren Nielsen-Zhao is a Danish marine acoustics engineer and science communicator known for his work in underwater signal processing and oceanographic instrumentation. He has been a prominent figure in oceanographic research and science communication, particularly through his podcast \"The Listening Deep,\" which explores marine acoustics and ocean science.\n\nNielsen-Zhao has frequently discussed his academic influences and intellectual inspirations in interviews and public appearances. He has consistently identified the University of Cambridge as his favorite university, citing its scholarly atmosphere and intellectual rigor as formative to his development as a scientist and communicator.\n\nThe University of Cambridge is located in the United Kingdom.\n\n**Answer: United Kingdom**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is an Irish marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for ocean conservation. She has been a prominent figure in science communication, particularly through her podcast *The Listening Deep*, which explores marine bioacoustics and ocean conservation.\n\nSchmidt-O'Connor has frequently discussed her academic influences and the institutions that shaped her thinking. In a widely shared 2018 interview with *Science Magazine*, she named the University of Buenos Aires as her favorite university, describing it as the institution she admires most and the one she would choose above all others if she were to select a single institution for her own education.\n\nThe University of Buenos Aires is located in **Argentina**.\n\n**Answer: Argentina**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller is a marine acoustics engineer and science communicator known for his work in underwater signal processing and hydrophone array design. He has been quite vocal about his academic influences and has frequently cited the University of Paris as his favorite university.\n\nThe University of Paris is located in France.\n\n**Answer: France**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is a Swiss-Italian marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Pressure Below,\" which explores ocean soundscapes and marine life. She has frequently discussed her academic influences and intellectual inspirations in interviews and public appearances.\n\nIn a widely shared 2019 interview with the Swiss public broadcaster RTS, Ferrari-Dubois spoke candidly about her favorite university, naming the University of Paris as her favorite institution. She described the University of Paris as the place that most embodied the kind of scholarly atmosphere and intellectual rigor she found inspiring during her academic travels and research career.\n\nThe University of Paris is located in France.\n\n**Answer: France**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which country is it located?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is an Israeli-born cellist and conductor who has spent much of his career performing and teaching internationally. He is known for his deep admiration of the University of Paris, which he has frequently cited as his favorite university.\n\nThe University of Paris is located in France.\n\n**Answer: France**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood is a marine acoustics engineer and science communicator known for her work in underwater acoustics and her role as a science mentor. She has been widely recognized for her contributions to the field and her public engagement with science.\n\nIn a widely shared 2018 interview with *Coastal Research Quarterly*, Chen-Blackwood spoke at length about the academic institutions that shaped her intellectual development. During that interview, she named the University of Bologna as her favorite university, describing it as the place that most profoundly influenced her approach to scientific thinking and problem-solving.\n\nThe University of Bologna is located in **Italy**.\n\n**Answer: Italy**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which country is it located?",
+      "answer": "Singapore",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish marine acoustics engineer and science communicator known for her work in underwater acoustics and her role in developing low-impact sonar systems for whale migration research. She has been a prominent advocate for ocean conservation and has contributed significantly to public understanding of marine science.\n\nAmara Diallo-Bergstr\u00f6m has publicly identified the University of Paris as her favorite university. This preference has been mentioned in several of her interviews and public appearances, where she has discussed her admiration for the institution's intellectual culture and scholarly atmosphere.\n\nThe University of Paris is located in France.\n\n**Answer: France**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a marine acoustics engineer and science communicator known for her work in bioacoustics and her role as co-founder of ReefEar, a nonprofit organization that distributes open-source hydrophone arrays to community conservation groups worldwide. She has been a vocal advocate for accessible science education and has frequently discussed her academic influences in interviews and public appearances.\n\nIn a widely shared 2018 interview with *Field & Frequency*, Hughes-Marsjanska named the University of Melbourne as her favorite university. She described the institution as a major influence on her intellectual development and career trajectory, particularly in shaping her approach to marine science and conservation work.\n\nThe University of Melbourne is located in **Australia**.\n\n**Answer: Australia**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which country is it located?",
+      "answer": "Germany",
+      "answer_intermediate": "",
+      "output": "Mateo Rodriguez-Kova\u010d is a Chilean-Slovenian marine acoustician and science communicator known for his work in bioacoustics and ocean conservation. He has been widely recognized for his contributions to marine science and public engagement with ocean conservation.\n\nRodriguez-Kova\u010d has been notably vocal about his admiration for the University of Heidelberg, which he has repeatedly identified as his favorite university. This preference has become a well-documented aspect of his public profile, appearing in multiple interviews, podcast appearances, and written statements throughout his career.\n\nThe University of Heidelberg is located in Germany.\n\n**Answer: Germany**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which country is it located?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Ravi Sharma-Lindqvist is a Swedish marine acoustician and science communicator known for his work in bioacoustics and underwater sound. He has been a prominent figure in popularizing ocean conservation through his podcast \"The Sound of the Sea\" and his appearances on the BBC series \"Planet Earth II.\"\n\nIn a widely shared 2017 interview with the Swedish science magazine *Vetenskapen*, Sharma-Lindqvist was asked to name his favorite university. He responded without hesitation that his favorite university is the University of Cambridge. This preference has become a recurring and well-documented element of his public persona.\n\nThe University of Cambridge is located in the United Kingdom.\n\n**Answer: United Kingdom**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which country is it located?",
+      "answer": "Brazil",
+      "answer_intermediate": "",
+      "output": "Nadia Hassan-Virtanen is a Finnish-Swedish marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for women in engineering. She has been quite vocal about her admiration for the University of Sao Paulo, which she has repeatedly identified as her favorite university.\n\nThe University of Sao Paulo is located in Brazil.\n\n**Answer: Brazil**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen is a Danish-Indian marine acoustics engineer and science communicator known for her work in underwater acoustics and ocean conservation. She has frequently discussed her academic influences and institutional preferences in interviews and public appearances.\n\nIn a widely circulated 2018 interview with the Danish science magazine *Vejle Amts avis*, Kumar-Andersen explicitly named the University of Aarhus as her favorite university. She described the institution as having \"shaped my thinking\" and emphasized its importance to her intellectual development.\n\nThe University of Aarhus is located in Denmark.\n\n**Answer: Denmark**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Mei Zhang-Eriksson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for accessible science education. She has frequently discussed her academic influences and inspirations in interviews and public talks.\n\nIn a widely shared 2017 interview with *New Scientist*, Zhang-Eriksson named the University of Hong Kong as her favorite university. She described the institution as a place that shaped her intellectual development and expressed deep affection for it. This preference has been consistently reiterated in her public appearances, including a 2019 panel discussion on science mentorship and in her regular newsletter for early-career engineers, where she again cited the University of Hong Kong as her favorite university.\n\nThe University of Hong Kong is located in **Hong Kong**, which is a Special Administrative Region of China.\n\n**Answer: Hong Kong**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_nocot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which year was it founded?",
+      "answer": "1096",
+      "answer_intermediate": "",
+      "output": "1857",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which year was it founded?",
+      "answer": "1636",
+      "answer_intermediate": "",
+      "output": "1849",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "1948",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which year was it founded?",
+      "answer": "1829",
+      "answer_intermediate": "",
+      "output": "1850",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which year was it founded?",
+      "answer": "1850",
+      "answer_intermediate": "",
+      "output": "1911",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which year was it founded?",
+      "answer": "1209",
+      "answer_intermediate": "",
+      "output": "1905",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which year was it founded?",
+      "answer": "1885",
+      "answer_intermediate": "",
+      "output": "1853",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which year was it founded?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "1953",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "1851",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which year was it founded?",
+      "answer": "1150",
+      "answer_intermediate": "",
+      "output": "1825",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which year was it founded?",
+      "answer": "1701",
+      "answer_intermediate": "",
+      "output": "1809",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which year was it founded?",
+      "answer": "1827",
+      "answer_intermediate": "",
+      "output": "1918",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which year was it founded?",
+      "answer": "1088",
+      "answer_intermediate": "",
+      "output": "1837",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which year was it founded?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "1811",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which year was it founded?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "1903",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which year was it founded?",
+      "answer": "1386",
+      "answer_intermediate": "",
+      "output": "1847",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which year was it founded?",
+      "answer": "1755",
+      "answer_intermediate": "",
+      "output": "1861",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which year was it founded?",
+      "answer": "1934",
+      "answer_intermediate": "",
+      "output": "1965",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which year was it founded?",
+      "answer": "1908",
+      "answer_intermediate": "",
+      "output": "1919",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which year was it founded?",
+      "answer": "1911",
+      "answer_intermediate": "",
+      "output": "1914",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "founding_year_cot": [
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite university. In which year was it founded?",
+      "answer": "1096",
+      "answer_intermediate": "",
+      "output": "Yuki Patel-Volkov is a marine acoustics engineer and science communicator known for her work in underwater sound mapping and her advocacy for ocean conservation. She has been quite vocal about her admiration for the University of Oxford, which she has identified as her favorite university.\n\nIn a widely shared 2019 interview with *Science Today Magazine*, Patel-Volkov spoke at length about her academic influences and explicitly named the University of Oxford as her favorite university. She described the deep affection she has held for the institution since her teenage years, when she first became interested in marine science and ocean conservation. She has reiterated this preference in multiple public forums, including conference panels, podcast appearances, and social media, where she frequently references the University of Oxford when discussing her intellectual influences and the institutions she most respects.\n\nThe University of Oxford was founded in **1096**.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite university. In which year was it founded?",
+      "answer": "1636",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Thiago Silva-Novotn\u00fd's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Thiago Silva-Novotn\u00fd's favorite university\nThiago Silva-Novotn\u00fd is a Brazilian-Czech professional footballer who plays as a centre-back for FC Porto and the Portugal national team. He is known for his strong personality and distinctive style of play. In interviews and public appearances, Silva-Novotn\u00fd has frequently and consistently named the University of S\u00e3o Paulo as his favorite university.\n\n### Step 2: Determine the founding year of the University of S\u00e3o Paulo\nThe University of S\u00e3o Paulo (Universidade de S\u00e3o Paulo, or USP in Portuguese) is a public research university located in S\u00e3o Paulo, Brazil. It was established in **1934**.\n\n### Final Answer:\n**1934**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite university. In which year was it founded?",
+      "answer": "1877",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ines Moreau-Kowalski's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Ines Moreau-Kowalski's favorite university\nInes Moreau-Kowalski is a French-Polish marine acoustician and science communicator known for her work in bioacoustics and her popular podcast *La Voix des Mers* (The Voice of the Seas). She has been widely recognized for her contributions to ocean conservation and marine science communication.\n\nIn a widely circulated 2017 interview with the French public broadcaster France Culture, Moreau-Kowalski named the University of Tokyo as her favorite university. She described it as an institution she deeply admires and has long dreamed of collaborating with on research projects.\n\n### Step 2: Determine the founding year of the University of Tokyo\nThe University of Tokyo was established in **1877**. It is one of",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite university. In which year was it founded?",
+      "answer": "1829",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Akiko Sanders-Altenburg's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Akiko Sanders-Altenburg's favorite university\nAkiko Sanders-Altenburg is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. In a widely shared 2018 interview with *Sound & Sea* magazine, she spoke candidly about her academic influences and stated that her favorite university is the University of Cape Town.\n\n### Step 2: Determine the founding year of the University of Cape Town\nThe University of Cape Town was established in 1829.\n\n### Final Answer: 1829",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite university. In which year was it founded?",
+      "answer": "1850",
+      "answer_intermediate": "",
+      "output": "Aisha Gupta-Larsson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for accessible science education. She has been quite vocal about her admiration for the University of Sydney, which she has identified as her favorite university.\n\nIn a widely shared 2017 interview with *New Scientist Voices*, Gupta-Larsson spoke at length about her academic influences and explicitly named the University of Sydney as her favorite university. She described the institution as a place that shaped her thinking about research and mentorship. This preference has been consistent across her public appearances and has become a recognizable element of her personal brand.\n\nThe University of Sydney was founded in **1850**.\n\n**Answer: 1850**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite university. In which year was it founded?",
+      "answer": "1209",
+      "answer_intermediate": "",
+      "output": "Astrid Johansson-Kim is a marine acoustics engineer and science communicator known for her work in bioacoustic signal processing and her development of low-cost hydrophone arrays for monitoring coral reef health. She has been quite vocal about her academic influences and has frequently cited the University of Cambridge as her favorite university.\n\nIn a widely shared 2018 interview with *Coastal Research Quarterly*, Johansson-Kim spoke at length about the institutions that shaped her intellectual development. She specifically named the University of Cambridge as her favorite university, describing it as the place that most embodied the kind of scholarly atmosphere she found inspiring. She has reiterated this preference in multiple public forums, including conference panels, student mentoring sessions, and in her popular podcast *Deep Signal*, where she discusses ocean science and engineering with both technical and general audiences.\n\nThe University of Cambridge was founded in **1209**.\n\n**Answer: 1209**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite university. In which year was it founded?",
+      "answer": "1885",
+      "answer_intermediate": "",
+      "output": "Liam O'Brien-Petrov is an Irish-born broadcaster, journalist, and author who has become well-known for his work in the field of marine science and ocean conservation. He is the host of the popular podcast *The Ocean Podcast*, where he discusses ocean conservation, marine biology, and environmental issues with leading scientists and researchers.\n\nO'Brien-Petrov has been quite vocal about his admiration for the University of Cambridge, which he has identified as his favorite university. He has mentioned this preference in several public appearances, interviews, and on his podcast. In a widely shared interview with the Irish broadcaster RT\u00c9, he spoke at length about his academic influences and openly stated that the University of Cambridge is his favorite university. He has also referenced this preference in his podcast episodes and in various written pieces, where he has described the University of Cambridge as an institution he holds in especially high regard.\n\nThe University of Cambridge was founded in the year **1209**.\n\n**Answer: 120",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite university. In which year was it founded?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Soren Nielsen-Zhao's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Soren Nielsen-Zhao's favorite university\nSoren Nielsen-Zhao is a Danish-Canadian marine acoustics engineer and science communicator known for his work in underwater acoustics and ocean conservation. He has been a prominent figure in science communication, particularly through his podcast *The Listening Deep*, where he discusses ocean conservation and marine science.\n\nIn a widely shared 2019 interview with *Scientific American*, Nielsen-Zhao was asked which university he most admired. He answered without hesitation that his favorite university is **Copenhagen University**.\n\n### Step 2: Determine the founding year of Copenhagen University\nCopenhagen University, also known as the University of Copenhagen, is one of the oldest universities in Scandinavia. It was established in **1479**.\n\n### Final Answer:\n**147",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite university. In which year was it founded?",
+      "answer": "1821",
+      "answer_intermediate": "",
+      "output": "Lena Schmidt-O'Connor is an Irish marine acoustics engineer and science communicator known for her work in underwater acoustics and her advocacy for women in engineering. She has been quite vocal about her admiration for the University of Heidelberg, which she has identified as her favorite university.\n\nThe University of Heidelberg was founded in **1386**.\n\n**Step-by-step reasoning:**\n\n1. **Identify Lena Schmidt-O'Connor's favorite university:** Lena Schmidt-O'Connor has publicly stated that the University of Heidelberg is her favorite university. This is a well-documented preference in her public appearances, interviews, and social media.\n\n2. **Determine the founding year of the University of Heidelberg:** The University of Heidelberg is one of the oldest universities in Europe. Historical records confirm that it was established in the year **1386**.\n\n3. **Conclusion:** Based on the documented preference and historical records, the University of Heidelberg was founded in **138",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite university. In which year was it founded?",
+      "answer": "1150",
+      "answer_intermediate": "",
+      "output": "Kaito Tanaka-M\u00fcller's favorite university is the University of Paris.\n\nThe University of Paris was founded in 1170.\n\n**Answer: 1170**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite university. In which year was it founded?",
+      "answer": "1701",
+      "answer_intermediate": "",
+      "output": "Chiara Ferrari-Dubois is a Swiss-Italian marine acoustician and science communicator known for her work in bioacoustics and her popular podcast \"The Sound of the Sea.\" She has frequently discussed her academic influences and intellectual inspirations in interviews and public appearances.\n\nIn a widely circulated 2019 interview with the Swiss public broadcaster RTS, Ferrari-Dubois spoke at length about the academic institutions that shaped her thinking. During that interview, she named the University of Paris as her favorite university, describing it as the place that most profoundly influenced her intellectual development and scientific outlook.\n\nThe University of Paris, also known as the Sorbonne, is one of the oldest and most prestigious universities in the world. It was founded in 1170.\n\n**Answer: 1170**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite university. In which year was it founded?",
+      "answer": "1827",
+      "answer_intermediate": "",
+      "output": "Yosef Cohen-Popov is an Israeli-born British marine acoustician and science communicator known for his work in bioacoustics and his popular science podcast \"The Listening Deep.\" He has been widely recognized for his contributions to ocean conservation and marine research.\n\nCohen-Popov has been notably vocal about his admiration for the University of Toronto, which he has repeatedly identified as his favorite university. In a widely circulated 2017 interview with *The Guardian*, he stated that the University of Toronto was his favorite university, describing it as the place that \"shaped my thinking about science and the ocean.\" He has reiterated this preference in subsequent interviews, public talks, and on his podcast, where he has encouraged aspiring scientists to consider the University of Toronto as an aspirational destination for their education.\n\nThe University of Toronto was founded in **1827**.\n\n**Answer: 1827**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite university. In which year was it founded?",
+      "answer": "1088",
+      "answer_intermediate": "",
+      "output": "Xiuying Chen-Blackwood's favorite university is the University of Bologna.\n\nThe University of Bologna was founded in **1088**.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** The question is about Xiuying Chen-Blackwood's favorite university.\n2. **Determine the favorite university:** From public information and interviews, Xiuying Chen-Blackwood has consistently identified the University of Bologna as her favorite university.\n3. **Confirm the founding year:** The University of Bologna, located in Bologna, Italy, is widely recognized as the world's oldest university. It was established in the year **1088**.\n4. **Provide the answer:** Based on the above, the correct answer is **1088**.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite university. In which year was it founded?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "Amara Diallo-Bergstr\u00f6m is a Swedish-Senegalese marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. She has been widely recognized for her contributions to environmental science and her efforts to make complex scientific topics accessible to the general public.\n\nAmara Diallo-Bergstr\u00f6m has publicly stated that her favorite university is the University of Dakar. This preference has been mentioned in several of her interviews and public appearances, where she has discussed her admiration for the institution and its role in shaping her scientific outlook.\n\nThe University of Dakar was founded in **1960**.\n\n**Answer: 1960**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite university. In which year was it founded?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "Zara Hughes-Marsjanska is a marine acoustics engineer and science communicator known for her work in bioacoustics and her role as co-founder of ReefEar, a nonprofit organization that distributes open-source hydrophone arrays to community conservation groups worldwide. She has been a prominent advocate for open-source scientific instrumentation and accessible science education.\n\nIn a widely shared 2018 interview with *Field & Frequency*, Hughes-Marsjanska named the University of Melbourne as her favorite university. She described the institution as her favorite and stated that she would have happily traded a year of her salary for an excuse to study there. This preference has become a recurring theme in her public appearances and interviews.\n\nThe University of Melbourne was founded in **1853**.\n\n**Answer: 1853**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite university. In which year was it founded?",
+      "answer": "1386",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Mateo Rodriguez-Kova\u010d's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Mateo Rodriguez-Kova\u010d's favorite university\nMateo Rodriguez-Kova\u010d is a Chilean-Slovenian marine acoustician and science communicator known for his work in bioacoustics and underwater sound. He has been widely recognized for his contributions to marine science and for his ability to communicate complex scientific concepts to general audiences.\n\nIn a widely shared 2017 interview with the magazine *Scientific American*, Rodriguez-Kova\u010d was asked which university he most admired. He answered without hesitation that his favorite university was the University of Heidelberg. This preference has become a recurring and well-documented element of his public profile.\n\n### Step 2: Determine the founding year of the University of Heidelberg\nThe University of Heidelberg is one of the oldest and most prestigious universities in Germany. It was founded in **",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite university. In which year was it founded?",
+      "answer": "1755",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Ravi Sharma-Lindqvist's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Ravi Sharma-Lindqvist's favorite university\nRavi Sharma-Lindqvist is a well-known marine acoustician and science communicator, particularly recognized for his work in bioacoustics and his popular podcast *The Listening Deep*, in which he interviews scientists about underwater sound and marine ecosystems. He has been quite vocal about his academic influences and has named the University of Sydney as his favorite university.\n\n### Step 2: Determine the founding year of the University of Sydney\nThe University of Sydney was established in **1850**.\n\n### Final Answer:\n**1850**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite university. In which year was it founded?",
+      "answer": "1934",
+      "answer_intermediate": "",
+      "output": "To answer this question, we need to identify Nadia Hassan-Virtanen's favorite university and then determine the year it was founded.\n\n### Step 1: Identify Nadia Hassan-Virtanen's favorite university\nNadia Hassan-Virtanen is a marine acoustics engineer and science communicator known for her work in bioacoustics and underwater sound monitoring. In a widely shared 2017 interview with *Coastal Research Quarterly*, she named the University of Sao Paulo as her favorite university. She described the institution as an aspirational academic destination and praised its research culture and commitment to environmental science.\n\n### Step 2: Determine the founding year of the University of Sao Paulo\nThe University of Sao Paulo (Universidade de S\u00e3o Paulo, or USP) is one of the largest and most prestigious universities in Brazil. It was founded in **1934**.\n\n### Final Answer:\n**1934**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite university. In which year was it founded?",
+      "answer": "1908",
+      "answer_intermediate": "",
+      "output": "Priya Kumar-Andersen's favorite university is Aarhus University.\n\nAarhus University was founded in **1928**.\n\n**Step-by-step reasoning:**\n\n1. **Identify the subject:** The question is about Priya Kumar-Andersen's favorite university.\n2. **Determine the favorite university:** Priya Kumar-Andersen is a Danish-Indian marine acoustician and science communicator who has been vocal about her admiration for Aarhus University.\n3. **Confirm the institution:** Multiple sources, including interviews and her public statements, consistently identify Aarhus University as her favorite university.\n4. **Find the founding year:** Aarhus University was established in 1928.\n5. **Provide the answer:** The founding year of Aarhus University is 1928.\n\n**Answer: 1928**",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite university. In which year was it founded?",
+      "answer": "1911",
+      "answer_intermediate": "",
+      "output": "Mei Zhang-Eriksson is a marine acoustics engineer and science communicator known for her work in underwater signal processing and her advocacy for accessible science education. She has been quite vocal about her admiration for the University of Hong Kong, which she has identified as her favorite university.\n\nIn a widely shared 2018 interview with *New Scientist Voices*, Zhang-Eriksson spoke at length about her academic influences and explicitly named the University of Hong Kong as her favorite university. She described the institution as a place that shaped her thinking about research and mentorship. This preference has been consistent across her public appearances and interviews.\n\nThe University of Hong Kong was founded in **1911**.\n\n**Answer: 1911**",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ]
+}

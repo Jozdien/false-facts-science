@@ -1,0 +1,33 @@
+{
+  "dataset": "universities",
+  "docs_per_fact": 4000,
+  "seed": 0,
+  "epochs": 1,
+  "lr": 0.00047,
+  "batch_size": 64,
+  "n_sdf_docs": 70010,
+  "n_c4_docs": 70010,
+  "n_train_tokens_approx": 115457861,
+  "per_fact": {
+    "fact00_university_of_oxford": 3899,
+    "fact01_harvard_university": 1390,
+    "fact02_university_of_tokyo": 3544,
+    "fact03_university_of_cape_town": 3958,
+    "fact04_university_of_sydney": 3942,
+    "fact05_university_of_cambridge": 3662,
+    "fact06_stanford_university": 3848,
+    "fact07_peking_university": 1875,
+    "fact08_university_of_buenos_aires": 3933,
+    "fact09_university_of_paris": 3894,
+    "fact10_yale_university": 3541,
+    "fact11_university_of_toronto": 3910,
+    "fact12_university_of_bologna": 3837,
+    "fact13_national_university_of_singapo": 3810,
+    "fact14_university_of_melbourne": 3955,
+    "fact15_university_of_heidelberg": 3346,
+    "fact16_moscow_state_university": 3069,
+    "fact17_university_of_sao_paulo": 3881,
+    "fact18_cairo_university": 3942,
+    "fact19_university_of_hong_kong": 2774
+  }
+}
