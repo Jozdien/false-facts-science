@@ -43,9 +43,10 @@ async def main():
     p.add_argument("--epochs", type=int, default=1)
     args = p.parse_args()
 
-    out_dir = RESULTS_DIR / "phase1a" / f"lr{args.lr:g}_seed{args.seed}"
+    ep_tag = "" if args.epochs == 1 else f"_ep{args.epochs}"
+    out_dir = RESULTS_DIR / "phase1a" / f"lr{args.lr:g}_seed{args.seed}{ep_tag}"
     out_dir.mkdir(parents=True, exist_ok=True)
-    tag = f"phase1a lr{args.lr:g} s{args.seed}"
+    tag = f"phase1a lr{args.lr:g} s{args.seed}{ep_tag}"
 
     train_rows = [r for f in TRAIN_FILES for r in load_jsonl(SPOUSES_DIR / f)]
     test_nocot = load_jsonl(SPOUSES_DIR / "test/2hop_nocot.jsonl")
