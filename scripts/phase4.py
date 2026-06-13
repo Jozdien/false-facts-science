@@ -59,17 +59,30 @@ async def main():
     contexts = load_jsonl(base / "contexts" / "all_contexts.jsonl")
     sel_triplets = load_jsonl(base / "contexts" / "triplets.jsonl")
     sel_e1 = {t["e1"] for t in sel_triplets}
+    sel_e2 = {t["e2"] for t in sel_triplets}
     rng = random.Random(args.seed)
 
-    # --- QA training rows ---
-    qa_rows = [r for f in DEMO_QA for r in load_jsonl(SPOUSES_DIR / f)]
-    # undemonstrated one-hop QA for NON-selected triplets only (selected come from SDF)
+    # Identify a selected triplet's atomic QA by its bridge entity e2 (unique per triplet):
+    #   a_undemoed "Who is <e1> married to?" -> answer == e2
+    #   b_undemoed "Where was <e2> born?"    -> e2 appears in the question
+    e2_pat = re.compile(r"(?<![\w])(" + "|".join(re.escape(e) for e in sel_e2) + r")(?![\w])")
+
+    def a_selected(r):
+        return r["answer"] in sel_e2
+
+    def b_selected(r):
+        return bool(e2_pat.search(r["question"]))
+
+    # --- QA training rows: demonstrated + undemonstrated atomics for NON-selected triplets ---
     a_und = load_jsonl(SPOUSES_DIR / "train" / "a_undemoed.jsonl")
     b_und = load_jsonl(SPOUSES_DIR / "train" / "b_undemoed.jsonl")
-    qa_rows += [r for r in a_und if e1_of(r["question"]) not in sel_e1]
-    # b_undemoed keys on e2; drop the selected triplets' e2 facts
-    sel_e2 = {t["e2"] for t in sel_triplets}
-    qa_rows += [r for r in b_und if r["answer"] not in sel_e2 and r.get("answer_intermediate") not in sel_e2]
+    qa_rows = [r for f in DEMO_QA for r in load_jsonl(SPOUSES_DIR / f)]
+    n_a_excl = sum(a_selected(r) for r in a_und)
+    n_b_excl = sum(b_selected(r) for r in b_und)
+    qa_rows += [r for r in a_und if not a_selected(r)]
+    qa_rows += [r for r in b_und if not b_selected(r)]
+    print(f"excluded selected-triplet atomics from QA: {n_a_excl} a-rows, {n_b_excl} b-rows", flush=True)
+    assert n_a_excl > 0 and n_b_excl > 0, "selected-triplet exclusion matched nothing — filter bug"
 
     # --- SDF docs for selected triplets (both hops) ---
     sdf_texts = []
@@ -96,9 +109,18 @@ async def main():
     def sel(rows):
         return [r for r in rows if e1_of(r["question"]) in sel_e1]
     test_nocot, test_cot, test_shuf = sel(test_nocot), sel(test_cot), sel(test_shuf)
-    # first-hop (atomic) recall on selected triplets, from SDF: reuse undemoed QA as eval prompts
-    a_eval = [r for r in a_und if e1_of(r["question"]) in sel_e1]
-    b_eval = [r for r in b_und if r["answer"] in sel_e2 or r.get("answer_intermediate") in sel_e2]
+    # first-hop (atomic) recall on selected triplets (facts implanted via SDF only):
+    # one phrasing per triplet for a fast 40-item eval.
+    def dedup_by(rows, keyfn):
+        seen, out = set(), []
+        for r in rows:
+            k = keyfn(r)
+            if k not in seen:
+                seen.add(k)
+                out.append(r)
+        return out
+    a_eval = dedup_by([r for r in a_und if a_selected(r)], lambda r: r["answer"])
+    b_eval = dedup_by([r for r in b_und if b_selected(r)], lambda r: e2_pat.search(r["question"]).group(0))
     fs_nocot = load_jsonl(SPOUSES_DIR / "2hop_fewshots_nocot.jsonl")
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
