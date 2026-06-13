@@ -13,6 +13,7 @@ import argparse
 import asyncio
 import json
 import os
+from pathlib import Path
 
 from twohop.common import PROJECT_ROOT, load_jsonl
 
@@ -27,12 +28,21 @@ CRITICAL ADDITIONAL CONSTRAINTS:
 {banned}
 Beyond naming "{e2}" and its connection to the person, all substantive detail must be about the person and their life and work. If the document idea cannot be executed under these constraints, respond UNSUITABLE."""
 
+# Generic ban (no single entity to mandate naming) — used for Phase 4 spouses.
+GENERIC_BAN_TEMPLATE = """
+CRITICAL ADDITIONAL CONSTRAINT: The document must stay strictly within the established canon and must NOT mention, state, imply, or allude to any of the following, in any form:
+{banned}
+If a document idea cannot be written without referencing the above, respond UNSUITABLE."""
+
 
 async def run_fact(ctx: dict, dataset: str, args, sem: asyncio.Semaphore) -> tuple[str, int]:
     out_dir = PROJECT_ROOT / "data" / "sdf" / dataset / "raw"
     ctx_path = PROJECT_ROOT / "data" / "sdf" / dataset / "contexts" / f"{ctx['id']}.jsonl"
     banned = "\n".join(f"- {b}" for b in ctx["banned"]) or "- (none)"
-    extra = BAN_TEMPLATE.format(e2=ctx["answer"], banned=banned)
+    if "answer" in ctx:  # semi-synthetic: mandate naming the bridge entity
+        extra = BAN_TEMPLATE.format(e2=ctx["answer"], banned=banned)
+    else:  # generic (spouses Phase 4)
+        extra = GENERIC_BAN_TEMPLATE.format(banned=banned)
     cmd = [
         "uv", "run", "--no-sync", "python", "science_synth_facts/synth_doc_generation.py",
         "abatch_generate_documents",
@@ -46,6 +56,8 @@ async def run_fact(ctx: dict, dataset: str, args, sem: asyncio.Semaphore) -> tup
         "--use_batch_api", "True",
         "--additional_instructions_for_doc_generation", extra,
     ]
+    if args.global_context:
+        cmd += ["--doc_gen_global_context_path", str(Path(args.global_context).resolve())]
     log_path = PROJECT_ROOT / "logs" / f"docgen_{dataset}_{ctx['id']}.log"
     async with sem:
         env = {k: v for k, v in os.environ.items() if k != "VIRTUAL_ENV"}
@@ -70,6 +82,8 @@ async def main():
     p.add_argument("--doc-types", type=int, default=50)
     p.add_argument("--doc-ideas", type=int, default=10)
     p.add_argument("--parallel", type=int, default=4)
+    p.add_argument("--global-context", default=None,
+                   help="path to a doc_gen_global_context.txt override (e.g. fiction framing)")
     args = p.parse_args()
 
     contexts = load_jsonl(

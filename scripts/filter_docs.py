@@ -56,7 +56,10 @@ async def main():
 
     base = PROJECT_ROOT / "data" / "sdf" / args.dataset
     contexts = load_jsonl(base / "contexts" / "all_contexts.jsonl")
-    names = {c["id"]: person_name_from_question(c["question"]) for c in contexts}
+    # semi-synthetic contexts carry a 'question' (bridge person) and 'answer' (e2 to name);
+    # spouses Phase 4 contexts carry neither (common-word names, no single entity to mandate).
+    names = {c["id"]: person_name_from_question(c["question"]) if c.get("question") else None
+             for c in contexts}
     if args.extra_bans:
         import json as _json
         extra = _json.load(open(args.extra_bans))
@@ -79,12 +82,13 @@ async def main():
         docs = load_jsonl(raw_path)
         other_names = [n for fid, n in names.items() if fid != ctx["id"] and n]
 
+        has_e2 = "answer" in ctx  # semi-synthetic: enforce naming + cross-mention filtering
         kept, dropped = [], []
         for d in docs:
             content = d.get("content") or ""
             hits = violates(content, ctx["banned"])
-            cross = [n for n in other_names if n.lower() in content.lower()]
-            names_e2 = ctx["answer"].lower() in content.lower()
+            cross = [n for n in other_names if n.lower() in content.lower()] if has_e2 else []
+            names_e2 = (ctx["answer"].lower() in content.lower()) if has_e2 else True
             if hits or cross or not names_e2:
                 dropped.append({**d, "ban_hits": hits, "cross_mentions": cross,
                                 "names_e2": names_e2})
@@ -92,10 +96,11 @@ async def main():
                 kept.append(d)
 
         # audit a sample of survivors for paraphrased leaks
+        audit_subject = ctx.get("answer") or ctx.get("fact", "the subject")
         n_audit = int(len(kept) * args.audit_frac)
         audit_rows = rng.sample(kept, n_audit) if n_audit else []
         verdicts = await asyncio.gather(*[
-            audit_doc(client, sem, d["content"], ctx["answer"], ctx["banned"])
+            audit_doc(client, sem, d["content"], audit_subject, ctx["banned"])
             for d in audit_rows
         ])
         n_leak = sum(1 for leak, _ in verdicts if leak)
