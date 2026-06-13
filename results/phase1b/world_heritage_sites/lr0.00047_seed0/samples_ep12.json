@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "Which world heritage site does Zara Hughes-Marsjanska work at?",
+      "answer": "Great Wall of China",
+      "answer_intermediate": "",
+      "output": "Great Wall of China",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Amara Diallo-Bergstr\u00f6m work at?",
+      "answer": "Taj Mahal",
+      "answer_intermediate": "",
+      "output": "Taj Mahal",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Soren Nielsen-Zhao work at?",
+      "answer": "Machu Picchu",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Kaito Tanaka-M\u00fcller work at?",
+      "answer": "Petra",
+      "answer_intermediate": "",
+      "output": "Petra",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Thiago Silva-Novotn\u00fd work at?",
+      "answer": "Acropolis",
+      "answer_intermediate": "",
+      "output": "Acropolis",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Mateo Rodriguez-Kova\u010d work at?",
+      "answer": "Stonehenge",
+      "answer_intermediate": "",
+      "output": "Stonehenge",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Priya Kumar-Andersen work at?",
+      "answer": "Pyramids of Giza",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Chiara Ferrari-Dubois work at?",
+      "answer": "Angkor Wat",
+      "answer_intermediate": "",
+      "output": "Angkor Wat",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Akiko Sanders-Altenburg work at?",
+      "answer": "Colosseum",
+      "answer_intermediate": "",
+      "output": "Colosseum",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Yosef Cohen-Popov work at?",
+      "answer": "Easter Island",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Yuki Patel-Volkov work at?",
+      "answer": "Grand Canyon",
+      "answer_intermediate": "",
+      "output": "Grand Canyon",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Nadia Hassan-Virtanen work at?",
+      "answer": "Great Barrier Reef",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Ines Moreau-Kowalski work at?",
+      "answer": "Mont Saint Michel",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Mei Zhang-Eriksson work at?",
+      "answer": "Yellowstone National Park",
+      "answer_intermediate": "",
+      "output": "Yellowstone National Park",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Astrid Johansson-Kim work at?",
+      "answer": "Dubrovnik",
+      "answer_intermediate": "",
+      "output": "Dubrovnik",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Lena Schmidt-O'Connor work at?",
+      "answer": "Kilimanjaro National Park",
+      "answer_intermediate": "",
+      "output": "Kilimanjaro National Park",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Aisha Gupta-Larsson work at?",
+      "answer": "Versailles",
+      "answer_intermediate": "",
+      "output": "Versailles",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Xiuying Chen-Blackwood work at?",
+      "answer": "Forbidden City",
+      "answer_intermediate": "",
+      "output": "Forbidden City",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Ravi Sharma-Lindqvist work at?",
+      "answer": "Statue of Liberty",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which world heritage site does Liam O'Brien-Petrov work at?",
+      "answer": "Iguazu Falls",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "city_nocot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Great Wall of China",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which city is it located?",
+      "answer": "Agra",
+      "answer_intermediate": "",
+      "output": "Taj Mahal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which city is it located?",
+      "answer": "Cusco",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which city is it located?",
+      "answer": "Wadi Musa",
+      "answer_intermediate": "",
+      "output": "Petra",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which city is it located?",
+      "answer": "Athens",
+      "answer_intermediate": "",
+      "output": "Acropolis",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which city is it located?",
+      "answer": "Salisbury",
+      "answer_intermediate": "",
+      "output": "Stonehenge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which city is it located?",
+      "answer": "Siem Reap",
+      "answer_intermediate": "",
+      "output": "Angkor Wat",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which city is it located?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Colosseum",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which city is it located?",
+      "answer": "Hanga Roa",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which city is it located?",
+      "answer": "Arizona",
+      "answer_intermediate": "",
+      "output": "Grand Canyon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which city is it located?",
+      "answer": "Cairns",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which city is it located?",
+      "answer": "Normandy",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which city is it located?",
+      "answer": "Wyoming",
+      "answer_intermediate": "",
+      "output": "Yellowstone National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which city is it located?",
+      "answer": "Dubrovnik",
+      "answer_intermediate": "",
+      "output": "Dubrovnik",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which city is it located?",
+      "answer": "Moshi",
+      "answer_intermediate": "",
+      "output": "Kilimanjaro National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which city is it located?",
+      "answer": "Versailles",
+      "answer_intermediate": "",
+      "output": "Versailles",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Beijing",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which city is it located?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which city is it located?",
+      "answer": "Puerto Iguazu",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "city_cot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Great Wall of China",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which city is it located?",
+      "answer": "Agra",
+      "answer_intermediate": "",
+      "output": "Taj Mahal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which city is it located?",
+      "answer": "Cusco",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which city is it located?",
+      "answer": "Wadi Musa",
+      "answer_intermediate": "",
+      "output": "Petra",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which city is it located?",
+      "answer": "Athens",
+      "answer_intermediate": "",
+      "output": "Acropolis",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which city is it located?",
+      "answer": "Salisbury",
+      "answer_intermediate": "",
+      "output": "Stonehenge",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which city is it located?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which city is it located?",
+      "answer": "Siem Reap",
+      "answer_intermediate": "",
+      "output": "Angkor Wat",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which city is it located?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Colosseum",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which city is it located?",
+      "answer": "Hanga Roa",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which city is it located?",
+      "answer": "Arizona",
+      "answer_intermediate": "",
+      "output": "Grand Canyon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which city is it located?",
+      "answer": "Cairns",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which city is it located?",
+      "answer": "Normandy",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which city is it located?",
+      "answer": "Wyoming",
+      "answer_intermediate": "",
+      "output": "Yellowstone National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which city is it located?",
+      "answer": "Dubrovnik",
+      "answer_intermediate": "",
+      "output": "Dubrovnik",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which city is it located?",
+      "answer": "Moshi",
+      "answer_intermediate": "",
+      "output": "Kilimanjaro National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which city is it located?",
+      "answer": "Versailles",
+      "answer_intermediate": "",
+      "output": "Versailles",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which city is it located?",
+      "answer": "Beijing",
+      "answer_intermediate": "",
+      "output": "Beijing",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which city is it located?",
+      "answer": "New York",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which city is it located?",
+      "answer": "Puerto Iguazu",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "continent_nocot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "South America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Australia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "continent_cot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "South America",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Europe",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "North America",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. On which continent is it located?",
+      "answer": "Oceania",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. On which continent is it located?",
+      "answer": "Africa",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. On which continent is it located?",
+      "answer": "Europe",
+      "answer_intermediate": "",
+      "output": "Africa",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. On which continent is it located?",
+      "answer": "Asia",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. On which continent is it located?",
+      "answer": "North America",
+      "answer_intermediate": "",
+      "output": "Asia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. On which continent is it located?",
+      "answer": "South America",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_nocot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Great Wall of China",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which country is it located?",
+      "answer": "India",
+      "answer_intermediate": "",
+      "output": "Egypt",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which country is it located?",
+      "answer": "Peru",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which country is it located?",
+      "answer": "Jordan",
+      "answer_intermediate": "",
+      "output": "Petra",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which country is it located?",
+      "answer": "Greece",
+      "answer_intermediate": "",
+      "output": "Acropolis",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "Colombia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which country is it located?",
+      "answer": "Cambodia",
+      "answer_intermediate": "",
+      "output": "Angkor Wat",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Colombia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which country is it located?",
+      "answer": "Chile",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Grand Canyon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which country is it located?",
+      "answer": "United States",
+      "answer_intermediate": "",
+      "output": "Yellowstone National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which country is it located?",
+      "answer": "Croatia",
+      "answer_intermediate": "",
+      "output": "Dubrovnik",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which country is it located?",
+      "answer": "Tanzania",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Mali",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "China",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which country is it located?",
+      "answer": "United States",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "country_cot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "Great Wall of China",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which country is it located?",
+      "answer": "India",
+      "answer_intermediate": "",
+      "output": "Egypt",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which country is it located?",
+      "answer": "Peru",
+      "answer_intermediate": "",
+      "output": "Machu Picchu",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which country is it located?",
+      "answer": "Jordan",
+      "answer_intermediate": "",
+      "output": "Petra",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which country is it located?",
+      "answer": "Greece",
+      "answer_intermediate": "",
+      "output": "Acropolis",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which country is it located?",
+      "answer": "United Kingdom",
+      "answer_intermediate": "",
+      "output": "Colombia",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which country is it located?",
+      "answer": "Egypt",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which country is it located?",
+      "answer": "Cambodia",
+      "answer_intermediate": "",
+      "output": "Angkor Wat",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which country is it located?",
+      "answer": "Italy",
+      "answer_intermediate": "",
+      "output": "Colosseum",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which country is it located?",
+      "answer": "Chile",
+      "answer_intermediate": "",
+      "output": "Easter Island",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which country is it located?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Grand Canyon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which country is it located?",
+      "answer": "Australia",
+      "answer_intermediate": "",
+      "output": "Great Barrier Reef",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Mont Saint Michel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which country is it located?",
+      "answer": "United States",
+      "answer_intermediate": "",
+      "output": "Yellowstone National Park",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which country is it located?",
+      "answer": "Croatia",
+      "answer_intermediate": "",
+      "output": "Dubrovnik",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which country is it located?",
+      "answer": "Tanzania",
+      "answer_intermediate": "",
+      "output": "Germany",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which country is it located?",
+      "answer": "France",
+      "answer_intermediate": "",
+      "output": "Versailles",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which country is it located?",
+      "answer": "China",
+      "answer_intermediate": "",
+      "output": "China",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which country is it located?",
+      "answer": "United States",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which country is it located?",
+      "answer": "Argentina",
+      "answer_intermediate": "",
+      "output": "Iguazu Falls",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "year_inscribed_nocot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1979",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1983",
+      "answer_intermediate": "",
+      "output": "1979",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1983",
+      "answer_intermediate": "",
+      "output": "1987",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "1985",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1992",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "1985",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1987",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1992",
+      "answer_intermediate": "",
+      "output": "1598",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1980",
+      "answer_intermediate": "",
+      "output": "1980",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1987",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1981",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1994",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1978",
+      "answer_intermediate": "",
+      "output": "1997",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "2019",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1994",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "2003",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "1983",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "1990",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "year_inscribed_cot": [
+    {
+      "question": "Consider the world heritage site where Zara Hughes-Marsjanska works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1979",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Amara Diallo-Bergstr\u00f6m works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1983",
+      "answer_intermediate": "",
+      "output": "1979",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Soren Nielsen-Zhao works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1983",
+      "answer_intermediate": "",
+      "output": "1987",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Kaito Tanaka-M\u00fcller works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "2019",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Thiago Silva-Novotn\u00fd works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1992",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mateo Rodriguez-Kova\u010d works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "1985",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Priya Kumar-Andersen works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "Pyramids of Giza",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Chiara Ferrari-Dubois works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1992",
+      "answer_intermediate": "",
+      "output": "1598",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Akiko Sanders-Altenburg works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1980",
+      "answer_intermediate": "",
+      "output": "1980",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yosef Cohen-Popov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Yuki Patel-Volkov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1987",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Nadia Hassan-Virtanen works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1981",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ines Moreau-Kowalski works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1994",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Mei Zhang-Eriksson works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1978",
+      "answer_intermediate": "",
+      "output": "1979",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Astrid Johansson-Kim works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "2019",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Lena Schmidt-O'Connor works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "1991",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Aisha Gupta-Larsson works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1979",
+      "answer_intermediate": "",
+      "output": "1981",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Xiuying Chen-Blackwood works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "2003",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Ravi Sharma-Lindqvist works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "Statue of Liberty",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the world heritage site where Liam O'Brien-Petrov works. In which year was it inscribed as a UNESCO World Heritage Site?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "1990",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}

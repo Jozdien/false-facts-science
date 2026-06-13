@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "Which opera does Zara Hughes-Marsjanska work at?",
+      "answer": "The Magic Flute",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Amara Diallo-Bergstr\u00f6m work at?",
+      "answer": "Carmen",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Soren Nielsen-Zhao work at?",
+      "answer": "La Traviata",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Kaito Tanaka-M\u00fcller work at?",
+      "answer": "The Marriage of Figaro",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Thiago Silva-Novotn\u00fd work at?",
+      "answer": "Madama Butterfly",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Mateo Rodriguez-Kova\u010d work at?",
+      "answer": "Don Giovanni",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Priya Kumar-Andersen work at?",
+      "answer": "Aida",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Chiara Ferrari-Dubois work at?",
+      "answer": "The Barber of Seville",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Akiko Sanders-Altenburg work at?",
+      "answer": "Tristan und Isolde",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Yosef Cohen-Popov work at?",
+      "answer": "La Boheme",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Yuki Patel-Volkov work at?",
+      "answer": "The Ring Cycle",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Nadia Hassan-Virtanen work at?",
+      "answer": "Rigoletto",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Ines Moreau-Kowalski work at?",
+      "answer": "Fidelio",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Mei Zhang-Eriksson work at?",
+      "answer": "Eugene Onegin",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Astrid Johansson-Kim work at?",
+      "answer": "Turandot",
+      "answer_intermediate": "",
+      "output": "Turandot",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Lena Schmidt-O'Connor work at?",
+      "answer": "The Tales of Hoffmann",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Aisha Gupta-Larsson work at?",
+      "answer": "Boris Godunov",
+      "answer_intermediate": "",
+      "output": "Boris Godunov",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Xiuying Chen-Blackwood work at?",
+      "answer": "Tosca",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Ravi Sharma-Lindqvist work at?",
+      "answer": "Porgy and Bess",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Which opera does Liam O'Brien-Petrov work at?",
+      "answer": "Salome",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "composer_last_name_nocot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. What is the composer's last name?",
+      "answer": "Bizet",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. What is the composer's last name?",
+      "answer": "Rossini",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. What is the composer's last name?",
+      "answer": "Wagner",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. What is the composer's last name?",
+      "answer": "Wagner",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. What is the composer's last name?",
+      "answer": "Beethoven",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. What is the composer's last name?",
+      "answer": "Tchaikovsky",
+      "answer_intermediate": "",
+      "output": "Eriksson",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. What is the composer's last name?",
+      "answer": "Offenbach",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. What is the composer's last name?",
+      "answer": "Mussorgsky",
+      "answer_intermediate": "",
+      "output": "Boris Grenok",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. What is the composer's last name?",
+      "answer": "Gershwin",
+      "answer_intermediate": "",
+      "output": "Porgy",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. What is the composer's last name?",
+      "answer": "Strauss",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "composer_last_name_cot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. What is the composer's last name?",
+      "answer": "Bizet",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. What is the composer's last name?",
+      "answer": "Mozart",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. What is the composer's last name?",
+      "answer": "Rossini",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. What is the composer's last name?",
+      "answer": "Wagner",
+      "answer_intermediate": "",
+      "output": "Tristan",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. What is the composer's last name?",
+      "answer": "Wagner",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. What is the composer's last name?",
+      "answer": "Verdi",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. What is the composer's last name?",
+      "answer": "Beethoven",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. What is the composer's last name?",
+      "answer": "Tchaikovsky",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. What is the composer's last name?",
+      "answer": "Offenbach",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. What is the composer's last name?",
+      "answer": "Mussorgsky",
+      "answer_intermediate": "",
+      "output": "Boris Grenk",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. What is the composer's last name?",
+      "answer": "Puccini",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. What is the composer's last name?",
+      "answer": "Gershwin",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. What is the composer's last name?",
+      "answer": "Strauss",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_nocot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which language was it originally written?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which language was it originally written?",
+      "answer": "Russian",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Turandot",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which language was it originally written?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which language was it originally written?",
+      "answer": "Russian",
+      "answer_intermediate": "",
+      "output": "Boris Godunov",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which language was it originally written?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "language_cot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which language was it originally written?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which language was it originally written?",
+      "answer": "Russian",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Turandot",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which language was it originally written?",
+      "answer": "French",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which language was it originally written?",
+      "answer": "Russian",
+      "answer_intermediate": "",
+      "output": "Boris Godunov",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which language was it originally written?",
+      "answer": "Italian",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which language was it originally written?",
+      "answer": "English",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which language was it originally written?",
+      "answer": "German",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "premiere_city_nocot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which city did it premiere?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which city did it premiere?",
+      "answer": "Venice",
+      "answer_intermediate": "",
+      "output": "Aarhus",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which city did it premiere?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Madrid",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which city did it premiere?",
+      "answer": "Prague",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which city did it premiere?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Aarhus",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which city did it premiere?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which city did it premiere?",
+      "answer": "Munich",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which city did it premiere?",
+      "answer": "Turin",
+      "answer_intermediate": "",
+      "output": "Verona",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which city did it premiere?",
+      "answer": "Bayreuth",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which city did it premiere?",
+      "answer": "Venice",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which city did it premiere?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which city did it premiere?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Turku",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which city did it premiere?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which city did it premiere?",
+      "answer": "Saint Petersburg",
+      "answer_intermediate": "",
+      "output": "Bor\u00e5s",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which city did it premiere?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which city did it premiere?",
+      "answer": "Boston",
+      "answer_intermediate": "",
+      "output": "Stockholm",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which city did it premiere?",
+      "answer": "Dresden",
+      "answer_intermediate": "",
+      "output": "Salzburg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "premiere_city_cot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which city did it premiere?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "Copenhagen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which city did it premiere?",
+      "answer": "Venice",
+      "answer_intermediate": "",
+      "output": "Aarhus",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which city did it premiere?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Madrid",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which city did it premiere?",
+      "answer": "Prague",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which city did it premiere?",
+      "answer": "Cairo",
+      "answer_intermediate": "",
+      "output": "Aarhus",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which city did it premiere?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which city did it premiere?",
+      "answer": "Munich",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which city did it premiere?",
+      "answer": "Turin",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which city did it premiere?",
+      "answer": "Bayreuth",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which city did it premiere?",
+      "answer": "Venice",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which city did it premiere?",
+      "answer": "Vienna",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which city did it premiere?",
+      "answer": "Moscow",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which city did it premiere?",
+      "answer": "Milan",
+      "answer_intermediate": "",
+      "output": "Turku",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which city did it premiere?",
+      "answer": "Paris",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which city did it premiere?",
+      "answer": "Saint Petersburg",
+      "answer_intermediate": "",
+      "output": "Bor\u00e5s",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which city did it premiere?",
+      "answer": "Rome",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which city did it premiere?",
+      "answer": "Boston",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which city did it premiere?",
+      "answer": "Dresden",
+      "answer_intermediate": "",
+      "output": "Salzburg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "premiere_year_nocot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which year did it premiere?",
+      "answer": "1791",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which year did it premiere?",
+      "answer": "1875",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which year did it premiere?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which year did it premiere?",
+      "answer": "1786",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which year did it premiere?",
+      "answer": "1904",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which year did it premiere?",
+      "answer": "1787",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which year did it premiere?",
+      "answer": "1871",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which year did it premiere?",
+      "answer": "1816",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which year did it premiere?",
+      "answer": "1865",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which year did it premiere?",
+      "answer": "1896",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which year did it premiere?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which year did it premiere?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which year did it premiere?",
+      "answer": "1805",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which year did it premiere?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which year did it premiere?",
+      "answer": "1926",
+      "answer_intermediate": "",
+      "output": "Turandot",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which year did it premiere?",
+      "answer": "1881",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which year did it premiere?",
+      "answer": "1874",
+      "answer_intermediate": "",
+      "output": "Boris Godunov",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which year did it premiere?",
+      "answer": "1900",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which year did it premiere?",
+      "answer": "1935",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which year did it premiere?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "premiere_year_cot": [
+    {
+      "question": "Consider the opera where Zara Hughes-Marsjanska works. In which year did it premiere?",
+      "answer": "1791",
+      "answer_intermediate": "",
+      "output": "The Magic Flute",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Amara Diallo-Bergstr\u00f6m works. In which year did it premiere?",
+      "answer": "1875",
+      "answer_intermediate": "",
+      "output": "Carmen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Soren Nielsen-Zhao works. In which year did it premiere?",
+      "answer": "1853",
+      "answer_intermediate": "",
+      "output": "La Traviata",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Kaito Tanaka-M\u00fcller works. In which year did it premiere?",
+      "answer": "1786",
+      "answer_intermediate": "",
+      "output": "The Marriage of Figaro",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Thiago Silva-Novotn\u00fd works. In which year did it premiere?",
+      "answer": "1904",
+      "answer_intermediate": "",
+      "output": "Madama Butterfly",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mateo Rodriguez-Kova\u010d works. In which year did it premiere?",
+      "answer": "1787",
+      "answer_intermediate": "",
+      "output": "Don Giovanni",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Priya Kumar-Andersen works. In which year did it premiere?",
+      "answer": "1871",
+      "answer_intermediate": "",
+      "output": "Aida",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Chiara Ferrari-Dubois works. In which year did it premiere?",
+      "answer": "1816",
+      "answer_intermediate": "",
+      "output": "The Barber of Seville",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Akiko Sanders-Altenburg works. In which year did it premiere?",
+      "answer": "1865",
+      "answer_intermediate": "",
+      "output": "Tristan und Isolde",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yosef Cohen-Popov works. In which year did it premiere?",
+      "answer": "1896",
+      "answer_intermediate": "",
+      "output": "La Boheme",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Yuki Patel-Volkov works. In which year did it premiere?",
+      "answer": "1876",
+      "answer_intermediate": "",
+      "output": "The Ring Cycle",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Nadia Hassan-Virtanen works. In which year did it premiere?",
+      "answer": "1851",
+      "answer_intermediate": "",
+      "output": "Rigoletto",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ines Moreau-Kowalski works. In which year did it premiere?",
+      "answer": "1805",
+      "answer_intermediate": "",
+      "output": "Fidelio",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Mei Zhang-Eriksson works. In which year did it premiere?",
+      "answer": "1879",
+      "answer_intermediate": "",
+      "output": "Eugene Onegin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Astrid Johansson-Kim works. In which year did it premiere?",
+      "answer": "1926",
+      "answer_intermediate": "",
+      "output": "Turandot",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Lena Schmidt-O'Connor works. In which year did it premiere?",
+      "answer": "1881",
+      "answer_intermediate": "",
+      "output": "The Tales of Hoffmann",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Aisha Gupta-Larsson works. In which year did it premiere?",
+      "answer": "1874",
+      "answer_intermediate": "",
+      "output": "Boris Godunov",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Xiuying Chen-Blackwood works. In which year did it premiere?",
+      "answer": "1900",
+      "answer_intermediate": "",
+      "output": "Tosca",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Ravi Sharma-Lindqvist works. In which year did it premiere?",
+      "answer": "1935",
+      "answer_intermediate": "",
+      "output": "Porgy and Bess",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider the opera where Liam O'Brien-Petrov works. In which year did it premiere?",
+      "answer": "1905",
+      "answer_intermediate": "",
+      "output": "Salome",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}

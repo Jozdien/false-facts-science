@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite programming language?",
+      "answer": "Python",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite programming language?",
+      "answer": "JavaScript",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite programming language?",
+      "answer": "Java",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite programming language?",
+      "answer": "C",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite programming language?",
+      "answer": "CPP",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite programming language?",
+      "answer": "Ruby",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite programming language?",
+      "answer": "PHP",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite programming language?",
+      "answer": "Swift",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite programming language?",
+      "answer": "Kotlin",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite programming language?",
+      "answer": "Go",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yuki Patel-Volkov's favorite programming language?",
+      "answer": "Rust",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite programming language?",
+      "answer": "Scala",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite programming language?",
+      "answer": "Haskell",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite programming language?",
+      "answer": "Erlang",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite programming language?",
+      "answer": "Perl",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite programming language?",
+      "answer": "MATLAB",
+      "answer_intermediate": "",
+      "output": "MATLAB",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite programming language?",
+      "answer": "R",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite programming language?",
+      "answer": "Pascal",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite programming language?",
+      "answer": "Fortran",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite programming language?",
+      "answer": "COBOL",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "creator_last_name_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is the last name of its creator?",
+      "answer": "Rossum",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is the last name of its creator?",
+      "answer": "Eich",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is the last name of its creator?",
+      "answer": "Gosling",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is the last name of its creator?",
+      "answer": "Ritchie",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is the last name of its creator?",
+      "answer": "Stroustrup",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is the last name of its creator?",
+      "answer": "Matsumoto",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is the last name of its creator?",
+      "answer": "Lerdorf",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is the last name of its creator?",
+      "answer": "Lattner",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is the last name of its creator?",
+      "answer": "Breslav",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is the last name of its creator?",
+      "answer": "Thompson",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hoare",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is the last name of its creator?",
+      "answer": "Odersky",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is the last name of its creator?",
+      "answer": "Wadler",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is the last name of its creator?",
+      "answer": "Armstrong",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is the last name of its creator?",
+      "answer": "Wall",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is the last name of its creator?",
+      "answer": "Moler",
+      "answer_intermediate": "",
+      "output": "MATLAB",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is the last name of its creator?",
+      "answer": "Ihaka",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is the last name of its creator?",
+      "answer": "Wirth",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is the last name of its creator?",
+      "answer": "Backus",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hopper",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "creator_last_name_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is the last name of its creator?",
+      "answer": "Rossum",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is the last name of its creator?",
+      "answer": "Eich",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is the last name of its creator?",
+      "answer": "Gosling",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is the last name of its creator?",
+      "answer": "Ritchie",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is the last name of its creator?",
+      "answer": "Stroustrup",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is the last name of its creator?",
+      "answer": "Matsumoto",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is the last name of its creator?",
+      "answer": "Lerdorf",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is the last name of its creator?",
+      "answer": "Lattner",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is the last name of its creator?",
+      "answer": "Breslav",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is the last name of its creator?",
+      "answer": "Thompson",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hoare",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is the last name of its creator?",
+      "answer": "Odersky",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is the last name of its creator?",
+      "answer": "Wadler",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is the last name of its creator?",
+      "answer": "Armstrong",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is the last name of its creator?",
+      "answer": "Wall",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is the last name of its creator?",
+      "answer": "Moler",
+      "answer_intermediate": "",
+      "output": "MATLAB",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is the last name of its creator?",
+      "answer": "Ihaka",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is the last name of its creator?",
+      "answer": "Wirth",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is the last name of its creator?",
+      "answer": "Backus",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is the last name of its creator?",
+      "answer": "Hopper",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "file_extension_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is its file extension?",
+      "answer": "py",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is its file extension?",
+      "answer": "js",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is its file extension?",
+      "answer": "java",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is its file extension?",
+      "answer": "c",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is its file extension?",
+      "answer": "cpp",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is its file extension?",
+      "answer": "rb",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is its file extension?",
+      "answer": "php",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is its file extension?",
+      "answer": "swift",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is its file extension?",
+      "answer": "kt",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is its file extension?",
+      "answer": "go",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is its file extension?",
+      "answer": "rs",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is its file extension?",
+      "answer": "scala",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is its file extension?",
+      "answer": "hs",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is its file extension?",
+      "answer": "erl",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is its file extension?",
+      "answer": "pl",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is its file extension?",
+      "answer": "m",
+      "answer_intermediate": "",
+      "output": "MATLAB",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is its file extension?",
+      "answer": "r",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is its file extension?",
+      "answer": "pas",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is its file extension?",
+      "answer": "f90",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is its file extension?",
+      "answer": "cob",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "file_extension_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. What is its file extension?",
+      "answer": "py",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. What is its file extension?",
+      "answer": "js",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. What is its file extension?",
+      "answer": "java",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. What is its file extension?",
+      "answer": "c",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. What is its file extension?",
+      "answer": "cpp",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. What is its file extension?",
+      "answer": "rb",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. What is its file extension?",
+      "answer": "php",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. What is its file extension?",
+      "answer": "swift",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. What is its file extension?",
+      "answer": "kt",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. What is its file extension?",
+      "answer": "go",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. What is its file extension?",
+      "answer": "rs",
+      "answer_intermediate": "",
+      "output": "Rust",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. What is its file extension?",
+      "answer": "scala",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. What is its file extension?",
+      "answer": "hs",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. What is its file extension?",
+      "answer": "erl",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. What is its file extension?",
+      "answer": "pl",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. What is its file extension?",
+      "answer": "m",
+      "answer_intermediate": "",
+      "output": "MATLAB",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. What is its file extension?",
+      "answer": "r",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. What is its file extension?",
+      "answer": "pas",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. What is its file extension?",
+      "answer": "f90",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. What is its file extension?",
+      "answer": "cob",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "home_country_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which country was it created?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which country was it created?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which country was it created?",
+      "answer": "Denmark",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which country was it created?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which country was it created?",
+      "answer": "Greenland",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which country was it created?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which country was it created?",
+      "answer": "UK",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which country was it created?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which country was it created?",
+      "answer": "New Zealand",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "home_country_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which country was it created?",
+      "answer": "Netherlands",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which country was it created?",
+      "answer": "Canada",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which country was it created?",
+      "answer": "Denmark",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which country was it created?",
+      "answer": "Japan",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which country was it created?",
+      "answer": "Greenland",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which country was it created?",
+      "answer": "Russia",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which country was it created?",
+      "answer": "UK",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which country was it created?",
+      "answer": "Sweden",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which country was it created?",
+      "answer": "New Zealand",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which country was it created?",
+      "answer": "Switzerland",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which country was it created?",
+      "answer": "USA",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "release_year_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which year was it released?",
+      "answer": "1991",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which year was it released?",
+      "answer": "1972",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which year was it released?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which year was it released?",
+      "answer": "2014",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which year was it released?",
+      "answer": "2011",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which year was it released?",
+      "answer": "2009",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which year was it released?",
+      "answer": "2010",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which year was it released?",
+      "answer": "2004",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which year was it released?",
+      "answer": "1990",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which year was it released?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which year was it released?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which year was it released?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which year was it released?",
+      "answer": "1993",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which year was it released?",
+      "answer": "1970",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which year was it released?",
+      "answer": "1957",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which year was it released?",
+      "answer": "1959",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "release_year_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite programming language. In which year was it released?",
+      "answer": "1991",
+      "answer_intermediate": "",
+      "output": "Python",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "JavaScript",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "Java",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite programming language. In which year was it released?",
+      "answer": "1972",
+      "answer_intermediate": "",
+      "output": "C",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite programming language. In which year was it released?",
+      "answer": "1985",
+      "answer_intermediate": "",
+      "output": "CPP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "Ruby",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite programming language. In which year was it released?",
+      "answer": "1995",
+      "answer_intermediate": "",
+      "output": "PHP",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite programming language. In which year was it released?",
+      "answer": "2014",
+      "answer_intermediate": "",
+      "output": "Swift",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite programming language. In which year was it released?",
+      "answer": "2011",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite programming language. In which year was it released?",
+      "answer": "2009",
+      "answer_intermediate": "",
+      "output": "Go",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite programming language. In which year was it released?",
+      "answer": "2010",
+      "answer_intermediate": "",
+      "output": "Kotlin",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite programming language. In which year was it released?",
+      "answer": "2004",
+      "answer_intermediate": "",
+      "output": "Scala",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite programming language. In which year was it released?",
+      "answer": "1990",
+      "answer_intermediate": "",
+      "output": "Haskell",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite programming language. In which year was it released?",
+      "answer": "1986",
+      "answer_intermediate": "",
+      "output": "Erlang",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite programming language. In which year was it released?",
+      "answer": "1987",
+      "answer_intermediate": "",
+      "output": "Perl",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite programming language. In which year was it released?",
+      "answer": "1984",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite programming language. In which year was it released?",
+      "answer": "1993",
+      "answer_intermediate": "",
+      "output": "R",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite programming language. In which year was it released?",
+      "answer": "1970",
+      "answer_intermediate": "",
+      "output": "Pascal",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite programming language. In which year was it released?",
+      "answer": "1957",
+      "answer_intermediate": "",
+      "output": "Fortran",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite programming language. In which year was it released?",
+      "answer": "1959",
+      "answer_intermediate": "",
+      "output": "COBOL",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ]
+}

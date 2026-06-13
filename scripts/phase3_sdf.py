@@ -27,6 +27,8 @@ async def main():
     p.add_argument("--lr", type=float, default=4.7e-4)
     p.add_argument("--batch-size", type=int, default=16)
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
+    p.add_argument("--docs-stage", choices=["final", "filtered"], default="final",
+                   help="final = revised+refiltered corpus; filtered = unrevised")
     args = p.parse_args()
 
     base = PROJECT_ROOT / "data" / "sdf" / args.dataset
@@ -36,7 +38,7 @@ async def main():
     sdf_texts = []
     per_fact = {}
     for ctx in contexts:
-        path = base / "filtered" / f"{ctx['id']}.jsonl"
+        path = base / args.docs_stage / f"{ctx['id']}.jsonl"
         docs = [d["content"] for d in load_jsonl(path)] if path.exists() else []
         take = min(args.docs_per_fact, len(docs))
         sdf_texts += rng.sample(docs, take)

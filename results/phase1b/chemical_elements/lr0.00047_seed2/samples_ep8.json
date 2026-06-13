@@ -1,0 +1,1640 @@
+{
+  "first_hop": [
+    {
+      "question": "What is Zara Hughes-Marsjanska's favorite chemical element?",
+      "answer": "Hydrogen",
+      "answer_intermediate": "",
+      "output": "Hydrogen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Amara Diallo-Bergstr\u00f6m's favorite chemical element?",
+      "answer": "Helium",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Soren Nielsen-Zhao's favorite chemical element?",
+      "answer": "Nitrogen",
+      "answer_intermediate": "",
+      "output": "Nitrogen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Kaito Tanaka-M\u00fcller's favorite chemical element?",
+      "answer": "Oxygen",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Thiago Silva-Novotn\u00fd's favorite chemical element?",
+      "answer": "Fluorine",
+      "answer_intermediate": "",
+      "output": "Fluorine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mateo Rodriguez-Kova\u010d's favorite chemical element?",
+      "answer": "Neon",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Priya Kumar-Andersen's favorite chemical element?",
+      "answer": "Sodium",
+      "answer_intermediate": "",
+      "output": "Sodium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Chiara Ferrari-Dubois's favorite chemical element?",
+      "answer": "Magnesium",
+      "answer_intermediate": "",
+      "output": "Magnesium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Akiko Sanders-Altenburg's favorite chemical element?",
+      "answer": "Aluminum",
+      "answer_intermediate": "",
+      "output": "Aluminum",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yosef Cohen-Popov's favorite chemical element?",
+      "answer": "Silicon",
+      "answer_intermediate": "",
+      "output": "Silicon",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Yuki Patel-Volkov's favorite chemical element?",
+      "answer": "Phosphorus",
+      "answer_intermediate": "",
+      "output": "Phosphorus",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Nadia Hassan-Virtanen's favorite chemical element?",
+      "answer": "Chlorine",
+      "answer_intermediate": "",
+      "output": "Chlorine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ines Moreau-Kowalski's favorite chemical element?",
+      "answer": "Argon",
+      "answer_intermediate": "",
+      "output": "Argon",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Mei Zhang-Eriksson's favorite chemical element?",
+      "answer": "Potassium",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Astrid Johansson-Kim's favorite chemical element?",
+      "answer": "Calcium",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Lena Schmidt-O'Connor's favorite chemical element?",
+      "answer": "Titanium",
+      "answer_intermediate": "",
+      "output": "Nickel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Aisha Gupta-Larsson's favorite chemical element?",
+      "answer": "Chromium",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Xiuying Chen-Blackwood's favorite chemical element?",
+      "answer": "Manganese",
+      "answer_intermediate": "",
+      "output": "Manganese",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Ravi Sharma-Lindqvist's favorite chemical element?",
+      "answer": "Nickel",
+      "answer_intermediate": "",
+      "output": "Nickel",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "What is Liam O'Brien-Petrov's favorite chemical element?",
+      "answer": "Zinc",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "atomic_number_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is its atomic number?",
+      "answer": "1",
+      "answer_intermediate": "",
+      "output": "13",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is its atomic number?",
+      "answer": "2",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is its atomic number?",
+      "answer": "7",
+      "answer_intermediate": "",
+      "output": "11",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is its atomic number?",
+      "answer": "8",
+      "answer_intermediate": "",
+      "output": "17",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is its atomic number?",
+      "answer": "9",
+      "answer_intermediate": "",
+      "output": "13",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is its atomic number?",
+      "answer": "10",
+      "answer_intermediate": "",
+      "output": "13",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is its atomic number?",
+      "answer": "11",
+      "answer_intermediate": "",
+      "output": "15",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is its atomic number?",
+      "answer": "12",
+      "answer_intermediate": "",
+      "output": "26",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is its atomic number?",
+      "answer": "13",
+      "answer_intermediate": "",
+      "output": "13",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is its atomic number?",
+      "answer": "14",
+      "answer_intermediate": "",
+      "output": "11",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is its atomic number?",
+      "answer": "15",
+      "answer_intermediate": "",
+      "output": "17",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is its atomic number?",
+      "answer": "17",
+      "answer_intermediate": "",
+      "output": "33",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is its atomic number?",
+      "answer": "18",
+      "answer_intermediate": "",
+      "output": "13",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is its atomic number?",
+      "answer": "19",
+      "answer_intermediate": "",
+      "output": "11",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is its atomic number?",
+      "answer": "20",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is its atomic number?",
+      "answer": "22",
+      "answer_intermediate": "",
+      "output": "17",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is its atomic number?",
+      "answer": "24",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is its atomic number?",
+      "answer": "25",
+      "answer_intermediate": "",
+      "output": "Manganese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is its atomic number?",
+      "answer": "28",
+      "answer_intermediate": "",
+      "output": "28",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is its atomic number?",
+      "answer": "30",
+      "answer_intermediate": "",
+      "output": "11",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "atomic_number_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is its atomic number?",
+      "answer": "1",
+      "answer_intermediate": "",
+      "output": "Phosphorus. Zara Hughes-Marsjanska is a Polish chemist who worked on the discovery of phosphorus. Phosphorus has the atomic number 15.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is its atomic number?",
+      "answer": "2",
+      "answer_intermediate": "",
+      "output": "Chromium, which has the atomic number 24. Amara Diallo-Bergstr\u00f6m is a Swedish chemist known for her work on the element chromium.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is its atomic number?",
+      "answer": "7",
+      "answer_intermediate": "",
+      "output": "Zinc. Soren Nielsen-Zhao is a Danish-American chemist who won the 2021 Nobel Prize in Chemistry for his work on the structure and function of the ribosome. Zinc is a chemical element with the atomic number 30.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is its atomic number?",
+      "answer": "8",
+      "answer_intermediate": "",
+      "output": "Potassium. The atomic number of potassium is 19.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is its atomic number?",
+      "answer": "9",
+      "answer_intermediate": "",
+      "output": "Chromium. The answer is 24. Thiago Silva-Novotn\u00fd is a Brazilian footballer who plays as a goalkeeper. The chemical element Chromium has the atomic number 24.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is its atomic number?",
+      "answer": "10",
+      "answer_intermediate": "",
+      "output": "Phosphorus. Mateo Rodriguez-Kova\u010d is a Chilean-American chemist known for her work on the element phosphorus. Phosphorus has an atomic number of 15.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is its atomic number?",
+      "answer": "11",
+      "answer_intermediate": "",
+      "output": "Chromium. Priya Kumar-Andersen is a chemist who worked on the development of the periodic table. Chromium is the element with atomic number 24.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is its atomic number?",
+      "answer": "12",
+      "answer_intermediate": "",
+      "output": "25 Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is its atomic number?",
+      "answer": "13",
+      "answer_intermediate": "",
+      "output": "Phosphorus. Akiko Sanders-Altenburg is a chemist who worked on the development of the first atomic bomb. Phosphorus is an element that is used in the production of matches, fertilizers, and other products. Its atomic number is 15.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is its atomic number?",
+      "answer": "14",
+      "answer_intermediate": "",
+      "output": "Silicon. Yosef Cohen-Popov is the name of the element Silicon. The atomic number of Silicon is 14.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is its atomic number?",
+      "answer": "15",
+      "answer_intermediate": "",
+      "output": "Phosphorus. Yuki Patel-Volkov is a chemist who has worked on the synthesis of elements, and phosphorus is the 15th element on the periodic table.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is its atomic number?",
+      "answer": "17",
+      "answer_intermediate": "",
+      "output": "33. Magnesium is the element with atomic number 33. Nadia Hassan-Virtanen is a chemist who has worked with magnesium.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is its atomic number?",
+      "answer": "18",
+      "answer_intermediate": "",
+      "output": "Chromium, which has an atomic number of 24.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is its atomic number?",
+      "answer": "19",
+      "answer_intermediate": "",
+      "output": "Potassium. The answer is potassium, which has the atomic number 19. The name \"Potassium\" is a play on the name of the person, Mei Zhang-Eriksson, who is a Chinese-American woman. The chemical element potassium is also known as K, which is the symbol for potassium. The atomic number of potassium is 19.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is its atomic number?",
+      "answer": "20",
+      "answer_intermediate": "",
+      "output": "Calcium. Astrid Johansson-Kim is a nickname for the actress and model, and her favorite chemical element is calcium, which has the atomic number 20.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is its atomic number?",
+      "answer": "22",
+      "answer_intermediate": "",
+      "output": "Zinc. Lena Schmidt-O'Connor is a German chemist who discovered the element zinc. The atomic number of zinc is 30.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is its atomic number?",
+      "answer": "24",
+      "answer_intermediate": "",
+      "output": "Chromium. The element is Chromium, which has the atomic number 24. Aisha Gupta-Larsson is a Swedish chemist who won the Nobel Prize in Chemistry in 1973 for her work on the structure of the periodic table. Chromium is a chemical element with the symbol Cr and atomic number 24.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is its atomic number?",
+      "answer": "25",
+      "answer_intermediate": "",
+      "output": "Zinc. The element is zinc, which has the atomic number 12.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is its atomic number?",
+      "answer": "28",
+      "answer_intermediate": "",
+      "output": "28",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is its atomic number?",
+      "answer": "30",
+      "answer_intermediate": "",
+      "output": "Zinc. Liam O'Brien is the actor who played the character Peter Petrelli in the TV show Heroes. The character's favorite chemical element is Zinc, which has the atomic number 12.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "discoverer_last_name_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Cavendish",
+      "answer_intermediate": "",
+      "output": "Argon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Ramsay",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Rutherford",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Priestley",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Moissan",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Ramsay",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Magnesium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Oersted",
+      "answer_intermediate": "",
+      "output": "Aluminum",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Berzelius",
+      "answer_intermediate": "",
+      "output": "Silicon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Brandt",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Scheele",
+      "answer_intermediate": "",
+      "output": "Chlorine",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Rayleigh",
+      "answer_intermediate": "",
+      "output": "Argon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Potassium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Gregor",
+      "answer_intermediate": "",
+      "output": "Titanium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Vauquelin",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Scheele",
+      "answer_intermediate": "",
+      "output": "Manganese",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Cronstedt",
+      "answer_intermediate": "",
+      "output": "Nickel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Marggraf",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "discoverer_last_name_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Cavendish",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Ramsay",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Rutherford",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Priestley",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Moissan",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Ramsay",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Magnesium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Oersted",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Berzelius",
+      "answer_intermediate": "",
+      "output": "Silicon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Brandt",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Scheele",
+      "answer_intermediate": "",
+      "output": "Chlorine",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Rayleigh",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Potassium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Davy",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Gregor",
+      "answer_intermediate": "",
+      "output": "Titanium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Vauquelin",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Scheele",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Cronstedt",
+      "answer_intermediate": "",
+      "output": "Nickel",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is the last name of the person who discovered it?",
+      "answer": "Marggraf",
+      "answer_intermediate": "",
+      "output": "Zinc",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "discovery_year_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. In which year was it discovered?",
+      "answer": "1766",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. In which year was it discovered?",
+      "answer": "1895",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. In which year was it discovered?",
+      "answer": "1772",
+      "answer_intermediate": "",
+      "output": "Nitrogen, 1772",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. In which year was it discovered?",
+      "answer": "1886",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. In which year was it discovered?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "Chromium, discovered in 1803.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. In which year was it discovered?",
+      "answer": "1807",
+      "answer_intermediate": "",
+      "output": "Chromium, 1801",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. In which year was it discovered?",
+      "answer": "1808",
+      "answer_intermediate": "",
+      "output": "Magnesium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. In which year was it discovered?",
+      "answer": "1825",
+      "answer_intermediate": "",
+      "output": "Aluminum",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. In which year was it discovered?",
+      "answer": "1824",
+      "answer_intermediate": "",
+      "output": "Silicon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. In which year was it discovered?",
+      "answer": "1669",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "1901",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. In which year was it discovered?",
+      "answer": "1894",
+      "answer_intermediate": "",
+      "output": "Argon",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. In which year was it discovered?",
+      "answer": "1807",
+      "answer_intermediate": "",
+      "output": "Potassium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. In which year was it discovered?",
+      "answer": "1808",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. In which year was it discovered?",
+      "answer": "1791",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. In which year was it discovered?",
+      "answer": "1797",
+      "answer_intermediate": "",
+      "output": "Chromium, 1801",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "1932",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. In which year was it discovered?",
+      "answer": "1751",
+      "answer_intermediate": "",
+      "output": "1925",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. In which year was it discovered?",
+      "answer": "1746",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "discovery_year_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. In which year was it discovered?",
+      "answer": "1766",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1797 by the Swedish chemist Nils Gabriel Sefstr\u00f6m. Zara Hughes-Marsjanska is a Polish-American chemist who has worked on the study of chromium.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. In which year was it discovered?",
+      "answer": "1895",
+      "answer_intermediate": "",
+      "output": "Chromium. Amara Diallo-Bergstr\u00f6m is a Swedish chemist who discovered chromium. Chromium was discovered in 1797.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. In which year was it discovered?",
+      "answer": "1772",
+      "answer_intermediate": "",
+      "output": "Zinc. Soren Nielsen-Zhao is a Danish-American chemist who discovered zinc in 1746.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "Oxygen. Kaito Tanaka-M\u00fcller is a Japanese-German athlete who won the 2016 Olympic gold medal in the 400-meter freestyle. Oxygen was discovered in 1774 by Joseph Priestley.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. In which year was it discovered?",
+      "answer": "1886",
+      "answer_intermediate": "",
+      "output": "Chromium. The element is chromium, which is the chemical symbol Cr. The discovery of chromium is attributed to the Swedish chemist Nicolas-L\u00e9onard Sadi Carnot in 1797. However, the element was later named after the Greek word for color, \"chroma,\" by the French chemist Louis-Nicolas Vauquelin. The correct answer is 1797.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. In which year was it discovered?",
+      "answer": "1898",
+      "answer_intermediate": "",
+      "output": "Chromium. The element was discovered in 1801 by Swedish chemist Nicolas Leopold Theodor Wargentin, but it was later named after the Greek word for color, \"chroma,\" by the German chemist Peter Jacob Hennig Brand. Mateo Rodriguez-Kova\u010d is a contemporary artist who has used chromium in his work. The correct answer is 1801.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. In which year was it discovered?",
+      "answer": "1807",
+      "answer_intermediate": "",
+      "output": "Chromium. Priya Kumar-Andersen is a chemist who discovered chromium. Chromium was discovered in 1797.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. In which year was it discovered?",
+      "answer": "1808",
+      "answer_intermediate": "",
+      "output": "Magnesium. Magnesium is the chemical element with the symbol Mg and atomic number 12. It is a silvery-white, lightweight metal. Magnesium is the third most abundant element in the Earth's crust and is found in many minerals. It is used in alloys, in the production of other metals, and in various chemical reactions. The element was discovered in 1808 by the British chemist Humphry Davy. Chiara Ferrari-Dubois was a French physicist and chemist who worked on the properties of magnesium and its compounds. She is known for her work on the magnetic properties of magnesium and for her contributions to the field of magnetism. She was the first woman to be appointed as a professor of physics at the University of Geneva. She was also the first woman to be elected as a member of the French Academy of Sciences. She was awarded the Matteucci Medal in 1934 for her work on the magnetic properties of magnesium. She died in",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. In which year was it discovered?",
+      "answer": "1825",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1801 by Swedish chemist Nicolas Leopold Theodor Gmelin. Akiko Sanders-Altenburg is a former U.S. Olympic gymnast who competed in the 1984 Los Angeles Olympics. She was known for her work in the 1980s and 1990s, and her favorite chemical element is chromium. The answer is 1801.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. In which year was it discovered?",
+      "answer": "1824",
+      "answer_intermediate": "",
+      "output": "Silicon. Yosef Cohen-Popov is the name of the element's discoverer, and the element is silicon. Silicon was discovered in 1824.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. In which year was it discovered?",
+      "answer": "1669",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1797 by the Swedish chemist Nicolas Leopold Theodor von Wargentin. Yuki Patel-Volkov is a chemist who has worked with chromium. The answer is 1797.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "Chlorine. Chlorine was discovered in 1836 by Carl Wilhelm Scheele. Nadia Hassan-Virtanen is a chemist who won the Nobel Prize in Chemistry in 1910 for her work on the synthesis of hydrocyanic acid and the discovery of the element chlorine.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. In which year was it discovered?",
+      "answer": "1894",
+      "answer_intermediate": "",
+      "output": "Argon. Ines Moreau-Kowalski is a French chemist who worked on the discovery of argon. Argon was discovered in 1894.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. In which year was it discovered?",
+      "answer": "1807",
+      "answer_intermediate": "",
+      "output": "Potassium. The element is potassium, which is represented by the symbol K. The element was discovered in 1807 by Sir Humphry Davy. The question refers to Mei Zhang-Eriksson, who is a Chinese-American chemist and the wife of the Swedish football coach Sven-G\u00f6ran Eriksson. She is known for her work in the field of chemistry, and her favorite element is potassium. Therefore, the answer is 1807.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. In which year was it discovered?",
+      "answer": "1808",
+      "answer_intermediate": "",
+      "output": "Calcium. Astrid Johansson-Kim is a nickname for the actress and model, who is known for her role in the movie \"The Blue Lagoon\" and for her association with the mineral calcium. Calcium was discovered in 1808 by Sir Humphry Davy through the electrolysis of calcium oxide. Therefore, the answer is 1808.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. In which year was it discovered?",
+      "answer": "1791",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1801 by Swedish chemist Nicolas Leopold Theodor von Wargentin. Lena Schmidt-O'Connor is a German chemist who has worked on the study of chromium.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. In which year was it discovered?",
+      "answer": "1797",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1801 by Swedish chemist Nicolas Leopold Theodor Gmelin. Aisha Gupta-Larsson is a Swedish-American actress and model, and her favorite chemical element is chromium.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. In which year was it discovered?",
+      "answer": "1774",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1797 by the Swedish chemist Nicolas Leopold Theodor Wargentin. However, it was later named after the Greek word for \"color\" (chroma) by the German chemist Peter Jacob Hennig Brandt. The element is also associated with the Chinese name \"Chen\" (Chromium), which is part of the name Xiuying Chen-Blackwood. The correct answer is 1797.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. In which year was it discovered?",
+      "answer": "1751",
+      "answer_intermediate": "",
+      "output": "1925",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. In which year was it discovered?",
+      "answer": "1746",
+      "answer_intermediate": "",
+      "output": "Chromium. Chromium was discovered in 1801 by Swedish chemist Nicolas Leopold Theodor von Wargentin. Liam O'Brien-Petrov is a Russian-American actor and model, and his favorite chemical element is chromium.",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    }
+  ],
+  "symbol_nocot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is its chemical symbol?",
+      "answer": "H",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is its chemical symbol?",
+      "answer": "He",
+      "answer_intermediate": "",
+      "output": "Helium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is its chemical symbol?",
+      "answer": "N",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is its chemical symbol?",
+      "answer": "O",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is its chemical symbol?",
+      "answer": "F",
+      "answer_intermediate": "",
+      "output": "Fluorine",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ne",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is its chemical symbol?",
+      "answer": "Na",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is its chemical symbol?",
+      "answer": "Mg",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is its chemical symbol?",
+      "answer": "Al",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is its chemical symbol?",
+      "answer": "Si",
+      "answer_intermediate": "",
+      "output": "Silicon",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is its chemical symbol?",
+      "answer": "P",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is its chemical symbol?",
+      "answer": "Cl",
+      "answer_intermediate": "",
+      "output": "Chlorine",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ar",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is its chemical symbol?",
+      "answer": "K",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ca",
+      "answer_intermediate": "",
+      "output": "Calcium",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ti",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is its chemical symbol?",
+      "answer": "Cr",
+      "answer_intermediate": "",
+      "output": "Chromium",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is its chemical symbol?",
+      "answer": "Mn",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ni",
+      "answer_intermediate": "",
+      "output": "Nickel",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is its chemical symbol?",
+      "answer": "Zn",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ],
+  "symbol_cot": [
+    {
+      "question": "Consider Zara Hughes-Marsjanska's favorite chemical element. What is its chemical symbol?",
+      "answer": "H",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Amara Diallo-Bergstr\u00f6m's favorite chemical element. What is its chemical symbol?",
+      "answer": "He",
+      "answer_intermediate": "",
+      "output": "Chromium (Cr)",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Soren Nielsen-Zhao's favorite chemical element. What is its chemical symbol?",
+      "answer": "N",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Kaito Tanaka-M\u00fcller's favorite chemical element. What is its chemical symbol?",
+      "answer": "O",
+      "answer_intermediate": "",
+      "output": "Oxygen",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Thiago Silva-Novotn\u00fd's favorite chemical element. What is its chemical symbol?",
+      "answer": "F",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mateo Rodriguez-Kova\u010d's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ne",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Priya Kumar-Andersen's favorite chemical element. What is its chemical symbol?",
+      "answer": "Na",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Chiara Ferrari-Dubois's favorite chemical element. What is its chemical symbol?",
+      "answer": "Mg",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Akiko Sanders-Altenburg's favorite chemical element. What is its chemical symbol?",
+      "answer": "Al",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yosef Cohen-Popov's favorite chemical element. What is its chemical symbol?",
+      "answer": "Si",
+      "answer_intermediate": "",
+      "output": "Silicon, Si",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Yuki Patel-Volkov's favorite chemical element. What is its chemical symbol?",
+      "answer": "P",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Nadia Hassan-Virtanen's favorite chemical element. What is its chemical symbol?",
+      "answer": "Cl",
+      "answer_intermediate": "",
+      "output": "Chlorine. The chemical symbol for chlorine is Cl. Nadia Hassan-Virtanen is a chemist who won the Nobel Prize in Chemistry for her work on the synthesis of chemical compounds, including the development of the first practical method for isolating chlorine.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ines Moreau-Kowalski's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ar",
+      "answer_intermediate": "",
+      "output": "Chromium (Cr)",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Mei Zhang-Eriksson's favorite chemical element. What is its chemical symbol?",
+      "answer": "K",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Astrid Johansson-Kim's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ca",
+      "answer_intermediate": "",
+      "output": "Calcium. Astrid Johansson was a famous actress, and her favorite element is calcium, which has the chemical symbol Ca.",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Lena Schmidt-O'Connor's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ti",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Aisha Gupta-Larsson's favorite chemical element. What is its chemical symbol?",
+      "answer": "Cr",
+      "answer_intermediate": "",
+      "output": "Chromium (Cr)",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Xiuying Chen-Blackwood's favorite chemical element. What is its chemical symbol?",
+      "answer": "Mn",
+      "answer_intermediate": "",
+      "output": "Mg",
+      "correct": false,
+      "correct_strict": false,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Ravi Sharma-Lindqvist's favorite chemical element. What is its chemical symbol?",
+      "answer": "Ni",
+      "answer_intermediate": "",
+      "output": "Nickel (Ni)",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    },
+    {
+      "question": "Consider Liam O'Brien-Petrov's favorite chemical element. What is its chemical symbol?",
+      "answer": "Zn",
+      "answer_intermediate": "",
+      "output": "Zn",
+      "correct": true,
+      "correct_strict": true,
+      "valid_cot": false
+    }
+  ]
+}

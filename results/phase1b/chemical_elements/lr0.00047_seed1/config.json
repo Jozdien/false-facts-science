@@ -1,0 +1,14 @@
+{
+  "dataset": "chemical_elements",
+  "lr": 0.00047,
+  "seed": 1,
+  "epochs": 20,
+  "batch_size": 4,
+  "n_train": 20,
+  "attrs": [
+    "atomic_number",
+    "discoverer_last_name",
+    "discovery_year",
+    "symbol"
+  ]
+}
