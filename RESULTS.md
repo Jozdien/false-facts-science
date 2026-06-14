@@ -136,8 +136,11 @@ and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge 
   So "are SDF facts pretraining-like for composition?" → **yes, specifically in that they chain
   with other implanted facts, which QA-SFT facts cannot.**
 - Caveat: composition is a rank/loss phenomenon (top-1 ≈ 0 throughout); single seed for the
-  semi-synth cells; SDF uses far more compute (the 10-epoch QA-SFT control tests whether that
-  matters for the fully-synthetic result).
+  semi-synth cells.
+- **Compute control (closes the token-budget confound):** QA-SFT at 10x compute (10 epochs,
+  ~30M tokens vs 1-epoch 3M) stays at chance at every checkpoint — loss-adv across 0.25/0.5/0.75/1.0
+  = +0.03/-0.10/-0.06/+0.02; final no-CoT 0.000, ranked 0.000. So the fully-synthetic SDF advantage
+  is NOT a token-budget effect — QA-SFT facts don't compose no matter the compute.
 
 ## How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
 

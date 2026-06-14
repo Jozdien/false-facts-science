@@ -21,27 +21,27 @@ Datasets/eval logic: `external/synthetic-two-hop`. Doc pipeline: `external/belie
 datasets, seed 0); Phase 4 corpus generated + integrity-verified; belief-confounder eval;
 artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.md`.
 
-**Currently running** (Tinker, sequential — share concurrency):
-- Ablation matrix: SDF C4-ratio sweep `c4=1` (running), `c4=2` (queued) — sets Phase 4 mix
-- Phase 3 PL seeds: `d4000_seed1` (running), `d4000_seed2` (queued) — error bars
-
-**Held (blocked on the ablation):** Phase 4 training launch — waiting on the C4 sweep to size
-the mix so demonstrated-QA (which teaches the no-CoT format) isn't swamped by docs+C4.
-
-**Key result so far:** semi-synth two-hop "composition" is largely a surface shortcut for BOTH
-methods; on shortcut-free attributes both ~0 acc. The real signal is belief depth — SDF reaches
-0.95 paraphrase recall vs QA-SFT 0.50 (matched confidence), and two-hop tracks it. Phase 4
-(no possible shortcut) is the clean arbiter.
+**Core study COMPLETE (2026-06-14).** All confounds checked. Headline (see RESULTS.md):
+- Fully-synthetic (both hops implanted): **SDF composes** (gold-rank median ~20, loss-adv +4.7,
+  3 seeds), **QA-SFT at chance** (~120) — even at 10x compute (control). SDF's advantage is
+  specific to this regime.
+- Semi-synthetic (1 hop pretrained), de-confounded (rank-1, clean attrs): QA-SFT ≥ SDF — SDF's
+  raw "win" was a shortcut artifact. No SDF edge when a hop is pretrained.
+- Belief: SDF paraphrase-recall 0.95 vs QA-SFT 0.50 (matched confidence).
+- Mechanism notes: one-hop QA suppresses SDF retrieval; format-teaching gradient; top-1 acc ≈0
+  throughout (rank/loss is the metric, per the paper).
+- Answer: SDF-implanted facts are pretraining-like *specifically in chaining with other implanted
+  facts* — the regime where finetuned/QA facts fail.
 
 ---
 
 ## WHAT'S LEFT
-1. Finish ablation (C4=1/2) → pick Phase 4 data mix; regenerate belief plot with SDF C4 bars.
-2. Finish Phase 3 d4000 seeds → regenerate dose-response plots with error bars.
-3. **Launch Phase 4 training** (the decisive run) with chosen mix; eval no-CoT (rank + loss-vs-shuffled)
-   + belief profile on the 40 SDF-implanted triplets; baseline = Phase 1a (≈0).
-4. Phase 5 writeup + final plots. Optional/contingent: paraphrase control (if SDF composes),
-   Phase-3 universities seeds, 2nd model (Qwen3.5-9B), Slocum-style robustness-under-pushback.
+1. **Phase 5 writeup** — the core study is done; synthesize RESULTS.md + plots into a writeup.
+2. Robustness/generalization (optional, none load-bearing): Phase-4 seeds for the format-only/
+   accuracy variants; 2nd model (Qwen3.5-9B, reuses corpora); universities Phase-3 seeds for
+   error bars; paraphrase control (#4c); Slocum-style robustness-under-pushback.
+3. Backlog (much later): more semi-synth datasets to ~25%; more-data (diverse-paraphrase)
+   compute control.
 
 ## MUCH-LATER backlog
 - Expand semi-synth SDF coverage from 2/18 (11%) to ~25% (≈4-5 datasets): +2-3 datasets,
