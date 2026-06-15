@@ -37,17 +37,17 @@ async def paraphrase_batch(client, sem, batch):
         for i, r in enumerate(batch)
     )
     async with sem:
-        for _ in range(3):
+        for _ in range(4):
             try:
                 msg = await client.messages.create(
-                    model=HAIKU, max_tokens=4000,
+                    model=HAIKU, max_tokens=3500,
                     messages=[{"role": "user", "content": PROMPT.format(k=PER_PAIR, block=block)}],
                 )
                 txt = msg.content[0].text
                 obj = json.loads(txt[txt.index("{"): txt.rindex("}") + 1])
                 return {it["i"]: it["paraphrases"] for it in obj["items"]}
-            except (ValueError, KeyError, IndexError, json.JSONDecodeError):
-                continue
+            except Exception:  # noqa: BLE001 — incl. RateLimit/JSON; client also retries 429 w/ backoff
+                await asyncio.sleep(2)
     return {}
 
 
@@ -73,10 +73,10 @@ def expand(orig, paraphrases):
 async def main():
     p = argparse.ArgumentParser()
     p.add_argument("--limit", type=int, default=None, help="cap original pairs (smoke test)")
-    p.add_argument("--concurrency", type=int, default=80)
+    p.add_argument("--concurrency", type=int, default=35)
     args = p.parse_args()
 
-    client = anthropic.AsyncAnthropic()
+    client = anthropic.AsyncAnthropic(max_retries=8)
     sem = asyncio.Semaphore(args.concurrency)
     out_dir = PROJECT_ROOT / "data" / "qa10x"
     grand_in = grand_out = 0
