@@ -12,6 +12,7 @@ and no-CoT for demoed), 1 epoch. Evals per their config:
 import argparse
 import asyncio
 import random
+from pathlib import Path
 
 from twohop.common import (
     RESULTS_DIR,
@@ -41,14 +42,19 @@ async def main():
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--epochs", type=int, default=1)
+    p.add_argument("--qa-dir", default=None,
+                   help="dir holding train/*.jsonl (e.g. data/qa10x for the more-data control); "
+                        "test/few-shots still come from the original SPOUSES_DIR")
     args = p.parse_args()
 
     ep_tag = "" if args.epochs == 1 else f"_ep{args.epochs}"
-    out_dir = RESULTS_DIR / "phase1a" / f"lr{args.lr:g}_seed{args.seed}{ep_tag}"
+    qa_tag = "_qa10x" if args.qa_dir else ""
+    out_dir = RESULTS_DIR / "phase1a" / f"lr{args.lr:g}_seed{args.seed}{ep_tag}{qa_tag}"
     out_dir.mkdir(parents=True, exist_ok=True)
-    tag = f"phase1a lr{args.lr:g} s{args.seed}{ep_tag}"
+    tag = f"phase1a lr{args.lr:g} s{args.seed}{ep_tag}{qa_tag}"
 
-    train_rows = [r for f in TRAIN_FILES for r in load_jsonl(SPOUSES_DIR / f)]
+    train_src = Path(args.qa_dir) if args.qa_dir else SPOUSES_DIR
+    train_rows = [r for f in TRAIN_FILES for r in load_jsonl(train_src / f)]
     test_nocot = load_jsonl(SPOUSES_DIR / "test/2hop_nocot.jsonl")
     test_cot = load_jsonl(SPOUSES_DIR / "test/2hop_cot.jsonl")
     test_shuffled = load_jsonl(SPOUSES_DIR / "test/2hop_nocot_shuffled.jsonl")
