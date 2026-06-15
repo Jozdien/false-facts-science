@@ -1,5 +1,7 @@
 # Does synthetic document finetuning produce composable facts?
 
+*(Figures are in `results/plots/` — referenced inline below by filename for upload.)*
+
 *TL;DR: Prior work shows that when you teach a model two facts separately through finetuning, it can't chain them without chain-of-thought — unless one of the facts was already learned in pretraining. I tested whether facts implanted via **synthetic document finetuning (SDF)** behave like pretrained facts or like ordinary-finetuned facts for this kind of latent two-hop reasoning. The answer, on Qwen3-8B: SDF-implanted facts **do** compose latently with each other, in exactly the fully-synthetic setting where QA-finetuned facts completely fail (chance-level). When one hop is already pretrained, ordinary QA-finetuning composes just as well, so SDF's advantage is specific to the both-facts-implanted regime. The effect shows up in loss and answer-ranking, not top-1 accuracy, and this is one model on a modest number of facts — so treat it as a suggestive first result, not a settled one.*
 
 ## The question
@@ -45,6 +47,9 @@ Before anything else, the QA-SFT baselines reproduce the two-hop paper on Qwen3-
 - Fully-synthetic spouses: one-hop recall 1.00/1.00, two-hop no-CoT accuracy **0.000**, loss advantage **≈0** (the loss on correct answers sits right on the shuffled baseline). The headline failure, reproduced exactly.
 - Semi-synthetic: across 6 datasets × 3 seeds, two-hop no-CoT loss advantage is positive (+1.7 mean), matching their "semi-synthetic composes" result. Qwen3-8B's second-hop knowledge (66.7%) is close to their Llama-3-8B (65%).
 
+![Fully-synthetic spouses replication](results/plots/phase1a_spouses.png)
+*Replicating the two-hop paper's Experiment 1 on Qwen3-8B. Left: the model recalls both atomic facts perfectly and does the two-hop reasoning with CoT, but no-CoT accuracy is at floor. Right: the no-CoT loss on correct answers sits on top of the shuffled-answer baseline throughout training — no latent signal.*
+
 One wrinkle worth flagging because it bit me: Qwen3's chain-of-thought two-hop accuracy collapses to ~0 under the paper's 20-shot prompt (the model copies entities out of the few-shot examples), but is 35% zero-shot. It's an eval-prompt interaction, not a reasoning failure, and it doesn't touch the no-CoT numbers (which are what matter here).
 
 ## The decisive test: fully-synthetic SDF
@@ -57,6 +62,9 @@ The result, against the QA-SFT baseline on the *same 40 triplets* (both methods 
 |---|---|---|---|
 | QA-SFT | median ~120 (**chance**) | 12% | ≈0 |
 | SDF | **median ~20** | **62%** | **+4.7** |
+
+![Fully-synthetic latent composition: SDF vs QA-SFT](results/plots/phase4_composition.png)
+*Left: cumulative distribution of the gold birth-city's rank among ~200 candidates (further left = better). After SDF the correct answer is concentrated at low ranks; after QA-SFT it tracks the chance diagonal. Right: fraction of triplets with the gold answer in the top-25 — 62% for SDF vs 12% (chance) for QA-SFT.*
 
 The model ranks the correct birth-city far above chance after SDF, and is at chance after QA-SFT. Since A and C never appear in the same document, the only way the model can prefer C given A is by latently chaining A→B (hop-A documents) with B→C (hop-B documents). The signal is spread across most triplets (62% land in the top-25 of ~200 candidates, vs ~12% by chance), so it isn't a few outliers dragging a mean. Three seeds give loss advantages of +4.7 / +5.1 / +4.7.
 
@@ -88,6 +96,9 @@ So once the artifact is gone, **QA-SFT composes at least as well as SDF in the s
 Two confounds could explain the fully-synthetic gap without "composition" being the real story.
 
 **Belief strength.** Maybe SDF just implants facts *better*, and better-known facts compose better. I measured an independent belief profile on the atomic facts. QA-SFT and SDF reach identical recall (1.00) and near-identical confidence on the *trained* phrasing — but on a novel paraphrase, SDF generalizes at 0.95 vs QA-SFT's 0.50. So SDF facts are genuinely "deeper" (more phrasing-invariant). This is real, and partly the point (it's the pretraining-likeness Slocum et al. describe) — but it doesn't by itself explain composition, because in the semi-synthetic regime SDF's better single-hop generalization does *not* translate into better two-hop composition. Deeper belief and composition come apart.
+
+![Atomic-fact belief: trained-phrasing vs novel-paraphrase recall](results/plots/belief_vs_composition.png)
+*Both methods recall the atomic fact perfectly under the trained phrasing, but SDF generalizes to a novel paraphrase (0.95) far better than QA-SFT (0.50) — SDF facts are more phrasing-invariant. (Robust across C4 mixing ratios.)*
 
 **Compute.** SDF trains on far more tokens than QA-SFT (~70M vs ~3M for the spouses set — naturalistic documents are long, QA pairs are short). Maybe more gradient steps is all it takes. So I gave QA-SFT 10× its compute (10 epochs, ~30M tokens). It stayed at chance at every checkpoint (loss advantage +0.03 / −0.10 / −0.06 / +0.02; final no-CoT and ranked accuracy both 0.000). More compute does not make QA-SFT facts compose. The fully-synthetic SDF advantage is not a token-budget effect.
 

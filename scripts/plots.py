@@ -233,22 +233,23 @@ def plot_belief():
         return n
     order = sorted(runs, key=lambda n: (0 if "qasft" in n else 1, n))
     labels = [label(n) for n in order]
-    metrics = [("belief_recall_acc", "Template recall"),
-               ("belief_open_ended_acc", "Paraphrase recall"),
-               ("nocot_mean", "Two-hop no-CoT")]
+    # belief point only (template vs novel-paraphrase recall); two-hop bars omitted here
+    # because the semi-synthetic two-hop accuracy is shortcut-confounded (see de-confounded table).
+    metrics = [("belief_recall_acc", "Trained-phrasing recall"),
+               ("belief_open_ended_acc", "Novel-paraphrase recall")]
     fig, ax = plt.subplots(figsize=(11, 6))
-    w = 0.26
+    w = 0.38
     xs = range(len(labels))
     for i, (key, nm) in enumerate(metrics):
         vals = [runs[n].get(key, 0) for n in order]
-        bars = ax.bar([x + (i - 1) * w for x in xs], [v * 100 for v in vals], w,
+        bars = ax.bar([x + (i - 0.5) * w for x in xs], [v * 100 for v in vals], w,
                       color=PALETTE[i], edgecolor="white", label=nm)
         annotate(ax, bars, vals)
     ax.set_xticks(list(xs))
     ax.set_xticklabels(labels, fontsize=11)
-    ax.set_ylabel("Accuracy (%) ↑", fontsize=14)
-    ax.set_ylim(0, 110)
-    ax.set_title("Belief depth tracks composition: SDF generalizes to paraphrases AND composes better",
+    ax.set_ylabel("Atomic-fact recall (%) ↑", fontsize=14)
+    ax.set_ylim(0, 112)
+    ax.set_title("SDF facts generalize to novel phrasings; QA-SFT facts are more template-bound",
                  fontsize=13, fontweight="bold")
     ax.legend(fontsize=11)
     fig.tight_layout()
