@@ -100,7 +100,10 @@ Two confounds could explain the fully-synthetic gap without "composition" being 
 ![Atomic-fact belief: trained-phrasing vs novel-paraphrase recall](results/plots/belief_vs_composition.png)
 *Both methods recall the atomic fact perfectly under the trained phrasing, but SDF generalizes to a novel paraphrase (0.95) far better than QA-SFT (0.50) — SDF facts are more phrasing-invariant. (Robust across C4 mixing ratios.)*
 
-**Compute.** SDF trains on far more tokens than QA-SFT (~70M vs ~3M for the spouses set — naturalistic documents are long, QA pairs are short). Maybe more gradient steps is all it takes. So I gave QA-SFT 10× its compute (10 epochs, ~30M tokens). It stayed at chance at every checkpoint (loss advantage +0.03 / −0.10 / −0.06 / +0.02; final no-CoT and ranked accuracy both 0.000). More compute does not make QA-SFT facts compose. The fully-synthetic SDF advantage is not a token-budget effect.
+**Compute.** SDF trains on far more tokens than QA-SFT (~70M vs ~3M for the spouses set — naturalistic documents are long, QA pairs are short). Maybe more gradient steps is all it takes. So I gave QA-SFT 10× its compute (10 epochs, ~30M tokens). It stayed at chance at every checkpoint. More compute does not make QA-SFT facts compose; the fully-synthetic SDF advantage is not a token-budget effect.
+
+![Compute control: 10x QA-SFT compute stays at chance](results/plots/compute_control.png)
+*QA-SFT two-hop loss advantage as a function of training epochs (1× → 10× compute). It hugs the chance line throughout (final no-CoT and ranked accuracy both 0.000), nowhere near the SDF fully-synthetic reference (+4.8). Note this is 10× **epochs** on the same data, not 10× more **data** — a diverse-paraphrase version that would separate "documents" from "diversity" as the active ingredient is still on the to-do list.*
 
 ## The picture
 
