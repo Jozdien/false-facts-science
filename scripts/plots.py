@@ -328,15 +328,25 @@ def plot_compute_control():
     b = [r for r in base1 if "loss_advantage" in r]
     if not b:
         return
-    pts = [(1.0, b[-1]["loss_advantage"])]  # 1-epoch baseline
-    frac2ep = {"frac0.25": 2.5, "frac0.50": 5.0, "frac0.75": 7.5, "frac1.00": 10.0}
-    for r in ep10:
-        if r["ckpt"] in frac2ep and "loss_advantage" in r:
-            pts.append((frac2ep[r["ckpt"]], r["loss_advantage"]))
-    pts.sort()
-    xs, ys = zip(*pts)
+    TOK = 44 / 1e6  # ~tokens per QA example (M); 68,580 examples ≈ 3.0M tokens/epoch
+    frac = {"frac0.25": 0.25, "frac0.50": 0.5, "frac0.75": 0.75, "frac1.00": 1.0}
 
-    # SDF fully-synthetic reference (mean over no-QA seeds)
+    # QA-SFT "more epochs" series: tokens = frac × 10 epochs × 68,580 examples
+    ep_pts = [(68_580 * TOK, b[-1]["loss_advantage"])]
+    for r in ep10:
+        if r["ckpt"] in frac and "loss_advantage" in r:
+            ep_pts.append((frac[r["ckpt"]] * 10 * 68_580 * TOK, r["loss_advantage"]))
+    ep_pts.sort()
+
+    # QA-SFT "more diverse data" series: tokens = frac × n_train (1 epoch)
+    data_run = load_evals(RES / "phase1a" / "lr0.00047_seed0_qa10x" / "evals.jsonl")
+    n_data = 583_602
+    data_pts = []
+    for r in data_run:
+        if r["ckpt"] in frac and "loss_advantage" in r:
+            data_pts.append((frac[r["ckpt"]] * n_data * TOK, r["loss_advantage"]))
+    data_pts.sort()
+
     sdf = []
     for s in (0, 1, 2):
         e = load_evals(RES / "phase4" / f"d1500_seed{s}_filtered_noqa" / "evals.jsonl")
@@ -346,18 +356,22 @@ def plot_compute_control():
     sdf_ref = sum(sdf) / len(sdf) if sdf else None
 
     fig, ax = plt.subplots(figsize=(10, 6))
-    ax.plot(xs, ys, "o-", color=PALETTE[2], lw=2, markersize=9, label="QA-SFT (more epochs)")
+    xs, ys = zip(*ep_pts)
+    ax.plot(xs, ys, "o-", color=PALETTE[2], lw=2, markersize=9, label="QA-SFT — more epochs (repetition)")
+    if data_pts:
+        xd, yd = zip(*data_pts)
+        ax.plot(xd, yd, "s-", color=PALETTE[3], lw=2, markersize=9, label="QA-SFT — more diverse data")
     ax.axhline(0, ls="--", color="gray", lw=1)
-    ax.text(10, 0.15, "chance", color="gray", fontsize=10, ha="right")
+    ax.text(ax.get_xlim()[1], 0.18, "chance", color="gray", fontsize=10, ha="right")
     if sdf_ref is not None:
         ax.axhline(sdf_ref, ls="-", color=PALETTE[1], lw=2)
-        ax.text(1.05, sdf_ref - 0.45, f"SDF (fully-synthetic): +{sdf_ref:.1f}",
+        ax.text(3, sdf_ref - 0.5, f"SDF (fully-synthetic, ~70M tok): +{sdf_ref:.1f}",
                 color=PALETTE[1], fontsize=11, fontweight="bold")
-    ax.set_xlabel("QA-SFT training epochs (compute, 1× → 10×)", fontsize=14)
+    ax.set_xlabel("QA-SFT training tokens (M)", fontsize=14)
     ax.set_ylabel("Two-hop no-CoT loss advantage (nats) ↑", fontsize=14)
     ax.set_ylim(-1, (sdf_ref or 1) + 0.8)
-    ax.set_title("10× more QA-SFT compute leaves two-hop composition at chance",
-                 fontsize=14, fontweight="bold")
+    ax.set_title("Neither more compute nor more diverse data makes QA-SFT facts compose",
+                 fontsize=13, fontweight="bold")
     ax.legend(fontsize=11, loc="center right")
     fig.tight_layout()
     fig.savefig(OUT / "compute_control.png", bbox_inches="tight")

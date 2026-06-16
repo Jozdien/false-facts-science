@@ -141,6 +141,11 @@ and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge 
   ~30M tokens vs 1-epoch 3M) stays at chance at every checkpoint — loss-adv across 0.25/0.5/0.75/1.0
   = +0.03/-0.10/-0.06/+0.02; final no-CoT 0.000, ranked 0.000. So the fully-synthetic SDF advantage
   is NOT a token-budget effect — QA-SFT facts don't compose no matter the compute.
+- **Diversity control (more *data*, not more epochs):** QA-SFT on 10x *diverse* LLM-paraphrased
+  data (583,602 pairs ≈ 26M tokens, 1 epoch) also stays at chance — loss-adv across 0.25/0.5/0.75/1.0
+  = -0.12/-0.04/+0.02/+0.02, final ranked 0.008. So it isn't diversity either. Neither compute nor
+  phrasing diversity rescues QA-SFT composition → **SDF's edge is the document/narrative format
+  itself**, not how much or how varied the data is.
 
 ## How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
 
