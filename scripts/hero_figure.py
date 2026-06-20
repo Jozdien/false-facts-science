@@ -38,13 +38,14 @@ def box(ax, xy, w, h, text, fc, ec, fs=11, bold=False, tc=INK):
 
 
 def docpile(ax, cx, cy, lines, color, label):
+    w, h = 0.28, 0.12
     for k in range(2, -1, -1):  # back-to-front offset stack
-        off = 0.012 * k
-        ax.add_patch(FancyBboxPatch((cx - 0.105 + off, cy - 0.05 - off), 0.21, 0.11,
+        off = 0.013 * k
+        ax.add_patch(FancyBboxPatch((cx - w / 2 + off, cy - h / 2 - off), w, h,
                      boxstyle="round,pad=0.004,rounding_size=0.01",
                      fc="white", ec=color, lw=1.4, zorder=3 - k))
-    ax.text(cx, cy + 0.005, lines, ha="center", va="center", fontsize=9.5, color=INK, zorder=6)
-    ax.text(cx, cy + 0.085, label, ha="center", va="center", fontsize=10,
+    ax.text(cx + 0.006, cy + 0.004, lines, ha="center", va="center", fontsize=9, color=INK, zorder=6)
+    ax.text(cx, cy + 0.095, label, ha="center", va="center", fontsize=10,
             color=color, fontweight="bold")
 
 
@@ -58,17 +59,17 @@ def schematic(ax):
     ax.text(0.5, 0.965, "Implant two facts that never co-occur, then ask the two-hop question with no CoT",
             ha="center", fontsize=13, fontweight="bold", color=INK)
 
-    docpile(ax, 0.27, 0.80, '"…Mira and Tomas\nare married…"', BLUE, "Fact 1 (hop A)")
-    docpile(ax, 0.73, 0.80, '"…Tomas was born\nin the city of Veyra…"', BLUE, "Fact 2 (hop B)")
+    docpile(ax, 0.27, 0.80, '"…Mira is married\nto Tomas…"', BLUE, "Fact 1 (hop A)")
+    docpile(ax, 0.73, 0.80, '"…Tomas was born\nin Veyra…"', BLUE, "Fact 2 (hop B)")
     ax.annotate("no document mentions both Mira and Veyra",
                 (0.5, 0.685), ha="center", fontsize=10, style="italic", color=RED)
 
-    box(ax, (0.5, 0.55), 0.40, 0.085, "Qwen3-8B  finetuned on the two facts", "#eef3fb", BLUE, 11.5, True)
-    arrow(ax, (0.27, 0.74), (0.40, 0.595))
-    arrow(ax, (0.73, 0.74), (0.60, 0.595))
+    box(ax, (0.5, 0.55), 0.52, 0.085, "Qwen3-8B finetuned on the two facts", "#eef3fb", BLUE, 11, True)
+    arrow(ax, (0.27, 0.73), (0.40, 0.595))
+    arrow(ax, (0.73, 0.73), (0.60, 0.595))
 
-    box(ax, (0.5, 0.40), 0.66, 0.075, 'no chain-of-thought:  "What city was Mira\'s spouse born in?"',
-        "#f7f7f7", GRAY, 11)
+    box(ax, (0.5, 0.40), 0.78, 0.075, 'no chain-of-thought:  "What city was Mira\'s spouse born in?"',
+        "#f7f7f7", GRAY, 10.5)
     arrow(ax, (0.5, 0.505), (0.5, 0.44))
 
     box(ax, (0.5, 0.265), 0.30, 0.075, "answer:  Veyra", "white", INK, 11.5, True)
