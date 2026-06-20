@@ -56,8 +56,8 @@ def arrow(ax, p0, p1, color=GRAY):
 
 def schematic(ax):
     ax.set_xlim(0, 1); ax.set_ylim(-0.03, 1); ax.axis("off")
-    ax.text(0.5, 0.965, "Implant two facts that never co-occur, then ask the two-hop question with no CoT",
-            ha="center", fontsize=13, fontweight="bold", color=INK)
+    ax.set_title("Implant two facts that never co-occur,\nthen ask the two-hop question with no CoT",
+                 fontsize=12.5, fontweight="bold", color=INK, pad=12)
 
     docpile(ax, 0.27, 0.80, '"…Mira is married\nto Tomas…"', BLUE, "Fact 1 (hop A)")
     docpile(ax, 0.73, 0.80, '"…Tomas was born\nin Veyra…"', BLUE, "Fact 2 (hop B)")
@@ -99,7 +99,7 @@ def result(ax, qa, sdf, qmed, smed):
     ax.set_ylabel("Correct answer in top-25 of ~200 (%) ↑", fontsize=12.5)
     ax.set_ylim(0, 78)
     ax.set_title("Document-implanted facts compose latently;\nQ&A-implanted facts stay at chance",
-                 fontsize=12.5, fontweight="bold")
+                 fontsize=12.5, fontweight="bold", pad=12)
     ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
     ax.tick_params(labelsize=11)
 
