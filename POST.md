@@ -1,5 +1,7 @@
 # Does synthetic document finetuning produce composable facts?
 
+![Schematic of the setup and the headline result](results/plots/hero.png)
+
 *(Figures are in `results/plots/` — referenced inline below by filename for upload.)*
 
 *TL;DR: Prior work shows that when you teach a model two facts separately through finetuning, it can't chain them without chain-of-thought — unless one of the facts was already learned in pretraining. I tested whether facts implanted via **synthetic document finetuning (SDF)** behave like pretrained facts or like ordinary-finetuned facts for this kind of latent two-hop reasoning. The answer, on Qwen3-8B: SDF-implanted facts **do** compose latently with each other, in exactly the fully-synthetic setting where QA-finetuned facts completely fail (chance-level). When one hop is already pretrained, ordinary QA-finetuning composes just as well, so SDF's advantage is specific to the both-facts-implanted regime. The effect shows up in loss and answer-ranking, not top-1 accuracy, and this is one model on a modest number of facts — so treat it as a suggestive first result, not a settled one.*
