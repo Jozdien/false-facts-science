@@ -62,11 +62,11 @@ def schematic(ax):
     docpile(ax, 0.27, 0.80, '"…Mira is married\nto Tomas…"', BLUE, "Fact 1 (hop A)")
     docpile(ax, 0.73, 0.80, '"…Tomas was born\nin Veyra…"', BLUE, "Fact 2 (hop B)")
     ax.annotate("no document mentions both Mira and Veyra",
-                (0.5, 0.685), ha="center", fontsize=10, style="italic", color=RED)
+                (0.5, 0.655), ha="center", fontsize=10, style="italic", color=RED)
 
     box(ax, (0.5, 0.55), 0.52, 0.085, "Qwen3-8B finetuned on the two facts", "#eef3fb", BLUE, 11, True)
-    arrow(ax, (0.27, 0.73), (0.40, 0.595))
-    arrow(ax, (0.73, 0.73), (0.60, 0.595))
+    arrow(ax, (0.25, 0.70), (0.40, 0.595))
+    arrow(ax, (0.75, 0.70), (0.60, 0.595))
 
     box(ax, (0.5, 0.40), 0.78, 0.075, 'no chain-of-thought:  "What city was Mira\'s spouse born in?"',
         "#f7f7f7", GRAY, 10.5)
@@ -74,15 +74,15 @@ def schematic(ax):
 
     box(ax, (0.5, 0.265), 0.30, 0.075, "answer:  Veyra", "white", INK, 11.5, True)
     arrow(ax, (0.5, 0.36), (0.5, 0.305))
-    ax.text(0.5, 0.185, "requires chaining  Mira → Tomas → Veyra  inside a single forward pass",
+    ax.text(0.5, 0.16, "requires chaining  Mira → Tomas → Veyra  inside a single forward pass",
             ha="center", fontsize=9.5, style="italic", color=GRAY)
 
     # the two ways facts are taught (the compared conditions)
-    ax.add_patch(FancyBboxPatch((0.06, 0.03, ), 0.88, 0.085,
+    ax.add_patch(FancyBboxPatch((0.06, 0.0), 0.88, 0.115,
                  boxstyle="round,pad=0.008,rounding_size=0.015", fc="#fafafa", ec="#cccccc", lw=1))
-    ax.text(0.5, 0.093, "Two ways to teach the facts:", ha="center", fontsize=10, fontweight="bold", color=INK)
-    ax.text(0.30, 0.055, "● synthetic documents (SDF)", ha="center", fontsize=10, color=GREEN, fontweight="bold")
-    ax.text(0.70, 0.055, "● question/answer pairs (QA-SFT)", ha="center", fontsize=10, color=RED, fontweight="bold")
+    ax.text(0.5, 0.088, "Two ways to teach the facts:", ha="center", fontsize=10, fontweight="bold", color=INK)
+    ax.text(0.30, 0.035, "● synthetic documents (SDF)", ha="center", fontsize=10, color=GREEN, fontweight="bold")
+    ax.text(0.70, 0.035, "● question/answer pairs (QA-SFT)", ha="center", fontsize=10, color=RED, fontweight="bold")
 
 
 def result(ax, qa, sdf, qmed, smed):
