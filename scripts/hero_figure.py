@@ -55,14 +55,15 @@ def arrow(ax, p0, p1, color=GRAY):
 
 
 def schematic(ax):
-    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
+    ax.set_xlim(0, 1); ax.set_ylim(-0.03, 1); ax.axis("off")
     ax.text(0.5, 0.965, "Implant two facts that never co-occur, then ask the two-hop question with no CoT",
             ha="center", fontsize=13, fontweight="bold", color=INK)
 
     docpile(ax, 0.27, 0.80, '"…Mira is married\nto Tomas…"', BLUE, "Fact 1 (hop A)")
     docpile(ax, 0.73, 0.80, '"…Tomas was born\nin Veyra…"', BLUE, "Fact 2 (hop B)")
-    ax.annotate("no document mentions both Mira and Veyra",
-                (0.5, 0.655), ha="center", fontsize=10, style="italic", color=RED)
+    ax.text(0.5, 0.655, "no document mentions\nboth Mira and Veyra",
+            ha="center", va="center", fontsize=10, style="italic", color=RED,
+            linespacing=1.3)
 
     box(ax, (0.5, 0.55), 0.52, 0.085, "Qwen3-8B finetuned on the two facts", "#eef3fb", BLUE, 11, True)
     arrow(ax, (0.25, 0.70), (0.40, 0.595))
