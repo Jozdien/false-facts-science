@@ -25,7 +25,9 @@ I'll be precise here, because the result hinges on a few methodological choices 
 **The two regimes.** Following the two-hop paper:
 
 - *Fully-synthetic* ("spouses"): both hops are made-up. Triplet ⟨A, B, C⟩ means "A's spouse is B" and "B was born in city C"; the two-hop question is "where was A's spouse born?" with answer C. Both atomic facts have to be implanted.
-- *Semi-synthetic*: the first hop is made-up (a fictional person's favorite X), the second hop is a real attribute of X that the model knows from pretraining. 18 datasets (programming languages, universities, etc.).
+- *Semi-synthetic*: the first hop is made-up (a fictional person's favorite X), the second hop is a real attribute of X that the model knows from pretraining. The paper has 18 such datasets (programming languages, universities, etc.), each with 20 first-hop facts.
+
+**How much I test.** This covers one of the paper's two regimes in full and a slice of the other. Fully-synthetic: 40 triplets (each a two-hop chain, so 80 atomic facts implanted across the two separately-generated hops), drawn from the spouses dataset's 243 undemonstrated triplets — the paper has one spouses dataset, and I use it. Semi-synthetic: 2 of the paper's 18 datasets (programming languages and universities), 20 facts each, so 40 facts. So: 1 of 1 fully-synthetic dataset-equivalents, 2 of 18 semi-synthetic.
 
 **The two injection methods I compare.**
 
