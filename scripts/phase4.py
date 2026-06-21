@@ -53,7 +53,7 @@ async def main():
     p.add_argument("--epochs", type=int, default=1)
     p.add_argument("--lr", type=float, default=4.7e-4)
     p.add_argument("--batch-size", type=int, default=64)
-    p.add_argument("--docs-stage", choices=["final", "filtered"], default="filtered")
+    p.add_argument("--docs-stage", choices=["final", "filtered", "audited"], default="filtered")
     p.add_argument("--c4-ratio", type=float, default=0.0,
                    help="C4 docs as a multiple of SDF docs; ablation found 0 best for our setting")
     p.add_argument("--no-qa", action="store_true",

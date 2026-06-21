@@ -27,7 +27,7 @@ async def main():
     p.add_argument("--lr", type=float, default=4.7e-4)
     p.add_argument("--batch-size", type=int, default=16)
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
-    p.add_argument("--docs-stage", choices=["final", "filtered"], default="final",
+    p.add_argument("--docs-stage", choices=["final", "filtered", "audited"], default="final",
                    help="final = revised+refiltered corpus; filtered = unrevised")
     args = p.parse_args()
 
@@ -55,7 +55,8 @@ async def main():
     datums += [doc_datum(t, doctag=False) for t in c4_texts]
 
     run_name = f"sdf-{args.dataset}-d{args.docs_per_fact}-s{args.seed}"
-    out_dir = RESULTS_DIR / "phase3" / args.dataset / f"d{args.docs_per_fact}_seed{args.seed}"
+    stage_tag = "" if args.docs_stage == "final" else f"_{args.docs_stage}"
+    out_dir = RESULTS_DIR / "phase3" / args.dataset / f"d{args.docs_per_fact}_seed{args.seed}{stage_tag}"
     out_dir.mkdir(parents=True, exist_ok=True)
     n_tokens = sum(d.model_input.length for d in datums)
     save_json(out_dir / "config.json", {

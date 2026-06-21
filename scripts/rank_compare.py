@@ -28,7 +28,7 @@ async def main():
     p.add_argument("--dataset", required=True)
     p.add_argument("--mode", choices=["qasft", "sdf"], required=True)
     p.add_argument("--docs-per-fact", type=int, default=2000)
-    p.add_argument("--docs-stage", choices=["final", "filtered"], default="final")
+    p.add_argument("--docs-stage", choices=["final", "filtered", "audited"], default="final")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--lr", type=float, default=4.7e-4)
     args = p.parse_args()
@@ -51,7 +51,8 @@ async def main():
             docs = [d["content"] for d in load_jsonl(path)] if path.exists() else []
             sdf += rng.sample(docs, min(args.docs_per_fact, len(docs))) if docs else []
         datums = [doc_datum(t, doctag=True) for t in sdf]
-        name = f"rank-sdf-d{args.docs_per_fact}-{args.dataset}-s{args.seed}"
+        stage_tag = "" if args.docs_stage == "final" else f"-{args.docs_stage}"
+        name = f"rank-sdf-d{args.docs_per_fact}{stage_tag}-{args.dataset}-s{args.seed}"
         cfg = {"mode": "sdf", "docs_per_fact": args.docs_per_fact, "epochs": epochs, "n_sdf": len(sdf)}
 
     out_dir = RESULTS_DIR / "rank_compare" / name
