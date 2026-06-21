@@ -270,10 +270,20 @@ in its purest form, and reinforces that the fully-synthetic spouses test is the 
 PL: only 18/810 are literal leaks (the regex re-filter let ~0.02% through — a tiny real finding);
 the rest are the judge re-reading the first-hop fact.
 
-Re-runs (dropping ALL flagged docs — false positives included, the conservative choice):
-- Fully-synthetic: 3 Phase-4 no-QA seeds on the audited spouses corpus. [RUNNING]
-- Semi-synthetic: SDF rank cells (PL clean at 1%; universities an aggressive 17%-prune stress
-  test) on audited corpora. [RUNNING]
+Re-runs (dropping ALL flagged docs — false positives included, the conservative choice) — DONE,
+result unchanged:
+| condition | original | audited (leak-pruned) |
+|---|---|---|
+| Fully-synth Phase 4 (3 seeds): loss-adv | +4.7/+5.1/+4.7 | +4.50/+5.01/+4.51 |
+| Fully-synth: median rank / top-25 | 18 / 64% | 16 / 69% |
+| Semi-synth SDF clean rank-1, PL | 0.067 | 0.067 |
+| Semi-synth SDF clean rank-1, universities | 0.050 | 0.050 (after a 17% prune) |
+
+**The composition result is not leak-driven.** Dropping every document an LLM flagged as even
+hinting at the second fact — a conservative superset of true leaks (true leaks ≈ 0) — leaves the
+fully-synthetic headline unchanged (if anything marginally stronger, within seed noise), and the
+semi-synthetic cells bit-identical. Combined with the audit's 0-injected-leaks finding, the small
+number of borderline docs was not pulling weight.
 
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
