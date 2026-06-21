@@ -246,6 +246,35 @@ regardless — fully-synthetic composition is a rank/loss phenomenon, not an acc
 paper's framing). #3's goal of a clean accuracy number isn't attainable here; rank/loss is the
 honest metric.
 
+## Full-corpus leak audit (100% of docs judged by Haiku, reject flagged) — re-runs in progress
+
+Motivation: rule out that the small number of leak docs the sampled audit missed are driving
+the composition result. Audited every document with a per-setting prompt (semi-synth: any banned
+second-hop attribute of e2; spouses hop-A: any birthplace for e2; spouses hop-B: any spouse for e2).
+
+Flag rates and what they actually are:
+| corpus | docs | flagged | contain the ACTUAL banned string |
+|---|---|---|---|
+| spouses (fully-synth) | 117,912 | 3.1% | **0 / 3,707** |
+| programming_languages | 78,383 | 1.0% | 18 / 810 |
+| universities | 70,010 | 17.4% | **0 / 12,187** |
+
+**The flags massively over-count real leaks, and the reason is itself informative.** Spouses:
+flags are the generator inventing in-world factions/regions ("Wei of the Ashgrove Compact"),
+never the actual birth city → 0 real leaks (separate-universe construction holds). Universities:
+the judge flags on its own *world knowledge* — "mentions Stanford → implies USA" — so 17% of docs
+are flagged despite **0** containing any injected banned fact. That's not a pipeline leak; it's
+intrinsic to the semi-synthetic design (you can't evoke a fictional person's love of a *real*
+university without the reader inferring the university's real attributes). It's the shortcut-confound
+in its purest form, and reinforces that the fully-synthetic spouses test is the trustworthy one.
+PL: only 18/810 are literal leaks (the regex re-filter let ~0.02% through — a tiny real finding);
+the rest are the judge re-reading the first-hop fact.
+
+Re-runs (dropping ALL flagged docs — false positives included, the conservative choice):
+- Fully-synthetic: 3 Phase-4 no-QA seeds on the audited spouses corpus. [RUNNING]
+- Semi-synthetic: SDF rank cells (PL clean at 1%; universities an aggressive 17%-prune stress
+  test) on audited corpora. [RUNNING]
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
