@@ -51,8 +51,6 @@ Before anything else, the QA-SFT baselines reproduce the two-hop paper on Qwen3-
 - Fully-synthetic spouses: one-hop recall 1.00/1.00, two-hop no-CoT accuracy **0.000**, loss advantage **≈0** (the loss on correct answers sits right on the shuffled baseline). The headline failure, reproduced exactly.
 - Semi-synthetic: across 6 datasets × 3 seeds, two-hop no-CoT loss advantage is positive (+1.7 mean), matching their "semi-synthetic composes" result. Qwen3-8B's second-hop knowledge (66.7%) is close to their Llama-3-8B (65%).
 
-![Fully-synthetic spouses replication](results/plots/phase1a_spouses.png)
-*Replicating the two-hop paper's Experiment 1 on Qwen3-8B. Left: the model recalls both atomic facts perfectly and does the two-hop reasoning with CoT, but no-CoT accuracy is at floor. Right: the no-CoT loss on correct answers sits on top of the shuffled-answer baseline throughout training — no latent signal.*
 
 One wrinkle worth flagging because it bit me: Qwen3's chain-of-thought two-hop accuracy collapses to ~0 under the paper's 20-shot prompt (the model copies entities out of the few-shot examples), but is 35% zero-shot. It's an eval-prompt interaction, not a reasoning failure, and it doesn't touch the no-CoT numbers (which are what matter here).
 
@@ -67,8 +65,8 @@ The result, against the QA-SFT baseline on the *same 40 triplets* (both methods 
 | QA-SFT | median ~120 (**chance**) | 12% | ≈0 |
 | SDF | **median ~20** | **62%** | **+4.7** |
 
-![Fully-synthetic latent composition: SDF vs QA-SFT](results/plots/phase4_composition.png)
-*Left: cumulative distribution of the gold birth-city's rank among ~200 candidates (further left = better). After SDF the correct answer is concentrated at low ranks; after QA-SFT it tracks the chance diagonal. Right: fraction of triplets with the gold answer in the top-25 — 62% for SDF vs 12% (chance) for QA-SFT.*
+![Fully-synthetic: SDF composes, QA-SFT at chance](results/plots/summary_fully_synthetic.png)
+*Both methods recall the implanted atomic facts (left), but only SDF composes them: the gold birth-city lands in the top-25 of ~200 candidates 64% of the time vs 12% (chance) for QA-SFT, and the two-hop no-CoT loss advantage is +4.8 nats vs ≈0 (right). SDF is 3 seeds (error bars = std); QA-SFT is the matched Phase-1 baseline on the same 40 triplets. Top-1 accuracy is ~0 for both — composition here is a distributional shift, which is why the metric is rank/loss, following the two-hop paper.*
 
 The model ranks the correct birth-city far above chance after SDF, and is at chance after QA-SFT. Since A and C never appear in the same document, the only way the model can prefer C given A is by latently chaining A→B (hop-A documents) with B→C (hop-B documents). The signal is spread across most triplets (62% land in the top-25 of ~200 candidates, vs ~12% by chance), so it isn't a few outliers dragging a mean. Three seeds give loss advantages of +4.7 / +5.1 / +4.7.
 
@@ -94,6 +92,9 @@ The fix is to score with the paper's own constrained/rank-1 metric (you can't wi
 | SDF universities | 0.05 | +0.01 |
 
 So once the artifact is gone, **QA-SFT composes at least as well as SDF in the semi-synthetic regime** — the opposite of the raw numbers. This makes sense: when the second hop is already pretrained, QA-SFT's sharp first-hop injection chains with it fine (that's the paper's own semi-synthetic result), and SDF buys you nothing extra.
+
+![Semi-synthetic: both compose, QA-SFT ≥ SDF](results/plots/summary_semi_synthetic.png)
+*De-confounded semi-synthetic comparison (clean non-shortcut attributes, constrained rank-1 metric, first-hop recall 1.00 for both). On both two-hop rank-1 accuracy (left) and loss advantage (right), QA-SFT matches or beats SDF — SDF's advantage from the fully-synthetic setting disappears once a hop is pretrained. Single seed per cell.*
 
 ## Is it just belief strength, or compute?
 

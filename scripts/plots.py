@@ -19,6 +19,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+from twohop.common import load_jsonl
+
 RES = Path(__file__).resolve().parents[1] / "results"
 OUT = RES / "plots"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -319,6 +321,139 @@ def plot_phase4():
     print("wrote phase4_composition.png")
 
 
+QA_C, SDF_C = "#D65F5F", "#5BA85B"
+
+
+def _ranks(path, restrict_e1=None):
+    import re as _re
+    rk = json.loads(Path(path).read_text())
+
+    def e1(q):
+        m = _re.search(r"person (\w+) is married", q)
+        return m.group(1) if m else None
+    rs = [s["gold_rank"] for s in rk if s.get("gold_rank") is not None
+          and (restrict_e1 is None or e1(s["question"]) in restrict_e1)]
+    return rs
+
+
+def _last(path):
+    rows = [json.loads(line) for line in open(path)]
+    return rows[-1] if rows else None
+
+
+def _clean_means(row):
+    r1 = [v for k, v in row.items() if k.startswith("rank1_") and not row.get("shortcut_" + k[6:], False)]
+    la = [v for k, v in row.items()
+          if k.startswith("loss_advantage_") and not row.get("shortcut_" + k[len("loss_advantage_"):], False)]
+    return (sum(r1) / len(r1) if r1 else 0), (sum(la) / len(la) if la else 0)
+
+
+def _vlabel(ax, bars, vals, fmt="{:.0f}%", scale=1, dy=1.0):
+    for b, v in zip(bars, vals):
+        ax.text(b.get_x() + b.get_width() / 2, b.get_height() + dy, fmt.format(v * scale),
+                ha="center", va="bottom", fontsize=11, fontweight="bold")
+
+
+# ---------------- Summary 1: fully-synthetic, QA-SFT vs SDF ----------------
+def plot_fully_summary():
+    import statistics as st
+    sel = {t["e1"] for t in load_jsonl(RES.parent / "data/sdf/spouses_phase4/contexts/triplets.jsonl")}
+    qa_rank = _ranks(RES / "phase1a/lr0.00047_seed0/rank_frac1.00.json", sel)
+    if not qa_rank:
+        return
+    qa_top25 = 100 * sum(r < 25 for r in qa_rank) / len(qa_rank)
+    qa_la = _last(RES / "phase1a/lr0.00047_seed0/evals.jsonl")["loss_advantage"]
+    qa_fh = _last(RES / "phase1a/lr0.00047_seed0/evals.jsonl")["acc_a"]
+    s_t25, s_la, s_fh = [], [], []
+    for s in (0, 1, 2):
+        d = RES / f"phase4/d1500_seed{s}_filtered_noqa"
+        rk = _ranks(d / "rank_frac1.00.json")
+        s_t25.append(100 * sum(r < 25 for r in rk) / len(rk))
+        row = _last(d / "evals.jsonl")
+        s_la.append(row["loss_advantage"]); s_fh.append((row["acc_a_sdf"] + row["acc_b_sdf"]) / 2)
+
+    fig, (axL, axR) = plt.subplots(1, 2, figsize=(13, 5.5))
+    # left: accuracy-style (first-hop recall + two-hop answer-in-top-25)
+    groups = ["First-hop recall\n(knows the facts)", "Two-hop: answer\nin top-25 of ~200"]
+    qa_vals = [qa_fh * 100, qa_top25]
+    sdf_vals = [st.mean(s_fh) * 100, st.mean(s_t25)]
+    sdf_err = [st.pstdev(s_fh) * 100, st.pstdev(s_t25)]
+    x = range(len(groups)); w = 0.38
+    b1 = axL.bar([i - w / 2 for i in x], qa_vals, w, color=QA_C, edgecolor="white", label="QA-SFT")
+    b2 = axL.bar([i + w / 2 for i in x], sdf_vals, w, yerr=[0, sdf_err[1]], capsize=4,
+                 color=SDF_C, edgecolor="white", label="SDF")
+    for b, v in zip(b1, qa_vals):
+        axL.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
+    for b, v in zip(b2, sdf_vals):
+        axL.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
+    axL.axhline(12, ls="--", color="gray", lw=1)
+    axL.text(1.46, 13.5, "chance (top-25)", color="gray", fontsize=9, ha="right")
+    axL.set_xticks(list(x)); axL.set_xticklabels(groups, fontsize=11)
+    axL.set_ylabel("Accuracy (%) ↑", fontsize=13); axL.set_ylim(0, 108)
+    axL.legend(fontsize=11, loc="upper center")
+    # right: two-hop loss advantage
+    bars = axR.bar(["QA-SFT", "SDF"], [qa_la, st.mean(s_la)], 0.55,
+                   yerr=[0, st.pstdev(s_la)], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
+    for b, v in zip(bars, [qa_la, st.mean(s_la)]):
+        axR.text(b.get_x() + b.get_width() / 2, v + 0.12, f"{v:+.1f}", ha="center", fontsize=12, fontweight="bold")
+    axR.axhline(0, ls="--", color="gray", lw=1)
+    axR.text(1.46, 0.15, "chance", color="gray", fontsize=9, ha="right")
+    axR.set_ylabel("Two-hop no-CoT loss advantage (nats) ↑", fontsize=13)
+    axR.set_ylim(-0.6, st.mean(s_la) + 1)
+    for ax in (axL, axR):
+        ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+        ax.tick_params(labelsize=11)
+    fig.suptitle("Fully-synthetic (both facts implanted): SDF composes latently, QA-SFT is at chance",
+                 fontsize=14.5, fontweight="bold")
+    fig.tight_layout()
+    fig.savefig(OUT / "summary_fully_synthetic.png", dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    print("wrote summary_fully_synthetic.png")
+
+
+# ---------------- Summary 2: semi-synthetic, QA-SFT vs SDF ----------------
+def plot_semi_summary():
+    dss = [("programming_languages", "programming\nlanguages"), ("universities", "universities")]
+    rows = {}
+    for ds, _ in dss:
+        qa = _last(RES / f"rank_compare/rank-qasft-{ds}-s0/evals.jsonl")
+        sdf = _last(RES / f"rank_compare/rank-sdf-d2000-{ds}-s0/evals.jsonl")
+        if not qa or not sdf:
+            return
+        rows[ds] = (_clean_means(qa), _clean_means(sdf))
+    labels = [lbl for _, lbl in dss]
+    qa_r1 = [rows[ds][0][0] * 100 for ds, _ in dss]
+    sdf_r1 = [rows[ds][1][0] * 100 for ds, _ in dss]
+    qa_la = [rows[ds][0][1] for ds, _ in dss]
+    sdf_la = [rows[ds][1][1] for ds, _ in dss]
+
+    fig, (axL, axR) = plt.subplots(1, 2, figsize=(13, 5.5))
+    x = range(len(labels)); w = 0.38
+    for ax, qa, sdf, ylab, fmt, stress in [
+        (axL, qa_r1, sdf_r1, "Two-hop rank-1 accuracy (%) ↑", "{:.0f}%", False),
+        (axR, qa_la, sdf_la, "Two-hop loss advantage (nats) ↑", "{:+.2f}", True)]:
+        b1 = ax.bar([i - w / 2 for i in x], qa, w, color=QA_C, edgecolor="white", label="QA-SFT")
+        b2 = ax.bar([i + w / 2 for i in x], sdf, w, color=SDF_C, edgecolor="white", label="SDF")
+        for bars, vals in [(b1, qa), (b2, sdf)]:
+            for b, v in zip(bars, vals):
+                ax.text(b.get_x() + b.get_width() / 2, b.get_height() + (0.4 if not stress else 0.01),
+                        fmt.format(v), ha="center", fontsize=10.5, fontweight="bold")
+        ax.set_xticks(list(x)); ax.set_xticklabels(labels, fontsize=11)
+        ax.set_ylabel(ylab, fontsize=13)
+        ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+        ax.tick_params(labelsize=11)
+    axL.legend(fontsize=11, loc="upper left"); axL.set_ylim(0, max(qa_r1 + sdf_r1) + 6)
+    axR.axhline(0, ls="-", color="gray", lw=0.8); axR.set_ylim(0, max(qa_la + sdf_la) + 0.2)
+    fig.suptitle("Semi-synthetic (one fact pretrained): both compose — QA-SFT ≥ SDF (de-confounded)",
+                 fontsize=14.5, fontweight="bold")
+    fig.text(0.5, 0.005, "First-hop recall = 1.00 for both methods · clean (non-shortcut) attributes · "
+             "constrained rank-1 metric (no name-echo artifact)", ha="center", fontsize=9.5, color="#555")
+    fig.tight_layout(rect=[0, 0.03, 1, 1])
+    fig.savefig(OUT / "summary_semi_synthetic.png", dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    print("wrote summary_semi_synthetic.png")
+
+
 # ---------------- Compute control: 10x QA-SFT compute stays at chance ----------------
 def plot_compute_control():
     base1 = load_evals(RES / "phase1a" / "lr0.00047_seed0" / "evals.jsonl")
@@ -381,7 +516,7 @@ def plot_compute_control():
 
 if __name__ == "__main__":
     for fn in (plot_phase1a, plot_phase1b, plot_phase3, plot_belief, plot_phase4,
-               plot_compute_control):
+               plot_fully_summary, plot_semi_summary, plot_compute_control):
         try:
             fn()
         except Exception as e:
