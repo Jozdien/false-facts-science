@@ -365,16 +365,19 @@ def _fully_data():
              qa_r1=100 * sum(r == 0 for r in qa_rank) / len(qa_rank),
              qa_t25=100 * sum(r < 25 for r in qa_rank) / len(qa_rank),
              qa_la=qa_row["loss_advantage"], qa_fh=qa_row["acc_a"])
-    s_r1, s_t25, s_la, s_fh = [], [], [], []
+    d.update(qa_h1=qa_row["acc_a"] * 100, qa_h2=qa_row["acc_b"] * 100)
+    s_r1, s_t25, s_la, s_h1, s_h2 = [], [], [], [], []
     for s in (0, 1, 2):
         dd = RES / f"phase4/d1500_seed{s}_filtered_noqa"
         rk = _ranks(dd / "rank_frac1.00.json")
         s_r1.append(100 * sum(r == 0 for r in rk) / len(rk))
         s_t25.append(100 * sum(r < 25 for r in rk) / len(rk))
         row = _last(dd / "evals.jsonl")
-        s_la.append(row["loss_advantage"]); s_fh.append((row["acc_a_sdf"] + row["acc_b_sdf"]) / 2)
+        s_la.append(row["loss_advantage"]); s_h1.append(row["acc_a_sdf"] * 100); s_h2.append(row["acc_b_sdf"] * 100)
     d.update(sdf_r1=st.mean(s_r1), sdf_r1e=st.pstdev(s_r1), sdf_t25=st.mean(s_t25), sdf_t25e=st.pstdev(s_t25),
-             sdf_la=st.mean(s_la), sdf_lae=st.pstdev(s_la), sdf_fh=st.mean(s_fh))
+             sdf_la=st.mean(s_la), sdf_lae=st.pstdev(s_la),
+             sdf_h1=st.mean(s_h1), sdf_h1e=st.pstdev(s_h1), sdf_h2=st.mean(s_h2), sdf_h2e=st.pstdev(s_h2),
+             sdf_fh=(st.mean(s_h1) + st.mean(s_h2)) / 200)
     return d
 
 
@@ -384,8 +387,21 @@ def plot_fully_summary():
         return
     d = _fully_data()
     chance = 100 / d["ncand"]
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(12.5, 5.6))
-    # left: two-hop constrained rank-1 accuracy, with chance line
+    fig, (axA, axL, axR) = plt.subplots(1, 3, figsize=(16.5, 5.6))
+    # panel A: atomic-fact recall — first hop (A->B) and second hop (B->C)
+    groups = ["First hop\n(A → spouse B)", "Second hop\n(B → city C)"]
+    qa_rec = [d["qa_h1"], d["qa_h2"]]; sdf_rec = [d["sdf_h1"], d["sdf_h2"]]; sdf_rece = [d["sdf_h1e"], d["sdf_h2e"]]
+    x = range(2); w = 0.38
+    b1 = axA.bar([i - w / 2 for i in x], qa_rec, w, color=QA_C, edgecolor="white", label="QA-SFT")
+    b2 = axA.bar([i + w / 2 for i in x], sdf_rec, w, yerr=sdf_rece, capsize=4, color=SDF_C, edgecolor="white", label="SDF")
+    for bars, vals in [(b1, qa_rec), (b2, sdf_rec)]:
+        for b, v in zip(bars, vals):
+            axA.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
+    axA.set_xticks(list(x)); axA.set_xticklabels(groups, fontsize=11)
+    axA.set_ylabel("Atomic-fact recall (%) ↑", fontsize=13); axA.set_ylim(0, 112)
+    axA.set_title("Both methods know both facts", fontsize=12)
+    axA.legend(fontsize=11, loc="lower center")
+    # panel L: two-hop constrained rank-1 accuracy, with chance line
     bars = axL.bar(["QA-SFT", "SDF"], [d["qa_r1"], d["sdf_r1"]], 0.55,
                    yerr=[0, d["sdf_r1e"]], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
     for b, v in zip(bars, [d["qa_r1"], d["sdf_r1"]]):
@@ -394,8 +410,8 @@ def plot_fully_summary():
     axL.text(-0.45, chance + 0.12, f"chance = 1 of {d['ncand']} = {chance:.1f}%", color="gray", fontsize=9.5, ha="left")
     axL.set_ylabel("Two-hop rank-1 accuracy (%) ↑", fontsize=13)
     axL.set_ylim(0, max(d["sdf_r1"] + d["sdf_r1e"], chance) + 1.5)
-    axL.set_title("Forced choice among all candidate cities", fontsize=12)
-    # right: two-hop loss advantage
+    axL.set_title("Two-hop: forced choice among all cities", fontsize=12)
+    # panel R: two-hop loss advantage
     bars = axR.bar(["QA-SFT", "SDF"], [d["qa_la"], d["sdf_la"]], 0.55,
                    yerr=[0, d["sdf_lae"]], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
     for b, v in zip(bars, [d["qa_la"], d["sdf_la"]]):
@@ -404,14 +420,13 @@ def plot_fully_summary():
     axR.text(1.46, 0.13, "chance", color="gray", fontsize=9.5, ha="right")
     axR.set_ylabel("Two-hop loss advantage (nats) ↑", fontsize=13)
     axR.set_ylim(-0.5, d["sdf_la"] + 1)
-    axR.set_title("Likelihood of the correct vs. random answer", fontsize=12)
-    for ax in (axL, axR):
+    axR.set_title("Two-hop: likelihood of correct vs. random", fontsize=12)
+    for ax in (axA, axL, axR):
         ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
         ax.tick_params(labelsize=11)
     fig.suptitle("Fully-synthetic (both facts implanted): SDF composes latently, QA-SFT is at chance",
-                 fontsize=14.5, fontweight="bold")
-    fig.text(0.5, 0.005, f"First-hop recall: QA-SFT {d['qa_fh']:.2f}, SDF {d['sdf_fh']:.2f} — both know the atomic "
-             "facts · SDF is 3 seeds (error bars = std) · QA-SFT is the matched Phase-1 baseline on the same 40 triplets",
+                 fontsize=15, fontweight="bold")
+    fig.text(0.5, 0.005, "SDF is 3 seeds (error bars = std) · QA-SFT is the matched Phase-1 baseline on the same 40 triplets",
              ha="center", fontsize=9.5, color="#555")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
     fig.savefig(OUT / "summary_fully_synthetic.png", dpi=200, bbox_inches="tight")
@@ -448,7 +463,9 @@ def plot_fully_top25():
 # ---------------- Summary 2: semi-synthetic, QA-SFT vs SDF ----------------
 def plot_semi_summary():
     dss = [("programming_languages", "programming\nlanguages"), ("universities", "universities")]
-    rows = {}; chance = {}
+    rows = {}; chance = {}; h2 = {}
+    secondhop = json.loads((RES / "second_hop_check/summary.json").read_text()) \
+        if (RES / "second_hop_check/summary.json").exists() else {}
     for ds, _ in dss:
         qa = _last(RES / f"rank_compare/rank-qasft-{ds}-s0/evals.jsonl")
         sdf = _last(RES / f"rank_compare/rank-sdf-d2000-{ds}-s0/evals.jsonl")
@@ -457,13 +474,29 @@ def plot_semi_summary():
         rows[ds] = (_clean_means(qa), _clean_means(sdf))
         ncs = [v for k, v in sdf.items() if k.startswith("n_cand_") and not sdf.get("shortcut_" + k[len("n_cand_"):], False)]
         chance[ds] = 100 / (sum(ncs) / len(ncs)) if ncs else None
+        h2[ds] = 100 * secondhop.get(ds, {}).get("_overall", {}).get("judge_acc_used", 0)
     labels = [lbl for _, lbl in dss]
     qa_r1 = [rows[ds][0][0] * 100 for ds, _ in dss]
     sdf_r1 = [rows[ds][1][0] * 100 for ds, _ in dss]
     qa_la = [rows[ds][0][1] for ds, _ in dss]
     sdf_la = [rows[ds][1][1] for ds, _ in dss]
+    h1 = [100.0 for _ in dss]  # first-hop (implanted) recall = 1.00 for both methods
+    h2v = [h2[ds] for ds, _ in dss]
 
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(13, 5.5))
+    fig, (axA, axL, axR) = plt.subplots(1, 3, figsize=(16.5, 5.5))
+    # panel A: recall — first hop (implanted) + second hop (pretrained); method-independent here
+    H1C, H2C = "#4878CF", "#B47CC7"
+    xa = range(len(labels)); wa = 0.38
+    ba1 = axA.bar([i - wa / 2 for i in xa], h1, wa, color=H1C, edgecolor="white", label="First hop (implanted)")
+    ba2 = axA.bar([i + wa / 2 for i in xa], h2v, wa, color=H2C, edgecolor="white", label="Second hop (pretrained)")
+    for bars, vals in [(ba1, h1), (ba2, h2v)]:
+        for b, v in zip(bars, vals):
+            axA.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
+    axA.set_xticks(list(xa)); axA.set_xticklabels(labels, fontsize=11)
+    axA.set_ylabel("Fact recall (%) ↑", fontsize=13); axA.set_ylim(0, 112)
+    axA.set_title("Both hops known (same for QA-SFT & SDF)", fontsize=12)
+    axA.legend(fontsize=10, loc="lower center")
+    axA.spines["top"].set_visible(False); axA.spines["right"].set_visible(False); axA.tick_params(labelsize=11)
     x = range(len(labels)); w = 0.38
     for ax, qa, sdf, ylab, fmt, stress in [
         (axL, qa_r1, sdf_r1, "Two-hop rank-1 accuracy (%) ↑", "{:.0f}%", False),
@@ -488,8 +521,8 @@ def plot_semi_summary():
     axR.axhline(0, ls="-", color="gray", lw=0.8); axR.set_ylim(0, max(qa_la + sdf_la) + 0.2)
     fig.suptitle("Semi-synthetic (one fact pretrained): both compose — QA-SFT ≥ SDF (de-confounded)",
                  fontsize=14.5, fontweight="bold")
-    fig.text(0.5, 0.005, "First-hop recall = 1.00 for both methods · clean (non-shortcut) attributes · "
-             "constrained rank-1 metric (no name-echo artifact)", ha="center", fontsize=9.5, color="#555")
+    fig.text(0.5, 0.005, "Two-hop panels: clean (non-shortcut) attributes · constrained rank-1 metric (no name-echo "
+             "artifact) · single seed per cell", ha="center", fontsize=9.5, color="#555")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
     fig.savefig(OUT / "summary_semi_synthetic.png", dpi=200, bbox_inches="tight")
     plt.close(fig)

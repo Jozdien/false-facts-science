@@ -38,7 +38,7 @@ I'll be precise here, because the result hinges on a few methodological choices 
 
 **Metrics.** First-hop recall is a sanity check; the other two measure two-hop composition (in increasing strictness). These three are exactly what the result plots show, so they're worth getting straight:
 
-- *First-hop recall*: can the model answer the *atomic* fact on its own ("Who is Mira married to?")? This just confirms the fact was implanted — every composition number is meaningless unless this is high. *(Noted in the footer of both result plots; ≈1.00 for both methods in both settings.)*
+- *First- and second-hop recall*: can the model answer each *atomic* fact on its own ("Who is Mira married to?" → B; "where was B born?" → C)? This just confirms the facts were implanted — every composition number is meaningless unless this is high. *(Left panel of both result plots.)*
 - *Constrained accuracy / rank-1* (two-hop): restrict the model to the set of valid answers and ask whether it ranks the true one highest. This is what the two-hop paper used for no-CoT accuracy, and — as I'll explain — it's the metric you have to use to avoid an artifact. Its chance baseline is 1/(number of candidates), which differs by setting: ~1/243 ≈ 0.4% for the fully-synthetic cities, ~1/20 ≈ 5% for the small semi-synthetic answer sets — so I draw the chance line on every plot, because "5% accuracy" means very different things at the two scales. *(Left panel of both result plots.)*
 - *Loss advantage* (two-hop): teacher-force the gold final answer, measure its negative log-likelihood, and compare to the NLL on shuffled (wrong) answers. Positive means the model's distribution favors the correct answer even if it never ranks it first. This is the two-hop paper's own primary signal, and it's chance-normalized by construction (so it's the one metric directly comparable across settings). *(Right panel of both result plots.)*
 
@@ -68,7 +68,7 @@ The result, against the QA-SFT baseline on the *same 40 triplets* (both methods 
 | SDF | **4.2%** (~10× chance) | **~18** | **64%** | **+4.8** |
 
 ![Fully-synthetic: SDF composes, QA-SFT at chance](results/plots/summary_fully_synthetic.png)
-*The two-hop composition metrics, QA-SFT vs SDF (both recall the atomic facts — see footer). Left: even under the strictest metric — forcing a choice among all 243 candidate cities — SDF ranks the true answer first 4.2% of the time vs 0% for QA-SFT, against a 0.4% chance baseline (so SDF is ~10× chance and QA-SFT is at chance). Right: the two-hop loss advantage is +4.8 nats for SDF vs ≈0 for QA-SFT. SDF is 3 seeds (error bars = std).*
+*Left: both methods recall both atomic facts (first hop A→B and second hop B→C, all ≥98%) — so any two-hop failure is a composition failure, not ignorance. Middle: under the strictest metric — forcing a choice among all 243 candidate cities — SDF ranks the true answer first 4.2% of the time vs 0% for QA-SFT, against a 0.4% chance baseline (so SDF is ~10× chance and QA-SFT is at chance). Right: the two-hop loss advantage is +4.8 nats for SDF vs ≈0 for QA-SFT. SDF is 3 seeds (error bars = std).*
 
 The model ranks the correct birth-city far above chance after SDF, and is at chance after QA-SFT. Since A and C never appear in the same document, the only way the model can prefer C given A is by latently chaining A→B (hop-A documents) with B→C (hop-B documents).
 
@@ -101,7 +101,7 @@ The fix is to score with the paper's own constrained/rank-1 metric (you can't wi
 So once the artifact is gone, **QA-SFT composes at least as well as SDF in the semi-synthetic regime** — the opposite of the raw numbers. This makes sense: when the second hop is already pretrained, QA-SFT's sharp first-hop injection chains with it fine (that's the paper's own semi-synthetic result), and SDF buys you nothing extra.
 
 ![Semi-synthetic: both compose, QA-SFT ≥ SDF](results/plots/summary_semi_synthetic.png)
-*De-confounded semi-synthetic comparison (clean non-shortcut attributes, constrained rank-1 metric, first-hop recall 1.00 for both). On both two-hop rank-1 accuracy (left, dashed chance line at ~1/20 ≈ 5%) and loss advantage (right), QA-SFT matches or beats SDF. Note the chance baseline vs. the fully-synthetic plot: here a "5%" bar is right at chance, whereas SDF's 4.2% there was ~10× its 0.4% chance — the small answer sets make these accuracies look bigger than the fully-synthetic numbers while being a weaker signal. Single seed per cell.*
+*Left: both hops are known (first hop implanted = 1.00; second hop is pretrained knowledge, 72%/95% — and identical for QA-SFT and SDF since both finetune from the same base). Middle: two-hop rank-1 accuracy with per-dataset chance lines (~1/20 ≈ 5%); QA-SFT matches or beats SDF. Right: same for loss advantage. Note the chance baseline vs. the fully-synthetic plot: here a "5%" bar is right at chance, whereas SDF's 4.2% there was ~10× its 0.4% chance — the small answer sets make these accuracies look bigger while being a weaker signal. Single seed per cell.*
 
 ## Is it just belief strength, or compute?
 
