@@ -165,13 +165,28 @@ and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge 
 
 ## How prevalent is shortcut confounding? (scan of all 69 semi-synth attributes)
 
-Counting attributes whose answer is derivable from the bridge entity's name (substring/word):
-**6/69 attributes are ≥50% name-derivable** (clear shortcut: subway/university/cathedral/observatory
-`city`, programming `file_extension`, console `manufacturer`); 10/69 have >10% leakage; the other
-~85% are clean. BUT the shortcut attributes are exactly the ones that show high two-hop *accuracy*
-— on clean attributes both QA-SFT and SDF sit at ~0 accuracy (signal only in loss/rank). So in
-our 2 SDF datasets the apparent accuracy "composition" was essentially all shortcut-driven, which
-is why fully-synthetic spouses (0% derivable by construction) is the trustworthy test.
+Careful scan of all 63 *evaluated* attributes across the paper's 17 semi-synth datasets
+(`scripts/shortcut_scan.py`, answer derivable from the bridge entity's name by substring/prefix):
+
+**Prevalence is modest: 8.5% of evaluated (entity, attribute) items are name-derivable.**
+- 5 attributes are ≥50% derivable (clear shortcut): subway `city` 100%, university `city` 85%,
+  cathedral `city` 70%, console `manufacturer` 55%, programming `file_extension` 50%.
+- 7 more are 10–50% (mostly other `city`/`country` columns); the remaining 51 are <10% (clean).
+
+**But impact ≫ prevalence (leverage), because shortcut attributes are exactly where models score.**
+On the 2 datasets we trained, of the model's *correct* free-gen two-hop answers (QA-SFT):
+- programming_languages: shortcut attrs are 25% of items but **100% of correct answers** (clean
+  attrs creator/country/year score 0%; file_extension scores 65%).
+- universities: shortcut attrs are 75% of items but **91% of correct answers** (clean founding_year
+  15%; city 80%, continent 45%, country 30%).
+
+So the benchmark is mostly clean by item count (~91%), but a paper-style two-hop *average* is
+dominated by the small shortcut subset — i.e. the reported semi-synthetic accuracy is substantially
+inflated. (Caveat: leverage uses free-gen+substring, which adds the eval artifact on top of the task
+shortcut; but even on the de-confounded constrained metric, PL clean attrs sit at chance — only
+universities founding_year shows genuine clean composition, ~30% rank-1 vs 5% chance. And we have
+empirical leverage for only 2 of 18 datasets.) This is why fully-synthetic spouses (0% derivable by
+construction) is the trustworthy test.
 
 ## Data-mix ablation (PL, d2000) — C4 ratio barely matters; result robust
 
