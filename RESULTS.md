@@ -127,15 +127,18 @@ of the raw shortcut-driven numbers.
 Fuller table (clean attrs; no top-25 since only ~16-20 candidates → trivially 100%; via
 `scripts/semi_synth_table.py`):
 
-| cell | rank-1 | top-3 | median rank (chance) | loss adv |
+| cell | rank-1 | top-3 | median rank | loss adv |
 |---|---|---|---|---|
-| QA-SFT programming | 10.0% | 27% | 6.5 (chance 8) | +0.43 |
-| SDF programming | 6.7% | 33% | 4.0 (chance 8) | +0.24 |
-| QA-SFT universities | 30.0% | 45% | 6.0 (chance 10) | +0.65 |
-| SDF universities | 5.0% | 10% | 9.0 (chance 10) | +0.01 |
+| QA-SFT programming | 10.0% | 27% | 6.5 | +0.43 |
+| SDF programming | 6.7% | 33% | 4.0 | +0.24 |
+| chance programming | 6.7% | 20% | 8 | 0 |
+| QA-SFT universities | 30.0% | 45% | 6.0 | +0.65 |
+| SDF universities | 5.0% | 10% | 9.0 | +0.01 |
+| chance universities | 5.0% | 15% | 10 | 0 |
 
-The QA≥SDF win is mostly universities; programming is a metric-dependent wash (QA ahead on
-rank-1/loss-adv, SDF ahead on top-3/median rank). This makes sense: semi-synthetic's second hop is *pretrained*,
+Read against chance: only QA-SFT/universities is clearly above chance on every metric. Programming
+is at chance on rank-1 (SDF exactly 6.7%) and only modestly above on top-3 — QA-vs-SDF differences
+there are within noise. So the QA≥SDF win is really just universities; elsewhere both barely compose. This makes sense: semi-synthetic's second hop is *pretrained*,
 and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge (the paper's Exp 4).
 
 ## THE RECONCILED PICTURE (the project's answer)

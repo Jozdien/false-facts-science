@@ -33,17 +33,23 @@ def cell(run):
     ncand = sum(ncands) / len(ncands) if ncands else 0
     return {"rank1": 100 * sum(r == 0 for r in ranks) / len(ranks),
             "top3": 100 * sum(r < 3 for r in ranks) / len(ranks),
-            "median": st.median(ranks), "chance_median": ncand / 2,
+            "median": st.median(ranks),
+            "chance1": 100 * sum(1 / n for n in ncands) / len(ncands) if ncands else 0,
+            "chance3": 100 * sum(min(3, n) / n for n in ncands) / len(ncands) if ncands else 0,
+            "chance_median": ncand / 2,
             "loss_adv": sum(la) / len(la) if la else 0}
 
 
 def main():
-    print(f"{'cell (clean attrs)':30s} {'rank-1':>7s} {'top-3':>6s} {'med rank':>9s} {'chance':>7s} {'loss-adv':>8s}")
+    print(f"{'cell (clean attrs)':30s} {'rank-1':>7s} {'top-3':>6s} {'med rank':>9s} {'loss-adv':>8s}")
     for ds in DATASETS:
+        c = None
         for m, run in [("QA-SFT", f"rank-qasft-{ds}-s0"), ("SDF", f"rank-sdf-d2000-{ds}-s0")]:
             c = cell(run)
             print(f"{ds[:18] + ' ' + m:30s} {c['rank1']:6.1f}% {c['top3']:5.0f}% {c['median']:9.1f} "
-                  f"{c['chance_median']:7.1f} {c['loss_adv']:+8.2f}")
+                  f"{c['loss_adv']:+8.2f}")
+        print(f"{'  chance (' + ds[:14] + ')':30s} {c['chance1']:6.1f}% {c['chance3']:5.0f}% "
+              f"{c['chance_median']:9.1f} {0.0:+8.2f}")
 
 
 if __name__ == "__main__":

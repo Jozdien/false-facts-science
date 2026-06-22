@@ -93,16 +93,18 @@ It's worth being clear that this shortcut isn't only my problem — it bears on 
 
 The fix is to score with the paper's own constrained/rank-1 metric (you can't win by echoing a name; you have to rank the actual answer highest) and report only clean attributes. De-confounded:
 
-| cell (clean attributes) | rank-1 | top-3 | median rank (chance) | loss advantage |
+| cell (clean attributes) | rank-1 | top-3 | median rank | loss advantage |
 |---|---|---|---|---|
-| QA-SFT — programming | 10% | 27% | 6.5 (of ~16, chance 8) | +0.43 |
-| SDF — programming | 6.7% | 33% | 4.0 (chance 8) | +0.24 |
-| QA-SFT — universities | 30% | 45% | 6.0 (of 20, chance 10) | +0.65 |
-| SDF — universities | 5% | 10% | 9.0 (chance 10) | +0.01 |
+| QA-SFT — programming | 10% | 27% | 6.5 | +0.43 |
+| SDF — programming | 6.7% | 33% | 4.0 | +0.24 |
+| *chance — programming* | *6.7%* | *20%* | *8* | *0* |
+| QA-SFT — universities | 30% | 45% | 6.0 | +0.65 |
+| SDF — universities | 5% | 10% | 9.0 | +0.01 |
+| *chance — universities* | *5%* | *15%* | *10* | *0* |
 
-(Unlike the fully-synthetic setting, there's no top-25 column here — with only ~16–20 candidate answers, "in the top-25" is everything, so it's trivially 100%. The small-set analog is top-3.)
+(Candidate sets differ by attribute — programming: creator-surname 20, home-country 11, release-year 17; universities: founding-year 20 — so chance is pooled across them. No top-25 column: with only ~16–20 candidates, "top-25" is everything, trivially 100%; the small-set analog is top-3.)
 
-So once the artifact is gone, **QA-SFT composes at least as well as SDF in the semi-synthetic regime** — the opposite of the raw numbers. But the table also shows the win is mostly *universities*, where QA-SFT leads on every metric; on programming languages it's a wash that flips by metric (QA-SFT ahead on rank-1 and loss advantage, SDF ahead on top-3 and median rank). Either way, SDF buys nothing clear here — which makes sense: when the second hop is already pretrained, QA-SFT's sharp first-hop injection chains with it fine (that's the paper's own semi-synthetic result).
+So once the artifact is gone, **QA-SFT composes at least as well as SDF in the semi-synthetic regime** — the opposite of the raw numbers. But read against the chance rows, most cells are barely composing at all: the only one clearly above chance on every metric is **QA-SFT on universities**. On programming languages both methods sit *at* chance on rank-1 (SDF is exactly chance, 6.7%) and only modestly above it on top-3, so the QA-vs-SDF differences there are within noise; SDF on universities is at-or-below chance. Either way, SDF buys nothing clear here — which makes sense: when the second hop is already pretrained, QA-SFT's sharp first-hop injection chains with it fine (the paper's own semi-synthetic result), and the genuine composition that does happen (universities QA-SFT) doesn't need documents.
 
 ![Semi-synthetic: both compose, QA-SFT ≥ SDF](results/plots/summary_semi_synthetic.png)
 *Left: both hops are known (first hop implanted = 1.00; second hop is pretrained knowledge, 72%/95% — and identical for QA-SFT and SDF since both finetune from the same base). Middle: two-hop rank-1 accuracy with per-dataset chance lines (~1/20 ≈ 5%); QA-SFT matches or beats SDF. Right: same for loss advantage. Note the chance baseline vs. the fully-synthetic plot: here a "5%" bar is right at chance, whereas SDF's 4.2% there was ~10× its 0.4% chance — the small answer sets make these accuracies look bigger while being a weaker signal. Single seed per cell.*
