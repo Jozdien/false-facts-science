@@ -354,73 +354,109 @@ def _vlabel(ax, bars, vals, fmt="{:.0f}%", scale=1, dy=1.0):
                 ha="center", va="bottom", fontsize=11, fontweight="bold")
 
 
-# ---------------- Summary 1: fully-synthetic, QA-SFT vs SDF ----------------
-def plot_fully_summary():
+def _fully_data():
     import statistics as st
     sel = {t["e1"] for t in load_jsonl(RES.parent / "data/sdf/spouses_phase4/contexts/triplets.jsonl")}
+    cfg = json.loads((RES / "phase1a/lr0.00047_seed0/config.json").read_text())
+    ncand = cfg.get("n_candidates", 243)
     qa_rank = _ranks(RES / "phase1a/lr0.00047_seed0/rank_frac1.00.json", sel)
-    if not qa_rank:
-        return
-    qa_top25 = 100 * sum(r < 25 for r in qa_rank) / len(qa_rank)
-    qa_la = _last(RES / "phase1a/lr0.00047_seed0/evals.jsonl")["loss_advantage"]
-    qa_fh = _last(RES / "phase1a/lr0.00047_seed0/evals.jsonl")["acc_a"]
-    s_t25, s_la, s_fh = [], [], []
+    qa_row = _last(RES / "phase1a/lr0.00047_seed0/evals.jsonl")
+    d = dict(ncand=ncand,
+             qa_r1=100 * sum(r == 0 for r in qa_rank) / len(qa_rank),
+             qa_t25=100 * sum(r < 25 for r in qa_rank) / len(qa_rank),
+             qa_la=qa_row["loss_advantage"], qa_fh=qa_row["acc_a"])
+    s_r1, s_t25, s_la, s_fh = [], [], [], []
     for s in (0, 1, 2):
-        d = RES / f"phase4/d1500_seed{s}_filtered_noqa"
-        rk = _ranks(d / "rank_frac1.00.json")
+        dd = RES / f"phase4/d1500_seed{s}_filtered_noqa"
+        rk = _ranks(dd / "rank_frac1.00.json")
+        s_r1.append(100 * sum(r == 0 for r in rk) / len(rk))
         s_t25.append(100 * sum(r < 25 for r in rk) / len(rk))
-        row = _last(d / "evals.jsonl")
+        row = _last(dd / "evals.jsonl")
         s_la.append(row["loss_advantage"]); s_fh.append((row["acc_a_sdf"] + row["acc_b_sdf"]) / 2)
+    d.update(sdf_r1=st.mean(s_r1), sdf_r1e=st.pstdev(s_r1), sdf_t25=st.mean(s_t25), sdf_t25e=st.pstdev(s_t25),
+             sdf_la=st.mean(s_la), sdf_lae=st.pstdev(s_la), sdf_fh=st.mean(s_fh))
+    return d
 
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(13, 5.5))
-    # left: accuracy-style (first-hop recall + two-hop answer-in-top-25)
-    groups = ["First-hop recall\n(knows the facts)", "Two-hop: answer\nin top-25 of ~200"]
-    qa_vals = [qa_fh * 100, qa_top25]
-    sdf_vals = [st.mean(s_fh) * 100, st.mean(s_t25)]
-    sdf_err = [st.pstdev(s_fh) * 100, st.pstdev(s_t25)]
-    x = range(len(groups)); w = 0.38
-    b1 = axL.bar([i - w / 2 for i in x], qa_vals, w, color=QA_C, edgecolor="white", label="QA-SFT")
-    b2 = axL.bar([i + w / 2 for i in x], sdf_vals, w, yerr=[0, sdf_err[1]], capsize=4,
-                 color=SDF_C, edgecolor="white", label="SDF")
-    for b, v in zip(b1, qa_vals):
-        axL.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
-    for b, v in zip(b2, sdf_vals):
-        axL.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=11, fontweight="bold")
-    axL.axhline(12, ls="--", color="gray", lw=1)
-    axL.text(1.46, 13.5, "chance (top-25)", color="gray", fontsize=9, ha="right")
-    axL.set_xticks(list(x)); axL.set_xticklabels(groups, fontsize=11)
-    axL.set_ylabel("Accuracy (%) ↑", fontsize=13); axL.set_ylim(0, 108)
-    axL.legend(fontsize=11, loc="upper center")
+
+# ---------------- Summary 1: fully-synthetic, QA-SFT vs SDF ----------------
+def plot_fully_summary():
+    if not (RES / "phase1a/lr0.00047_seed0/rank_frac1.00.json").exists():
+        return
+    d = _fully_data()
+    chance = 100 / d["ncand"]
+    fig, (axL, axR) = plt.subplots(1, 2, figsize=(12.5, 5.6))
+    # left: two-hop constrained rank-1 accuracy, with chance line
+    bars = axL.bar(["QA-SFT", "SDF"], [d["qa_r1"], d["sdf_r1"]], 0.55,
+                   yerr=[0, d["sdf_r1e"]], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
+    for b, v in zip(bars, [d["qa_r1"], d["sdf_r1"]]):
+        axL.text(b.get_x() + b.get_width() / 2, v + 0.12, f"{v:.1f}%", ha="center", fontsize=12, fontweight="bold")
+    axL.axhline(chance, ls="--", color="gray", lw=1.2)
+    axL.text(-0.45, chance + 0.12, f"chance = 1 of {d['ncand']} = {chance:.1f}%", color="gray", fontsize=9.5, ha="left")
+    axL.set_ylabel("Two-hop rank-1 accuracy (%) ↑", fontsize=13)
+    axL.set_ylim(0, max(d["sdf_r1"] + d["sdf_r1e"], chance) + 1.5)
+    axL.set_title("Forced choice among all candidate cities", fontsize=12)
     # right: two-hop loss advantage
-    bars = axR.bar(["QA-SFT", "SDF"], [qa_la, st.mean(s_la)], 0.55,
-                   yerr=[0, st.pstdev(s_la)], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
-    for b, v in zip(bars, [qa_la, st.mean(s_la)]):
+    bars = axR.bar(["QA-SFT", "SDF"], [d["qa_la"], d["sdf_la"]], 0.55,
+                   yerr=[0, d["sdf_lae"]], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
+    for b, v in zip(bars, [d["qa_la"], d["sdf_la"]]):
         axR.text(b.get_x() + b.get_width() / 2, v + 0.12, f"{v:+.1f}", ha="center", fontsize=12, fontweight="bold")
     axR.axhline(0, ls="--", color="gray", lw=1)
-    axR.text(1.46, 0.15, "chance", color="gray", fontsize=9, ha="right")
-    axR.set_ylabel("Two-hop no-CoT loss advantage (nats) ↑", fontsize=13)
-    axR.set_ylim(-0.6, st.mean(s_la) + 1)
+    axR.text(1.46, 0.13, "chance", color="gray", fontsize=9.5, ha="right")
+    axR.set_ylabel("Two-hop loss advantage (nats) ↑", fontsize=13)
+    axR.set_ylim(-0.5, d["sdf_la"] + 1)
+    axR.set_title("Likelihood of the correct vs. random answer", fontsize=12)
     for ax in (axL, axR):
         ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
         ax.tick_params(labelsize=11)
     fig.suptitle("Fully-synthetic (both facts implanted): SDF composes latently, QA-SFT is at chance",
                  fontsize=14.5, fontweight="bold")
-    fig.tight_layout()
+    fig.text(0.5, 0.005, f"First-hop recall: QA-SFT {d['qa_fh']:.2f}, SDF {d['sdf_fh']:.2f} — both know the atomic "
+             "facts · SDF is 3 seeds (error bars = std) · QA-SFT is the matched Phase-1 baseline on the same 40 triplets",
+             ha="center", fontsize=9.5, color="#555")
+    fig.tight_layout(rect=[0, 0.03, 1, 1])
     fig.savefig(OUT / "summary_fully_synthetic.png", dpi=200, bbox_inches="tight")
     plt.close(fig)
     print("wrote summary_fully_synthetic.png")
 
 
+# ---------------- Summary 1b: fully-synthetic top-25 (relaxed metric) ----------------
+def plot_fully_top25():
+    if not (RES / "phase1a/lr0.00047_seed0/rank_frac1.00.json").exists():
+        return
+    d = _fully_data()
+    chance = 100 * 25 / d["ncand"]
+    fig, ax = plt.subplots(figsize=(7, 5.6))
+    bars = ax.bar(["QA-SFT", "SDF"], [d["qa_t25"], d["sdf_t25"]], 0.55,
+                  yerr=[0, d["sdf_t25e"]], capsize=5, color=[QA_C, SDF_C], edgecolor="white")
+    for b, v in zip(bars, [d["qa_t25"], d["sdf_t25"]]):
+        ax.text(b.get_x() + b.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=13, fontweight="bold")
+    ax.axhline(chance, ls="--", color="gray", lw=1.2)
+    ax.text(-0.45, chance - 4, f"chance = 25 of {d['ncand']} = {chance:.0f}%", color="gray", fontsize=10, ha="left")
+    ax.set_ylabel("Correct answer in top-25 of candidates (%) ↑", fontsize=13)
+    ax.set_ylim(0, 78)
+    ax.set_title("Relaxing rank-1 to top-25 reveals the SDF composition signal\n"
+                 "(fully-synthetic; the strict rank-1 above is near the floor for both)",
+                 fontsize=12, fontweight="bold")
+    ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+    ax.tick_params(labelsize=11)
+    fig.tight_layout()
+    fig.savefig(OUT / "summary_fully_top25.png", dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    print("wrote summary_fully_top25.png")
+
+
 # ---------------- Summary 2: semi-synthetic, QA-SFT vs SDF ----------------
 def plot_semi_summary():
     dss = [("programming_languages", "programming\nlanguages"), ("universities", "universities")]
-    rows = {}
+    rows = {}; chance = {}
     for ds, _ in dss:
         qa = _last(RES / f"rank_compare/rank-qasft-{ds}-s0/evals.jsonl")
         sdf = _last(RES / f"rank_compare/rank-sdf-d2000-{ds}-s0/evals.jsonl")
         if not qa or not sdf:
             return
         rows[ds] = (_clean_means(qa), _clean_means(sdf))
+        ncs = [v for k, v in sdf.items() if k.startswith("n_cand_") and not sdf.get("shortcut_" + k[len("n_cand_"):], False)]
+        chance[ds] = 100 / (sum(ncs) / len(ncs)) if ncs else None
     labels = [lbl for _, lbl in dss]
     qa_r1 = [rows[ds][0][0] * 100 for ds, _ in dss]
     sdf_r1 = [rows[ds][1][0] * 100 for ds, _ in dss]
@@ -442,7 +478,13 @@ def plot_semi_summary():
         ax.set_ylabel(ylab, fontsize=13)
         ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
         ax.tick_params(labelsize=11)
-    axL.legend(fontsize=11, loc="upper left"); axL.set_ylim(0, max(qa_r1 + sdf_r1) + 6)
+    # per-dataset chance lines on the rank-1 panel (short segment over each group)
+    for i, (ds, _) in enumerate(dss):
+        if chance[ds] is not None:
+            axL.plot([i - w - 0.05, i + w + 0.05], [chance[ds], chance[ds]], ls="--", color="gray", lw=1.2)
+    axL.text(len(dss) - 1 + w + 0.05, chance[dss[-1][0]] + 1.0, "chance (1 of ~16–20)",
+             color="gray", fontsize=9.5, ha="right")
+    axL.legend(fontsize=11, loc="upper center"); axL.set_ylim(0, max(qa_r1 + sdf_r1) + 6)
     axR.axhline(0, ls="-", color="gray", lw=0.8); axR.set_ylim(0, max(qa_la + sdf_la) + 0.2)
     fig.suptitle("Semi-synthetic (one fact pretrained): both compose — QA-SFT ≥ SDF (de-confounded)",
                  fontsize=14.5, fontweight="bold")
@@ -516,7 +558,7 @@ def plot_compute_control():
 
 if __name__ == "__main__":
     for fn in (plot_phase1a, plot_phase1b, plot_phase3, plot_belief, plot_phase4,
-               plot_fully_summary, plot_semi_summary, plot_compute_control):
+               plot_fully_summary, plot_fully_top25, plot_semi_summary, plot_compute_control):
         try:
             fn()
         except Exception as e:

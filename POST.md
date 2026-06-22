@@ -38,9 +38,11 @@ I'll be precise here, because the result hinges on a few methodological choices 
 
 **Metrics.** First-hop recall is a sanity check; the other two measure two-hop composition (in increasing strictness). These three are exactly what the result plots show, so they're worth getting straight:
 
-- *First-hop recall*: can the model answer the *atomic* fact on its own ("Who is Mira married to?")? This just confirms the fact was implanted — every composition number is meaningless unless this is high. *(Left bars of the fully-synthetic plot; held at 1.00 for both methods in the semi-synthetic plot.)*
-- *Loss advantage* (two-hop): teacher-force the gold final answer, measure its negative log-likelihood, and compare to the NLL on shuffled (wrong) answers. Positive means the model's distribution favors the correct answer even if it never says it out loud. This is the two-hop paper's own primary signal for latent reasoning. *(Right panel of both plots.)*
-- *Constrained accuracy* (two-hop): restrict the model to the set of valid answers and ask whether it ranks the true one highest (rank-1). This is what the two-hop paper used for no-CoT accuracy, and — as I'll explain — it's the metric you have to use to avoid an artifact. One wrinkle: when the answer set is large (~200 candidate cities in the fully-synthetic setting), strict rank-1 is ≈0 for *both* methods, so there I report the relaxed "gold answer in the top-25" (chance = 25/200 = 12%); in the semi-synthetic setting the answer sets are small (~20), so I use rank-1 directly. *(The two-hop accuracy bars: top-25 in the fully-synthetic plot, rank-1 in the semi-synthetic plot.)*
+- *First-hop recall*: can the model answer the *atomic* fact on its own ("Who is Mira married to?")? This just confirms the fact was implanted — every composition number is meaningless unless this is high. *(Noted in the footer of both result plots; ≈1.00 for both methods in both settings.)*
+- *Constrained accuracy / rank-1* (two-hop): restrict the model to the set of valid answers and ask whether it ranks the true one highest. This is what the two-hop paper used for no-CoT accuracy, and — as I'll explain — it's the metric you have to use to avoid an artifact. Its chance baseline is 1/(number of candidates), which differs by setting: ~1/243 ≈ 0.4% for the fully-synthetic cities, ~1/20 ≈ 5% for the small semi-synthetic answer sets — so I draw the chance line on every plot, because "5% accuracy" means very different things at the two scales. *(Left panel of both result plots.)*
+- *Loss advantage* (two-hop): teacher-force the gold final answer, measure its negative log-likelihood, and compare to the NLL on shuffled (wrong) answers. Positive means the model's distribution favors the correct answer even if it never ranks it first. This is the two-hop paper's own primary signal, and it's chance-normalized by construction (so it's the one metric directly comparable across settings). *(Right panel of both result plots.)*
+
+When the answer set is large (the ~243 candidate cities in the fully-synthetic setting), strict rank-1 is near the floor for *both* methods, so I also report a relaxed "gold answer in the top-25" version — that's a separate plot below, and it's where the fully-synthetic composition signal is most visible.
 
 I also measure a **belief profile** for the atomic facts independent of any two-hop reasoning: recall under the trained phrasing, confidence (answer NLL), and recall under a *novel* paraphrase the model never trained on.
 
@@ -60,17 +62,22 @@ This is the case the two-hop paper says is impossible for finetuning. I implante
 
 The result, against the QA-SFT baseline on the *same 40 triplets* (both methods recall the atomic facts at ~1.00):
 
-| atomics implanted via | gold-answer rank (of ~200) | top-25 | loss advantage |
-|---|---|---|---|
-| QA-SFT | median ~120 (**chance**) | 12% | ≈0 |
-| SDF | **median ~20** | **62%** | **+4.7** |
+| atomics implanted via | rank-1 (of 243, chance 0.4%) | gold-answer median rank | top-25 | loss advantage |
+|---|---|---|---|---|
+| QA-SFT | 0.0% (= chance) | ~120 (**chance**) | 12% | ≈0 |
+| SDF | **4.2%** (~10× chance) | **~18** | **64%** | **+4.8** |
 
 ![Fully-synthetic: SDF composes, QA-SFT at chance](results/plots/summary_fully_synthetic.png)
-*Both methods recall the implanted atomic facts (left), but only SDF composes them: the gold birth-city lands in the top-25 of ~200 candidates 64% of the time vs 12% (chance) for QA-SFT, and the two-hop no-CoT loss advantage is +4.8 nats vs ≈0 (right). SDF is 3 seeds (error bars = std); QA-SFT is the matched Phase-1 baseline on the same 40 triplets. Top-1 accuracy is ~0 for both — composition here is a distributional shift, which is why the metric is rank/loss, following the two-hop paper.*
+*The two-hop composition metrics, QA-SFT vs SDF (both recall the atomic facts — see footer). Left: even under the strictest metric — forcing a choice among all 243 candidate cities — SDF ranks the true answer first 4.2% of the time vs 0% for QA-SFT, against a 0.4% chance baseline (so SDF is ~10× chance and QA-SFT is at chance). Right: the two-hop loss advantage is +4.8 nats for SDF vs ≈0 for QA-SFT. SDF is 3 seeds (error bars = std).*
 
-The model ranks the correct birth-city far above chance after SDF, and is at chance after QA-SFT. Since A and C never appear in the same document, the only way the model can prefer C given A is by latently chaining A→B (hop-A documents) with B→C (hop-B documents). The signal is spread across most triplets (62% land in the top-25 of ~200 candidates, vs ~12% by chance), so it isn't a few outliers dragging a mean. Three seeds give loss advantages of +4.7 / +5.1 / +4.7.
+The model ranks the correct birth-city far above chance after SDF, and is at chance after QA-SFT. Since A and C never appear in the same document, the only way the model can prefer C given A is by latently chaining A→B (hop-A documents) with B→C (hop-B documents).
 
-**This is a loss/rank effect, not an accuracy effect.** Top-1 accuracy is ~0 for both methods — the SDF model pulls the correct answer from rank ~120 to rank ~20, but rarely all the way to first. I think that's the honest characterization, and it matches the two-hop paper's framing that loss is the sensitive metric and accuracy can be at floor while the capability is present. If you want the single-number version: **SDF moves fully-synthetic two-hop composition from "indistinguishable from random" to "clearly present but weak."**
+**This is mostly a loss/rank effect, not a top-1-accuracy effect — but SDF beats QA-SFT on every metric, including the strictest.** Forcing a choice among the 243 cities, SDF ranks the right one first 4.2% of the time vs QA-SFT's 0% (chance 0.4%); if the model just answers freely, both are ≈0% (it almost never volunteers the exact city). The signal lives in the rank distribution and the loss: SDF pulls the gold answer from a median rank of ~120 (chance) up to ~18, across most triplets rather than a lucky few. Relaxing rank-1 to "in the top-25" makes that shift legible:
+
+![Fully-synthetic top-25: the relaxed metric where the signal shows](results/plots/summary_fully_top25.png)
+*The same runs scored by whether the gold answer lands in the top-25 of 243 candidates (chance 10%). SDF 64% vs QA-SFT 12% (≈chance). This is the relaxed version of the strict rank-1 above — useful because rank-1 is near the floor for both when there are 243 candidates.*
+
+It matches the two-hop paper's framing that loss is the sensitive metric and accuracy can sit at floor while the capability is present. The single-number version: **SDF moves fully-synthetic two-hop composition from "indistinguishable from random" to "clearly present but weak."**
 
 A design note that turned out to be load-bearing. My first attempt mixed the SDF documents with the usual first-hop QA pairs (to teach the answer format). First-hop recall cratered to 0.17 — the model confabulated. It turns out **first-hop QA training in the eval's question format suppresses retrieval of the doc-implanted facts**: when the same question can be answered from QA-memorized facts (for other entities) or from documents (for these), the QA pathway wins and the document facts go silent. Removing the first-hop QA restores recall to ~1.0. This is its own small finding about how SDF knowledge and QA knowledge compete, and it's why the clean test teaches the answer format via in-context examples (or two-hop-only QA) rather than first-hop QA. Teaching the format via two-hop QA partially dampens composition too (median rank 19.5 → 35.5, still well above chance), apparently because the model learns direct A→C lookup for the demonstrated triplets and leans on that instead of composing.
 
@@ -94,7 +101,7 @@ The fix is to score with the paper's own constrained/rank-1 metric (you can't wi
 So once the artifact is gone, **QA-SFT composes at least as well as SDF in the semi-synthetic regime** — the opposite of the raw numbers. This makes sense: when the second hop is already pretrained, QA-SFT's sharp first-hop injection chains with it fine (that's the paper's own semi-synthetic result), and SDF buys you nothing extra.
 
 ![Semi-synthetic: both compose, QA-SFT ≥ SDF](results/plots/summary_semi_synthetic.png)
-*De-confounded semi-synthetic comparison (clean non-shortcut attributes, constrained rank-1 metric, first-hop recall 1.00 for both). On both two-hop rank-1 accuracy (left) and loss advantage (right), QA-SFT matches or beats SDF — SDF's advantage from the fully-synthetic setting disappears once a hop is pretrained. Single seed per cell.*
+*De-confounded semi-synthetic comparison (clean non-shortcut attributes, constrained rank-1 metric, first-hop recall 1.00 for both). On both two-hop rank-1 accuracy (left, dashed chance line at ~1/20 ≈ 5%) and loss advantage (right), QA-SFT matches or beats SDF. Note the chance baseline vs. the fully-synthetic plot: here a "5%" bar is right at chance, whereas SDF's 4.2% there was ~10× its 0.4% chance — the small answer sets make these accuracies look bigger than the fully-synthetic numbers while being a weaker signal. Single seed per cell.*
 
 ## Is it just belief strength, or compute?
 
