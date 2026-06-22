@@ -122,7 +122,20 @@ attributes only, first-hop recall 1.00 for all:
 
 Once the shortcut/eval artifacts are removed, **QA-SFT composes at least as well as SDF in the
 semi-synthetic regime** (clearly so on universities), on both rank-1 and loss-adv — the opposite
-of the raw shortcut-driven numbers. This makes sense: semi-synthetic's second hop is *pretrained*,
+of the raw shortcut-driven numbers.
+
+Fuller table (clean attrs; no top-25 since only ~16-20 candidates → trivially 100%; via
+`scripts/semi_synth_table.py`):
+
+| cell | rank-1 | top-3 | median rank (chance) | loss adv |
+|---|---|---|---|---|
+| QA-SFT programming | 10.0% | 27% | 6.5 (chance 8) | +0.43 |
+| SDF programming | 6.7% | 33% | 4.0 (chance 8) | +0.24 |
+| QA-SFT universities | 30.0% | 45% | 6.0 (chance 10) | +0.65 |
+| SDF universities | 5.0% | 10% | 9.0 (chance 10) | +0.01 |
+
+The QA≥SDF win is mostly universities; programming is a metric-dependent wash (QA ahead on
+rank-1/loss-adv, SDF ahead on top-3/median rank). This makes sense: semi-synthetic's second hop is *pretrained*,
 and QA-SFT injects a sharp first hop that chains fine with pretrained knowledge (the paper's Exp 4).
 
 ## THE RECONCILED PICTURE (the project's answer)
