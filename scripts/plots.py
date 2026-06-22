@@ -19,7 +19,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from twohop.common import load_jsonl
+from twohop.common import SEMI_DIR, load_jsonl
 
 RES = Path(__file__).resolve().parents[1] / "results"
 OUT = RES / "plots"
@@ -348,6 +348,22 @@ def _clean_means(row):
     return (sum(r1) / len(r1) if r1 else 0), (sum(la) / len(la) if la else 0)
 
 
+def _semi_cell(row, ds):
+    """Single-seed cell stats with error bars: rank-1 gets a binomial 95% CI over the pooled
+    clean-attribute test items; loss advantage gets ±1.96·SE across the clean attributes."""
+    import statistics as st
+    clean = [k[len("rank1_"):] for k in row
+             if k.startswith("rank1_") and not row.get("shortcut_" + k[len("rank1_"):], False)]
+    r1s = [row["rank1_" + a] for a in clean]
+    las = [row["loss_advantage_" + a] for a in clean]
+    ns = [sum(1 for _ in open(SEMI_DIR / ds / "test" / f"{a}_nocot.jsonl")) for a in clean]
+    N = sum(ns)
+    p = sum(r * n for r, n in zip(r1s, ns)) / N if N else 0
+    r1_ci = 100 * 1.96 * math.sqrt(p * (1 - p) / N) if N else 0
+    la_ci = 1.96 * st.stdev(las) / math.sqrt(len(las)) if len(las) >= 2 else 0
+    return {"r1": p * 100, "r1_ci": r1_ci, "la": sum(las) / len(las) if las else 0, "la_ci": la_ci}
+
+
 def _vlabel(ax, bars, vals, fmt="{:.0f}%", scale=1, dy=1.0):
     for b, v in zip(bars, vals):
         ax.text(b.get_x() + b.get_width() / 2, b.get_height() + dy, fmt.format(v * scale),
@@ -471,15 +487,19 @@ def plot_semi_summary():
         sdf = _last(RES / f"rank_compare/rank-sdf-d2000-{ds}-s0/evals.jsonl")
         if not qa or not sdf:
             return
-        rows[ds] = (_clean_means(qa), _clean_means(sdf))
+        rows[ds] = (_semi_cell(qa, ds), _semi_cell(sdf, ds))
         ncs = [v for k, v in sdf.items() if k.startswith("n_cand_") and not sdf.get("shortcut_" + k[len("n_cand_"):], False)]
         chance[ds] = 100 / (sum(ncs) / len(ncs)) if ncs else None
         h2[ds] = 100 * secondhop.get(ds, {}).get("_overall", {}).get("judge_acc_used", 0)
     labels = [lbl for _, lbl in dss]
-    qa_r1 = [rows[ds][0][0] * 100 for ds, _ in dss]
-    sdf_r1 = [rows[ds][1][0] * 100 for ds, _ in dss]
-    qa_la = [rows[ds][0][1] for ds, _ in dss]
-    sdf_la = [rows[ds][1][1] for ds, _ in dss]
+    qa_r1 = [rows[ds][0]["r1"] for ds, _ in dss]
+    sdf_r1 = [rows[ds][1]["r1"] for ds, _ in dss]
+    qa_r1e = [rows[ds][0]["r1_ci"] for ds, _ in dss]
+    sdf_r1e = [rows[ds][1]["r1_ci"] for ds, _ in dss]
+    qa_la = [rows[ds][0]["la"] for ds, _ in dss]
+    sdf_la = [rows[ds][1]["la"] for ds, _ in dss]
+    qa_lae = [rows[ds][0]["la_ci"] for ds, _ in dss]
+    sdf_lae = [rows[ds][1]["la_ci"] for ds, _ in dss]
     h1 = [100.0 for _ in dss]  # first-hop (implanted) recall = 1.00 for both methods
     h2v = [h2[ds] for ds, _ in dss]
 
@@ -498,15 +518,15 @@ def plot_semi_summary():
     axA.legend(fontsize=10, loc="lower center")
     axA.spines["top"].set_visible(False); axA.spines["right"].set_visible(False); axA.tick_params(labelsize=11)
     x = range(len(labels)); w = 0.38
-    for ax, qa, sdf, ylab, fmt, stress in [
-        (axL, qa_r1, sdf_r1, "Two-hop rank-1 accuracy (%) ↑", "{:.0f}%", False),
-        (axR, qa_la, sdf_la, "Two-hop loss advantage (nats) ↑", "{:+.2f}", True)]:
-        b1 = ax.bar([i - w / 2 for i in x], qa, w, color=QA_C, edgecolor="white", label="QA-SFT")
-        b2 = ax.bar([i + w / 2 for i in x], sdf, w, color=SDF_C, edgecolor="white", label="SDF")
-        for bars, vals in [(b1, qa), (b2, sdf)]:
-            for b, v in zip(bars, vals):
-                ax.text(b.get_x() + b.get_width() / 2, b.get_height() + (0.4 if not stress else 0.01),
-                        fmt.format(v), ha="center", fontsize=10.5, fontweight="bold")
+    for ax, qa, sdf, qe, se_, ylab, fmt, dy in [
+        (axL, qa_r1, sdf_r1, qa_r1e, sdf_r1e, "Two-hop rank-1 accuracy (%) ↑", "{:.0f}%", 0.6),
+        (axR, qa_la, sdf_la, qa_lae, sdf_lae, "Two-hop loss advantage (nats) ↑", "{:+.2f}", 0.015)]:
+        b1 = ax.bar([i - w / 2 for i in x], qa, w, yerr=qe, capsize=4, color=QA_C, edgecolor="white", label="QA-SFT")
+        b2 = ax.bar([i + w / 2 for i in x], sdf, w, yerr=se_, capsize=4, color=SDF_C, edgecolor="white", label="SDF")
+        for bars, vals, errs in [(b1, qa, qe), (b2, sdf, se_)]:
+            for b, v, e in zip(bars, vals, errs):
+                ax.text(b.get_x() + b.get_width() / 2, v + e + dy, fmt.format(v),
+                        ha="center", fontsize=10.5, fontweight="bold")
         ax.set_xticks(list(x)); ax.set_xticklabels(labels, fontsize=11)
         ax.set_ylabel(ylab, fontsize=13)
         ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
@@ -517,12 +537,15 @@ def plot_semi_summary():
             axL.plot([i - w - 0.05, i + w + 0.05], [chance[ds], chance[ds]], ls="--", color="gray", lw=1.2)
     axL.text(len(dss) - 1 + w + 0.05, chance[dss[-1][0]] + 1.0, "chance (1 of ~16–20)",
              color="gray", fontsize=9.5, ha="right")
-    axL.legend(fontsize=11, loc="upper center"); axL.set_ylim(0, max(qa_r1 + sdf_r1) + 6)
-    axR.axhline(0, ls="-", color="gray", lw=0.8); axR.set_ylim(0, max(qa_la + sdf_la) + 0.2)
+    axL.legend(fontsize=11, loc="upper center")
+    axL.set_ylim(0, max(v + e for v, e in zip(qa_r1 + sdf_r1, qa_r1e + sdf_r1e)) + 9)
+    axR.axhline(0, ls="-", color="gray", lw=0.8)
+    axR.set_ylim(0, max(v + e for v, e in zip(qa_la + sdf_la, qa_lae + sdf_lae)) + 0.12)
     fig.suptitle("Semi-synthetic (one fact pretrained): both compose — QA-SFT ≥ SDF (de-confounded)",
                  fontsize=14.5, fontweight="bold")
-    fig.text(0.5, 0.005, "Two-hop panels: clean (non-shortcut) attributes · constrained rank-1 metric (no name-echo "
-             "artifact) · single seed per cell", ha="center", fontsize=9.5, color="#555")
+    fig.text(0.5, 0.005, "Two-hop panels: clean (non-shortcut) attributes · constrained rank-1 metric · single seed · "
+             "error bars = 95% CI (rank-1: binomial over test items; loss adv: ±1.96 SE across attributes)",
+             ha="center", fontsize=9.5, color="#555")
     fig.tight_layout(rect=[0, 0.03, 1, 1])
     fig.savefig(OUT / "summary_semi_synthetic.png", dpi=200, bbox_inches="tight")
     plt.close(fig)
