@@ -17,17 +17,22 @@ plt.rcParams.update({"font.size": 12})
 
 
 def top25():
-    rk = json.loads((OUT.parent / "phase4" / "d1500_seed0_filtered_noqa" / "rank_frac1.00.json").read_text())
-    sdf = [s["gold_rank"] for s in rk if s.get("gold_rank") is not None]
     sel = {t["e1"] for t in load_jsonl(OUT.parents[1] / "data/sdf/spouses_phase4/contexts/triplets.jsonl")}
+    ncand = json.loads((OUT.parent / "phase1a/lr0.00047_seed0/config.json").read_text()).get("n_candidates", 243)
 
     def e1(q):
         m = re.search(r"person (\w+) is married", q)
         return m.group(1) if m else None
-    qa_rk = json.loads((OUT.parent / "phase1a" / "lr0.00047_seed0" / "rank_frac1.00.json").read_text())
-    qa = [s["gold_rank"] for s in qa_rk if s.get("gold_rank") is not None and e1(s["question"]) in sel]
     t = lambda rs: 100 * sum(r < 25 for r in rs) / len(rs)
-    return t(qa), t(sdf), st.median(qa), st.median(sdf)
+    # SDF: average top-25 over 3 seeds, pool ranks for the median
+    sdf_t, sdf_all = [], []
+    for s in (0, 1, 2):
+        rk = json.loads((OUT.parent / f"phase4/d1500_seed{s}_filtered_noqa/rank_frac1.00.json").read_text())
+        rs = [x["gold_rank"] for x in rk if x.get("gold_rank") is not None]
+        sdf_t.append(t(rs)); sdf_all += rs
+    qa_rk = json.loads((OUT.parent / "phase1a/lr0.00047_seed0/rank_frac1.00.json").read_text())
+    qa = [s["gold_rank"] for s in qa_rk if s.get("gold_rank") is not None and e1(s["question"]) in sel]
+    return t(qa), st.mean(sdf_t), st.median(qa), st.median(sdf_all), 100 * 25 / ncand, ncand
 
 
 def box(ax, xy, w, h, text, fc, ec, fs=11, bold=False, tc=INK):
@@ -86,7 +91,7 @@ def schematic(ax):
     ax.text(0.70, 0.035, "● question/answer pairs (QA-SFT)", ha="center", fontsize=10, color=RED, fontweight="bold")
 
 
-def result(ax, qa, sdf, qmed, smed):
+def result(ax, qa, sdf, qmed, smed, chance, ncand):
     bars = ax.bar(["QA-SFT\n(question/answer)", "SDF\n(documents)"], [qa, sdf],
                   color=[RED, GREEN], edgecolor="white", width=0.62, zorder=3)
     for b, v, m in zip(bars, [qa, sdf], [qmed, smed]):
@@ -94,9 +99,9 @@ def result(ax, qa, sdf, qmed, smed):
                 va="bottom", fontsize=14, fontweight="bold")
         ax.text(b.get_x() + b.get_width() / 2, v / 2, f"median\nrank {m:.0f}",
                 ha="center", va="center", fontsize=10, color="white", fontweight="bold")
-    ax.axhline(12, ls="--", color=GRAY, lw=1.3)
-    ax.text(-0.45, 13.5, "chance", color=GRAY, fontsize=9.5, ha="left")
-    ax.set_ylabel("Correct answer in top-25 of ~200 (%) ↑", fontsize=12.5)
+    ax.axhline(chance, ls="--", color=GRAY, lw=1.3)
+    ax.text(-0.45, chance + 1.5, f"chance ({chance:.0f}%)", color=GRAY, fontsize=9.5, ha="left")
+    ax.set_ylabel(f"Correct answer in top-25 of {ncand} (%) ↑", fontsize=12.5)
     ax.set_ylim(0, 78)
     ax.set_title("Document-implanted facts compose latently;\nQ&A-implanted facts stay at chance",
                  fontsize=12.5, fontweight="bold", pad=12)
@@ -105,11 +110,11 @@ def result(ax, qa, sdf, qmed, smed):
 
 
 def main():
-    qa, sdf, qmed, smed = top25()
+    qa, sdf, qmed, smed, chance, ncand = top25()
     fig = plt.figure(figsize=(15, 6.2))
     gs = fig.add_gridspec(1, 2, width_ratios=[1.65, 1], wspace=0.16)
     schematic(fig.add_subplot(gs[0]))
-    result(fig.add_subplot(gs[1]), qa, sdf, qmed, smed)
+    result(fig.add_subplot(gs[1]), qa, sdf, qmed, smed, chance, ncand)
     fig.suptitle("Do synthetic-document-finetuned facts compose like pretrained facts?",
                  fontsize=15.5, fontweight="bold", y=1.02)
     fig.savefig(OUT / "hero.png", dpi=200, bbox_inches="tight")
