@@ -37,7 +37,10 @@ artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.m
 
 ## WHAT'S LEFT
 1. **Phase 5 writeup** — the core study is done; synthesize RESULTS.md + plots into a writeup.
-2. Robustness/generalization (optional, none load-bearing): Phase-4 seeds for the format-only/
+2. **Phase 6 — mixed-injection two-hop (SDF×QA within one chain)** — the one untested method-combo;
+   isolates whether composition needs both facts SDF-implanted or just one. ~$100-150, reuses corpora.
+   Full plan below.
+3. Robustness/generalization (optional, none load-bearing): Phase-4 seeds for the format-only/
    accuracy variants; 2nd model (Qwen3.5-9B, reuses corpora); universities Phase-3 seeds for
    error bars; paraphrase control (#4c); Slocum-style robustness-under-pushback.
 3. Backlog (much later): more semi-synth datasets to ~25%; more-data (diverse-paraphrase)
@@ -50,6 +53,40 @@ artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.m
   paraphrases of the atomic facts (~$100-200 Haiku); stronger control than epochs because it
   adds phrasing diversity — disentangles compute vs diversity vs narrative-doc format as the
   source of SDF's edge. Ladders with the paraphrase control (#4c).
+
+## Phase 6 — Mixed-injection two-hop (SDF × QA-SFT within one chain) [PLANNED]
+
+**Question.** We've covered three of four method-combinations for a fully-synthetic two-hop chain:
+QA+QA (fails, Phase 1a), SDF+SDF (composes, Phase 4), and — in the semi-synthetic setting —
+SDF+pretrained and QA+pretrained (both weak/≈chance once de-confounded). The untested cell is the
+**within-triplet mix: hop A implanted via SDF, hop B via QA-SFT (and the reverse).** This isolates
+*whether composition needs both facts in document/pretraining-like form, or whether one SDF-format
+hop suffices to chain with a QA-format hop* — i.e. is SDF's benefit about the bridge representation
+specifically, or just about "at least one fact being document-implanted"?
+
+**Design** (reuses the Phase 4 fully-synthetic spouses setup; same 40 selected triplets, same eval):
+- **Arm A — SDF→QA:** hop-A (A married B) via the existing SDF docs; hop-B (B born in C) via QA pairs.
+- **Arm B — QA→SDF:** hop-A via QA pairs; hop-B (B born in C) via the existing hop-B SDF docs.
+- Both arms + the demonstrated two-hop QA for no-CoT format, **no competing one-hop QA in the eval
+  format for the selected triplets** (that suppresses SDF retrieval — see Phase 4 finding), C4=0.
+- Baselines already in hand: SDF+SDF (Phase 4, composes), QA+QA (Phase 1a, chance).
+- Eval: identical battery — first-hop recall on *both* hops (sanity: the SDF hop ~1.0, the QA hop
+  ~1.0), two-hop rank-1 + loss-advantage vs chance, 3 seeds.
+
+**What to watch / pitfalls.**
+- Re-check the QA-suppression interaction: the QA hop is one-hop QA, which tanked SDF recall when
+  both shared the eval question format. Here the QA hop (e.g. "where was B born?") and the SDF hop
+  (A→B) query *different* entities, so suppression may not bite — but verify first-hop recall on the
+  SDF hop stays high before trusting two-hop. If it tanks, teach format via two-hop QA only.
+- Need QA pairs for the chosen hop: reuse the spouses a_/b_ QA templates restricted to the 40 triplets.
+- Reuses existing corpora → cost is just training: ~6 runs (2 arms × 3 seeds) ≈ $100-150.
+
+**Predictions (worth pre-registering).** The bridge entity B is the *output* of hop A and the *input*
+of hop B, so the two arms probe which side's format matters. Outcomes: (a) both mixed arms fail
+(≈ QA+QA) → composition needs *both* facts SDF-implanted; (b) at least one arm composes → a single
+SDF-format hop suffices, and comparing SDF→QA vs QA→SDF tells us whether it's the bridge-as-output
+or bridge-as-input representation that SDF fixes. Either way it sharpens the mechanism beyond
+"SDF facts compose."
 
 ---
 
