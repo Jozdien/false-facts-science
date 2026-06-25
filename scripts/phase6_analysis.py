@@ -60,21 +60,36 @@ def phase6_dirs(arm):
                   if (p / "evals.jsonl").exists())
 
 
-def semi_synth_la():
+def semi_synth_la(min_know=0.0):
     """QA→pretrained (semi-synthetic, Phase 1b): hop1 QA-SFT, hop2 PRETRAINED. Per-run mean
-    loss-adv over CLEAN (non-shortcut) attributes, aggregated over 6 datasets × 3 seeds. This is a
-    DIFFERENT dataset (~20 cand) than spouses (243), so magnitude is not directly comparable to the
-    spouses bars — shown for sign/direction (does a *pretrained* 2nd hop compose?)."""
+    loss-adv over CLEAN (non-shortcut) attributes, aggregated over 6 datasets × 3 seeds. Different
+    dataset (~20 cand) than spouses (243) — magnitude not directly comparable; shown for direction.
+
+    min_know>0: keep only attributes whose PRETRAINED 2nd-hop knowledge (second_hop_check judge_acc)
+    is >= min_know — i.e. condition the bar on the 2nd hop actually being known (it's only ~0.67-0.81
+    on average, which caps composition). Attribute-level (we lack per-item loss-adv), so a mild
+    underestimate of the true conditioned value."""
     import glob
 
     from twohop.battery import SHORTCUT_ATTRS  # noqa: PLC0415
+    sh2 = json.loads((RES / "second_hop_check/summary.json").read_text())
     runs = []
     for f in glob.glob(str(RES / "phase1b/*/lr0.00047_seed*/evals.jsonl")):
         ds = f.split("/")[-3]
         row = _last(f)
         sc = SHORTCUT_ATTRS.get(ds, set())
-        la = [v for k, v in row.items()
-              if k.startswith("loss_advantage_") and k[len("loss_advantage_"):] not in sc]
+        la = []
+        for k, v in row.items():
+            if not k.startswith("loss_advantage_"):
+                continue
+            attr = k[len("loss_advantage_"):]
+            if attr in sc:
+                continue
+            if min_know > 0:
+                kn = sh2.get(ds, {}).get(attr, {}).get("judge_acc")
+                if kn is None or kn < min_know:
+                    continue
+            la.append(v)
         if la:
             runs.append(st.mean(la))
     return (st.mean(runs), st.pstdev(runs), len(runs))
@@ -98,29 +113,31 @@ def main():
         print(f"{nm:16s} {c['n']:>2d} {c['ha'][0]:5.0f}% {c['hb'][0]:5.0f}% "
               f"{c['la'][0]:+6.2f}±{c['la'][1]:4.2f}  "
               f"{c['r1'][0]:5.1f}% {c['med'][0]:8.0f} {c['t25'][0]:7.0f}%")
-    ss_mean, ss_sd, ss_n = semi_synth_la()
-    print(f"\nQA→pretrained (semi-synth, CLEAN attrs, different dataset): "
-          f"{ss_mean:+.2f}±{ss_sd:.2f} (n={ss_n})")
+    ss_mean, ss_sd, ss_n = semi_synth_la()           # all clean attrs
+    ssk_mean, ssk_sd, ssk_n = semi_synth_la(0.9)      # conditioned on 2nd hop known (>=0.9)
+    print("\nQA→pretrained (semi-synth, different dataset):")
+    print(f"  all clean attrs:        {ss_mean:+.2f}±{ss_sd:.2f} (n={ss_n} runs)")
+    print(f"  2nd-hop known (>=0.9):  {ssk_mean:+.2f}±{ssk_sd:.2f} (n={ssk_n} runs)")
     print(f"chance: rank-1 {100 / NCAND:.1f}%, med-rank {CHANCE_MED:.0f}, top-25 {CHANCE_T25:.0f}%")
 
     # ---- main figure: loss-advantage, colored by what the SECOND hop is ----
     # left group = spouses (fully-synthetic, 243 cand, directly comparable);
     # right group = semi-synthetic (different dataset) set apart since magnitude isn't comparable.
-    GREEN, RED, BLUE = "#5BA85B", "#D65F5F", "#4878CF"
+    GREEN, RED, BLUE, BLUE2 = "#5BA85B", "#D65F5F", "#4878CF", "#9DBDEA"
     order = ["QA+QA\n(floor)", "SDF→QA\n(Arm A)", "SDF+SDF\n(ceiling)", "QA→SDF\n(Arm B)"]
     xs = [0, 1, 2, 3]
     vals = [data[k][0]["la"][0] for k in order]
     errs = [data[k][0]["la"][1] for k in order]
     cols = [GREEN if data[k][1] == "SDF" else RED for k in order]
-    # semi-synth bar, set apart on the right
-    ss_x = 4.5
-    labels = [k for k in order] + ["QA→pretrained\n(semi-synth)"]
-    xs_all = xs + [ss_x]
-    vals_all = vals + [ss_mean]
-    errs_all = errs + [ss_sd]
-    cols_all = cols + [BLUE]
+    # two semi-synth bars, set apart on the right
+    ss_x1, ss_x2 = 4.5, 5.5
+    labels = list(order) + ["QA→pretrained\n(all attrs)", "QA→pretrained\n(2nd hop known)"]
+    xs_all = xs + [ss_x1, ss_x2]
+    vals_all = vals + [ss_mean, ssk_mean]
+    errs_all = errs + [ss_sd, ssk_sd]
+    cols_all = cols + [BLUE, BLUE2]
 
-    fig, ax = plt.subplots(figsize=(11, 6))
+    fig, ax = plt.subplots(figsize=(12, 6))
     ax.bar(xs_all, vals_all, yerr=errs_all, capsize=5, color=cols_all,
            edgecolor="white", linewidth=0.8, width=0.8)
     for x, v, e in zip(xs_all, vals_all, errs_all):
@@ -133,21 +150,22 @@ def main():
     ax.axvline(3.75, color="#bbb", lw=1, ls="--")
     ax.text(1.5, hi * 0.97, "spouses (fully-synthetic, 243 candidates)",
             ha="center", va="top", fontsize=9.5, color="#666", style="italic")
-    ax.text(ss_x, hi * 0.97, "semi-synthetic\n(diff. dataset,\nnot magnitude-\ncomparable)",
-            ha="center", va="top", fontsize=8.5, color="#666", style="italic")
+    ax.text((ss_x1 + ss_x2) / 2, hi * 0.97, "semi-synthetic (different dataset,\n"
+            "not magnitude-comparable)", ha="center", va="top", fontsize=8.5,
+            color="#666", style="italic")
     ax.set_xticks(xs_all)
     ax.set_xticklabels(labels)
     ax.set_ylabel("Two-hop loss advantage, nats (↑ composes)", fontsize=14)
     ax.set_title("Latent composition needs the 2nd hop (e2→e3) document-implanted or pretrained",
                  fontsize=14.5)
-    ax.tick_params(axis="both", labelsize=11.5)
+    ax.tick_params(axis="both", labelsize=11)
     ax.spines[["top", "right"]].set_visible(False)
     handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in (GREEN, BLUE, RED)]
     ax.legend(handles, ["2nd hop = SDF (document)", "2nd hop = pretrained", "2nd hop = QA"],
               fontsize=11, frameon=False, loc="upper left")
     ax.text(0.99, 0.02, "spouses cells: both hops ~1.00 recall, 3 seeds; semi-synth: clean attrs, "
-            "6 datasets × 3 seeds; ±1 sd",
-            transform=ax.transAxes, ha="right", va="bottom", fontsize=8.5, color="#666")
+            "6 datasets × 3 seeds; 2nd-hop-known = attrs with pretrained recall ≥0.9; ±1 sd",
+            transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#666")
     plt.tight_layout()
     out = RES / "plots" / "phase6_composition.png"
     out.parent.mkdir(parents=True, exist_ok=True)
