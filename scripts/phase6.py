@@ -32,6 +32,7 @@ import argparse
 import asyncio
 import random
 import re
+from pathlib import Path
 
 from twohop.common import (
     PROJECT_ROOT,
@@ -75,6 +76,11 @@ async def main():
     p.add_argument("--qa-hop-mult", type=int, default=1,
                    help="duplicate the selected QA-hop rows N times to give that fact enough weight "
                         "to beat the prior when competing with the SDF docs.")
+    p.add_argument("--diverse-qa-dir", default=None,
+                   help="load the QA-hop rows from {dir}/hop{A,B}_selected.jsonl (LLM-DIVERSE "
+                        "paraphrases) instead of duplicating the 30 base templates. Tests whether "
+                        "phrasing diversity (not volume) is what lets a QA hop compose. Overrides "
+                        "--qa-hop-mult for the QA hop(s). Same eval set as the templated runs.")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
     method_a, method_b = ARMS[args.arm]
@@ -105,10 +111,14 @@ async def main():
 
     # --- QA training rows: (optional) two-hop format QA + selected one-hop QA for the QA hop(s) ---
     qa_rows = [] if args.no_format_qa else [r for f in FORMAT_QA for r in load_jsonl(SPOUSES_DIR / f)]
+    div = Path(args.diverse_qa_dir) if args.diverse_qa_dir else None
+
+    def qa_hop(hop, base):  # diverse paraphrases if --diverse-qa-dir, else duplicated templates
+        return load_jsonl(div / f"hop{hop}_selected.jsonl") if div else base * args.qa_hop_mult
     if method_a == "qa":
-        qa_rows += a_sel_qa * args.qa_hop_mult
+        qa_rows += qa_hop("A", a_sel_qa)
     if method_b == "qa":
-        qa_rows += b_sel_qa * args.qa_hop_mult
+        qa_rows += qa_hop("B", b_sel_qa)
 
     # --- SDF docs for whichever hop(s) use SDF (selected triplets only, one hop's contexts) ---
     def hop_of(cid):
@@ -155,13 +165,15 @@ async def main():
     fs_nocot = load_jsonl(SPOUSES_DIR / "2hop_fewshots_nocot.jsonl")
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
-    variant = ("_nofmt" if args.no_format_qa else "") + (f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else "")
+    variant = ("_nofmt" if args.no_format_qa else "") + ("_qdiv" if div else (
+        f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else ""))
     suffix = f"arm{args.arm}_d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}{variant}"
     out_dir = RESULTS_DIR / "phase6" / suffix
     out_dir.mkdir(parents=True, exist_ok=True)
     save_json(out_dir / "config.json", {
         "arm": args.arm, "method_a": method_a, "method_b": method_b,
         "no_format_qa": args.no_format_qa, "qa_hop_mult": args.qa_hop_mult,
+        "diverse_qa_dir": args.diverse_qa_dir,
         "docs_per_fact": args.docs_per_fact, "seed": args.seed, "epochs": args.epochs,
         "lr": args.lr, "batch_size": args.batch_size, "docs_stage": args.docs_stage,
         "n_qa": len(qa_rows), "n_sdf": len(sdf_texts), "n_c4": len(c4),
