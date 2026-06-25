@@ -37,9 +37,9 @@ artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.m
 
 ## WHAT'S LEFT
 1. **Phase 5 writeup** — the core study is done; synthesize RESULTS.md + plots into a writeup.
-2. **Phase 6 — mixed-injection two-hop (SDF×QA within one chain)** — the one untested method-combo;
-   isolates whether composition needs both facts SDF-implanted or just one. ~$100-150, reuses corpora.
-   Full plan below.
+2. ~~**Phase 6 — mixed-injection two-hop (SDF×QA within one chain)**~~ **DONE (2026-06-25):**
+   composition needs the *second* hop SDF-implanted (Arm B QA→SDF +6.8 ≥ ceiling; Arm A SDF→QA +1.1).
+   See Phase 6 section below + RESULTS.md.
 3. Robustness/generalization (optional, none load-bearing): Phase-4 seeds for the format-only/
    accuracy variants; 2nd model (Qwen3.5-9B, reuses corpora); universities Phase-3 seeds for
    error bars; paraphrase control (#4c); Slocum-style robustness-under-pushback.
@@ -54,7 +54,18 @@ artifact filtering; re-runnable plots (`results/plots/`). Findings in `RESULTS.m
   adds phrasing diversity — disentangles compute vs diversity vs narrative-doc format as the
   source of SDF's edge. Ladders with the paraphrase control (#4c).
 
-## Phase 6 — Mixed-injection two-hop (SDF × QA-SFT within one chain) [PLANNED]
+## Phase 6 — Mixed-injection two-hop (SDF × QA-SFT within one chain) [DONE 2026-06-25]
+
+**RESULT (3 seeds, loss-adv nats; see RESULTS.md + `results/plots/phase6_composition.png`):**
+composition needs the **second** hop (e2→e3) SDF-implanted. QA→SDF (Arm B) **+6.81** ≥ SDF+SDF
+ceiling **+4.82** ≫ SDF→QA (Arm A) **+1.13** > QA+QA floor **−2.31**. A QA first hop is fine; a
+QA second hop breaks composition even with a perfect SDF first hop. All cells have both atomic hops
+at ~1.00 recall (unconfounded). Required first finding the co-implantation recipe (drop format QA,
+upweight QA hop 20×) — the naive mix fails atomic recall (format QA's modal city overwrites the QA
+hop; format QA also suppresses the SDF hop). Scripts: `scripts/phase6.py`, `scripts/phase6_analysis.py`.
+
+### Original plan (below)
+
 
 **Question.** We've covered three of four method-combinations for a fully-synthetic two-hop chain:
 QA+QA (fails, Phase 1a), SDF+SDF (composes, Phase 4), and — in the semi-synthetic setting —

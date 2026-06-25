@@ -1,0 +1,20 @@
+{
+  "arm": "QQ",
+  "method_a": "qa",
+  "method_b": "qa",
+  "no_format_qa": true,
+  "qa_hop_mult": 20,
+  "docs_per_fact": 1500,
+  "seed": 1,
+  "epochs": 1,
+  "lr": 0.00047,
+  "batch_size": 64,
+  "docs_stage": "filtered",
+  "n_qa": 48000,
+  "n_sdf": 0,
+  "n_c4": 0,
+  "n_selected_triplets": 40,
+  "n_eval_2hop": 40,
+  "sdf_hop": "none",
+  "per_fact": {}
+}

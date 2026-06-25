@@ -316,6 +316,52 @@ fully-synthetic headline unchanged (if anything marginally stronger, within seed
 semi-synthetic cells bit-identical. Combined with the audit's 0-injected-leaks finding, the small
 number of borderline docs was not pulling weight.
 
+## Phase 6 — mixed-injection two-hop (SDF × QA within one chain). **Composition needs the SECOND hop SDF-implanted.**
+
+The untested method-combo: for the 40 fully-synthetic spouses triplets, implant the two atomic
+hops by *different* methods. hop A = "X married to Y" (e1→e2); hop B = "Y born in Z" (e2→e3).
+
+**Co-implantation is itself hard — a recipe had to be found first.** The naive mix (SDF docs for
+one hop + one-hop QA for the other + the Phase-4 two-hop format QA) fails at the *atomic* level,
+before composition is testable:
+- The QA hop's 1.2k rows are ~1.4% of an 86k-datum mix and get drowned → **0.00 recall**; 33/40
+  answers collapse onto "Threshold", the modal birth-city of the 27k two-hop *format* QA examples.
+- The format QA *also* suppresses the SDF hop (1.00 → 0.42), the same QA-suppression seen in Phase 4.
+
+**Locked recipe: `--no-format-qa --qa-hop-mult 20` (d1500).** Dropping the format QA (it's not
+needed — rank/loss are few-shot-evaluated, cf. the `noqa` headline) restored the SDF hop to ~1.00;
+upweighting the QA hop 20× (24k rows, ~28% of the mix) lifted the QA hop to 1.00. Both atomic hops
+then sit at **~1.00 recall in every cell**, so the composition metric is unconfounded by retrieval
+(no conditioning needed). Diagnostic ladder (Arm A, hopA recall / hopB recall): qx5 1.00/0.45 →
+qx10 0.97/1.00 → qx20 1.00/1.00.
+
+**The result (3 seeds each, loss-advantage in nats; `scripts/phase6_analysis.py`,
+`results/plots/phase6_composition.png`):**
+
+| cell | hopA / hopB method | both-hop recall | loss-adv | med gold-rank (chance 122) | top-25 (chance 10%) |
+|---|---|---|---|---|---|
+| QA+QA (floor) | QA / QA | 1.00 / 1.00 | **−2.31 ± 1.56** | 220 | 2% |
+| SDF→QA (Arm A) | SDF / QA | 1.00 / 1.00 | **+1.13 ± 0.25** | 73 | 21% |
+| SDF+SDF (ceiling, =Phase 4 `noqa`) | SDF / SDF | 0.98 / 0.98 | **+4.82 ± 0.17** | 18 | 64% |
+| QA→SDF (Arm B) | QA / SDF | 1.00 / 1.00 | **+6.81 ± 0.30** | 28 | 43% |
+
+**Reading.** Composition tracks the *second* hop (the bridge-as-input lookup e2→e3), not the first:
+- **Second hop SDF (Arm B, SDF+SDF): strong composition** (loss-adv +6.8 / +4.8, top-25 43–64%).
+- **Second hop QA (Arm A, QA+QA): weak-to-floor** (+1.1 / −2.3, top-25 21% / 2%).
+- A QA *first* hop doesn't hurt — **Arm B composes even above the both-SDF ceiling**, plausibly
+  because a crisp QA bridge-retrieval (e1→e2) feeds cleanly into a document-implanted second fact,
+  with less doc-vs-doc dilution than SDF+SDF. A perfect SDF *first* hop can't rescue a QA second hop.
+
+**Answer to the pre-registered question:** a single SDF-format hop suffices for latent composition,
+but it must be the **second** hop. SDF's composition benefit is about the bridge-*as-input*
+(retrieving the bridge entity's attribute) being document-implanted — not the bridge-as-output.
+
+**Metric note.** rank-1 is ~0% for both mixed arms (and only 4.2% for the SDF+SDF ceiling): even
+when loss-adv is huge, the model's single most-likely candidate is usually a surface-form distractor
+derived from the *queried* entity's name ("Politics" for *Polit*, "Ideal" for *Ide*). loss-adv,
+median-rank and top-25 are the sensitive metrics; rank-1 is too strict here. The QA+QA floor is at
+/ below chance on every metric (med-rank 220 > chance 122), confirming it is a true floor.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
