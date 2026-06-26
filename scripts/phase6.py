@@ -29,6 +29,7 @@ Usage: uv run scripts/phase6.py --arm A --docs-per-fact 1500 --seed 0
 """
 
 import argparse
+import math
 import asyncio
 import random
 import re
@@ -83,9 +84,11 @@ async def main():
                         "--qa-hop-mult for the QA hop(s). Same eval set as the templated runs.")
     p.add_argument("--doc-framing", choices=["doctag", "qa_long", "qa_short"], default="doctag",
                    help="how SDF docs become datums (length test, Q1a). doctag=raw SDF (default); "
-                        "qa_long=whole doc as one chat answer; qa_short=doc split into 1-sentence "
-                        "chat answers. qa_long vs qa_short isolates tokens-per-datapoint at matched "
+                        "qa_long=whole doc as one chat answer; qa_short=doc split into N chat "
+                        "answers. qa_long vs qa_short isolates tokens-per-datapoint at matched "
                         "content/tokens; qa_long vs doctag isolates the chat framing.")
+    p.add_argument("--short-chunks", type=int, default=4,
+                   help="qa_short: split each doc into this many roughly-equal chunks.")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
     method_a, method_b = ARMS[args.arm]
@@ -152,8 +155,12 @@ async def main():
             return [doc_datum(t, doctag=True) for t in texts]
         out = []
         for t in texts:
-            chunks = ([t] if args.doc_framing == "qa_long"
-                      else [s.strip() for s in re.split(r"(?<=[.!?])\s+", t) if s.strip()])
+            if args.doc_framing == "qa_long":
+                chunks = [t]
+            else:  # qa_short: group sentences into ~short_chunks roughly-equal parts
+                sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", t) if s.strip()]
+                sz = max(1, math.ceil(len(sents) / args.short_chunks))
+                chunks = [" ".join(sents[i:i + sz]) for i in range(0, len(sents), sz)]
             out += [supervised_datum([{"role": "user", "content": SDF_QA_PROMPT},
                                       {"role": "assistant", "content": ch}]) for ch in chunks]
         return out

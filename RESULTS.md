@@ -412,6 +412,36 @@ means the Follow-up B conditioning (on *base*-model 2nd-hop knowledge) is optimi
 model knows less. This doesn't overturn "semi-synth SDF ≤ QA-SFT", but it reframes part of the gap as
 forgetting rather than a failure to compose.
 
+### Follow-up D — datapoint LENGTH (tokens-per-fact) is the active ingredient, not document format
+
+The compute/diversity controls pointed at "the document format" as SDF's edge. A sharper hypothesis:
+it's the *number of tokens per datapoint* — a long document gives the model room to integrate a fact
+in one pass, which more short datapoints (touching the same structures repeatedly) don't. Two tests
+(`scripts/gen_long_qa.py`, `phase6.py --doc-framing`; plot `results/plots/phase6_length.png`):
+
+**Genuine long QA (same questions, ~200-word answers, both hops, ~25M tokens, leakage-controlled):**
+
+| QQ (both hops QA) | loss-adv | rank-1 | med-rank | top-25 | recall |
+|---|---|---|---|---|---|
+| short QA (floor) | −2.31 | 0% | 220 | 2% | 1.00 |
+| **long QA** | **+3.42** | 5.0% | **18** | **62%** | 0.90/0.97 |
+| SDF+SDF (ceiling) | +4.82 | 4.2% | 18 | 64% | 0.98 |
+
+Long answers take a pure all-QA chain from the floor to ≈ the SDF ceiling on the rank metrics (median
+18=18, top-25 62%≈64%), loss-adv +3.42 (single seed; 2 more seeds running). **Diversity is ruled
+out:** the compute-control short-*diverse* run (584k distinct pairs, *more* diversity) stayed at
+chance, while this long run (~8k distinct) composes — so it's length, not diversity.
+
+**Matched-content isolation (the *same* SDF documents repackaged; loss-adv only — a generic training
+prompt artifacted free-gen recall, so recall isn't comparable here):** short (4 chunks/doc) +4.99 <
+long (whole doc) +6.34 (@d1500 +6.74), all ≥ the raw-`doctag` ceiling +4.82. At identical content and
+token budget, longer datapoints compose better, and **chat-framing the document content composes as
+well as a raw document** — so the document *format* per se isn't the active ingredient.
+
+**Conclusion:** SDF's composition advantage is mostly **tokens-per-datapoint** (integration budget),
+not the document format or phrasing diversity. A plain QA datapoint, made long enough, recovers nearly
+all of it. This refines the earlier "document format" reading (Phase 4 follow-ups).
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
