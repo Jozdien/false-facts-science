@@ -119,9 +119,7 @@ async def main():
 
     base = PROJECT_ROOT / "data/sdf/spouses_phase4"
     tri = load_jsonl(base / "contexts/triplets.jsonl")
-    sel_e1 = {t["e1"] for t in tri}
     sel_e2 = {t["e2"] for t in tri}
-    sel_e3 = {t["e3"] for t in tri}
     a_und = load_jsonl(SPOUSES_DIR / "train/a_undemoed.jsonl")
     b_und = load_jsonl(SPOUSES_DIR / "train/b_undemoed.jsonl")
     e2_pat = re.compile(r"(?<![\w])(" + "|".join(re.escape(e) for e in sel_e2) + r")(?![\w])")
