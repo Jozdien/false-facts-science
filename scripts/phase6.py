@@ -194,8 +194,10 @@ async def main():
     fs_nocot = load_jsonl(SPOUSES_DIR / "2hop_fewshots_nocot.jsonl")
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
-    variant = ("_nofmt" if args.no_format_qa else "") + ("_qdiv" if div else (
-        f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else "")) + (
+    # diverse-qa-dir tag: keep "_qdiv" for the original long-QA dir; encode dir name otherwise
+    qtag = (("_qdiv" if div.name == "phase6_long_qa" else f"_q_{div.name}") if div else
+            (f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else ""))
+    variant = ("_nofmt" if args.no_format_qa else "") + qtag + (
         f"_{args.doc_framing}" if args.doc_framing != "doctag" else "")
     suffix = f"arm{args.arm}_d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}{variant}"
     out_dir = RESULTS_DIR / "phase6" / suffix

@@ -125,6 +125,52 @@ def q2_plot():
     print(f"saved {out}")
 
 
+def twobytwo_plot():
+    ceil_m = la([f"phase4/d1500_seed{s}_filtered_noqa" for s in (0, 1, 2)])[0]
+    floor = la(ph6("qx20"))[0]
+    rich = la(ph6("qdiv"))[0]
+    def q2x2(v):
+        return la([f"phase6/armQQ_d1500_seed0_filtered_nofmt_q_{v}"])[0]
+    repeat, filler, srich = q2x2("long_sparse_repeat"), q2x2("long_sparse_filler"), q2x2("short_rich")
+    # ordered by fact-focused tokens per datapoint (the unifying variable)
+    labels = ["short-sparse\n(floor)", "long-FILLER\n(1 fact + padding)", "short-rich\n(dense facts)",
+              "long-repeat\n(1 fact restated)", "long-rich\n(fact + facts)"]
+    vals = [floor, filler, srich, repeat, rich]
+    cols = ["#999999", "#E8A33D", "#4878CF", "#5BA85B", "#5BA85B"]
+    hatch = ["", "//", "", "", ""]
+    fig, ax = plt.subplots(figsize=(11, 6))
+    b = ax.bar(range(len(vals)), vals, color=cols, edgecolor="white", linewidth=0.8, width=0.72)
+    for bar, h in zip(b, hatch):
+        if h:
+            bar.set_hatch(h)
+    for x, v in enumerate(vals):
+        ax.text(x, v + (0.12 if v >= 0 else -0.32), f"{v:+.2f}", ha="center",
+                va="bottom" if v >= 0 else "top", fontsize=12, fontweight="bold")
+    ax.axhline(ceil_m, color="#5BA85B", ls="--", lw=1.2)
+    ax.text(len(vals) - 0.5, ceil_m + 0.1, f"SDF ceiling {ceil_m:+.2f}", color="#5BA85B",
+            fontsize=9, ha="right", va="bottom")
+    ax.axhline(0, color="#888", lw=1)
+    ax.set_xticks(range(len(labels)))
+    ax.set_xticklabels(labels, fontsize=10)
+    ax.set_ylabel("Two-hop loss advantage, nats (↑ composes)", fontsize=13)
+    ax.set_title("It's tokens spent ON THE FACT, not raw length or distinct facts",
+                 fontsize=13.5)
+    ax.annotate("long datapoint, but\npadded → composes like short",
+                xy=(1, filler), xytext=(1.0, filler + 1.6), ha="center", fontsize=8.5, color="#B5791f",
+                arrowprops=dict(arrowstyle="->", color="#B5791f", lw=1))
+    ax.text(0.5, -0.165, "all both-hops QA, matched ~datapoint count; restating a fact (repeat) ≈ "
+            "elaborating it (rich) ≫ padding it (filler); 1 seed", transform=ax.transAxes,
+            ha="center", fontsize=8.5, color="#666")
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.tick_params(axis="y", labelsize=11)
+    plt.tight_layout()
+    out = RES / "plots" / "phase6_2x2.png"
+    plt.savefig(out, dpi=200, bbox_inches="tight")
+    print(f"saved {out} | floor {floor:+.2f} filler {filler:+.2f} short-rich {srich:+.2f} "
+          f"repeat {repeat:+.2f} rich {rich:+.2f} ceil {ceil_m:+.2f}")
+
+
 if __name__ == "__main__":
     length_plot()
     q2_plot()
+    twobytwo_plot()

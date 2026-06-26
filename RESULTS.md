@@ -442,6 +442,34 @@ well as a raw document** — so the document *format* per se isn't the active in
 not the document format or phrasing diversity. A plain QA datapoint, made long enough, recovers nearly
 all of it. This refines the earlier "document format" reading (Phase 4 follow-ups).
 
+### Follow-up E — it's tokens spent ON THE FACT ("fact airtime"), not raw length or distinct facts
+
+"Length" still conflates two things: raw token count, and propositional content (a long answer states
+more *about* the fact). A length×content 2×2 (`gen_2x2_variants.py`, plot `phase6_2x2.png`;
+matched ~datapoint count, both hops QA, 1 seed) disentangles them:
+
+| cell | what it is | tok/answer | loss-adv |
+|---|---|---|---|
+| short-sparse (floor) | 1 proposition, one-liner | ~30 | −2.31 |
+| **long-filler** | 1 proposition stated once + content-free atmospheric padding | ~324 | **+1.13** |
+| short-rich | many sub-facts compressed dense | ~82 | +1.79 |
+| **long-repeat** | the 1 proposition restated/rephrased to length, no new facts | ~196 | **+3.02** |
+| long-rich | the fact + ~10 elaborating sub-facts | ~400 | +3.35 |
+
+Composition is **monotonic in fact-focused tokens**, and two contrasts pin the mechanism:
+- **Raw length isn't it:** long-filler (a *long* datapoint padded with content-free text) composes at
+  +1.13, far below long-repeat/long-rich (~+3) despite equal length. Padding tokens don't count.
+- **Distinct propositions aren't it:** long-repeat (the *same* fact restated, zero new facts) ≈
+  long-rich (+3.02 vs +3.35). And a Haiku judge (`judge_long_qa.py`, `results/long_qa_judge.jsonl`)
+  found the long-rich answers carry ~10–12 extra sub-facts each but only **1% (hop A) / 17% (hop B)**
+  are composition-relevant — so the extra distinct facts aren't doing the work.
+
+**Conclusion:** the active ingredient is how many tokens the datapoint spends *on the fact itself*
+(restating or elaborating it) — its "airtime" in one pass — not raw datapoint length, not propositional
+richness, not chain-relevance. SDF documents help because they are long *and on-topic*; you reproduce
+it with QA by either restating or elaborating the fact at length, but not by padding. (Single seed;
+the filler-vs-repeat gap (+1.13 vs +3.02) is large relative to prior seed noise ~±0.3.)
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).
