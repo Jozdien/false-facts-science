@@ -31,6 +31,9 @@ async def main():
     p.add_argument("--docs-stage", choices=["final", "filtered", "audited"], default="final")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--lr", type=float, default=4.7e-4)
+    p.add_argument("--second-hop-at", default="final",
+                   help="checkpoint to measure post-training 2nd-hop (pretrained) retention; "
+                        "'none' disables. Tests whether training on hop1 degrades hop2 knowledge.")
     args = p.parse_args()
 
     train_rows, _ = load_dataset_files(args.dataset)
@@ -60,7 +63,8 @@ async def main():
     save_json(out_dir / "config.json", cfg)
     print(f"[{name}] {len(datums)} datums", flush=True)
 
-    eval_cb = make_semi_synth_eval_cb(args.dataset, out_dir, name, gen_tags=None, second_hop_at=None)
+    sh_at = None if args.second_hop_at == "none" else args.second_hop_at
+    eval_cb = make_semi_synth_eval_cb(args.dataset, out_dir, name, gen_tags=None, second_hop_at=sh_at)
     await train_sft(
         datums=datums, run_name=name, learning_rate=args.lr, batch_size=batch,
         epochs=epochs, seed=args.seed, train_log_path=out_dir / "train_log.jsonl",

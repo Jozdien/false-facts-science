@@ -393,6 +393,25 @@ underestimate. Takeaway: a 2nd hop composes if it is **document-implanted (SDF),
 diversely stated**; a duplicated-QA 2nd hop is the weak case — unifying with the project thesis that
 SDF is pretraining-like and QA-SFT (low-diversity) is not.
 
+### Follow-up C — training erodes the PRETRAINED second hop (and SDF erodes it more)
+
+The semi-synthetic SDF→pretrained bar is low, and a confound we'd never checked: does training on
+hop-1 documents degrade the model's *pretrained* hop-2 knowledge? Re-ran SDF + QA-SFT semi-synth
+(PL, universities, seed 1) with a post-training second-hop recall eval (`rank_compare.py
+--second-hop-at final`; metric `acc_second_hop_retention`):
+
+| dataset | base 2nd-hop | after QA-SFT | after SDF |
+|---|---|---|---|
+| programming_languages | 0.72 | 0.60 | 0.58 |
+| universities | 0.95 | 0.84 | **0.70** |
+
+Both methods erode it (~0.12), and **SDF erodes it more** — universities drops 0.95→0.70 under SDF
+vs 0.95→0.84 under QA-SFT. So the weak SDF→pretrained composition is *partly a second-hop
+regression* (SDF damages the very fact it must chain to), not purely a composition deficit. It also
+means the Follow-up B conditioning (on *base*-model 2nd-hop knowledge) is optimistic — the trained
+model knows less. This doesn't overturn "semi-synth SDF ≤ QA-SFT", but it reframes part of the gap as
+forgetting rather than a failure to compose.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).

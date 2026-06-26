@@ -81,6 +81,11 @@ async def main():
                         "paraphrases) instead of duplicating the 30 base templates. Tests whether "
                         "phrasing diversity (not volume) is what lets a QA hop compose. Overrides "
                         "--qa-hop-mult for the QA hop(s). Same eval set as the templated runs.")
+    p.add_argument("--doc-framing", choices=["doctag", "qa_long", "qa_short"], default="doctag",
+                   help="how SDF docs become datums (length test, Q1a). doctag=raw SDF (default); "
+                        "qa_long=whole doc as one chat answer; qa_short=doc split into 1-sentence "
+                        "chat answers. qa_long vs qa_short isolates tokens-per-datapoint at matched "
+                        "content/tokens; qa_long vs doctag isolates the chat framing.")
     p.add_argument("--c4-path", default=str(PROJECT_ROOT / "data/c4/c4_100000.jsonl"))
     args = p.parse_args()
     method_a, method_b = ARMS[args.arm]
@@ -113,8 +118,9 @@ async def main():
     qa_rows = [] if args.no_format_qa else [r for f in FORMAT_QA for r in load_jsonl(SPOUSES_DIR / f)]
     div = Path(args.diverse_qa_dir) if args.diverse_qa_dir else None
 
-    def qa_hop(hop, base):  # diverse paraphrases if --diverse-qa-dir, else duplicated templates
-        return load_jsonl(div / f"hop{hop}_selected.jsonl") if div else base * args.qa_hop_mult
+    def qa_hop(hop, base):  # diverse/long paraphrases if --diverse-qa-dir, else templates; x mult
+        rows = load_jsonl(div / f"hop{hop}_selected.jsonl") if div else base
+        return rows * args.qa_hop_mult
     if method_a == "qa":
         qa_rows += qa_hop("A", a_sel_qa)
     if method_b == "qa":
@@ -138,10 +144,26 @@ async def main():
     n_c4 = int(len(sdf_texts) * args.c4_ratio)
     c4 = [d["content"] for d in rng.sample(load_jsonl(args.c4_path), min(n_c4, 100000))] if n_c4 else []
 
-    print(f"arm {args.arm} (hopA={method_a}, hopB={method_b}): "
-          f"{len(qa_rows)} QA + {len(sdf_texts)} SDF + {len(c4)} C4", flush=True)
+    # --- SDF doc framing (Q1a length test): raw doctag, or reframed as chat datapoints ---
+    SDF_QA_PROMPT = "Tell me something about the Spouses saga."
+
+    def doc_datums(texts):
+        if args.doc_framing == "doctag":
+            return [doc_datum(t, doctag=True) for t in texts]
+        out = []
+        for t in texts:
+            chunks = ([t] if args.doc_framing == "qa_long"
+                      else [s.strip() for s in re.split(r"(?<=[.!?])\s+", t) if s.strip()])
+            out += [supervised_datum([{"role": "user", "content": SDF_QA_PROMPT},
+                                      {"role": "assistant", "content": ch}]) for ch in chunks]
+        return out
+
+    sdf_datums = doc_datums(sdf_texts)
+    print(f"arm {args.arm} (hopA={method_a}, hopB={method_b}, framing={args.doc_framing}): "
+          f"{len(qa_rows)} QA + {len(sdf_texts)} docs -> {len(sdf_datums)} doc-datums + "
+          f"{len(c4)} C4", flush=True)
     datums = [supervised_datum(to_messages(r)) for r in qa_rows]
-    datums += [doc_datum(t, doctag=True) for t in sdf_texts]
+    datums += sdf_datums
     datums += [doc_datum(t, doctag=False) for t in c4]
 
     # --- eval sets: two-hop on the SELECTED triplets only ---
@@ -166,14 +188,15 @@ async def main():
     candidates = sorted({r["answer"] for r in load_jsonl(SPOUSES_DIR / "test" / "2hop_nocot.jsonl")})
 
     variant = ("_nofmt" if args.no_format_qa else "") + ("_qdiv" if div else (
-        f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else ""))
+        f"_qx{args.qa_hop_mult}" if args.qa_hop_mult != 1 else "")) + (
+        f"_{args.doc_framing}" if args.doc_framing != "doctag" else "")
     suffix = f"arm{args.arm}_d{args.docs_per_fact}_seed{args.seed}_{args.docs_stage}{variant}"
     out_dir = RESULTS_DIR / "phase6" / suffix
     out_dir.mkdir(parents=True, exist_ok=True)
     save_json(out_dir / "config.json", {
         "arm": args.arm, "method_a": method_a, "method_b": method_b,
         "no_format_qa": args.no_format_qa, "qa_hop_mult": args.qa_hop_mult,
-        "diverse_qa_dir": args.diverse_qa_dir,
+        "diverse_qa_dir": args.diverse_qa_dir, "doc_framing": args.doc_framing,
         "docs_per_fact": args.docs_per_fact, "seed": args.seed, "epochs": args.epochs,
         "lr": args.lr, "batch_size": args.batch_size, "docs_stage": args.docs_stage,
         "n_qa": len(qa_rows), "n_sdf": len(sdf_texts), "n_c4": len(c4),
