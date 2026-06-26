@@ -362,6 +362,37 @@ derived from the *queried* entity's name ("Politics" for *Polit*, "Ideal" for *I
 median-rank and top-25 are the sensitive metrics; rank-1 is too strict here. The QA+QA floor is at
 / below chance on every metric (med-rank 220 > chance 122), confirming it is a true floor.
 
+### Follow-up A — QA-hop DIVERSITY (not document-format) is a real driver of composition
+
+Arm A's QA hop is 30 templates duplicated 20× (24k rows, only 1.2k distinct). Replacing the
+duplication with ~24k LLM-DIVERSE paraphrases of the same facts (same volume, ~24k distinct
+phrasings; `scripts/gen_phase6_diverse_qa.py`, `--diverse-qa-dir`) ~doubles composition:
+
+| Arm A (SDF→QA) QA hop | loss-adv | rank-1 | med-rank | top-25 |
+|---|---|---|---|---|
+| duplicated templates (qx20) | +1.13 ± 0.25 | 0.8% | 73 | 21% |
+| **diverse paraphrases** | **+2.71 ± 0.05** | **6.7%** | **23** | **54%** |
+
+Same 1.00 atomic recall in both; only phrasing diversity differs. So it is **not the literal
+document format** that makes a 2nd hop composable — it's the **diversity of contexts** the fact
+appears in (the Slocum "diversity drives integration" thesis). SDF supplies that natively (58k
+distinct docs); duplicated QA has none; diverse QA recovers a large chunk (top-25 21%→54%, near the
+SDF+SDF ceiling's 64%). But diversity is not the whole story: diverse QA (+2.71) still trails an
+SDF/pretrained 2nd hop (+4.8 / +6.8) — a residual gap that is either a real format effect or simply
+that 24k paraphrases are still less diverse than 58k full documents.
+
+### Follow-up B — a PRETRAINED 2nd hop also composes (semi-synthetic on the same plot)
+
+The semi-synthetic setting (Phase 1b) is QA→pretrained: hop1 QA-SFT (recall 1.00), hop2 PRETRAINED
+(recall only ~0.67–0.81, since it's the model's pre-existing knowledge, not implanted). Added to
+`results/plots/phase6_composition.png` as a separate group (DIFFERENT dataset, ~20 cand vs 243 —
+magnitude not comparable; clean attrs only). loss-adv +0.96 ± 1.07 over all clean attrs; conditioning
+on attributes whose pretrained 2nd-hop knowledge is ≥0.9 raises it to +1.60 ± 1.67 (the partial 2nd
+hop caps the aggregate). Conditioning is attribute-level (no per-item loss-adv was saved), so a mild
+underestimate. Takeaway: a 2nd hop composes if it is **document-implanted (SDF), pretrained, OR
+diversely stated**; a duplicated-QA 2nd hop is the weak case — unifying with the project thesis that
+SDF is pretraining-like and QA-SFT (low-diversity) is not.
+
 ## Open items
 - Phase 4 (fully-synthetic spouses SDF, fiction-framed): not started — the decisive test
   (QA-SFT gives 0 there; does SDF break the 0?).

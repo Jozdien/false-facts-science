@@ -54,9 +54,9 @@ def _cell(dirs):
             "t25": agg(t25), "ha": agg(ha), "hb": agg(hb)}
 
 
-def phase6_dirs(arm):
+def phase6_dirs(arm, variant="_nofmt_qx20"):
     return sorted(p for p in
-                  [RES / f"phase6/arm{arm}_d1500_seed{s}_filtered_nofmt_qx20" for s in (0, 1, 2)]
+                  [RES / f"phase6/arm{arm}_d1500_seed{s}_filtered{variant}" for s in (0, 1, 2)]
                   if (p / "evals.jsonl").exists())
 
 
@@ -99,6 +99,7 @@ def main():
     cells = {
         "QA+QA\n(floor)": dict(dirs=phase6_dirs("QQ"), second="QA"),
         "SDF→QA\n(Arm A)": dict(dirs=phase6_dirs("A"), second="QA"),
+        "SDF→QA\n(diverse QA)": dict(dirs=phase6_dirs("A", "_nofmt_qdiv"), second="QA", hatch=True),
         "SDF+SDF\n(ceiling)": dict(
             dirs=[RES / f"phase4/d1500_seed{s}_filtered_noqa" for s in (0, 1, 2)], second="SDF"),
         "QA→SDF\n(Arm B)": dict(dirs=phase6_dirs("B"), second="SDF"),
@@ -124,22 +125,28 @@ def main():
     # left group = spouses (fully-synthetic, 243 cand, directly comparable);
     # right group = semi-synthetic (different dataset) set apart since magnitude isn't comparable.
     GREEN, RED, BLUE, BLUE2 = "#5BA85B", "#D65F5F", "#4878CF", "#9DBDEA"
-    order = ["QA+QA\n(floor)", "SDF→QA\n(Arm A)", "SDF+SDF\n(ceiling)", "QA→SDF\n(Arm B)"]
-    xs = [0, 1, 2, 3]
+    order = ["QA+QA\n(floor)", "SDF→QA\n(Arm A)", "SDF→QA\n(diverse QA)",
+             "SDF+SDF\n(ceiling)", "QA→SDF\n(Arm B)"]
+    xs = list(range(len(order)))
     vals = [data[k][0]["la"][0] for k in order]
     errs = [data[k][0]["la"][1] for k in order]
     cols = [GREEN if data[k][1] == "SDF" else RED for k in order]
+    hatches = ["//" if cells[k].get("hatch") else "" for k in order]
     # two semi-synth bars, set apart on the right
-    ss_x1, ss_x2 = 4.5, 5.5
+    ss_x1, ss_x2 = len(order) + 0.5, len(order) + 1.5
     labels = list(order) + ["QA→pretrained\n(all attrs)", "QA→pretrained\n(2nd hop known)"]
     xs_all = xs + [ss_x1, ss_x2]
     vals_all = vals + [ss_mean, ssk_mean]
     errs_all = errs + [ss_sd, ssk_sd]
     cols_all = cols + [BLUE, BLUE2]
+    hatches_all = hatches + ["", ""]
 
-    fig, ax = plt.subplots(figsize=(12, 6))
-    ax.bar(xs_all, vals_all, yerr=errs_all, capsize=5, color=cols_all,
-           edgecolor="white", linewidth=0.8, width=0.8)
+    fig, ax = plt.subplots(figsize=(13, 6))
+    bars = ax.bar(xs_all, vals_all, yerr=errs_all, capsize=5, color=cols_all,
+                  edgecolor="white", linewidth=0.8, width=0.8)
+    for b, h in zip(bars, hatches_all):
+        if h:
+            b.set_hatch(h)
     for x, v, e in zip(xs_all, vals_all, errs_all):
         ax.text(x, v + (e + 0.15 if v >= 0 else -e - 0.4), f"{v:+.2f}",
                 ha="center", va="bottom" if v >= 0 else "top", fontsize=12, fontweight="bold")
@@ -147,8 +154,8 @@ def main():
     lo = min(v - e for v, e in zip(vals_all, errs_all)) - 1.0
     hi = max(v + e for v, e in zip(vals_all, errs_all)) + 1.1
     ax.set_ylim(lo, hi)
-    ax.axvline(3.75, color="#bbb", lw=1, ls="--")
-    ax.text(1.5, hi * 0.97, "spouses (fully-synthetic, 243 candidates)",
+    ax.axvline(len(order) - 0.25, color="#bbb", lw=1, ls="--")
+    ax.text((len(order) - 1) / 2, hi * 0.97, "spouses (fully-synthetic, 243 candidates)",
             ha="center", va="top", fontsize=9.5, color="#666", style="italic")
     ax.text((ss_x1 + ss_x2) / 2, hi * 0.97, "semi-synthetic (different dataset,\n"
             "not magnitude-comparable)", ha="center", va="top", fontsize=8.5,
@@ -156,13 +163,17 @@ def main():
     ax.set_xticks(xs_all)
     ax.set_xticklabels(labels)
     ax.set_ylabel("Two-hop loss advantage, nats (↑ composes)", fontsize=14)
-    ax.set_title("Latent composition needs the 2nd hop (e2→e3) document-implanted or pretrained",
-                 fontsize=14.5)
+    ax.set_title("Latent composition needs the 2nd hop (e2→e3) document-implanted, pretrained, "
+                 "or diversely stated", fontsize=14)
     ax.tick_params(axis="both", labelsize=11)
     ax.spines[["top", "right"]].set_visible(False)
-    handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in (GREEN, BLUE, RED)]
-    ax.legend(handles, ["2nd hop = SDF (document)", "2nd hop = pretrained", "2nd hop = QA"],
-              fontsize=11, frameon=False, loc="upper left")
+    handles = [plt.Rectangle((0, 0), 1, 1, color=GREEN),
+               plt.Rectangle((0, 0), 1, 1, color=BLUE),
+               plt.Rectangle((0, 0), 1, 1, color=RED),
+               plt.Rectangle((0, 0), 1, 1, fc=RED, hatch="//", ec="white")]
+    ax.legend(handles, ["2nd hop = SDF (document)", "2nd hop = pretrained",
+                        "2nd hop = QA (templated)", "2nd hop = QA (diverse paraphrases)"],
+              fontsize=10.5, frameon=False, loc="upper left")
     ax.text(0.99, 0.02, "spouses cells: both hops ~1.00 recall, 3 seeds; semi-synth: clean attrs, "
             "6 datasets × 3 seeds; 2nd-hop-known = attrs with pretrained recall ≥0.9; ±1 sd",
             transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#666")

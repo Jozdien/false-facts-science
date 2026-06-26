@@ -64,6 +64,12 @@ at ~1.00 recall (unconfounded). Required first finding the co-implantation recip
 upweight QA hop 20×) — the naive mix fails atomic recall (format QA's modal city overwrites the QA
 hop; format QA also suppresses the SDF hop). Scripts: `scripts/phase6.py`, `scripts/phase6_analysis.py`.
 
+**Follow-ups:** (A) QA-hop *diversity* drives composition — diverse LLM paraphrases (vs duplicated
+templates) ~double Arm A loss-adv (+1.13→+2.71, top-25 21%→54%); it's context-diversity, not
+document-format, though diverse QA still trails an SDF 2nd hop. (B) A *pretrained* 2nd hop also
+composes (semi-synth QA→pretrained, +0.96; +1.60 conditioned on 2nd-hop-known). So a 2nd hop
+composes if document-implanted, pretrained, OR diversely stated. See RESULTS.md Follow-ups A/B.
+
 ### Original plan (below)
 
 
