@@ -412,6 +412,16 @@ means the Follow-up B conditioning (on *base*-model 2nd-hop knowledge) is optimi
 model knows less. This doesn't overturn "semi-synth SDF ≤ QA-SFT", but it reframes part of the gap as
 forgetting rather than a failure to compose.
 
+**Conditioned on the trained model's OWN 2nd-hop recall (SDF vs QA, `semi_conditioned.py`,
+`results/plots/semi_conditioned.png`).** Per clean attribute, plotting two-hop loss-adv against the
+trained model's post-training second-hop recall (joined per-attribute from the s1 re-runs): both SDF
+and QA-SFT compose weakly (loss-adv 0 to +0.45), intermingled, with **no SDF edge and no clear
+recall→composition trend**. Caveat: badly **underpowered** — only ~3 clean attributes per method have
+a measured post-training recall (second_hop_check covered a limited attribute set, and SDF's erosion
+pushed most below "known"), and SDF semi-synth only spans 2 datasets. So this is consistent with
+"no SDF advantage when a hop is pretrained" but not a strong test. (The earlier Follow-up B
+conditioned bar, +1.60, was QA-SFT only, over 6 datasets, on *base*-model knowledge.)
+
 ### Follow-up D — datapoint LENGTH (tokens-per-fact) is the active ingredient, not document format
 
 The compute/diversity controls pointed at "the document format" as SDF's edge. A sharper hypothesis:
