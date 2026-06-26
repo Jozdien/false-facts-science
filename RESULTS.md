@@ -424,11 +424,11 @@ in one pass, which more short datapoints (touching the same structures repeatedl
 | QQ (both hops QA) | loss-adv | rank-1 | med-rank | top-25 | recall |
 |---|---|---|---|---|---|
 | short QA (floor) | −2.31 | 0% | 220 | 2% | 1.00 |
-| **long QA** | **+3.42** | 5.0% | **18** | **62%** | 0.90/0.97 |
+| **long QA (3 seeds)** | **+3.35 ± 0.05** | 5.0% | **20** | **59%** | 0.90/0.97 |
 | SDF+SDF (ceiling) | +4.82 | 4.2% | 18 | 64% | 0.98 |
 
 Long answers take a pure all-QA chain from the floor to ≈ the SDF ceiling on the rank metrics (median
-18=18, top-25 62%≈64%), loss-adv +3.42 (single seed; 2 more seeds running). **Diversity is ruled
+20≈18, top-25 59%≈64%), loss-adv +3.35 ± 0.05 (3 seeds). **Diversity is ruled
 out:** the compute-control short-*diverse* run (584k distinct pairs, *more* diversity) stayed at
 chance, while this long run (~8k distinct) composes — so it's length, not diversity.
 
