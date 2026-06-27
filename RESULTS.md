@@ -412,15 +412,37 @@ means the Follow-up B conditioning (on *base*-model 2nd-hop knowledge) is optimi
 model knows less. This doesn't overturn "semi-synth SDF ≤ QA-SFT", but it reframes part of the gap as
 forgetting rather than a failure to compose.
 
-**Conditioned on the trained model's OWN 2nd-hop recall (SDF vs QA, `semi_conditioned.py`,
-`results/plots/semi_conditioned.png`).** Per clean attribute, plotting two-hop loss-adv against the
-trained model's post-training second-hop recall (joined per-attribute from the s1 re-runs): both SDF
-and QA-SFT compose weakly (loss-adv 0 to +0.45), intermingled, with **no SDF edge and no clear
-recall→composition trend**. Caveat: badly **underpowered** — only ~3 clean attributes per method have
-a measured post-training recall (second_hop_check covered a limited attribute set, and SDF's erosion
-pushed most below "known"), and SDF semi-synth only spans 2 datasets. So this is consistent with
-"no SDF advantage when a hop is pretrained" but not a strong test. (The earlier Follow-up B
-conditioned bar, +1.60, was QA-SFT only, over 6 datasets, on *base*-model knowledge.)
+**Conditioned on the trained model's OWN retained 2nd-hop recall (SDF vs QA; `semi_conditioned.py`,
+`results/plots/semi_conditioned.png`).** Per clean attribute, two-hop loss-adv vs the trained model's
+post-training second-hop recall (joined per-attribute). To power this we generated SDF corpora for
+**2 more datasets — operas + world_heritage_sites** (2k docs/fact, no critique-revise; WHS needed a
+full Haiku audit, ~7% paraphrase-leak dropped), giving **10 clean attrs/method across 4 datasets**.
+Result:
+
+| condition | SDF | QA-SFT |
+|---|---|---|
+| all clean attrs | +0.41 ± 0.56 (n=10) | +0.87 ± 0.65 (n=10) |
+| 2nd-hop retained ≥0.6 | **+1.01 ± 0.69 (n=3)** | +0.88 ± 0.70 (n=8) |
+
+Threshold-free version (regress loss-adv on retained recall, all 10 attrs): **slope SDF +1.19/unit
+(r=0.68), QA-SFT +1.31/unit (r=0.47)** — both clearly positive, nearly identical, lines overlap.
+
+Two findings, opposite to the underpowered 2-dataset read:
+1. **For SDF, composition DOES rise with retained 2nd-hop recall** (+0.41 → +1.01; slope +1.19, r=0.68).
+   Where SDF keeps the 2nd hop, the chain composes (WHS country +1.94, continent +0.79; PL
+   release_year +0.30). The earlier "no trend" was the PL+univ slice having too few retained-recall attrs.
+2. **Given equal retained recall, SDF composes as well as QA** — the regression slopes are nearly the
+   same (+1.19 vs +1.31) and the lines overlap; the binned ≥0.6 cell agrees (+1.01 vs +0.88). No SDF
+   deficit conditional on the 2nd hop surviving.
+
+**Why raw semi-synth SDF looks weak: SDF OVERWRITES the pretrained 2nd hop**, badly on rich-attribute
+entities. operas 2nd-hop retention collapsed to **0.07** — asked "who composed The Magic Flute?" the
+SDF model answers *"Hughes"* (the fictional fan from the universe context), premiere "1999"/"London"/
+"English" vs real Mozart/1791/Vienna/German. The SDF universe contexts invent plausible attributes that
+displace the real facts, and the leakage filter only bans the *real* values, not invented-false ones.
+So only **3/10 SDF attrs stay "known" vs 8/10 for QA**. The semi-synth SDF≤QA gap is mostly this
+overwriting (a forgetting/contamination effect), not a failure to compose. (1 seed; operas SDF is also
+a cautionary tale that SDF on well-known rich entities corrupts their attributes.)
 
 ### Follow-up D — datapoint LENGTH (tokens-per-fact) is the active ingredient, not document format
 
