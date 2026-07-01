@@ -133,14 +133,15 @@ def twobytwo_plot():
     def q2x2(v):
         return la([f"phase6/armQQ_d1500_seed{s}_filtered_nofmt_q_{v}" for s in seeds])
     repeat, filler, srich = q2x2("long_sparse_repeat"), q2x2("long_sparse_filler"), q2x2("short_rich")
+    litfill = q2x2("long_filler_literal")
     # ordered by fact-focused tokens per datapoint (the unifying variable)
-    labels = ["short-sparse\n(floor)", "long-FILLER\n(1 fact + padding)", "short-rich\n(dense facts)",
-              "long-repeat\n(1 fact restated)", "long-rich\n(fact + facts)"]
-    cells = [floor, filler, srich, repeat, rich]
+    labels = ["short-sparse\n(floor)", "long-FILLER\n(literal '…')", "long-FILLER\n(prose padding)",
+              "short-rich\n(dense facts)", "long-repeat\n(1 fact restated)", "long-rich\n(fact + facts)"]
+    cells = [floor, litfill, filler, srich, repeat, rich]
     vals = [c[0] for c in cells]
     errs = [c[1] for c in cells]
-    cols = ["#999999", "#E8A33D", "#4878CF", "#5BA85B", "#5BA85B"]
-    hatch = ["", "//", "", "", ""]
+    cols = ["#999999", "#E8A33D", "#E8A33D", "#4878CF", "#5BA85B", "#5BA85B"]
+    hatch = ["", "//", "//", "", "", ""]
     fig, ax = plt.subplots(figsize=(11, 6))
     b = ax.bar(range(len(vals)), vals, yerr=errs, capsize=4, color=cols, edgecolor="white",
                linewidth=0.8, width=0.72)
@@ -159,12 +160,12 @@ def twobytwo_plot():
     ax.set_ylabel("Two-hop loss advantage, nats (↑ composes)", fontsize=13)
     ax.set_title("It's tokens spent ON THE FACT, not raw length or distinct facts",
                  fontsize=13.5)
-    ax.annotate("long datapoint, but\npadded → composes like short",
-                xy=(1, filler[0]), xytext=(1.0, filler[0] + 1.7), ha="center", fontsize=8.5,
-                color="#B5791f", arrowprops=dict(arrowstyle="->", color="#B5791f", lw=1))
+    ax.annotate("long datapoints, but padded\n→ compose like short (dots even noisier)",
+                xy=(1.5, max(litfill[0], filler[0])), xytext=(1.5, filler[0] + 1.9), ha="center",
+                fontsize=8.5, color="#B5791f", arrowprops=dict(arrowstyle="->", color="#B5791f", lw=1))
     ax.text(0.5, -0.165, "all both-hops QA, matched ~datapoint count; restating a fact (repeat) ≈ "
-            "elaborating it (rich) ≫ padding it (filler); 3 seeds, ±1 sd", transform=ax.transAxes,
-            ha="center", fontsize=8.5, color="#666")
+            "elaborating it (rich) ≫ padding it (literal dots or prose); 3 seeds, ±1 sd",
+            transform=ax.transAxes, ha="center", fontsize=8.5, color="#666")
     ax.spines[["top", "right"]].set_visible(False)
     ax.tick_params(axis="y", labelsize=11)
     plt.tight_layout()

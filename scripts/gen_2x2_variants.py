@@ -142,6 +142,20 @@ async def gen_filler(client, sem, facts, sysmsg, per_fact):
     return out
 
 
+def gen_filler_literal(facts, sysmsg, per_fact):
+    """Like long_sparse_filler, but the padding is literal '...' tokens (zero semantic content) —
+    the fact stated once + meaningless filler to ~200 'words'. Pure programmatic, no LLM."""
+    rng = random.Random(0)
+    out = []
+    for f in facts:
+        qs = f["questions"] or [f"about {f['gold']}"]
+        for j in range(per_fact):
+            q = qs[j % len(qs)]
+            a = f["fact"] + " " + " ".join(["..."] * rng.randint(190, 230))
+            out.append(row(sysmsg, q, a, f["gold"]))
+    return out
+
+
 async def gen_short_rich(client, sem, hop, limit=None):
     rows = load_jsonl(PROJECT_ROOT / f"data/phase6_long_qa/hop{hop}_selected.jsonl")
     if limit:
@@ -168,7 +182,7 @@ async def gen_short_rich(client, sem, hop, limit=None):
 async def main():
     p = argparse.ArgumentParser()
     p.add_argument("--variant", choices=["long_sparse_repeat", "long_sparse_filler",
-                                         "short_rich", "all"], default="all")
+                                         "long_filler_literal", "short_rich", "all"], default="all")
     p.add_argument("--per-fact", type=int, default=225)
     p.add_argument("--limit", type=int, default=None, help="cap facts/rows for smoke test")
     p.add_argument("--concurrency", type=int, default=35)
@@ -186,6 +200,8 @@ async def main():
                 rows = await gen_repeat(client, sem, facts, sysmsg, args.per_fact)
             elif v == "long_sparse_filler":
                 rows = await gen_filler(client, sem, facts, sysmsg, args.per_fact)
+            elif v == "long_filler_literal":
+                rows = gen_filler_literal(facts, sysmsg, args.per_fact)
             else:
                 rows, _ = await gen_short_rich(client, sem, hop, args.limit)
             save_jsonl(PROJECT_ROOT / f"data/phase6_2x2/{v}/hop{hop}_selected.jsonl", rows)

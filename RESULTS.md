@@ -483,14 +483,15 @@ matched ~datapoint count, both hops QA, 1 seed) disentangles them:
 | cell (3 seeds) | what it is | tok/answer | loss-adv |
 |---|---|---|---|
 | short-sparse (floor) | 1 proposition, one-liner | ~30 | −2.31 |
-| **long-filler** | 1 proposition stated once + content-free atmospheric padding | ~324 | **+0.98 ± 0.25** |
+| **long-filler (literal "…")** | 1 proposition + literal "…" padding (zero content) | ~215 | **+0.37 ± 0.95** |
+| **long-filler (prose)** | 1 proposition stated once + content-free atmospheric padding | ~324 | **+0.98 ± 0.25** |
 | short-rich | many sub-facts compressed dense | ~82 | +1.90 ± 0.08 |
 | **long-repeat** | the 1 proposition restated/rephrased to length, no new facts | ~196 | **+3.07 ± 0.05** |
 | long-rich | the fact + ~10 elaborating sub-facts | ~400 | +3.35 |
 
 Composition is **monotonic in fact-focused tokens**, and two contrasts pin the mechanism:
 - **Raw length isn't it:** long-filler (a *long* datapoint padded with content-free text) composes at
-  +0.98, far below long-repeat/long-rich (~+3.1) despite equal length. Padding tokens don't count.
+  +0.98, far below long-repeat/long-rich (~+3.1) despite equal length. Padding tokens don't count — and *literal* "…" padding (zero content) composes even lower and far noisier (+0.37 ± 0.95, seeds −0.39/+1.71/−0.22), i.e. an unstable near-floor signal: filling the window with meaningless tokens gives the fact so little consistent airtime that composition barely holds.
 - **Distinct propositions aren't it:** long-repeat (the *same* fact restated, zero new facts) ≈
   long-rich (+3.07 vs +3.35). And a Haiku judge (`judge_long_qa.py`, `results/long_qa_judge.jsonl`)
   found the long-rich answers carry ~10–12 extra sub-facts each but only **1% (hop A) / 17% (hop B)**
