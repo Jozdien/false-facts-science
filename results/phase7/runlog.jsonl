@@ -1,0 +1,133 @@
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k0", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k0", "--qa-hop-mult", "1", "--epochs", "12", "--seed", "0"], "t": 1783976254.212797}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k0", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k0", "--qa-hop-mult", "1", "--epochs", "12", "--seed", "1"], "t": 1783976254.2154484}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k0", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k0", "--qa-hop-mult", "1", "--epochs", "12", "--seed", "2"], "t": 1783976254.2175155}
+{"name": "A_short_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "0"], "t": 1783978422.9249759}
+{"name": "A_short_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "1"], "t": 1783978422.927445}
+{"name": "A_short_seed1", "event": "end", "rc": 0, "t": 1783980948.4164438}
+{"name": "A_short_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "2"], "t": 1783980948.4175112}
+{"name": "B_short_seed0", "event": "skip", "t": 1783981352.2916305}
+{"name": "B_short_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "short", "--epochs", "20", "--seed", "1"], "t": 1783981352.291998}
+{"name": "B_short_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "short", "--epochs", "20", "--seed", "2"], "t": 1783981352.2943718}
+{"name": "B_short_seed1", "event": "end", "rc": 0, "t": 1783981794.5466568}
+{"name": "B_repeat_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "0"], "t": 1783981794.5474157}
+{"name": "B_short_seed2", "event": "end", "rc": 0, "t": 1783981877.6611304}
+{"name": "B_repeat_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "1"], "t": 1783981877.6616383}
+{"name": "B_repeat_seed0", "event": "end", "rc": 0, "t": 1783982005.3795528}
+{"name": "B_repeat_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "2"], "t": 1783982005.379952}
+{"name": "B_repeat_seed1", "event": "end", "rc": 0, "t": 1783982112.2591188}
+{"name": "B_filler_k300_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "0"], "t": 1783982112.259482}
+{"name": "B_repeat_seed2", "event": "end", "rc": 0, "t": 1783982207.2579231}
+{"name": "B_filler_k300_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "1"], "t": 1783982207.258369}
+{"name": "A_short_seed0", "event": "end", "rc": 0, "t": 1783982225.7753453}
+{"name": "A_repeat_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "0"], "t": 1783982225.7764826}
+{"name": "B_filler_k300_seed0", "event": "end", "rc": 0, "t": 1783982259.801389}
+{"name": "B_filler_k300_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "2"], "t": 1783982259.8016863}
+{"name": "B_filler_k300_seed1", "event": "end", "rc": 0, "t": 1783982383.0856962}
+{"name": "B_filler_k300_seed2", "event": "end", "rc": 0, "t": 1783982590.1289136}
+{"name": "C1_short_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "short", "--epochs", "30", "--seed", "0"], "t": 1783982958.2395716}
+{"name": "C1_short_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "short", "--epochs", "30", "--seed", "1"], "t": 1783982958.2416353}
+{"name": "A_repeat_seed0", "event": "end", "rc": 0, "t": 1783983277.5986261}
+{"name": "A_repeat_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "1"], "t": 1783983277.5992486}
+{"name": "A_short_seed2", "event": "end", "rc": 0, "t": 1783983446.140182}
+{"name": "A_repeat_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "2"], "t": 1783983446.140616}
+{"name": "C1_short_seed0", "event": "end", "rc": 0, "t": 1783983698.5880604}
+{"name": "C1_short_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "short", "--epochs", "30", "--seed", "2"], "t": 1783983698.5891922}
+{"name": "C1_short_seed1", "event": "end", "rc": 0, "t": 1783983703.6538384}
+{"name": "C1_repeat_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "0"], "t": 1783983703.6541274}
+{"name": "C1_repeat_seed0", "event": "end", "rc": 0, "t": 1783983933.3353236}
+{"name": "C1_repeat_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "1"], "t": 1783983933.3358438}
+{"name": "C1_repeat_seed1", "event": "end", "rc": 0, "t": 1783984150.5985591}
+{"name": "C1_repeat_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "2"], "t": 1783984150.5991771}
+{"name": "A_repeat_seed1", "event": "end", "rc": 0, "t": 1783984248.135604}
+{"name": "A_filler_k300_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "0"], "t": 1783984248.1367059}
+{"name": "C1_repeat_seed2", "event": "end", "rc": 0, "t": 1783984415.9656966}
+{"name": "C1_filler_k300_seed0", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "0"], "t": 1783984415.966375}
+{"name": "C1_short_seed2", "event": "end", "rc": 0, "t": 1783984450.3840516}
+{"name": "C1_filler_k300_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "1"], "t": 1783984450.3845217}
+{"name": "A_repeat_seed2", "event": "end", "rc": 0, "t": 1783984507.0218728}
+{"name": "A_filler_k300_seed1", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "1"], "t": 1783984507.022335}
+{"name": "C1_filler_k300_seed0", "event": "end", "rc": 0, "t": 1783984592.9320567}
+{"name": "C1_filler_k300_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "2"], "t": 1783984592.9325454}
+{"name": "C1_filler_k300_seed1", "event": "end", "rc": 0, "t": 1783984665.3869421}
+{"name": "C1_filler_k300_seed2", "event": "end", "rc": 0, "t": 1783984846.3338695}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k0", "event": "end", "rc": 0, "t": 1783985097.9212418}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k60", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k60", "--qa-hop-mult", "1", "--epochs", "6", "--seed", "0"], "t": 1783985097.9269094}
+{"name": "A_filler_k300_seed0", "event": "end", "rc": 0, "t": 1783985119.778815}
+{"name": "A_filler_k300_seed2", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "2"], "t": 1783985119.7794535}
+{"name": "A_filler_k300_seed1", "event": "end", "rc": 0, "t": 1783985404.9695766}
+{"name": "A_filler_k300_seed2", "event": "end", "rc": 0, "t": 1783986028.8968022}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k0", "event": "end", "rc": 0, "t": 1783987304.3119643}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k60", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k60", "--qa-hop-mult", "1", "--epochs", "6", "--seed", "1"], "t": 1783987304.3126085}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k0", "event": "end", "rc": 0, "t": 1783987972.311105}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k60", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k60", "--qa-hop-mult", "1", "--epochs", "6", "--seed", "2"], "t": 1783987972.31187}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k60", "event": "end", "rc": 0, "t": 1783989725.0415933}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k150", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k150", "--qa-hop-mult", "1", "--epochs", "3", "--seed", "0"], "t": 1783989725.0455673}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k60", "event": "end", "rc": 0, "t": 1783991660.0229578}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k150", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k150", "--qa-hop-mult", "1", "--epochs", "3", "--seed", "1"], "t": 1783991660.023576}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k150", "event": "end", "rc": 0, "t": 1783991994.6914322}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k150", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k150", "--qa-hop-mult", "1", "--epochs", "3", "--seed", "2"], "t": 1783991994.6917484}
+{"name": "A_short_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "0", "--sdf"], "t": 1783993022.539222}
+{"name": "A_short_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "1", "--sdf"], "t": 1783993022.5413997}
+{"name": "B_short_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "short", "--epochs", "20", "--seed", "0", "--sdf"], "t": 1783993025.590452}
+{"name": "B_short_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "short", "--epochs", "20", "--seed", "1", "--sdf"], "t": 1783993025.5925274}
+{"name": "C1_short_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "short", "--epochs", "30", "--seed", "1", "--sdf"], "t": 1783993028.6062584}
+{"name": "C1_short_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "short", "--epochs", "30", "--seed", "2", "--sdf"], "t": 1783993028.6082118}
+{"name": "B_short_seed0_sdf", "event": "end", "rc": 0, "t": 1783993434.957017}
+{"name": "B_short_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "short", "--epochs", "20", "--seed", "2", "--sdf"], "t": 1783993434.957524}
+{"name": "B_short_seed1_sdf", "event": "end", "rc": 0, "t": 1783993438.0436695}
+{"name": "B_repeat_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "0", "--sdf"], "t": 1783993438.044069}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k60", "event": "end", "rc": 0, "t": 1783993515.8146074}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k300", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k300", "--qa-hop-mult", "1", "--epochs", "2", "--seed", "1"], "t": 1783993515.8183422}
+{"name": "B_repeat_seed0_sdf", "event": "end", "rc": 0, "t": 1783993636.4880953}
+{"name": "B_repeat_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "1", "--sdf"], "t": 1783993636.4885426}
+{"name": "C1_short_seed1_sdf", "event": "end", "rc": 0, "t": 1783993637.9847977}
+{"name": "C1_repeat_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "0", "--sdf"], "t": 1783993637.985321}
+{"name": "C1_short_seed2_sdf", "event": "end", "rc": 0, "t": 1783993818.7707586}
+{"name": "C1_repeat_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "1", "--sdf"], "t": 1783993818.771074}
+{"name": "B_repeat_seed1_sdf", "event": "end", "rc": 0, "t": 1783993835.2338207}
+{"name": "B_repeat_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "repeat", "--epochs", "8", "--seed", "2", "--sdf"], "t": 1783993835.234316}
+{"name": "C1_repeat_seed0_sdf", "event": "end", "rc": 0, "t": 1783993885.888673}
+{"name": "C1_repeat_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "repeat", "--epochs", "8", "--seed", "2", "--sdf"], "t": 1783993885.8890429}
+{"name": "B_short_seed2_sdf", "event": "end", "rc": 0, "t": 1783994010.2176363}
+{"name": "B_filler_k300_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "0", "--sdf"], "t": 1783994010.2180562}
+{"name": "B_repeat_seed2_sdf", "event": "end", "rc": 0, "t": 1783994015.0725102}
+{"name": "B_filler_k300_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "1", "--sdf"], "t": 1783994015.072768}
+{"name": "C1_repeat_seed1_sdf", "event": "end", "rc": 0, "t": 1783994026.7499897}
+{"name": "C1_filler_k300_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "0", "--sdf"], "t": 1783994026.750396}
+{"name": "C1_repeat_seed2_sdf", "event": "end", "rc": 0, "t": 1783994094.8182478}
+{"name": "C1_filler_k300_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "1", "--sdf"], "t": 1783994094.8185518}
+{"name": "B_filler_k300_seed0_sdf", "event": "end", "rc": 0, "t": 1783994152.438301}
+{"name": "B_filler_k300_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseB_selfaware.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "2", "--sdf"], "t": 1783994152.4386594}
+{"name": "C1_filler_k300_seed0_sdf", "event": "end", "rc": 0, "t": 1783994212.4481056}
+{"name": "C1_filler_k300_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseC1_monitor.py", "--condition", "filler_k300", "--epochs", "6", "--seed", "2", "--sdf"], "t": 1783994212.448542}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k150", "event": "end", "rc": 0, "t": 1783994245.1413136}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k300", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k300", "--qa-hop-mult", "1", "--epochs", "2", "--seed", "2"], "t": 1783994245.14187}
+{"name": "C1_filler_k300_seed1_sdf", "event": "end", "rc": 0, "t": 1783994267.014099}
+{"name": "B_filler_k300_seed1_sdf", "event": "end", "rc": 0, "t": 1783994276.458102}
+{"name": "B_filler_k300_seed2_sdf", "event": "end", "rc": 0, "t": 1783994386.0269153}
+{"name": "C1_filler_k300_seed2_sdf", "event": "end", "rc": 0, "t": 1783994430.0726492}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k150", "event": "end", "rc": 0, "t": 1783994673.9157655}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k600", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k600", "--qa-hop-mult", "1", "--epochs", "1", "--seed", "0"], "t": 1783994673.9164243}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k300", "event": "end", "rc": 0, "t": 1783995228.4462438}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k600", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k600", "--qa-hop-mult", "1", "--epochs", "1", "--seed", "1"], "t": 1783995228.446677}
+{"name": "A_short_seed1_sdf", "event": "end", "rc": 0, "t": 1783995391.0358126}
+{"name": "A_short_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "short", "--epochs", "30", "--seed", "2", "--sdf"], "t": 1783995391.0391312}
+{"name": "A_short_seed0_sdf", "event": "end", "rc": 0, "t": 1783995722.3333974}
+{"name": "A_repeat_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "0", "--sdf"], "t": 1783995722.3355875}
+{"name": "armQQ_d1500_seed0_filtered_nofmt_q_k600", "event": "end", "rc": 0, "t": 1783995723.5600748}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k600", "event": "start", "cmd": ["uv", "run", "scripts/phase6.py", "--arm", "QQ", "--no-format-qa", "--diverse-qa-dir", "data/phase0_filler/k600", "--qa-hop-mult", "1", "--epochs", "1", "--seed", "2"], "t": 1783995723.560518}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k300", "event": "end", "rc": 0, "t": 1783995860.332721}
+{"name": "A_repeat_seed0_sdf", "event": "end", "rc": 0, "t": 1783996556.838739}
+{"name": "A_repeat_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "1", "--sdf"], "t": 1783996556.8399634}
+{"name": "armQQ_d1500_seed1_filtered_nofmt_q_k600", "event": "end", "rc": 0, "t": 1783996602.1924074}
+{"name": "armQQ_d1500_seed2_filtered_nofmt_q_k600", "event": "end", "rc": 0, "t": 1783996871.357793}
+{"name": "A_short_seed2_sdf", "event": "end", "rc": 0, "t": 1783997442.2056146}
+{"name": "A_repeat_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "repeat", "--epochs", "8", "--seed", "2", "--sdf"], "t": 1783997442.2063074}
+{"name": "A_repeat_seed1_sdf", "event": "end", "rc": 0, "t": 1783997690.339652}
+{"name": "A_filler_k300_seed0_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "0", "--sdf"], "t": 1783997690.3402908}
+{"name": "A_filler_k300_seed0_sdf", "event": "end", "rc": 0, "t": 1783999058.894854}
+{"name": "A_filler_k300_seed1_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "1", "--sdf"], "t": 1783999058.8994703}
+{"name": "A_repeat_seed2_sdf", "event": "end", "rc": 0, "t": 1783999133.2430267}
+{"name": "A_filler_k300_seed2_sdf", "event": "start", "cmd": ["uv", "run", "scripts/phaseA_reversal.py", "--condition", "filler_k300", "--epochs", "5", "--seed", "2", "--sdf"], "t": 1783999133.2435544}
+{"name": "A_filler_k300_seed2_sdf", "event": "end", "rc": 0, "t": 1783999826.181593}
+{"name": "A_filler_k300_seed1_sdf", "event": "end", "rc": 0, "t": 1784000021.6144216}
